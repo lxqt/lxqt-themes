@@ -1,18 +1,18 @@
 /*
  * General panel settings
  */
-RazorPanel {
+LxQtPanel {
     background-color: #121212;
 }
 
 /* PositionBottom */
-RazorPanel[position="Bottom"] {
+LxQtPanel[position="Bottom"] {
     border-top: 1px solid #4a4a4a;
 }
 
 
 /* PositionTop */
-RazorPanel[position="Top"] {
+LxQtPanel[position="Top"] {
     border-bottom: 1px solid #4a4a4a;
 }
 
@@ -143,36 +143,36 @@ TrayIcon {
  * Mount plugin
  */
 
-#RazorMount {
+#LxQtMount {
     qproperty-iconSize: 24px;
 }
 
-#RazorMount:hover {
+#LxQtMount:hover {
     margin: 0;
     border: 2px solid transparent;
 }
 
-#RazorMount:pressed {
+#LxQtMount:pressed {
     border: 2px solid transparent;
 }
 
-#RazorMountPopup {
+#LxQtMountPopup {
     background-color: #121212;
     border: 1px solid #4a4a4a;
     padding: 4px;
 }
 
-#RazorMountPopup > MenuDiskItem {
+#LxQtMountPopup > MenuDiskItem {
     border-radius: 4px;
 }
 
-#RazorMountPopup > MenuDiskItem:hover {
+#LxQtMountPopup > MenuDiskItem:hover {
     border-radius: 4px;
     border: 1px solid #4a4a4a;
 }
 
-#RazorMountPopup #EjectButton,
-#RazorMountPopup #DiskButton {
+#LxQtMountPopup #EjectButton,
+#LxQtMountPopup #DiskButton {
     qproperty-iconSize: 22px;
     background-color: transparent;
     border: none;
@@ -180,7 +180,7 @@ TrayIcon {
     padding: 2px;
 }
 
-#RazorMountPopup #NoDiskLabel {
+#LxQtMountPopup #NoDiskLabel {
     color: #7f7f7f;
     margin: 6px;
 }
@@ -301,6 +301,6 @@ TrayIcon {
 /*
  * CPU monitor
  */
-#RazorCpuLoad {
+#LxQtCpuLoad {
     qproperty-fontColor: #aaaaaa;
 }

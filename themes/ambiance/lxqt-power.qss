@@ -31,29 +31,29 @@ QToolButton:hover {
 }
 
 #cancelButton {
-	qproperty-icon: url(razor-power/cancel.png);
+	qproperty-icon: url(lxqt-power/cancel.png);
     border-radius: 3px;
     padding: 4px;
 }
 
 #hibernateButton {
-	qproperty-icon: url(razor-power/hibernate.png);
+	qproperty-icon: url(lxqt-power/hibernate.png);
 }
 
 #logoutButton {
-	qproperty-icon: url(razor-power/logout.png);
+	qproperty-icon: url(lxqt-power/logout.png);
 }
 
 #rebootButton {
-	qproperty-icon: url(razor-power/reboot.png);
+	qproperty-icon: url(lxqt-power/reboot.png);
 }
 
 #shutdownButton {
-	qproperty-icon: url(razor-power/shutdown.png);
+	qproperty-icon: url(lxqt-power/shutdown.png);
 }
 
 #suspendButton {
-	qproperty-icon: url(razor-power/suspend.png);
+	qproperty-icon: url(lxqt-power/suspend.png);
 }
 
 

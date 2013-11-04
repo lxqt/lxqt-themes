@@ -1,18 +1,18 @@
 /*
  * General panel settings
  */
-RazorPanel {
+LxQtPanel {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5C5B56, stop:0.25 #53524E, stop: 0.5 #4D4C47, stop: 0.75 #45442F, stop:1 #3C3B37);
 }
 
 /* PositionBottom */
-RazorPanel[position="Bottom"] {
+LxQtPanel[position="Bottom"] {
     border-top: 1px solid #33322E;
 }
 
 
 /* PositionTop */
-RazorPanel[position="Top"] {
+LxQtPanel[position="Top"] {
     border-bottom: 1px solid #33322E;
 }
 
@@ -21,7 +21,7 @@ RazorPanel[position="Top"] {
  * General plugins settings
  */
 Plugin, 
-RazorPanelPlugin {
+LxQtPanelPlugin {
     margin: 2px 0 2px 0;
     padding: 0;
     spacing: 20px;
@@ -36,7 +36,7 @@ Plugin  > QWidget > QWidget{
 
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
-RazorPanelPlugin > QToolButton {
+LxQtPanelPlugin > QToolButton {
     margin: 0;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -46,7 +46,7 @@ RazorPanelPlugin > QToolButton {
 
 Plugin > QToolButton:hover,
 Plugin > QWidget > QToolButton:hover,
-RazorPanelPlugin > QToolButton:hover {
+LxQtPanelPlugin > QToolButton:hover {
     margin: 0;
     border: 1px solid #7f7f7f;
     color: #cacaca;
@@ -174,21 +174,21 @@ TrayIcon {
 /*
  * Mount plugin
  */
-#RazorMountPopup {
+#LxQtMountPopup {
     background-color: #4E4D48;
     padding: 4px;
 }
 
-#RazorMountPopup > MenuDiskItem {
+#LxQtMountPopup > MenuDiskItem {
     border-radius: 4px;
 }
 
-#RazorMountPopup > MenuDiskItem:hover {
+#LxQtMountPopup > MenuDiskItem:hover {
     background: rgba(0, 0, 0, 40%);
 }
 
-#RazorMountPopup #EjectButton,
-#RazorMountPopup #DiskButton {
+#LxQtMountPopup #EjectButton,
+#LxQtMountPopup #DiskButton {
     qproperty-iconSize: 22px;
     background-color: transparent;
     border: none;
@@ -196,7 +196,7 @@ TrayIcon {
     padding: 4px;
 }
 
-#RazorMountPopup #NoDiskLabel {
+#LxQtMountPopup #NoDiskLabel {
     margin: 6px;
     color: #CCCCCC;
 }
@@ -305,6 +305,6 @@ TrayIcon {
 /*
  * CPU monitor
  */
-#RazorCpuLoad {
+#LxQtCpuLoad {
     qproperty-fontColor: #cacaca;
 }

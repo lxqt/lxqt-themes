@@ -14,7 +14,7 @@ QLabel
 #closeButton
 {
   border: none;
-  qproperty-icon: url(razor-notificationd/cancel.png);
+  qproperty-icon: url(lxqt-notificationd/cancel.png);
 }
 
 

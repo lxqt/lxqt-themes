@@ -13,7 +13,7 @@ QLabel
 
 #closeButton
 {
-    qproperty-icon: url(razor-notificationd/close-48x48.png);
+    qproperty-icon: url(lxqt-notificationd/close-48x48.png);
 }
 
 #closeButton:hover {

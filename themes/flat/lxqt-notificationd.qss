@@ -38,6 +38,6 @@ QToolButton:pressed {
 }
 
 #closeButton {
-    qproperty-icon: url(razor-runner/close.svg);
+    qproperty-icon: url(lxqt-runner/close.svg);
 	qproperty-iconSize: 16px;
 }

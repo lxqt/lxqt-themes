@@ -46,27 +46,27 @@ QToolButton:pressed {
 
 
 #cancelButton {
-	qproperty-icon: url(razor-power/cancel.svg);
+	qproperty-icon: url(lxqt-power/cancel.svg);
     padding: 4px;
 }
 
 #hibernateButton {
-	qproperty-icon: url(razor-power/hibernate.svg);
+	qproperty-icon: url(lxqt-power/hibernate.svg);
 }
 
 #logoutButton {
-	qproperty-icon: url(razor-power/logout.svg);
+	qproperty-icon: url(lxqt-power/logout.svg);
 }
 
 #rebootButton {
-	qproperty-icon: url(razor-power/reboot.svg);
+	qproperty-icon: url(lxqt-power/reboot.svg);
 }
 
 #shutdownButton {
-	qproperty-icon: url(razor-power/shutdown.svg);
+	qproperty-icon: url(lxqt-power/shutdown.svg);
 }
 
 #suspendButton {
-	qproperty-icon: url(razor-power/suspend.svg);
+	qproperty-icon: url(lxqt-power/suspend.svg);
 }
 

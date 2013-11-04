@@ -1,4 +1,4 @@
-RazorPanel {
+LxQtPanel {
 	background:hsv(0, 0, 192);
 	padding: 0px;
 	margin: 0px;
@@ -19,7 +19,7 @@ QToolTip {
 
 QToolButton,
 TrayIcon,
-#RazorMountPopup > MenuDiskItem {
+#LxQtMountPopup > MenuDiskItem {
 	margin: 1px;
 	border: 1px solid transparent;
 	padding: 0px;
@@ -30,7 +30,7 @@ TrayIcon,
 
 QToolButton:hover,
 TrayIcon:hover,
-#RazorMountPopup > MenuDiskItem:hover {
+#LxQtMountPopup > MenuDiskItem:hover {
 	border: 1px solid hsv(0, 0, 224);
 }
 
@@ -60,7 +60,7 @@ QLabel {
 	font-size: 11pt;
 }
 
-#RazorCpuLoad {
+#LxQtCpuLoad {
 	qproperty-fontColor: hsv(0, 0, 64);
 }
 
@@ -73,7 +73,7 @@ QLabel {
 }
 
 
-#RazorMountPopup,
+#LxQtMountPopup,
 VolumePopup,
 #WorldClockPopup {
 	border: 1px solid hsv(0, 0, 64);
@@ -100,30 +100,30 @@ VolumePopup,
 }
 
 
-#RazorMountPopup * {
+#LxQtMountPopup * {
 	margin: 0px;
 	padding: 0px;
 }
 
-#RazorMountPopup #EjectButton,
-#RazorMountPopup #DiskButton {
+#LxQtMountPopup #EjectButton,
+#LxQtMountPopup #DiskButton {
 	qproperty-iconSize: 24px;
 	background: transparent;
 	border: none;
 }
 
-#RazorMountPopup #NoDiskLabel {
+#LxQtMountPopup #NoDiskLabel {
 	margin: 4px;
 }
 
 
-RazorPanel[position="Top"] #KbIndicator,
-RazorPanel[position="Bottom"] #KbIndicator {
+LxQtPanel[position="Top"] #KbIndicator,
+LxQtPanel[position="Bottom"] #KbIndicator {
 	padding: 0px 3px;
 }
 
-RazorPanel[position="Left"] #KbIndicator,
-RazorPanel[position="Right"] #KbIndicator {
+LxQtPanel[position="Left"] #KbIndicator,
+LxQtPanel[position="Right"] #KbIndicator {
 	padding: 3px 0px;
 }
 

@@ -13,5 +13,5 @@ QLabel {
 }
 
 #closeButton {
-    qproperty-icon: url(razor-runner/close-48x48.png);
+    qproperty-icon: url(lxqt-runner/close-48x48.png);
 }
