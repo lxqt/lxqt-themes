@@ -42,7 +42,8 @@ Plugin > QWidget > QToolButton {
     qproperty-iconSize: 22px;
 }
 
-Plugin > QToolButton:pressed {
+Plugin > QToolButton:pressed,
+Plugin > QWidget > QToolButton:pressed {
     margin: 2px 0 0 2px;
     border: none;
 }
