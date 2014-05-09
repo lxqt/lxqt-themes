@@ -1,18 +1,18 @@
 /*
  * General panel settings
  */
-LxQtPanel {
+LxQtPanel #BackgroundWidget {
     background-color: #121212;
 }
 
 /* PositionBottom */
-LxQtPanel[position="Bottom"] {
+LxQtPanel[position="Bottom"] #BackgroundWidget {
     border-top: 1px solid #4a4a4a;
 }
 
 
 /* PositionTop */
-LxQtPanel[position="Top"] {
+LxQtPanel[position="Top"] #BackgroundWidget {
     border-bottom: 1px solid #4a4a4a;
 }
 
