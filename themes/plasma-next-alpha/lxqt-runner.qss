@@ -1,0 +1,13 @@
+#panel {
+    background-color:#EDEDED;
+    border: 1px solid #D2D2D2;
+}
+
+#closeButton {
+    qproperty-icon: url(lxqt-runner/close-48x48.png);
+}
+
+#commandList {
+    border: 1px solid #D2D2D2;
+    margin: 0 1px 1px 1px;
+}
