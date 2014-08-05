@@ -16,6 +16,11 @@ QToolTip {
 	margin: 0px;
 }
 
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 
 QToolButton,
 TrayIcon,

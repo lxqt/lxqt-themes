@@ -108,6 +108,11 @@ LxQtPanelPlugin > QToolButton:hover {
    border: 1px solid #7f7f7f;
 }
 
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 /*
  * Clock
  */

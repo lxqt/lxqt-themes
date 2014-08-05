@@ -168,6 +168,11 @@ LxQtPanelPlugin > QToolButton {
    border-top: 3px solid #FF5C1F;
 }
 
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 
 /*
  * Clock

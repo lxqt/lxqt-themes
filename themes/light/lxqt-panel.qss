@@ -107,6 +107,11 @@ LxQtTaskButton {
     border: 1px solid #80a8d3;
 }
 
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 /*
  * Clock
  */
