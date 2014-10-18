@@ -29,7 +29,7 @@ LxQtPanel[position="Right"] #BackgroundWidget {
  * General plugins settings
  */
 Plugin {
-    padding: 0 2px 0 2px;
+    padding: 0;
     spacing: 20px;
 }
 

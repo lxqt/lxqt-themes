@@ -22,7 +22,7 @@ LxQtPanel[position="Top"] #BackgroundWidget {
  */
 Plugin, 
 LxQtPanelPlugin {
-    margin: 2px 0 2px 0;
+    margin: 0;
     padding: 0;
     spacing: 20px;
     qproperty-moveMarkerColor: #C94C21;
