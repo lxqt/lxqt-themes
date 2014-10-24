@@ -2,8 +2,8 @@ QWidget {
     border-radius: 5px;
 }
 
-#formFrame {
-    background-color: rgba(200,200,200, 128);
+#formFrame { 
+    background-color: rgba(200,200,200, 128); 
     border-radius: 10px;
 }
 
@@ -24,5 +24,5 @@ QComboBox::down-arrow {
 
 #leaveButton {
     qproperty-iconSize: 25px;
-    qproperty-icon: url(lxqt-lightdm-greeter/leaveIcon.svg);
+    qproperty-icon: url(lxqt-lightdm-greeter/shutdown.svg);
 }
