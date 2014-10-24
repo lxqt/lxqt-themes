@@ -28,7 +28,10 @@ QToolButton::menu-indicator {
     qproperty-icon: url(lxqt-runner/down-arrow.svg);
     color: rgba(41, 41, 41, 0%);
     margin: 2px;
-    qproperty-arrowType: 2;
+}
+#actionButton:hover{
+   border: 1px solid rgba(0, 0, 0, 50%);
+   background: rgba(255, 255, 255, 20%);
 }
 
 

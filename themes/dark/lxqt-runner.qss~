@@ -31,10 +31,7 @@ QToolButton::menu-indicator {
     qproperty-arrowType: 2;
 }
 
-#actionButton:hover{
-   border: 1px solid rgba(0, 0, 0, 50%);
-   background: rgba(255, 255, 255, 20%);
-}
+
 
 /*
  * Search results (For some reason the #commandList does no take the styles, just the background and the border can be changed)
