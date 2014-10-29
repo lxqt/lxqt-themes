@@ -1,0 +1,70 @@
+/*
+ * Panel
+ */
+
+#panel {
+	border: 1px solid #4C4C4C;
+	background:#2D2D2D;
+	padding: 2px;
+	margin: 0px;
+}
+
+/*
+ * Buttons
+ */
+
+QToolButton::menu-indicator {
+   image: none;
+}
+
+QToolButton {
+	margin: 0px;
+	border: 0px solid transparent;
+	padding: 0px;
+	font-size: 10pt;
+	color: #DEDEDE;
+    qproperty-iconSize: 20px;
+}
+
+QToolButton:hover {
+	border: 0px solid #DEDEDE;
+    margin: 1px;
+    padding: 1px;
+    
+}
+
+#closeButton {
+	qproperty-icon: url(lxqt-runner/close.svg);
+}
+
+#actionButton {
+    qproperty-icon: url(lxqt-runner/down-arrow.svg);
+}
+
+
+
+#commandEd {
+	border: 1px solid #4C4C4C;
+	padding: 0px;
+	margin: 0px;
+    background: white;
+    color: #2D2D2D;
+    selection-background-color: #1A80B6;
+    selection-color: white;
+    
+}
+
+#commandList {
+	border: 1px solid #4C4C4C;
+}
+
+#commandList::item {
+    margin: 2px;
+    padding: 2px;
+}
+
+QStyledItemDelegate {
+    background: black
+}
+
+

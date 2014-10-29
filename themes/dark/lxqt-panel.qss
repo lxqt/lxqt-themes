@@ -36,12 +36,14 @@ VolumePopup {
 
 #MixerLink {
     outline: 0;
+    border: none;
 }   
 
 VolumePopup  > QPushButton {
     color: #DEDEDE;
     margin: 4px;
     outline: 0;
+    border: none;
 }
  
 VolumePopup  > QPushButton:hover {
@@ -267,7 +269,7 @@ TrayIcon {
     margin-right: 2px;
     border: 1px solid rgba(0, 0, 0, 30%);
     background: rgba(0, 0, 0, 50%);
-    qproperty-icon: url(mainmenu.svg);
+    qproperty-icon: url(mainmenu.png);
     color: #DEDEDE;
 }
 #MainMenu:hover {
@@ -281,6 +283,9 @@ TrayIcon {
 #MainMenu  QMenu {
     margin: 4px;
     background-color: hsv(0, 0, 41);
+}
+#MainMenu  QMenu::icon {
+    background-color: transparent;
 }
 
 #MainMenu QMenu::right-arrow {
