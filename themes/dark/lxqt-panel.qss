@@ -37,7 +37,7 @@ VolumePopup {
 #MixerLink {
     outline: 0;
     border: none;
-}   
+}
 
 VolumePopup  > QPushButton {
     color: #DEDEDE;
@@ -45,7 +45,7 @@ VolumePopup  > QPushButton {
     outline: 0;
     border: none;
 }
- 
+
 VolumePopup  > QPushButton:hover {
     border: 1px solid rgba(0, 0, 0, 50%);
     background: rgba(255, 255, 255, 20%);
@@ -187,7 +187,7 @@ LxQtPanelPlugin > QToolButton:hover {
 
 
 /*
- * Clock 
+ * Clock
  */
 
 #Clock > QWidget{
@@ -224,12 +224,12 @@ LxQtPanelPlugin > QToolButton:hover {
     max-height:20px;
     min-height:20px;
     qproperty-icon: url(calendar-popup/right-arrow.svg);
-} 
+}
 #Clock QCalendarWidget #qt_calendar_prevmonth {
     max-height:20px;
     min-height:20px;
     qproperty-icon: url(calendar-popup/left-arrow.svg);
-} 
+}
 
 #Clock QCalendarWidget QMenu {
     margin: 4px;
@@ -265,9 +265,10 @@ TrayIcon {
 
 #MainMenu {
     margin-right: 2px;
+    padding: 2px;
     border: 1px solid rgba(0, 0, 0, 30%);
     background: rgba(0, 0, 0, 50%);
-    qproperty-icon: url(mainmenu.png);
+    qproperty-icon: url(mainmenu.svg);
     color: #DEDEDE;
 }
 #MainMenu:hover {
@@ -361,7 +362,7 @@ TrayIcon {
 }
 #ShowDesktop {
    qproperty-icon: url(show-desktop.svg);
-    
+
 }
 
 
