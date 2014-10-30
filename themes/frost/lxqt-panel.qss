@@ -281,8 +281,6 @@ TrayIcon {
  */
 
 #MainMenu {
-    margin-left: 2px;
-    margin-right: 2px;
     border: 1px solid transparent;
     background: #1A80B6;
     qproperty-icon: url(mainmenu.png);
@@ -290,8 +288,6 @@ TrayIcon {
     color: #DEDEDE;
 }
 #MainMenu:hover {
-    margin-left: 2px;
-    margin-right: 2px; 
     border: 1px solid #2D2D2D;
     background: #1A80B6;
     color: #DEDEDE;
@@ -301,17 +297,12 @@ TrayIcon {
     background-color: #2D2D2D;
 }
 #MainMenu  QMenu::icon {
-    min-width: 20px;
     background-color: transparent;
 }
 
 
 #MainMenu QMenu::item {
-    min-width: 200px;
     color: #DEDEDE;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 22px;
 }
 
 #MainMenu QMenu::item:selected {
