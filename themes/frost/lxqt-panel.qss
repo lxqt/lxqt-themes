@@ -31,8 +31,12 @@ LxQtPanel[position="Top"] #BackgroundWidget {
  */
 
 VolumePopup {
-    background:#2D2D2D;
-    padding: 4px;
+    margin: 2px;
+    padding: 2px;
+}
+
+#VolumePlugin QToolButton:hover {
+    background: #1A1A1A;
 }
 
 #MixerLink {
@@ -42,13 +46,17 @@ VolumePopup {
     margin: 3px;
 }
 
+VolumePopup {
+    background: #2D2D2D;
+}
+
 VolumePopup  > QPushButton {
     color: #DEDEDE;
     margin: 3px;
     border: none;
     outline: 0;
-    min-height: 22px;
     min-width: 50px;
+    qproperty-iconSize: 24px;
 }
 
 VolumePopup  > QPushButton:hover {
@@ -188,6 +196,15 @@ LxQtPanelPlugin > QToolButton:hover {
  * Clock
  */
 
+#Clock {
+    margin: 2px;
+    padding: 2px;
+}
+
+#Clock:hover {
+    background: #1A1A1A;
+}
+
 #Clock > QWidget{
     margin-right: 2px;
 }
@@ -200,55 +217,58 @@ LxQtPanelPlugin > QToolButton:hover {
     color: #DEDEDE;
 }
 
-#Clock QCalendarWidget QAbstractItemView:enabled {
+/*
+ * Calendar Widget
+*/
+
+QCalendarWidget QAbstractItemView:enabled {
     color: #2D2D2D;
     selection-background-color: #1A80B6;
     selection-color: #DEDEDE;
 }
 
-#Clock QCalendarWidget QAbstractItemView:disabled {
+QCalendarWidget QAbstractItemView:disabled {
     color: #4C4C4C;
 }
 
-#Clock QCalendarWidget QWidget {
+QCalendarWidget QWidget {
     alternate-background-color: #DEDEDE;
 }
-
-#Clock QCalendarWidget #qt_calendar_navigationbar {
+QCalendarWidget #qt_calendar_navigationbar {
     background-color:#2D2D2D;
     color: #DEDEDE;
     padding: 2px;
 }
 
-#Clock QCalendarWidget QToolButton {
+QCalendarWidget QToolButton {
     padding:2px;
     margin: 2px;
 }
 
-#Clock QCalendarWidget QToolButton:hover {
+QCalendarWidget QToolButton:hover {
     background: #1A80B6;
     color: #DEDEDE;
 }
 
-#Clock QCalendarWidget QToolButton::menu-indicator {
+QCalendarWidget QToolButton::menu-indicator {
    image: none;
 }
 
-#Clock QCalendarWidget #qt_calendar_nextmonth {
+QCalendarWidget #qt_calendar_nextmonth {
     qproperty-icon: url(calendar-popup/right-arrow.svg);
 }
 
-#Clock QCalendarWidget #qt_calendar_prevmonth {
+QCalendarWidget #qt_calendar_prevmonth {
     qproperty-icon: url(calendar-popup/left-arrow.svg);
 }
 
-#Clock QCalendarWidget QMenu {
+QCalendarWidget QMenu {
     margin: 4px;
     background-color: #2D2D2D;
     color: #DEDEDE;
 }
 
-#Clock QCalendarWidget QMenu::item:selected {
+QCalendarWidget QMenu::item:selected {
     color: #DEDEDE;
     background: #1A80B6;
 }
@@ -268,8 +288,8 @@ QCalendarWidget QSpinBox {
     min-width: 6px;
     padding-left: 2px;
     padding-right: 2px;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 TrayIcon {
@@ -318,6 +338,15 @@ TrayIcon {
 /*
  * Mount plugin
  */
+
+#LxQtMountPlugin {
+    margin: 2px;
+    padding: 2px;
+}
+
+#LxQtMountPlugin QToolButton:hover {
+    background: #1A1A1A;
+}
 
 #LxQtMountPopup {
     background-color: #2D2D2D;
@@ -436,8 +465,20 @@ TrayIcon {
  * WorldClock
  */
 
+#WorldClock {
+    margin: 2px;
+    padding: 2px;
+}
+
+#WorldClock:hover {
+    background: #1A1A1A;
+}
+
 #WorldClockContent {
     color: #DEDEDE;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 2px;
 }
 
 #WorldClockPopup > QLabel {

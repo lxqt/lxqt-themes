@@ -41,8 +41,6 @@ QToolButton:hover {
     qproperty-icon: url(lxqt-runner/down-arrow.svg);
 }
 
-
-
 #commandEd {
     border: 1px solid #4C4C4C;
     padding: 0px;
@@ -51,7 +49,6 @@ QToolButton:hover {
     color: #2D2D2D;
     selection-background-color: #1A80B6;
     selection-color: white;
-
 }
 
 #commandList {
@@ -62,9 +59,3 @@ QToolButton:hover {
     margin: 2px;
     padding: 2px;
 }
-
-QStyledItemDelegate {
-    background: black
-}
-
-
