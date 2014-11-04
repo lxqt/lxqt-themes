@@ -41,6 +41,10 @@ QToolButton:hover {
     qproperty-icon: url(lxqt-runner/down-arrow.svg);
 }
 
+/*
+ *Search field
+ */
+
 #commandEd {
     border: 1px solid #4C4C4C;
     padding: 0px;
@@ -50,6 +54,10 @@ QToolButton:hover {
     selection-background-color: #1A80B6;
     selection-color: white;
 }
+
+/*
+ *Search results list
+ */
 
 #commandList {
     border: 1px solid #4C4C4C;

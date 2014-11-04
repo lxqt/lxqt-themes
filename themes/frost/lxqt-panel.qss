@@ -27,6 +27,44 @@ LxQtPanel[position="Top"] #BackgroundWidget {
 }
 
 /*
+ * General plugins settings
+ */
+
+Plugin,
+LxQtPanelPlugin {
+    padding: 0;
+    spacing: 20px;
+    qproperty-moveMarkerColor: #1A80B6;
+}
+
+Plugin  > QWidget,
+Plugin  > QWidget > QWidget {
+    color: #DEDEDE;
+}
+
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+LxQtPanelPlugin > QToolButton {
+    margin: 2px 0 2px 0;
+    border: 0px solid transparent;
+    qproperty-iconSize: 24px;
+    color: #DEDEDE;
+}
+
+Plugin > QToolButton:hover,
+Plugin > QWidget > QToolButton:hover,
+LxQtPanelPlugin > QToolButton:hover {
+    color: #DEDEDE;
+
+}
+
+Plugin > QToolButton:pressed,
+Plugin > QWidget > QToolButton:pressed,
+LxQtPanelPlugin > QToolButton:pressed {
+    padding: 4px;
+}
+
+/*
  * Volume plugin
  */
 
@@ -89,45 +127,11 @@ VolumePopup  > QSlider::sub-page:vertical {
  }
 
 /*
- * General plugins settings
- */
-
-Plugin,
-LxQtPanelPlugin {
-    margin: 2px 0 2px 0;
-    padding: 0;
-    spacing: 20px;
-    qproperty-moveMarkerColor: #1A80B6;
-}
-
-Plugin  > QWidget,
-Plugin  > QWidget > QWidget {
-    color: #DEDEDE;
-}
-
-Plugin > QToolButton,
-Plugin > QWidget > QToolButton,
-LxQtPanelPlugin > QToolButton {
-    margin: 0;
-    border: 0px solid transparent;
-    qproperty-iconSize: 24px;
-    color: #DEDEDE;
-}
-
-Plugin > QToolButton:hover,
-Plugin > QWidget > QToolButton:hover,
-LxQtPanelPlugin > QToolButton:hover {
-    margin: 0;
-    color: #DEDEDE;
-
-}
-
-/*
  * Desktopswitch
  */
 
 #DesktopSwitch QToolButton {
-    margin: 1px;
+    margin: 2px;
     color: #DEDEDE;
     border-left: 3px solid #4C4C4C;
     background: #2D2D2D;
@@ -135,12 +139,15 @@ LxQtPanelPlugin > QToolButton:hover {
 
 #DesktopSwitch QToolButton:on {
     background: #1A1A1A;
-    border: 0px solid #000000;
+    border-left: 3px solid #1A80B6;
 }
 
 #DesktopSwitch QToolButton:hover {
-    border: 0px solid #7f7f7f;
     background: #1A80B6
+}
+
+#DesktopSwitch QToolButton:pressed {
+    padding: 4px;
 }
 
 /*
@@ -158,13 +165,16 @@ LxQtPanelPlugin > QToolButton:hover {
 
 #QuickLaunch QToolButton{
      border: 0px;
-     margin-left: 2px;
-     margin-right: 2px;
+     margin: 2px;
      padding: 2px;
 }
 
 #QuickLaunch QToolButton:hover{
    background: #1A1A1A;
+}
+
+#QuickLaunch QToolButton:pressed {
+    padding: 4px;
 }
 
 /*
@@ -177,9 +187,9 @@ LxQtPanelPlugin > QToolButton:hover {
 }
 
 #TaskBar QToolButton{
-     border-left: 3px solid #4C4C4C;
-     margin: 2px;
-     padding: 2px;
+    border-left: 3px solid #4C4C4C;
+    margin: 2px;
+    padding: 2px;
 }
 
 #TaskBar QToolButton:on{
@@ -190,6 +200,10 @@ LxQtPanelPlugin > QToolButton:hover {
 #TaskBar QToolButton:hover{
    border-left: 3px solid #4C4C4C;
    background: #1A80B6;
+}
+
+#TaskBar QToolButton:pressed {
+    padding: 4px;
 }
 
 /*
@@ -203,6 +217,9 @@ LxQtPanelPlugin > QToolButton:hover {
 
 #Clock:hover {
     background: #1A1A1A;
+}
+#Clock:pressed {
+    padding: 4px
 }
 
 #Clock > QWidget{
@@ -304,14 +321,19 @@ TrayIcon {
     background: #1A80B6;
     qproperty-icon: url(mainmenu.svg);
     padding: 2px;
-    margin: 2px;
-    margin-left: 3px;
+    margin-right: 2px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: #DEDEDE;
 }
 
 #MainMenu:hover {
-    padding: 3px;
-    color: #DEDEDE;
+    background: #00A7FF;
+}
+
+#MainMenu:pressed {
+    padding: 4px;
 }
 
 #MainMenu  QMenu {
@@ -384,14 +406,16 @@ TrayIcon {
  * Screensaver
  */
 
-#PanelScreenSaver > QToolButton:hover {
-    margin: 0;
-    border: 2px solid transparent;
+#PanelScreenSaver {
+    margin: 2px;
 }
 
-#PanelScreenSaver > QToolButton:pressed {
-    margin: 2px;
-    border: 2px solid transparent;
+#PanelScreenSaver:hover {
+    background: #1A1A1A;
+}
+
+#PanelScreenSaver:pressed {
+    padding: 4px;
 }
 
 /*
@@ -399,7 +423,17 @@ TrayIcon {
  */
 
 #ShowDesktop {
+    margin: 2px;
 }
+
+#ShowDesktop:hover {
+    background: #1A1A1A;
+}
+
+#ShowDesktop:pressed {
+    padding: 4px;
+}
+
 
 /*
  * KbIndicator
