@@ -429,25 +429,13 @@ TrayIcon {
 }
 
 #KbIndicator > QLabel {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 3px;
     border: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
 }
 
-#KbIndicator:enabled {
-    background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 coral, stop:1 transparent);
-    color: #EEEEEE;
-}
-
-#KbIndicator:disabled {
-    background: transparent;
-    color: gray;
+#KbIndicator QLabel:enabled {
+    border: 1px solid rgba(0, 0, 0, 50%);
+    background: rgba(0, 0, 0, 40%);
 }
 
 /*
