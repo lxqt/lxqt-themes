@@ -22,7 +22,6 @@ LxQtPanel[position="Top"] #BackgroundWidget {
  */
 Plugin,
 LxQtPanelPlugin {
-    margin: 0;
     padding: 0;
     spacing: 20px;
     qproperty-moveMarkerColor: #eb7140;
@@ -50,6 +49,12 @@ LxQtPanelPlugin > QToolButton:hover {
     margin: 0;
     background: #363532;
     border: 1px solid #2b2b29;
+}
+
+Plugin > QToolButton:pressed,
+Plugin > QWidget > QToolButton:pressed,
+LxQtPanelPlugin > QToolButton:pressed {
+    padding: 4px;
 }
 
 /*
@@ -134,15 +139,11 @@ QCalendarWidget QAbstractItemView:enabled {
 #TaskBar {
     margin-right: 2px;
     margin-left: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding: 0;
 }
 
 #TaskBar QToolButton{
     padding: 1px;
-    margin-right: 2px;
-    margin-left: 2px;
+    margin: 2px;
 }
 
 #TaskBar QToolButton:on{
@@ -153,6 +154,10 @@ QCalendarWidget QAbstractItemView:enabled {
 #TaskBar QToolButton:hover{
     border: 1px solid #ca5f34;
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+#TaskBar QToolButton:pressed {
+    padding: 4px;
 }
 
 #TaskBar QToolButton[urgent="true"] {
@@ -171,6 +176,10 @@ QCalendarWidget QAbstractItemView:enabled {
     qproperty-icon: url(mainmenu.svg);
     color: #f2f1f0;
     border: none;
+}
+
+#MainMenu:pressed {
+    padding: 4px;
 }
 
 #MainMenu  QMenu {
@@ -216,6 +225,10 @@ QCalendarWidget QAbstractItemView:enabled {
 #QuickLaunch QToolButton:hover {
     background: #363532;
     border: 1px solid #2b2b29;
+}
+
+#QuickLaunch QToolButton:pressed {
+    padding: 4px;
 }
 
 #QuickLaunchPlaceHolder {
@@ -269,6 +282,10 @@ QCalendarWidget QAbstractItemView:enabled {
     border: 1px solid #2b2b29;
 }
 
+#DesktopSwitch QToolButton:pressed {
+    padding: 4px;
+}
+
 /*
  * Tray
  */
@@ -291,6 +308,10 @@ TrayIcon {
     border:none;
     padding: 1px;
     margin: 2px;
+}
+
+#LxQtMountPlugin QToolButton:pressed {
+    padding: 4px;
 }
 
 #LxQtMountPopup {
@@ -324,12 +345,15 @@ TrayIcon {
 /*
  * Screensaver
  */
-#PanelScreenSaver > QToolButton {
+#PanelScreenSaver {
     border:none;
     padding: 1px;
     margin: 2px;
 }
 
+#PanelScreenSaver:pressed {
+    padding: 4px;
+}
 
 /*
  * ShowDesktop
@@ -341,31 +365,29 @@ TrayIcon {
     margin: 2px;
 }
 
+#ShowDesktop:pressed {
+    padding: 4px;
+}
+
 
 /*
  * KbIndicator
  */
 #KbIndicator {
-    margin: 2px;
-    border: none;
-    padding: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #KbIndicator > QLabel {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding: 3px;
     border: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
 }
 
-#KbIndicator:enabled {
+#KbIndicator QLabel:enabled {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
     color: #f2f1f0;
+    border: 1px solid #ca5f34;
+    border-radius: 4px;
 }
 
 #KbIndicator:disabled {
@@ -445,6 +467,10 @@ TrayIcon {
     border:none;
     padding: 1px;
     margin: 2px;
+}
+
+#VolumePlugin QToolButton:pressed {
+    padding: 4px;
 }
 
 VolumePopup {
