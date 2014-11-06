@@ -45,8 +45,9 @@ Plugin  > QWidget > QWidget {
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 LxQtPanelPlugin > QToolButton {
-    margin: 2px 0 2px 0;
+    margin: 2px;
     border: 0px solid transparent;
+    outline: none;
     qproperty-iconSize: 24px;
     color: #DEDEDE;
 }
@@ -68,13 +69,24 @@ LxQtPanelPlugin > QToolButton:pressed {
  * Volume plugin
  */
 
-VolumePopup {
+#VolumePlugin {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 0px;
+}
+
+#VolumePlugin QToolButton{
+    border: 0px;
     margin: 2px;
     padding: 2px;
 }
 
 #VolumePlugin QToolButton:hover {
     background: #1A1A1A;
+}
+
+#VolumePlugin QToolButton:pressed {
+    padding: 4px;
 }
 
 #MixerLink {
@@ -86,6 +98,8 @@ VolumePopup {
 
 VolumePopup {
     background: #2D2D2D;
+    margin: 2px;
+    padding: 2px;
 }
 
 VolumePopup  > QPushButton {
@@ -102,36 +116,42 @@ VolumePopup  > QPushButton:hover {
 }
 
 VolumePopup  > QSlider::groove:vertical {
-     background: hsv(0, 0, 9);
-     width: 8px;
-     border-radius: 3px;
+    background: hsv(0, 0, 9);
+    width: 8px;
+    border-radius: 3px;
 }
 
 VolumePopup  > QSlider::handle:vertical {
-     height: 10px;
-     background: #C2C2C2;
-     border-radius: 2px;
-     margin: 0 -4px; /* expand outside the groove */
+    height: 10px;
+    background: #C2C2C2;
+    border-radius: 2px;
+    margin: 0 -4px; /* expand outside the groove */
  }
 
 VolumePopup  > QSlider::add-page:vertical {
-     background: #1A80B6;
-     border: 1px solid #2D2D2D;
-     border-radius: 3px;
+    background: #1A80B6;
+    border: 1px solid #2D2D2D;
+border-radius: 3px;
 
  }
 
 VolumePopup  > QSlider::sub-page:vertical {
-     background: rgba(0, 0, 0, 80%);
-     border-radius: 3px;
+background: rgba(0, 0, 0, 80%);
+border-radius: 3px;
  }
 
 /*
  * Desktopswitch
  */
 
+ #DesktopSwitch {
+    margin-left: 2px;
+    margin-right: 2px;
+ }
+
 #DesktopSwitch QToolButton {
-    margin: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
     color: #DEDEDE;
     border-left: 3px solid #4C4C4C;
     background: #2D2D2D;
@@ -164,9 +184,9 @@ VolumePopup  > QSlider::sub-page:vertical {
 }
 
 #QuickLaunch QToolButton{
-     border: 0px;
-     margin: 2px;
-     padding: 2px;
+border: 0px;
+margin: 2px;
+padding: 2px;
 }
 
 #QuickLaunch QToolButton:hover{
@@ -182,8 +202,8 @@ VolumePopup  > QSlider::sub-page:vertical {
  */
 
 #TaskBar {
-     margin-right: 2px;
-     margin-left: 2px;
+margin-right: 2px;
+margin-left: 2px;
 }
 
 #TaskBar QToolButton{
@@ -198,8 +218,8 @@ VolumePopup  > QSlider::sub-page:vertical {
 }
 
 #TaskBar QToolButton:hover{
-   border-left: 3px solid #4C4C4C;
-   background: #1A80B6;
+    border-left: 3px solid #4C4C4C;
+    background: #1A80B6;
 }
 
 #TaskBar QToolButton:pressed {
@@ -268,7 +288,7 @@ QCalendarWidget QToolButton:hover {
 }
 
 QCalendarWidget QToolButton::menu-indicator {
-   image: none;
+    image: none;
 }
 
 QCalendarWidget #qt_calendar_nextmonth {
@@ -303,14 +323,15 @@ QCalendarWidget QSpinBox {
 
 #Tray {
     min-width: 6px;
-    padding-left: 2px;
-    padding-right: 2px;
     margin-left: 2px;
     margin-right: 2px;
 }
 
 TrayIcon {
-    margin: 2px;
+    border: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 2px;
 }
 
 /*
@@ -362,12 +383,22 @@ TrayIcon {
  */
 
 #LxQtMountPlugin {
-    margin: 2px;
-    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#LxQtMountPlugin QToolButton{
+border: 0px;
+margin: 2px;
+padding: 2px;
 }
 
 #LxQtMountPlugin QToolButton:hover {
     background: #1A1A1A;
+}
+
+#LxQtMountPlugin QToolButton:pressed {
+    padding: 4px;
 }
 
 #LxQtMountPopup {
@@ -407,7 +438,9 @@ TrayIcon {
  */
 
 #PanelScreenSaver {
-    margin: 2px;
+border: 0px;
+margin: 2px;
+padding: 2px;
 }
 
 #PanelScreenSaver:hover {
@@ -423,7 +456,9 @@ TrayIcon {
  */
 
 #ShowDesktop {
-    margin: 2px;
+border: 0px;
+margin: 2px;
+padding: 2px;
 }
 
 #ShowDesktop:hover {
