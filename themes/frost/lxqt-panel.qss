@@ -411,13 +411,13 @@ padding: 2px;
 }
 
 #LxQtMountPopup > MenuDiskItem:hover {
-    background: #1A80B6;
+
 }
 
 #LxQtMountPopup #EjectButton,
 #LxQtMountPopup #DiskButton {
     qproperty-iconSize: 22px;
-    background-color: #2D2D2D;
+    background-color: transparent;
     border: none;
     color: #DEDEDE;
     padding: 4px;
