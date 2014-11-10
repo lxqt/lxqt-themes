@@ -343,25 +343,25 @@ VolumePopup  > QSlider::sub-page:vertical {
  */
 
 #KbIndicator {
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #KbIndicator > QLabel {
-    border: 0px;
-    margin: 4px 0;
-    padding: 0px 3px;
+    margin: 3px;
+    padding-top: 2px;
+    border-top: 3px solid transparent;
+    color: rgba(54, 54, 54, 60%);
 }
 
-#KbIndicator:enabled {
-    background: qradialgradient(cx:0.5, cy:0.5, radius: 0.5, fx:0.5, fy:0.5, stop:0 coral, stop:1 transparent);
-    color: #EEEEEE;
+#KbIndicator QLabel:enabled {
+    border-top: 3px solid rgba(30, 145, 255, 100%);
+    color: rgba(54, 54, 54, 100%);
 }
 
 #KbIndicator:disabled {
     background: transparent;
-    color: gray;
+    color: rgba(54, 54, 54, 60%);
 }
 
 /*
