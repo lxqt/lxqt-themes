@@ -184,7 +184,6 @@ QCalendarWidget QAbstractItemView:enabled {
     qproperty-icon: url(mainmenu.svg);
     color: #f2f1f0;
     border: none;
-    qproperty-shadow: blac;
 }
 
 #MainMenu:pressed {
