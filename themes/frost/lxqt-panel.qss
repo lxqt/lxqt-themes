@@ -9,6 +9,7 @@ LxQtPanel #BackgroundWidget {
 QToolTip {
     border: 0px solid #4C4C4C;
     background:#1A1A1A;
+    color: #DEDEDE;
     padding: 1px;
     margin: 0px;
 }
