@@ -432,11 +432,14 @@ TrayIcon {
     padding: 3px;
     border: 0px;
 }
+#KbIndicator QLabel:disabled {
+    color: #999999;
+}
 
 #KbIndicator QLabel:enabled {
-    border: 1px solid rgba(0, 0, 0, 50%);
-    background: rgba(0, 0, 0, 40%);
+    background: #1A80B6;
 }
+
 
 /*
  * SysStat
