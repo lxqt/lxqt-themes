@@ -248,6 +248,11 @@ QCalendarWidget QSpinBox {
     padding: 4px;
 }
 
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 /*
  * Tray Plugin
  */
