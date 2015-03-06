@@ -535,3 +535,34 @@ VolumePopup  > QSlider::sub-page:vertical {
      border-radius: 3px;
  }
 
+/*
+ * Spacer
+ */
+
+#Spacer {
+    background-position: center center;
+}
+
+#Spacer[type="invisible"] {
+    background-color: transparent;
+}
+
+#Spacer[type="lined"] {
+    background-image: url(/spacer-plugin/spacer-line.svg);
+}
+
+#Spacer[type="dotted"] {
+    background-image: url(/spacer-plugin/spacer-dots.svg);
+ }
+
+#Spacer[orientation="horizontal"] {
+    background-repeat: repeat-y;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#Spacer[orientation="vertical"] {
+    background-repeat: repeat-x;
+    margin-right: 4px;
+    margin-left: 4px;
+}
