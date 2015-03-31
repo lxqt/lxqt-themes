@@ -42,6 +42,7 @@ Plugin  > QWidget > QWidget {
 
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LxQtPanelPlugin > QToolButton {
     margin: 0;
     border: 1px solid transparent;
@@ -206,6 +207,10 @@ VolumePopup  > QSlider::sub-page:vertical {
     background: palette(highlight);
 }
 
+#TaskBar LxQtGroupPopup {
+    background:rgba(0, 0, 0, 50%);
+    border: 1px solid rgba(0, 0, 0, 40%);;
+}
 /*
  * Calendar Widget
  */

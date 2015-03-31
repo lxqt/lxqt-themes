@@ -45,6 +45,7 @@ Plugin  > QWidget > QWidget{
 
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LxQtPanelPlugin > QToolButton {
     margin: 0;
     border: 1px solid transparent;
@@ -119,6 +120,10 @@ QMenu::right-arrow {
     background: palette(highlight);
 }
 
+#TaskBar LxQtGroupPopup {
+    background:rgba(240, 240, 240, 100%);
+    border: 1px solid rgba(30, 145, 255, 100%);
+}
  /*
  * QuickLaunch
  */

@@ -48,6 +48,7 @@ Plugin  > QWidget > QWidget {
 
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LxQtPanelPlugin > QToolButton {
     margin: 2px;
     border: 0px solid transparent;
@@ -253,6 +254,10 @@ QCalendarWidget QSpinBox {
     background: palette(highlight);
 }
 
+#TaskBar LxQtGroupPopup {
+    background: #2D2D2D;
+    border: 1px solid #1A80B6;
+}
 /*
  * Tray Plugin
  */
