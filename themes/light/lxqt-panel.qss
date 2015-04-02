@@ -284,10 +284,6 @@ TrayIcon {
     background-position: center center;
 }
 
-#Spacer[type="invisible"] {
-    background-color: transparent;
-}
-
 #Spacer[type="lined"] {
     background-image: url(/spacer-plugin/spacer-line.svg);
 }
@@ -304,6 +300,6 @@ TrayIcon {
 
 #Spacer[orientation="vertical"] {
     background-repeat: repeat-x;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
 }

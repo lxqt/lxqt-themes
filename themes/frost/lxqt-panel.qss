@@ -629,10 +629,6 @@ border-radius: 3px;
     background-position: center center;
 }
 
-#Spacer[type="invisible"] {
-    background-color: transparent;
-}
-
 #Spacer[type="lined"] {
     background-image: url(/spacer-plugin/spacer-line.svg);
 }
@@ -649,6 +645,6 @@ border-radius: 3px;
 
 #Spacer[orientation="vertical"] {
     background-repeat: repeat-x;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
 }

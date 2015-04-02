@@ -548,10 +548,6 @@ VolumePopup  > QSlider::sub-page:vertical {
     background-position: center center;
 }
 
-#Spacer[type="invisible"] {
-    background-color: transparent;
-}
-
 #Spacer[type="lined"] {
     background-image: url(/spacer-plugin/spacer-line.svg);
 }
@@ -568,6 +564,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #Spacer[orientation="vertical"] {
     background-repeat: repeat-x;
-    margin-right: 4px;
-    margin-left: 4px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
