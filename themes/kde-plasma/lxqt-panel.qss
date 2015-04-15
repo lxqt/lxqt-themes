@@ -250,6 +250,11 @@ VolumePopup  > QSlider::sub-page:vertical {
     color: rgba(54, 54, 54, 100%);
 }
 
+#DesktopSwitch QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 /*
  * Mount plugin
  */

@@ -77,6 +77,11 @@ LxQtPanel[position="1"] #DesktopSwitch QToolButton
     border: 1px solid #80a8d3;
 }
 
+#DesktopSwitch QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 #QuickLaunchPlaceHolder {
     color: #555555;
 }

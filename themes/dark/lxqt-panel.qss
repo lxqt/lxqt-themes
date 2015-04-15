@@ -143,6 +143,10 @@ VolumePopup  > QSlider::sub-page:vertical {
     padding: 4px;
 }
 
+#DesktopSwitch QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
 
 /*
  * QuickLaunch

@@ -493,6 +493,11 @@ border-radius: 3px;
     padding: 4px;
 }
 
+#DesktopSwitch QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
 /*
  * Screensaver
  */
