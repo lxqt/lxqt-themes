@@ -18,18 +18,6 @@ QToolTip {
     margin: 0px;
 }
 
-/* PositionBottom */
-
-LxQtPanel[position="Bottom"] #BackgroundWidget {
-    border-top: 1px solid #1A1A1A;
-}
-
-/* PositionTop */
-
-LxQtPanel[position="Top"] #BackgroundWidget {
-    border-top: 1px solid #1A1A1A;
-}
-
 /*
  * General plugins settings
  */
@@ -168,20 +156,12 @@ QCalendarWidget QSpinBox {
 
 #MainMenuPlugin {
     padding: 0px;
-    margin-right: 2px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 #MainMenu {
     background: #1A80B6;
     qproperty-icon: url(mainmenu.svg);
     padding: 2px;
-    margin-right: 2px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: #DEDEDE;
 }
 
@@ -196,12 +176,6 @@ QCalendarWidget QSpinBox {
 /*
  * QuickLaunch
  */
-
-#QuickLaunchPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #QuickLaunchPlaceHolder {
     color: #DEDEDE;
 }
@@ -223,12 +197,6 @@ QCalendarWidget QSpinBox {
 /*
  * TaskBar
  */
-
-#TaskBarPlugin {
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
 #TaskBar QToolButton{
     border-left: 3px solid #4C4C4C;
     margin: 2px;
@@ -261,32 +229,19 @@ QCalendarWidget QSpinBox {
 /*
  * Tray Plugin
  */
-
-#TrayPlugin {
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
 #Tray {
     min-width: 6px;
 }
 
 TrayIcon {
     border: 0px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     padding: 2px;
 }
 
 /*
  * Mount plugin
  */
-
-#LxQtMountPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #LxQtMountPlugin QToolButton{
     border: 0px;
     margin: 2px;
@@ -335,12 +290,6 @@ TrayIcon {
 /*
  * Volume plugin
  */
-
-#VolumePlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #VolumePlugin QToolButton{
     border: 0px;
     margin: 2px;
@@ -408,15 +357,8 @@ border-radius: 3px;
  /*
  * Clock
  */
-
-#ClockPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #Clock{
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     padding: 2px;
 }
 
@@ -429,13 +371,11 @@ border-radius: 3px;
 }
 
 #Clock > QWidget{
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
 }
 
 #Clock QLabel{
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     color: #DEDEDE;
     qproperty-alignment: alignCenter;
 }
@@ -443,12 +383,6 @@ border-radius: 3px;
 /*
  * ShowDesktop
  */
-
-#ShowDesktopPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #ShowDesktop {
     border: 0px;
     margin: 2px;
@@ -466,15 +400,8 @@ border-radius: 3px;
 /*
  * Desktopswitch
  */
-
- #DesktopSwitchPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
- }
-
 #DesktopSwitch QToolButton {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     color: #DEDEDE;
     border-left: 3px solid #4C4C4C;
     background: #2D2D2D;
@@ -501,12 +428,6 @@ border-radius: 3px;
 /*
  * Screensaver
  */
-
-#PanelScreenSaverPlugin{
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #PanelScreenSaver {
     border: 0px;
     margin: 2px;
@@ -524,12 +445,6 @@ border-radius: 3px;
 /*
  * KbIndicator
  */
-
-#KbIndicatorPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #KbIndicator QLabel {
     padding: 3px;
     border: 0px;
@@ -547,14 +462,8 @@ border-radius: 3px;
  * WorldClock
  */
 
-#WorldClockPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #WorldClock {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
 }
 
 #WorldClock:hover {
@@ -562,8 +471,7 @@ border-radius: 3px;
 }
 
 #WorldClock QLabel {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 2px;
     color: #DEDEDE;
 }
 
@@ -606,12 +514,6 @@ border-radius: 3px;
 /*
  * DOM
  */
-
-#DomPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #DomPlugin QToolButton{
     qproperty-icon: url(/debug.png);
     margin: 2px;

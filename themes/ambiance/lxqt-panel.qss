@@ -5,17 +5,6 @@ LxQtPanel #BackgroundWidget {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
 }
 
-/* PositionBottom */
-LxQtPanel[position="Bottom"] #BackgroundWidget {
-    border-top: 1px solid #2b2b29;
-}
-
-
-/* PositionTop */
-LxQtPanel[position="Top"] #BackgroundWidget {
-    border-bottom: 1px solid #2b2b29;
-}
-
 QToolTip {
     border: 1px solid #2b2b29;
     background: #363532;
@@ -45,7 +34,7 @@ Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LxQtPanelPlugin > QToolButton {
-    margin: 0;
+    margin: 0px;
     border: 1px solid #2b2b29;
     border-radius: 4px;
     qproperty-iconSize: 24px;
@@ -55,7 +44,7 @@ LxQtPanelPlugin > QToolButton {
 Plugin > QToolButton:hover,
 Plugin > QWidget > QToolButton:hover,
 LxQtPanelPlugin > QToolButton:hover {
-    margin: 0;
+    margin: 0px;
     background: #363532;
     border: 1px solid #2b2b29;
 }
@@ -145,11 +134,6 @@ QCalendarWidget QAbstractItemView:enabled {
 /*
  * TaskBar
  */
-#TaskBar {
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
 #TaskBar QToolButton{
     padding: 1px;
     margin: 2px;
@@ -220,17 +204,8 @@ QCalendarWidget QAbstractItemView:enabled {
 /*
  * QuickLaunch
  */
-
-#QuickLaunch {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #QuickLaunch QToolButton {
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: 2px;
     padding: 1px;
     border: none;
 }
@@ -254,8 +229,7 @@ QCalendarWidget QAbstractItemView:enabled {
 
 #Clock {
     background: transparent;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: 2px;
     border-radius: 4px;
 }
 
@@ -278,8 +252,6 @@ QCalendarWidget QAbstractItemView:enabled {
 /*
  * Desktopswitch
  */
-#DesktopSwitch {}
-
 #DesktopSwitch QToolButton {
     border: none;
     margin: 2px;
@@ -309,9 +281,6 @@ QCalendarWidget QAbstractItemView:enabled {
  */
 #Tray {
     min-width: 6px;
-    padding: 1px;
-    margin-left: 2px;
-    margin-right: 2px;
 }
 
 TrayIcon {
@@ -391,11 +360,6 @@ TrayIcon {
 /*
  * KbIndicator
  */
-#KbIndicator {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #KbIndicator > QLabel {
     padding: 3px;
     border: 0px;
@@ -461,8 +425,6 @@ TrayIcon {
 
 #WorldClockContent {
     color: #f2f1f0;
-    margin-right: 2px;
-    margin-left: 2px;
     padding: 2px;
 }
 

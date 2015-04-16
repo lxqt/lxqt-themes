@@ -13,17 +13,6 @@ QToolTip {
     color: #DEDEDE
 }
 
-/* PositionBottom */
-LxQtPanel[position="Bottom"] #BackgroundWidget {
-    border-top: 1px solid rgba(0, 0, 0, 60%);
-}
-
-
-/* PositionTop */
-LxQtPanel[position="Top"] #BackgroundWidget {
-    border-top: 1px solid rgba(0, 0, 0, 60%);
-}
-
 /*
  * General plugins settings
  */
@@ -126,9 +115,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Desktopswitch
  */
-
-
-
 #DesktopSwitch QToolButton:on {
     background: rgba(0, 0, 0, 40%);
     border: 1px solid rgba(0, 0, 0, 50%);
@@ -151,26 +137,19 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * QuickLaunch
  */
-
-#QuickLaunch {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #QuickLaunchPlaceHolder {
     color: #AAAAAA;
 }
 
 #QuickLaunch QToolButton{
-     border: 0px;
-     margin-left: 1px;
-     margin-right: 1px;
-     padding: 2px;
+    border: 0px;
+    margin: 1px;
+    padding: 2px;
 }
 
 #QuickLaunch QToolButton:hover{
-   border: 1px solid rgba(0, 0, 0, 50%);
-   background: rgba(255, 255, 255, 20%);
+    border: 1px solid rgba(0, 0, 0, 50%);
+    background: rgba(255, 255, 255, 20%);
 }
 
 #QuickLaunch QToolButton:pressed {
@@ -181,12 +160,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * TaskBar
  */
-
-#TaskBar {
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
 #TaskBar QToolButton{
     margin: 2px;
     padding: 2px;
@@ -262,20 +235,13 @@ QCalendarWidget QMenu::item:selected {
 /*
  * Clock
  */
-
-#Clock {
-    margin: 2px;
-    padding: 2px;
-}
-
 #Clock:hover {
    border: 1px solid rgba(0, 0, 0, 50%);
    background: rgba(255, 255, 255, 20%);
 }
 
 #Clock > QWidget{
-    margin-right: 2px;
-    margin-left: 2px;
+    margin: 2px;
 }
 #Clock #TimeLabel{
     color: #DEDEDE;
@@ -300,8 +266,6 @@ QCalendarWidget QMenu::item:selected {
     min-width: 6px;
     padding-left: 2px;
     padding-right: 2px;
-    margin-left: 4px;
-    margin-right: 4px;
 }
 
 TrayIcon {
@@ -314,7 +278,7 @@ TrayIcon {
  */
 
 #MainMenu {
-    margin-right: 2px;
+    margin: 2px;
     padding: 2px;
     border: 1px solid rgba(0, 0, 0, 30%);
     background: rgba(0, 0, 0, 50%);
@@ -322,11 +286,8 @@ TrayIcon {
     color: #DEDEDE;
 }
 #MainMenu:hover {
-    margin-right: 2px;
     border: 1px solid rgba(0, 0, 0, 50%);
     background: rgba(255, 255, 255, 20%);
-    qproperty-icon: url(mainmenu.svg);
-    color: #DEDEDE;
 }
 
 #MainMenu:pressed {
@@ -361,7 +322,6 @@ TrayIcon {
 /*
  * Mount plugin
  */
-
 #LxQtMountPlugin {
     margin: 2px;
 }
@@ -417,11 +377,6 @@ TrayIcon {
 /*
  * ShowDesktop
  */
-
-#ShowDesktop {
-    margin: 2px;
-}
-
 #ShowDesktop > QToolButton:hover {
    border: 1px solid rgba(0, 0, 0, 50%);
    background: rgba(255, 255, 255, 20%);
@@ -430,13 +385,6 @@ TrayIcon {
 /*
  * KbIndicator
  */
-
-#KbIndicator {
-    margin: 2px;
-    border: 0px;
-    padding: 2px;
-}
-
 #KbIndicator > QLabel {
     padding: 3px;
     border: 0px;
@@ -482,11 +430,6 @@ TrayIcon {
 /*
  * WorldClock
  */
-
-#WorldClock {
-    margin: 2px;
-}
-
 #WorldClock:hover {
    border: 1px solid rgba(0, 0, 0, 50%);
    background: rgba(255, 255, 255, 20%);

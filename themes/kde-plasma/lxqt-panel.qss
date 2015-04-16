@@ -17,16 +17,6 @@ QToolTip {
     color: #313639;
 }
 
-/* PositionBottom */
-LxQtPanel[position="Bottom"]  #BackgroundWidget {
-    border-top: 1px solid rgba(155, 155, 155, 100%);
-}
-
-/* PositionTop */
-LxQtPanel[position="Top"] #BackgroundWidget {
-    border-bottom: 1px solid rgba(155, 155, 155, 100%);
-}
-
 /*
  * General plugins settings
  */
@@ -91,13 +81,6 @@ QMenu::right-arrow {
 /*
  * TaskBar
  */
-
-#TaskBar {
-    margin-right: 2px;
-    margin-left: 2px;
-    padding: 0;
-}
-
 #TaskBar QToolButton{
     margin: 3px;
     padding-top: 2px;
@@ -127,12 +110,6 @@ QMenu::right-arrow {
  /*
  * QuickLaunch
  */
-
-#QuickLaunch {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #QuickLaunchPlaceHolder {
     color: rgba(30, 145, 255, 50%);
 }
@@ -152,12 +129,6 @@ QMenu::right-arrow {
 /*
  * Volume plugin
  */
-
-#VolumePlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #VolumePlugin QToolButton {
     margin: 3px;
     padding-top: 2px;
@@ -227,12 +198,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Desktopswitch
  */
-
-#DesktopSwitch {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #DesktopSwitch QToolButton{
     margin: 3px;
     padding-top: 2px;
@@ -258,11 +223,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Mount plugin
  */
-#LxQtMountPlugin {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #LxQtMountPlugin MountButton{
     margin: 3px;
     padding-top: 2px;
@@ -314,11 +274,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Screensaver
  */
-
-#PanelScreenSaver QWidget{
-    margin: 3px;
-}
-
 #PanelScreenSaver > QToolButton{
     margin: 3px;
     padding-top: 2px;
@@ -351,12 +306,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * KbIndicator
  */
-
-#KbIndicator {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
 #KbIndicator > QLabel {
     margin: 3px;
     padding-top: 2px;
@@ -377,11 +326,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Clock
  */
-
-#Clock > QWidget{
-    margin: 2px;
-}
-
 #Clock #TimeLabel{
     margin-right: 4px;
     color: rgba(54, 54, 54, 100%);
@@ -398,10 +342,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #Tray {
     min-width: 6px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-left: 4px;
-    margin-right: 4px;
 }
 
 TrayIcon {
