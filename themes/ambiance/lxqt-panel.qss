@@ -458,19 +458,11 @@ VolumePopup {
     padding: 4px;
 }
 
-#MixerLink {
-    outline: 0;
-    border: none;
-    padding: 3;
-    margin: 3px;
-}
-
 VolumePopup  > QPushButton {
     color: #f2f1f0;
+    background: #363532;
+    padding: 2px 10px;
     margin: 3px;
-    border: none;
-    outline: 0;
-    min-width: 50px;
     qproperty-iconSize: 24px;
 }
 
