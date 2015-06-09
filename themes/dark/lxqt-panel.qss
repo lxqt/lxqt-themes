@@ -71,6 +71,7 @@ VolumePopup  > QPushButton {
 
 VolumePopup  > QPushButton:hover {
     border: 1px solid rgba(0, 0, 0, 50%);
+    border-radius: 2px;
     background: rgba(255, 255, 255, 20%);
 }
 

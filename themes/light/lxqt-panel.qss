@@ -204,6 +204,7 @@ VolumePopup  > QPushButton {
 VolumePopup  > QPushButton:hover {
     margin: 1px;
     border: 2px solid #80a8d3;
+    border-radius: 4px;
 }
 
 /*
