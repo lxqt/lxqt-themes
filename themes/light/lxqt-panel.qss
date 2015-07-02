@@ -33,6 +33,27 @@ Plugin {
     spacing: 20px;
 }
 
+Plugin[NeedsHandle="true"] {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+LxQtPanel[position="Bottom"] Plugin[NeedsHandle="true"],
+LxQtPanel[position="Top"] Plugin[NeedsHandle="true"] {
+    background-image: url(lxqt-panel/plugin-handle-horizontal.gif);
+    background-position: left center;
+    margin-left: 3px;
+    padding: 0 0 0 5px;
+}
+
+LxQtPanel[position="Right"] Plugin[NeedsHandle="true"],
+LxQtPanel[position="Left"] Plugin[NeedsHandle="true"] {
+    background-image: url(lxqt-panel/plugin-handle-vertical.gif);
+    background-position: center top;
+    margin-top: 3px;
+    padding: 5px 0 0 0;
+}
+
 Plugin > QToolButton, 
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 Plugin > QWidget > QToolButton {
