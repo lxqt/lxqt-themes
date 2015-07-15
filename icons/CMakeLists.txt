@@ -1,1 +1,1 @@
-install(DIRECTORY hicolor DESTINATION share/icons PATTERN "*")
+install(DIRECTORY hicolor DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons" PATTERN "*")
