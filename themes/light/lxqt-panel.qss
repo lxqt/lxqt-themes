@@ -1,27 +1,27 @@
 /*
  * General panel settings
  */
-LxQtPanel #BackgroundWidget {
+LXQtPanel #BackgroundWidget {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EFEFEF, stop:0.25 #e9e9e9, stop: 0.5 #dfdfdf, stop: 0.75 #d7d7d7, stop:1 #c0c0c0);
 }
 
 /* PositionBottom */
-LxQtPanel[position="Bottom"] #BackgroundWidget {
+LXQtPanel[position="Bottom"] #BackgroundWidget {
     border-top: 1px solid #B0B0B0;
 }
 
 /* PositionTop */
-LxQtPanel[position="Top"] #BackgroundWidget {
+LXQtPanel[position="Top"] #BackgroundWidget {
     border-bottom: 1px solid #B0B0B0;
 }
 
 /* PositionLeft */
-LxQtPanel[position="Left"] #BackgroundWidget {
+LXQtPanel[position="Left"] #BackgroundWidget {
     border-right: 1px solid #B0B0B0;
 }
 
 /* PositionRight */
-LxQtPanel[position="Right"] #BackgroundWidget {
+LXQtPanel[position="Right"] #BackgroundWidget {
     border-left: 1px solid #B0B0B0;
 }
 
@@ -38,16 +38,16 @@ Plugin[NeedsHandle="true"] {
     background-repeat: no-repeat;
 }
 
-LxQtPanel[position="Bottom"] Plugin[NeedsHandle="true"],
-LxQtPanel[position="Top"] Plugin[NeedsHandle="true"] {
+LXQtPanel[position="Bottom"] Plugin[NeedsHandle="true"],
+LXQtPanel[position="Top"] Plugin[NeedsHandle="true"] {
     background-image: url(lxqt-panel/plugin-handle-horizontal.gif);
     background-position: left center;
     margin-left: 3px;
     padding: 0 0 0 5px;
 }
 
-LxQtPanel[position="Right"] Plugin[NeedsHandle="true"],
-LxQtPanel[position="Left"] Plugin[NeedsHandle="true"] {
+LXQtPanel[position="Right"] Plugin[NeedsHandle="true"],
+LXQtPanel[position="Left"] Plugin[NeedsHandle="true"] {
     background-image: url(lxqt-panel/plugin-handle-vertical.gif);
     background-position: center top;
     margin-top: 3px;
@@ -82,8 +82,8 @@ Plugin > QWidget > QToolButton:pressed {
     background: rgba(0, 0, 0, 5%);
 }
 
-LxQtPanel[position="0"] #DesktopSwitch QToolButton,
-LxQtPanel[position="1"] #DesktopSwitch QToolButton
+LXQtPanel[position="0"] #DesktopSwitch QToolButton,
+LXQtPanel[position="1"] #DesktopSwitch QToolButton
 {
     margin-bottom: 4px;
     margin-top: 4px;
@@ -117,7 +117,7 @@ LxQtPanel[position="1"] #DesktopSwitch QToolButton
  */
 #TaskBar {}
 
-LxQtTaskButton {
+LXQtTaskButton {
     border: 2px groove silver;
     border-radius: 6px;
     margin: 3px 0 3px 0;
@@ -139,7 +139,7 @@ LxQtTaskButton {
     background: palette(highlight);
 }
 
-#TaskBar LxQtGroupPopup {
+#TaskBar LXQtGroupPopup {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EFEFEF, stop:0.25 #e9e9e9, stop: 0.5 #dfdfdf, stop: 0.75 #d7d7d7, stop:1 #c0c0c0);
     border: 1px solid #80a8d3;
 }
@@ -182,34 +182,34 @@ TrayIcon {
 /*
  * Mount plugin
  */
-#LxQtMountPopup {
+#LXQtMountPopup {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EFEFEF, stop:0.25 #e9e9e9, stop: 0.5 #dfdfdf, stop: 0.75 #d7d7d7, stop:1 #c0c0c0);
     border: 1px solid #a59f94;
     padding: 2px;
 }
 
-#LxQtMountPopup * {
+#LXQtMountPopup * {
  margin: 0;
  padding: 0;
 }
 
-#LxQtMountPopup > MenuDiskItem {
+#LXQtMountPopup > MenuDiskItem {
   padding: 2px;
 }
 
-#LxQtMountPopup > MenuDiskItem:hover {
+#LXQtMountPopup > MenuDiskItem:hover {
     border-radius: 4px;
     border: 1px solid #80a8d3;
 }
 
-#LxQtMountPopup #EjectButton,
-#LxQtMountPopup #DiskButton {
+#LXQtMountPopup #EjectButton,
+#LXQtMountPopup #DiskButton {
     qproperty-iconSize: 22px;
     background-color: transparent;
     border: none;
 }
 
-#LxQtMountPopup #NoDiskLabel {
+#LXQtMountPopup #NoDiskLabel {
     margin: 4px;
 }
 
@@ -308,7 +308,7 @@ VolumePopup  > QPushButton:hover {
 /*
  * CPU monitor
  */
-#LxQtCpuLoad {
+#LXQtCpuLoad {
     qproperty-fontColor: #606060;
 }
 

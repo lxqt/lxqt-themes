@@ -4,7 +4,7 @@
  * General panel settings
  */
 
-LxQtPanel #BackgroundWidget {
+LXQtPanel #BackgroundWidget {
     background:rgba(240, 240, 240, 100%);
 }
 
@@ -22,7 +22,7 @@ QToolTip {
  */
 
 Plugin,
-LxQtPanelPlugin {
+LXQtPanelPlugin {
     padding: 0;
     spacing: 20px;
     qproperty-moveMarkerColor: rgba(30, 145, 255, 50%);
@@ -36,7 +36,7 @@ Plugin  > QWidget > QWidget{
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
-LxQtPanelPlugin > QToolButton {
+LXQtPanelPlugin > QToolButton {
     margin: 0;
     border: 1px solid transparent;
     qproperty-iconSize: 24px;
@@ -103,7 +103,7 @@ QMenu::right-arrow {
     background: palette(highlight);
 }
 
-#TaskBar LxQtGroupPopup {
+#TaskBar LXQtGroupPopup {
     background:rgba(240, 240, 240, 100%);
     border: 1px solid rgba(30, 145, 255, 100%);
 }
@@ -223,34 +223,34 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Mount plugin
  */
-#LxQtMountPlugin MountButton{
+#LXQtMountPlugin MountButton{
     margin: 3px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
-#LxQtMountPlugin MountButton:hover{
+#LXQtMountPlugin MountButton:hover{
     border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
 
-#LxQtMountPopup {
+#LXQtMountPopup {
     background:rgba(240, 240, 240, 100%);
     color: rgba(54, 54, 54, 100%);
     padding: 4px;
 }
 
-#LxQtMountPopup > MenuDiskItem {
+#LXQtMountPopup > MenuDiskItem {
     color: rgba(54, 54, 54, 60%);
 }
 
-#LxQtMountPopup > MenuDiskItem:hover {
+#LXQtMountPopup > MenuDiskItem:hover {
 
 }
 
-#LxQtMountPopup #EjectButton,
-#LxQtMountPopup #DiskButton {
+#LXQtMountPopup #EjectButton,
+#LXQtMountPopup #DiskButton {
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -258,14 +258,14 @@ VolumePopup  > QSlider::sub-page:vertical {
     qproperty-iconSize: 22px;
 }
 
-#LxQtMountPopup #EjectButton:hover,
-#LxQtMountPopup #DiskButton:hover {
+#LXQtMountPopup #EjectButton:hover,
+#LXQtMountPopup #DiskButton:hover {
     color: rgba(54, 54, 54, 100%);
     background: rgba(30, 145, 255, 30%);
     border: 1px solid rgba(30, 145, 255, 100%);
 }
 
-#LxQtMountPopup #NoDiskLabel {
+#LXQtMountPopup #NoDiskLabel {
     color: rgba(54, 54, 54, 60%);
     margin: 6px;
 }
@@ -390,7 +390,7 @@ TrayIcon {
  * CPU monitor
  */
 
-#LxQtCpuLoad {
+#LXQtCpuLoad {
     qproperty-fontColor: #cacaca;
 }
 

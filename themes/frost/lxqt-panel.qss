@@ -6,7 +6,7 @@
  * General panel settings
  */
 
-LxQtPanel #BackgroundWidget {
+LXQtPanel #BackgroundWidget {
     background: #2D2D2D;
 }
 
@@ -23,7 +23,7 @@ QToolTip {
  */
 
 Plugin,
-LxQtPanelPlugin {
+LXQtPanelPlugin {
     padding: 0;
     spacing: 20px;
     qproperty-moveMarkerColor: #1A80B6;
@@ -37,7 +37,7 @@ Plugin  > QWidget > QWidget {
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
-LxQtPanelPlugin > QToolButton {
+LXQtPanelPlugin > QToolButton {
     margin: 2px;
     border: 0px solid transparent;
     outline: none;
@@ -47,13 +47,13 @@ LxQtPanelPlugin > QToolButton {
 
 Plugin > QToolButton:hover,
 Plugin > QWidget > QToolButton:hover,
-LxQtPanelPlugin > QToolButton:hover {
+LXQtPanelPlugin > QToolButton:hover {
     color: #DEDEDE;
 }
 
 Plugin > QToolButton:pressed,
 Plugin > QWidget > QToolButton:pressed,
-LxQtPanelPlugin > QToolButton:pressed {
+LXQtPanelPlugin > QToolButton:pressed {
     padding: 4px;
 }
 
@@ -222,7 +222,7 @@ QCalendarWidget QSpinBox {
     background: palette(highlight);
 }
 
-#TaskBar LxQtGroupPopup {
+#TaskBar LXQtGroupPopup {
     background: #2D2D2D;
     border: 1px solid #1A80B6;
 }
@@ -242,34 +242,34 @@ TrayIcon {
 /*
  * Mount plugin
  */
-#LxQtMountPlugin QToolButton{
+#LXQtMountPlugin QToolButton{
     border: 0px;
     margin: 2px;
     padding: 2px;
 }
 
-#LxQtMountPlugin QToolButton:hover {
+#LXQtMountPlugin QToolButton:hover {
     background: #1A1A1A;
 }
 
-#LxQtMountPlugin QToolButton:pressed {
+#LXQtMountPlugin QToolButton:pressed {
     padding: 4px;
 }
 
-#LxQtMountPopup {
+#LXQtMountPopup {
     background-color: #2D2D2D;
     padding: 4px;
 }
 
-#LxQtMountPopup > MenuDiskItem {
+#LXQtMountPopup > MenuDiskItem {
     border-radius: 0px;
 }
 
-#LxQtMountPopup > MenuDiskItem:hover {
+#LXQtMountPopup > MenuDiskItem:hover {
 }
 
-#LxQtMountPopup #EjectButton,
-#LxQtMountPopup #DiskButton {
+#LXQtMountPopup #EjectButton,
+#LXQtMountPopup #DiskButton {
     qproperty-iconSize: 22px;
     background-color: transparent;
     border: none;
@@ -277,12 +277,12 @@ TrayIcon {
     padding: 4px;
 }
 
-#LxQtMountPopup #EjectButton:hover,
-#LxQtMountPopup #DiskButton:hover {
+#LXQtMountPopup #EjectButton:hover,
+#LXQtMountPopup #DiskButton:hover {
     background-color: #1A80B6;
 }
 
-#LxQtMountPopup #NoDiskLabel {
+#LXQtMountPopup #NoDiskLabel {
     margin: 6px;
     color: #DEDEDE;
 }
@@ -499,7 +499,7 @@ border-radius: 3px;
  * CPU monitor
  */
 
-#LxQtCpuLoad {
+#LXQtCpuLoad {
     qproperty-fontColor: #cacaca;
 }
 

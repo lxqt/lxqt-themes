@@ -1,7 +1,7 @@
 /*
  * General panel settings
  */
-LxQtPanel #BackgroundWidget {
+LXQtPanel #BackgroundWidget {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
 }
 
@@ -18,7 +18,7 @@ QToolTip {
  */
 
 Plugin,
-LxQtPanelPlugin {
+LXQtPanelPlugin {
     padding: 0;
     spacing: 20px;
     qproperty-moveMarkerColor: #eb7140;
@@ -33,7 +33,7 @@ Plugin  > QWidget > QWidget{
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
-LxQtPanelPlugin > QToolButton {
+LXQtPanelPlugin > QToolButton {
     margin: 0px;
     border: 1px solid #2b2b29;
     border-radius: 4px;
@@ -43,7 +43,7 @@ LxQtPanelPlugin > QToolButton {
 
 Plugin > QToolButton:hover,
 Plugin > QWidget > QToolButton:hover,
-LxQtPanelPlugin > QToolButton:hover {
+LXQtPanelPlugin > QToolButton:hover {
     margin: 0px;
     background: #363532;
     border: 1px solid #2b2b29;
@@ -51,7 +51,7 @@ LxQtPanelPlugin > QToolButton:hover {
 
 Plugin > QToolButton:pressed,
 Plugin > QWidget > QToolButton:pressed,
-LxQtPanelPlugin > QToolButton:pressed {
+LXQtPanelPlugin > QToolButton:pressed {
     padding: 4px;
 }
 
@@ -158,7 +158,7 @@ QCalendarWidget QAbstractItemView:enabled {
     background: palette(highlight);
 }
 
-#TaskBar LxQtGroupPopup {
+#TaskBar LXQtGroupPopup {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
     border: 1px solid #f88657;
 }
@@ -291,31 +291,31 @@ TrayIcon {
  * Mount plugin
  */
 
-#LxQtMountPlugin QToolButton {
+#LXQtMountPlugin QToolButton {
     border:none;
     padding: 1px;
     margin: 2px;
 }
 
-#LxQtMountPlugin QToolButton:pressed {
+#LXQtMountPlugin QToolButton:pressed {
     padding: 4px;
 }
 
-#LxQtMountPopup {
+#LXQtMountPopup {
     background: #3c3b37;
     color: #f2f1f0;
 }
 
-#LxQtMountPopup > MenuDiskItem {
+#LXQtMountPopup > MenuDiskItem {
     border-radius: 4px;
 }
 
-#LxQtMountPopup > MenuDiskItem:hover {
+#LXQtMountPopup > MenuDiskItem:hover {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
-#LxQtMountPopup #EjectButton,
-#LxQtMountPopup #DiskButton {
+#LXQtMountPopup #EjectButton,
+#LXQtMountPopup #DiskButton {
     qproperty-iconSize: 22px;
     background-color: transparent;
     border: none;
@@ -323,7 +323,7 @@ TrayIcon {
     padding: 4px;
 }
 
-#LxQtMountPopup #NoDiskLabel {
+#LXQtMountPopup #NoDiskLabel {
     margin: 6px;
     color: #f2f1f0;
 }
@@ -435,7 +435,7 @@ TrayIcon {
 /*
  * CPU monitor
  */
-#LxQtCpuLoad {
+#LXQtCpuLoad {
     qproperty-fontColor: #f2f1f0;
 }
 
