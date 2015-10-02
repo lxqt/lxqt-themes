@@ -77,8 +77,15 @@ QMenu::item {
 }
 
 QMenu::item:selected {
-    color: #DEDEDE;
     background: #1A80B6;
+}
+
+QMenu::item:selected:disabled {
+    background-color: #2D2D2D;
+}
+
+QMenu::item:disabled {
+    color: #6D6D6D;
 }
 
 QMenu::right-arrow {

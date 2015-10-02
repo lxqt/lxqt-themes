@@ -53,9 +53,18 @@ QMenu::item {
     color: #313639;
 }
 
+QMenu::item:disabled {
+    color: rgb(160, 160, 160);
+}
+
 QMenu::item:selected {
     background: rgba(30, 145, 255, 50%);
     color: #313639;
+}
+
+QMenu::item:selected:disabled {
+    color: rgb(160, 160, 160);
+    background:rgb(240, 240, 240);
 }
 
 QMenu::right-arrow {
