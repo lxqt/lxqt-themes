@@ -3,8 +3,8 @@
  */
 
 #panel {
-    border: 1px solid #4C4C4C;
-    background:#2D2D2D;
+    border: 1px solid palette(text);
+    background: palette(text);
     padding: 2px;
     margin: 0px;
 }
@@ -22,12 +22,11 @@ QToolButton {
     border: 0px solid transparent;
     padding: 0px;
     font-size: 10pt;
-    color: #DEDEDE;
+    color: palette(window);
     qproperty-iconSize: 20px;
 }
 
 QToolButton:hover {
-    border: 0px solid #DEDEDE;
     margin: 1px;
     padding: 1px;
 
@@ -46,13 +45,13 @@ QToolButton:hover {
  */
 
 #commandEd {
-    border: 1px solid #4C4C4C;
+    border: 1px solid palette(text);
     padding: 0px;
     margin: 0px;
     background: white;
-    color: #2D2D2D;
-    selection-background-color: #1A80B6;
-    selection-color: white;
+    color: palette(text);
+    selection-background-color: palette(highlight);
+    selection-color: palette(highlighted-text);
 }
 
 /*
@@ -66,4 +65,39 @@ QToolButton:hover {
 #commandList::item {
     margin: 2px;
     padding: 2px;
+}
+
+/*
+ * Menus
+ */
+
+QMenu {
+    background-color: palette(text);
+}
+
+QMenu::icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-left: 5px;
+}
+
+QMenu::item {
+    color: palette(window);
+    padding: 5px 13px 5px 30px;
+}
+
+QMenu::item:selected {
+    background: palette(highlight);
+}
+
+QMenu::item:selected:disabled {
+    background-color: palette(text);
+}
+
+QMenu::item:disabled {
+    color: #6D6D6D;
+}
+
+QMenu::right-arrow {
+    image: url(arrow-right.svg);
 }
