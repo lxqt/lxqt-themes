@@ -68,12 +68,13 @@ QMenu {
 QMenu::icon {
     background-color: transparent;
     border: 1px solid transparent;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 QMenu::item {
     color: palette(window);
-    padding: 5px 13px 5px 30px;
+    border: 1px solid transparent;
+    padding: 5px 30px 5px 30px;
 }
 
 QMenu::item:selected {
@@ -116,6 +117,7 @@ QCalendarWidget #qt_calendar_navigationbar {
 }
 
 QCalendarWidget QToolButton {
+    color: palette(window);
     padding:2px;
     margin: 2px;
 }
@@ -178,6 +180,33 @@ QCalendarWidget QSpinBox {
 
 #MainMenu:pressed {
     padding: 4px;
+}
+
+#MainMenu QLineEdit {
+    border: none;
+    margin: 10px;
+    padding: 3px;
+    background: palette(highlighted-text);
+    color: palette(text);
+}
+
+#MainMenu ActionView {
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: palette(text);
+    color: palette(window);
+}
+
+#MainMenu ActionView::item {
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+#MainMenu ActionView::item:selected, ActionView::item:hover {
+    background: palette(highlight);
+    color: palette(highlighted-text);
 }
 
 /*
