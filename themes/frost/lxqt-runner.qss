@@ -88,6 +88,7 @@ QMenu::item {
 
 QMenu::item:selected {
     background: palette(highlight);
+    color: palette(highlighted-text);
 }
 
 QMenu::item:selected:disabled {
