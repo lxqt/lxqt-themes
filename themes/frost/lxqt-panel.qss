@@ -15,7 +15,7 @@ LXQtPanel #BackgroundWidget{
  * Menu titles
  */
 
-QToolButton:pressed {
+QMenu  > QToolButton:pressed {
     background: palette(highlight);
     color: palette(highlighted-text);
 }
@@ -608,4 +608,30 @@ border-radius: 3px;
     background-repeat: repeat-x;
     margin-right: 2px;
     margin-left: 2px;
+}
+
+/*
+ * Color Picker
+ */
+
+#ColorPickerPlugin QToolButton{
+    qproperty-icon: url(/color-picker.svg);
+    margin: 0px;
+    padding: 2px;
+}
+
+#ColorPickerPlugin QToolButton:hover {
+    background: rgba(0, 0, 0, 45%);
+}
+
+#ColorPickerPlugin QToolButton:pressed {
+    padding: 4px;
+}
+
+#ColorPickerPlugin QLineEdit {
+    border: none;
+    margin: 0px;
+    padding: 0fpx;
+    background: rgba(0, 0, 0, 45%);
+    color: palette(window);
 }
