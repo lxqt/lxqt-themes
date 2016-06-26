@@ -199,25 +199,22 @@ QCalendarWidget QSpinBox {
 }
 
 #MainMenu QLineEdit {
-    border: none;
-    margin: 10px;
-    padding: 3px;
     background: palette(text);
+    border: none;
+    padding: 6px;
+    margin-bottom: 1px;
     color: palette(window);
 }
 
 #MainMenu ActionView {
     border: none;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
     background: palette(text);
     color: palette(window);
 }
 
 #MainMenu ActionView::item {
-    border: 1px solid transparent;
-    padding: 5px;
+    border: 1px solid palette(text);
+    padding: 3px 0;
 }
 
 #MainMenu ActionView::item:selected, ActionView::item:hover {

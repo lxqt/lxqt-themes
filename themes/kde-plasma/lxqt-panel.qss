@@ -87,6 +87,22 @@ QMenu::right-arrow {
     border-top: 3px solid #1E91FE;
 }
 
+#MainMenu QLineEdit {
+    background: palette(window);
+    border: none;
+    padding: 6px;
+    margin-bottom: 1px;
+}
+
+#MainMenu ActionView {
+    background: palette(window);
+    border: none;
+}
+
+#MainMenu ActionView::item {
+    padding: 3px 0;
+}
+
 /*
  * TaskBar
  */

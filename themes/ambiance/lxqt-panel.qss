@@ -201,6 +201,29 @@ QCalendarWidget QAbstractItemView:enabled {
     background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
+#MainMenu ActionView {
+    background-color: #3c3b37;
+    border: none;
+    color: #f2f1f0;
+}
+
+#MainMenu ActionView::item {
+    padding: 2px 0;
+}
+
+#MainMenu QLineEdit {
+    background: #3c3b37;
+    border: none;
+    color: #f2f1f0;
+    margin-bottom: 1px;
+    padding: 6px;
+}
+
+#MainMenu QScrollBar::handle {
+    background-color: palette(highlighted-text);
+    color: palette(highlighted-text);
+}
+
 /*
  * QuickLaunch
  */
