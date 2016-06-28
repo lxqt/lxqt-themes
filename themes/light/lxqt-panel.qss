@@ -46,6 +46,13 @@ LXQtPanel[position="Top"] Plugin[NeedsHandle="true"] {
     padding: 0 0 0 5px;
 }
 
+LXQtPanel[position="Bottom"][layoutDirection="1"] Plugin[NeedsHandle="true"],
+LXQtPanel[position="Top"][layoutDirection="1"] Plugin[NeedsHandle="true"] {
+    background-position: right center;
+    margin-left: 0px;
+    margin-right: 3px;
+}
+
 LXQtPanel[position="Right"] Plugin[NeedsHandle="true"],
 LXQtPanel[position="Left"] Plugin[NeedsHandle="true"] {
     background-image: url(lxqt-panel/plugin-handle-vertical.gif);
