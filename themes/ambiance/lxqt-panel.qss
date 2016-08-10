@@ -353,19 +353,6 @@ TrayIcon {
 
 
 /*
- * Screensaver
- */
-#PanelScreenSaver {
-    border:none;
-    padding: 1px;
-    margin: 2px;
-}
-
-#PanelScreenSaver:pressed {
-    padding: 4px;
-}
-
-/*
  * ShowDesktop
  */
 

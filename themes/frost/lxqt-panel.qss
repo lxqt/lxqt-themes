@@ -477,23 +477,6 @@ border-radius: 3px;
 }
 
 /*
- * Screensaver
- */
-#PanelScreenSaver {
-    border: 0px;
-    margin: 2px;
-    padding: 2px;
-}
-
-#PanelScreenSaver:hover {
-    background: rgba(0, 0, 0, 45%);
-}
-
-#PanelScreenSaver:pressed {
-    padding: 4px;
-}
-
-/*
  * KbIndicator
  */
 #KbIndicator QLabel {

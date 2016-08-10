@@ -367,25 +367,6 @@ TrayIcon {
 
 
 /*
- * Screensaver
- */
-
-#PanelScreenSaver {
-    margin: 2px;
-}
-
-#PanelScreenSaver > QToolButton:hover {
-    margin: 0;
-    border: 2px solid transparent;
-}
-
-#PanelScreenSaver > QToolButton:pressed {
-    margin: 2px;
-    border: 2px solid transparent;
-}
-
-
-/*
  * ShowDesktop
  */
 #ShowDesktop > QToolButton:hover {

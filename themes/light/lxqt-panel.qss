@@ -278,11 +278,6 @@ VolumePopup  > QPushButton:hover {
 }
 
 /*
- * Screensaver
- */
-#PanelScreenSaver {}
-
-/*
  * ShowDesktop
  */
 #ShowDesktop {}

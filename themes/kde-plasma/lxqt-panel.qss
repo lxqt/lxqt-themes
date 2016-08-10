@@ -297,21 +297,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 
 /*
- * Screensaver
- */
-#PanelScreenSaver > QToolButton{
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
-    color: rgba(54, 54, 54, 60%);
-}
-
-#PanelScreenSaver > QToolButton:hover{
-    border-top: 3px solid rgba(30, 145, 255, 50%);
-    color: rgba(54, 54, 54, 100%);
-}
-
-/*
  * ShowDesktop
  */
 
