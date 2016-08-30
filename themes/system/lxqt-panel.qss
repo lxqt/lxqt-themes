@@ -2,6 +2,13 @@
  * Plain widget theme, only specific widgets are themed
  */
 
+/*
+ * General panel settings
+ */
+
+LXQtPanel #BackgroundWidget{
+    background: palette(window);
+}
 
 /*
  * TaskBar
