@@ -126,9 +126,18 @@ QCalendarWidget QSpinBox {
 }
 
 QCalendarWidget QAbstractItemView:enabled {
-    color: #3c3b37;
+    color: white;
+    background: #3c3b37;
     selection-background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
     selection-color: #f2f1f0;
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+    color: #969696;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #1e1d1b;
 }
 
 /*
@@ -186,14 +195,23 @@ QCalendarWidget QAbstractItemView:enabled {
 
 #MainMenu  QMenu::icon {
     background-color: transparent;
+    border: 10px solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
 }
 
 #MainMenu QMenu::right-arrow {
     image: url(arrow-right.svg);
+    border: 5px solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }
 
 #MainMenu QMenu::item {
     color: #f2f1f0;
+    padding: 7px 40px 7px 24px;
 }
 
 #MainMenu QMenu::item:selected {
@@ -216,7 +234,7 @@ QCalendarWidget QAbstractItemView:enabled {
     border: none;
     color: #f2f1f0;
     margin-bottom: 1px;
-    padding: 6px;
+    padding: 3px;
 }
 
 #MainMenu QScrollBar::handle {

@@ -62,15 +62,17 @@ VolumePopup {
 }
 
 VolumePopup  > QPushButton {
+    border: 1px solid rgba(255, 255, 255, 5%);
+    border-radius: 2px;
     color: #DEDEDE;
-    background: rgba(48, 48, 48, 50%);
+    background: rgba(255, 255, 255, 10%);
     padding: 2px 10px;
     margin: 3px;
     qproperty-iconSize: 24px;
 }
 
 VolumePopup  > QPushButton:hover {
-    border: 1px solid rgba(0, 0, 0, 50%);
+    border: 1px solid rgba(255, 255, 255, 10%);
     border-radius: 2px;
     background: rgba(255, 255, 255, 20%);
 }
@@ -105,23 +107,32 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Desktopswitch
  */
-#DesktopSwitch QToolButton:on {
-    background: rgba(0, 0, 0, 40%);
-    border: 1px solid rgba(0, 0, 0, 50%);
-}
 
 #DesktopSwitch QToolButton:hover {
     border: 1px solid rgba(0, 0, 0, 50%);
     background: rgba(255, 255, 255, 20%);
 }
 
+#DesktopSwitch QToolButton:on {
+    background: #640b0c;
+    border: 1px solid #640b0c;
+    font: bold;
+}
+
+#DesktopSwitch QToolButton:hover:on {
+    background: #870e10;
+    border: 1px solid #870e10;
+}
+
 #DesktopSwitch QToolButton:pressed {
+    background: #50080a;
     padding: 4px;
 }
 
 #DesktopSwitch QToolButton[urgent="true"] {
-    color: palette(highlighted-text);
-    background: palette(highlight);
+    color: white;
+    background: #960f11;
+    border: 1px solid #d21518;
 }
 
 /*
@@ -182,6 +193,21 @@ VolumePopup  > QSlider::sub-page:vertical {
  * Calendar Widget
  */
 
+QCalendarWidget QAbstractItemView:enabled {
+    color: white;
+    background: black;
+    selection-background-color: #640b0c;
+    selection-color: white;
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+    color: #969696;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #3c3c3c;
+}
+
 QCalendarWidget #qt_calendar_navigationbar,
 QCalendarWidget #qt_calendar_navigationbar * {
     background-color:hsv(0, 0, 41);
@@ -195,6 +221,7 @@ QCalendarWidget #qt_calendar_monthbutton:hover {
    border: 1px solid rgba(0, 0, 0, 50%);
    background: rgba(255, 255, 255, 20%);
 }
+
 QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
    image: none;
 }
@@ -211,15 +238,6 @@ QCalendarWidget #qt_calendar_prevmonth {
     max-height:20px;
     min-height:20px;
     qproperty-icon: url(calendar-popup/left-arrow.svg);
-}
-
-QCalendarWidget QMenu {
-    margin: 4px;
-    background-color: hsv(0, 0, 41);
-}
-QCalendarWidget QMenu::item:selected {
-    color: #DEDEDE;
-    background: rgba(255, 255, 255, 20%);
 }
 
 /*
@@ -244,10 +262,6 @@ QCalendarWidget QMenu::item:selected {
     margin-left: 2px;
 }
 
-
-
-
-
 /*
  * Tray
  */
@@ -262,6 +276,82 @@ TrayIcon {
     margin: 2px;
 }
 
+/*
+ * All menus
+ */
+
+QMenu {
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid rgba(50, 50, 50, 80%);
+    border-bottom-color: rgba(0, 0, 0, 80%);
+    border-right-color: rgba(0, 0, 0, 80%);
+    background: rgba(0, 0, 0, 80%);
+    /*qproperty-icon: url(mainmenu.svg);*/
+    color: white;
+}
+
+QMenu::icon {
+    background-color: transparent;
+    border: 20px;
+}
+
+QMenu QToolButton {
+    background-color: #3c3c3c;
+    padding: 5px;
+    border: none;
+    color: white;
+    font: bold italic;
+}
+
+QMenu::separator {
+    background-color: transparent;
+}
+
+QMenu::item {
+    border: 10px solid transparent;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 5px;
+    padding: 6px 40px 6px 24px;
+    background: transparent;
+    color: white;
+}
+
+QMenu::item:selected {
+    border: 10px solid #640b0c;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 5px;
+    background: #640b0c;
+    color: white;
+}
+
+QMenu::item:selected:disabled {
+    background-color: palette(text);
+}
+
+QMenu::item:disabled {
+    color: #6D6D6D;
+    background-color: transparent;
+}
+
+QMenu::right-arrow {
+    image: url(arrow-right.svg);
+}
+
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(checked.svg);
+}
 
 /*
  * Main menu
@@ -270,64 +360,45 @@ TrayIcon {
 #MainMenu {
     margin: 2px;
     padding: 2px;
-    border: 1px solid rgba(0, 0, 0, 30%);
-    background: rgba(0, 0, 0, 50%);
+    border: none;
+    background: rgba(0, 0, 0, 80%);
     qproperty-icon: url(mainmenu.svg);
-    color: #DEDEDE;
-}
-#MainMenu:hover {
-    border: 1px solid rgba(0, 0, 0, 50%);
-    background: rgba(255, 255, 255, 20%);
-}
-
-#MainMenu:pressed {
-    padding: 4px;
-}
-
-#MainMenu  QMenu {
-    margin: 4px;
-    background: palette(text);
-}
-
-#MainMenu  QMenu::icon {
-    background-color: transparent;
-}
-
-#MainMenu QMenu::right-arrow {
-    image: url(arrow-right.svg);
-}
-
-#MainMenu QMenu::item {
-    color: #DEDEDE;
-}
-
-#MainMenu QMenu::item:selected {
-    color: #DEDEDE;
-    background: rgba(255, 255, 255, 20%);
+    color: white;
 }
 
 #MainMenu QLineEdit {
-    background: palette(text);
-    border: none;
-    padding: 6px;
+    background: black;
+    border: 1px solid #3c3c3c;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    padding: 3px;
     margin-bottom: 1px;
-    color: palette(window);
+    color: white;
+    selection-background-color: #640b0c;
 }
 
 #MainMenu ActionView {
     border: none;
-    background: palette(text);
-    color: palette(window);
+    background: black;
+    color: white;
 }
 
 #MainMenu ActionView::item {
-    border: 1px solid palette(text);
-    padding: 3px 0;
+    background: black;
+    color: white;
+    border: none;
+    padding: 4px 3px 4px 10px;
 }
 
-#MainMenu ActionView::item:selected, ActionView::item:hover {
-    background: palette(highlight);
-    color: palette(highlighted-text);
+#MainMenu ActionView::item:selected {
+    background: #640b0c;
+    color: white;
+}
+
+#MainMenu ActionView::item:hover {
+    background: #500709;
+    color: white;
 }
 
 /*
@@ -377,18 +448,20 @@ TrayIcon {
 /*
  * KbIndicator
  */
-#KbIndicator > QLabel {
+#KbIndicator QLabel {
     padding: 3px;
     border: 0px;
+    font: bold;
 }
+
 #KbIndicator QLabel:disabled {
-    color: #999999;
+    color: #b4b4b4;
 }
 
 #KbIndicator QLabel:enabled {
-    background: #1A80B6;
+    color: white;
+    background: #780d0f;
 }
-
 
 /*
  * SysStat
@@ -432,6 +505,7 @@ TrayIcon {
     margin-left: 2px;
     padding: 2px;
     color: #DEDEDE;
+    background: transparent;
 }
 
 /*
