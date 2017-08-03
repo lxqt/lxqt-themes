@@ -323,7 +323,7 @@ VolumePopup  > QSlider::sub-page:vertical {
     color: rgba(54, 54, 54, 60%);
 }
 
-#KbIndicator QLabel:enabled {
+#KbIndicator > QLabel:enabled {
     border-top: 3px solid rgba(30, 145, 255, 100%);
     color: rgba(54, 54, 54, 100%);
 }

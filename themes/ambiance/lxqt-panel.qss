@@ -393,7 +393,7 @@ TrayIcon {
     border: 0px;
 }
 
-#KbIndicator QLabel:enabled {
+#KbIndicator > QLabel:enabled {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
     color: #f2f1f0;
     border: 1px solid #ca5f34;

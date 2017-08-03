@@ -448,17 +448,17 @@ QMenu::indicator:non-exclusive:checked {
 /*
  * KbIndicator
  */
-#KbIndicator QLabel {
+#KbIndicator > QLabel {
     padding: 3px;
     border: 0px;
     font: bold;
 }
 
-#KbIndicator QLabel:disabled {
+#KbIndicator > QLabel:disabled {
     color: #b4b4b4;
 }
 
-#KbIndicator QLabel:enabled {
+#KbIndicator > QLabel:enabled {
     color: white;
     background: #780d0f;
 }
