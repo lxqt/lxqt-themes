@@ -479,16 +479,16 @@ border-radius: 3px;
 /*
  * KbIndicator
  */
-#KbIndicator QLabel {
+#KbIndicator > QLabel {
     padding: 3px;
     border: 0px;
 }
 
-#KbIndicator QLabel:disabled {
+#KbIndicator >  QLabel:disabled {
     color: #999999;
 }
 
-#KbIndicator QLabel:enabled {
+#KbIndicator > QLabel:enabled {
     background: palette(highlight);
 }
 
