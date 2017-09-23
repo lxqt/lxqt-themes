@@ -11,6 +11,7 @@
 
 .*~        export-ignore
 .kdev4     export-ignore
+.github    export-ignore
 
 /build export-ignore
 /temp  export-ignore
