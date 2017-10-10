@@ -2,10 +2,13 @@
 lxqt-themes-0.12.0 / 2017-10-10
 ===============================
 
+  * Fixed CHANGELOG
+  * Release 0.12.1: Update changelog
   * Readme licenses (#6)
   * Update README.md
   * new README.md
   * Added missed AUTHORS and COPYING files
+  * Release 0.12.0: Update changelog
   * Don't export github related stuff
   * lxqt-panel/Kbindicator: Fixes a QLabel issue in the config dialog
   * liblxqt make no sense here
