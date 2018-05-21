@@ -1,7 +1,16 @@
 
-lxqt-themes-0.12.0 / 2017-10-10
+lxqt-themes-0.13.0 / 2018-05-21
 ===============================
 
+  * Set informa version to 0.13.0
+  * CMake: Prevent in-source builds
+  * fixed authors and bump the year (#8)
+  * fixed lxde mention (#7)
+
+0.12.0 / 2017-10-10
+===================
+
+  * Release 0.12.0: Update changelog
   * Fixed CHANGELOG
   * Release 0.12.1: Update changelog
   * Readme licenses (#6)
@@ -74,7 +83,7 @@ lxqt-themes-0.12.0 / 2017-10-10
   * Fixed keyboard indicator in Light theme
   * .gitignore added
   * Improved menu spacing Code cleaning Added style for DOM plugin Reduced icon size for the calendar's next an previous month buttons.
-  * Fix lxqt/lxqt#364
+  * Fix lxde/lxde-qt#364
   * Fixed tooltips colors.
   * Preview updated.
   * Keyboard indicator and preview updated.
@@ -121,4 +130,4 @@ lxqt-themes-0.12.0 / 2017-10-10
   * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
   * fixed theme loading
   * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
-  * Add default configuration files for lxqt session.
+  * Add default configuration files for lxde-qt session.
