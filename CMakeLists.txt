@@ -1,6 +1,8 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-
 project(lxqt-themes)
+# CMP0000 - A minimum required CMake version must be specified.
+# Note that the command invocation must appear in the CMakeLists.txt
+# file itself; a call in an included file is not sufficient.
+cmake_minimum_required(VERSION 3.6.2 FATAL_ERROR)
 
 set(LXQTBT_MINIMUM_VERSION "0.5.0")
 
