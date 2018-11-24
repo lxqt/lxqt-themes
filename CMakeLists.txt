@@ -6,10 +6,11 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 # versions.
 project(lxqt-themes)
 
-set(LXQTBT_MINIMUM_VERSION "0.5.0")
+# Minimum Versions
+set(LXQTBT_MINIMUM_VERSION "0.6.0")
 
 # lxqt-themes has no binaries - but we can set an informal version
-# Version 0.13.0
+# Version 0.14.0
 
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
