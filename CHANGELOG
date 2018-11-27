@@ -1,8 +1,13 @@
+lxqt-themes-0.14.0 / 2018-12-01
+===============================
 
+  * Set informal version to 0.14.0
+  * Set cmake_minimum_required to 3.1.0
+  
 lxqt-themes-0.13.0 / 2018-05-21
 ===============================
 
-  * Set informa version to 0.13.0
+  * Set informal version to 0.13.0
   * CMake: Prevent in-source builds
   * fixed authors and bump the year (#8)
   * fixed lxde mention (#7)
