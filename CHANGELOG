@@ -12,8 +12,8 @@ lxqt-themes-0.13.0 / 2018-05-21
   * fixed authors and bump the year (#8)
   * fixed lxde mention (#7)
 
-0.12.0 / 2017-10-10
-===================
+lxqt-themes-0.12.0 / 2017-10-10
+===============================
 
   * Release 0.12.0: Update changelog
   * Fixed CHANGELOG
@@ -28,8 +28,8 @@ lxqt-themes-0.13.0 / 2018-05-21
   * liblxqt make no sense here
   * Copied issue template
 
-0.11.96 / 2017-07-07
-====================
+lxqt-themes-0.11.96 / 2017-07-07
+================================
 
   * Release 0.11.96: Update changelog
   * Remove some more session stuff from CMakeLists.txt
