@@ -1,9 +1,13 @@
+lxqt-themes-0.15.0 / 2020-04-21
+===============================
+  * Bumped version to 0.15.0.
+
 lxqt-themes-0.14.0 / 2019-01-25
 ===============================
 
   * Set cmake_minimum_required to 3.1.0
   * Set informal version to 0.14.0
-  
+
 lxqt-themes-0.13.0 / 2018-05-21
 ===============================
 
