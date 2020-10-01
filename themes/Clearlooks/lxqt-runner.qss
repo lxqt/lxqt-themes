@@ -1,66 +1,91 @@
-/*
- * Panel
- */
+/* Panel */
 
-#panel {
-    background: #edeceb;
-    border: 1px solid #1a1a1a;
-    border-radius: 3px;
+#panel 
+{
+	background:	#edeceb;
+	border:		1px solid #1a1a1a;
+	border-radius:	3px;
+}
+
+/* Buttons */
+
+QToolButton::menu-indicator 
+{
+	image:		none;
+}
+
+#closeButton 
+{
+	qproperty-icon:	url(lxqt-runner/close.svg);
+	margin:		2px;
+}
+
+#closeButton:hover 
+{
+	background:	#ffffff;
+	border:		1px solid #1a1a1a;
+	border-radius:	3px;
+}
+
+#closeButton:pressed 
+{
+	background:	#ffffff;
+	border:		1px solid #909090;
+	border-radius:	3px;
+	padding:	1px;
+}
+
+#actionButton 
+{
+	qproperty-icon:	url(lxqt-runner/down-arrow.svg);
+	margin:		2px;
+}
+
+#actionButton:hover 
+{
+	background:	#ffffff;
+	border:		1px solid #909090;
+	border-radius:	3px;
+}
+
+#actionButton:pressed 
+{
+	background:	#ffffff;
+	border:		1px solid #909090;
+	border-radius:	3px;
+	padding:	3px;
+}
+
+
+/* Command Box */
+
+QLineEdit 
+{
+	color:		#1a1a1a;
+	background:	#ffffff;
+	border:		1px solid #909090;
+	border-radius:	3px;
+	padding:	6px;
 }
 
 /*
- * Buttons
+ *Search results list
  */
 
-QToolButton::menu-indicator {
-   image: none;
+/* The list doesn't seem to be stylable completely; so, we left it to the widget style. */
+
+#commandList {
+    border: none;
+    /*background: rgba(0, 0, 0, 50%);
+    alternate-background-color: #3c3c3c;
+    color: white;*/
 }
 
-#closeButton {
-    qproperty-icon: url(lxqt-runner/close.svg);
-    color: #1a1a1a;
-}
-#closeButton:hover{
-   border: 1px solid #909090;
-   background: #ffffff;
-   border-radius: 3px;
+/*#commandList::item {
 }
 
-#actionButton {
-    qproperty-icon: url(lxqt-runner/down-arrow.svg);
-    color: #1a1a1a;
-}
-#actionButton:hover{
-   border: 1px solid #909090;
-   background: #ffffff;
-   border-radius: 3px;
+#commandList::item:selected {
 }
 
-
-
-/*
- * Search results (For some reason the #commandList does no take the styles, just the background and the border can be changed)
- */
-
-QListView {
-    border: 1px solid #1a1a1a;
-    background: #ffffff;
- }
-
- QListView::item:alternate {
- }
-
- QListView::item:selected {
- }
-
- QListView::item:selected:!active {
- }
-
- QListView::item:selected:active {
- }
-
- QListView::item:hover {
- }
-
-
-
+#commandList::item::hover {
+}*/

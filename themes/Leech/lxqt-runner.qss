@@ -1,76 +1,92 @@
-/*
- * Panel
- */
+/* Panel */
 
-#panel {
-    background: #000000;
-    border: 1px solid #5e5f68;
-    border-radius: 2px;
-}
-
-/*
- * Buttons
- */
-
-QToolButton::menu-indicator {
-   image: none;
-}
-
-QLineEdit
+#panel 
 {
 	background:	#000000;
-	color:		#ffffff;
-	border:		1px solid #636372;
+	border:		1px solid #5e5f68;
 	border-radius:	2px;
-
-	padding:	2px;
 }
 
-#closeButton {
-    qproperty-icon: url(lxqt-runner/close.svg);
-    color: #ffffff;
-}
-#closeButton:hover{
-   border: 1px solid #636372;
-   background: #16162f;
-   border-radius: 2px;
+/* Buttons */
+
+QToolButton::menu-indicator 
+{
+	image:		none;
 }
 
-#actionButton {
-    qproperty-icon: url(lxqt-runner/down-arrow.svg);
-    color: #ffffff;
+#closeButton 
+{
+	qproperty-icon:	url(lxqt-runner/close.svg);
+	margin:		2px;
 }
-#actionButton:hover{
-   border: 1px solid #636372;
-   background: #16162f;
-   border-radius: 2px;
+
+#closeButton:hover 
+{
+	background:	#16162f;
+	border:		1px solid #5e5f68;
+	border-radius:	2px;
+}
+
+#closeButton:pressed 
+{
+	background:	#16162f;
+	border:		1px solid #5e5f68;
+	border-radius:	2px;
+	padding:	1px;
+}
+
+#actionButton 
+{
+	qproperty-icon:	url(lxqt-runner/down-arrow.svg);
+	margin:		2px;
+}
+
+#actionButton:hover 
+{
+	background:	#16162f;
+	border:		1px solid #5e5f68;
+	border-radius:	2px;
+}
+
+#actionButton:pressed 
+{
+	background:	#16162f;
+	border:		1px solid #5e5f68;
+	border-radius:	2px;
+	padding:	1px;
 }
 
 
+/* Command Box */
+
+QLineEdit 
+{
+	color:		#ffffff;
+	background:	#000000;
+	border:		1px solid #5e5f68;
+	border-radius:	2px;
+	padding:	6px;
+}
 
 /*
- * Search results (For some reason the #commandList does no take the styles, just the background and the border can be changed)
+ *Search results list
  */
 
-QListView {
-    border: 1px solid #5e5f68;
-    background: #000000;
- }
+/* The list doesn't seem to be stylable completely; so, we left it to the widget style. */
 
- QListView::item:alternate {
- }
+#commandList {
+    border: none;
+    /*background: rgba(0, 0, 0, 50%);
+    alternate-background-color: #3c3c3c;
+    color: white;*/
+}
 
- QListView::item:selected {
- }
+/*#commandList::item {
+}
 
- QListView::item:selected:!active {
- }
+#commandList::item:selected {
+}
 
- QListView::item:selected:active {
- }
-
- QListView::item:hover {
- }
-
-
+#commandList::item::hover {
+}*/
 
