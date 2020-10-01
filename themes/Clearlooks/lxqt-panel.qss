@@ -80,7 +80,7 @@ LXQtPanelPlugin > QToolButton
 #QuickLaunchPlaceHolder
 {
 	background-color:	transparent;
-	color:			rgba(255, 255, 255, 80%);
+	color:			909090;
 	border:			0px;
 
 	margin-left:		0px;
@@ -177,7 +177,13 @@ LXQtPanelPlugin > QToolButton
 
 #MainMenu QMenu::item
 {
-	padding:		3px 12px;
+	border:			1px solid transparent;
+	border-radius:		3px;
+	
+	padding-left:		8px;
+	padding-right:		6px;
+	padding-top:		2px;
+	padding-bottom:		2px;
 }
 
 #MainMenu QMenu::item:selected
@@ -187,7 +193,7 @@ LXQtPanelPlugin > QToolButton
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
 	color:			#ffffff;
 
-	padding-left:		11px;
+	margin-left:		1px;
 }
 
 
