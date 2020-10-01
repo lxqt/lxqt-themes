@@ -32,7 +32,7 @@ QToolButton::menu-indicator
 	background:	#ffffff;
 	border:		1px solid #909090;
 	border-radius:	3px;
-	padding:	1px;
+	padding:	3px;
 }
 
 #actionButton 
