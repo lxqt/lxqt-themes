@@ -1,5 +1,5 @@
 /*
-"Clearlooks-Darkpurpy" LXQt theme
+"Clearlooks-Phenix-Cinnabar" LXQt theme
 By Azuma Hazuki (wanderinghazuki@gmail.com)
 Created 10 October 2020
 */
@@ -70,7 +70,7 @@ LXQtPanelPlugin > QToolButton
 
 #TaskBar QToolButton[urgent="true"]
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #716c81, stop:1 #646071);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #65272b, stop:1 #552529);
 	color:			#ffffff;
 	border:			1px solid #000000;
 	border-radius:		3px;
@@ -188,7 +188,7 @@ LXQtPanelPlugin > QToolButton
 #MainMenu QMenu::item:selected
 {
 	border:			1px solid #1a1a1a;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #716c81, stop:1 #646071);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #65272b, stop:1 #552529);
 	color:			#ffffff;
 
 	margin-left:		1px;
@@ -238,3 +238,4 @@ LXQtPanelPlugin > QToolButton
 
 	color:			#1a1a1a;
 }
+
