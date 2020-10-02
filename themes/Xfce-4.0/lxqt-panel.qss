@@ -1,12 +1,12 @@
 /*
-"Clearlooks" LXQt theme
+"Xfce-4.0" LXQt theme
 By Azuma Hazuki (wanderinghazuki@gmail.com)
-Created 28 May 2020
+Created 2 October 2020
 */
 
 LXQtPanel #BackgroundWidget
 {
-	background-color:	#edeceb;
+	background-color:	#f6f6f6;
 	border:			0px solid #1a1a1a;
 }
 
@@ -22,7 +22,7 @@ Plugin > QWidget > QToolButton > QWidget > QToolButton,
 
 LXQtPanelPlugin > QToolButton
 {
-	background:		#edeceb;
+	background:		#f6f6f6;
 	margin:			0px;
 	padding:		2px;
 	color:			#1a1a1a;
@@ -33,54 +33,69 @@ LXQtPanelPlugin > QToolButton
 {
 	margin-left:		1px;
 	margin-right:		1px;
-	margin-top:		2px;
+	margin-top:		1px;
 	margin-bottom:		1px;
 
 	padding:		1px;
 
 	background-color:	#f0f0f0;
-	border:			1px solid #909090;
-	border-radius:		3px;
+	border:			1px solid #aaa29a;
+	border-radius:		1px;
 	color:			#1a1a1a;
 }
 
 #TaskBar QToolButton:on
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d4d2, stop:1 #c2bfbc);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a3a19f stop:1 #f9f9f9);
 	color:			#1a1a1a;
-	border:			1px solid #909090;
-	border-radius:		3px;
+	border:			1px solid #878482;
+	border-radius:		1px;
 }
 
 #TaskBar QToolButton:hover
 {
-	background-color:	#ffffff;
-	color:			#000000;
-	border:			1px solid #a0a0a0;
-	border-radius:		3px;
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
+	color:			#ffffff;
+	border-top:		2px solid #7d7da6;
+	border-bottm:		2px solid #62627e;
+	border-left:		2px solid #7d7da6;
+	border-right:		2px solid #7d7da6;
+	border-radius:		1px;
+
+	padding:		0px;
 }
 
 #TaskBar QToolButton:pressed
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d4d2, stop:1 #c2bfbc);
-	color:			#1a1a1a;
-	border:			1px solid #909090;
-	border-radius:		3px;
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
+	color:			#ffffff;
+	border-top:		2px solid #7d7da6;
+	border-bottm:		2px solid #62627e;
+	border-left:		2px solid #7d7da6;
+	border-right:		2px solid #7d7da6;
+	border-radius:		1px;
+
+	padding:		0px;
 }
 
 #TaskBar QToolButton[urgent="true"]
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
 	color:			#ffffff;
-	border:			1px solid #000000;
-	border-radius:		3px;
+	border-top:		2px solid #7d7da6;
+	border-bottm:		2px solid #62627e;
+	border-left:		2px solid #7d7da6;
+	border-right:		2px solid #7d7da6;
+	border-radius:		1px;
+
+	padding:		0px;
 }
 
 /* Quick Launch (Icon bar) */
 #QuickLaunchPlaceHolder
 {
 	background-color:	transparent;
-	color:			909090;
+	color:			aaa29a;
 	border:			0px;
 
 	margin-left:		0px;
@@ -150,7 +165,7 @@ LXQtPanelPlugin > QToolButton
 /* The actual menu... */
 #MainMenu QMenu
 {
-	background:		#edeceb;
+	background:		#f6f6f6;
 	color:			#1a1a1a;
 	border:			1px solid #1a1a1a;
 	padding:		1px;
@@ -160,8 +175,8 @@ LXQtPanelPlugin > QToolButton
 {
 	color:			#000000;
 	background:		#ffffff;
-	border:			1px solid #909090;
-	border-radius:		3px;
+	border:			1px solid #aaa29a;
+	border-radius:		1px;
 	padding:		2px;
 }
 
@@ -178,7 +193,7 @@ LXQtPanelPlugin > QToolButton
 #MainMenu QMenu::item
 {
 	border:			1px solid transparent;
-	border-radius:		3px;
+	border-radius:		1px;
 	
 	padding-left:		8px;
 	padding-right:		6px;
@@ -189,7 +204,7 @@ LXQtPanelPlugin > QToolButton
 #MainMenu QMenu::item:selected
 {
 	border:			1px solid #5070a0;
-	border-radius:		3px;
+	border-radius:		1px;
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
 	color:			#ffffff;
 

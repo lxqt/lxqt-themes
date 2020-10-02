@@ -1,12 +1,12 @@
 /*
-"Clearlooks" LXQt theme
+"Clearlooks-Darkpurpy" LXQt theme
 By Azuma Hazuki (wanderinghazuki@gmail.com)
-Created 28 May 2020
+Created 10 October 2020
 */
 
 LXQtPanel #BackgroundWidget
 {
-	background-color:	#edeceb;
+	background-color:	#f6f6f6;
 	border:			0px solid #1a1a1a;
 }
 
@@ -39,16 +39,16 @@ LXQtPanelPlugin > QToolButton
 	padding:		1px;
 
 	background-color:	#f0f0f0;
-	border:			1px solid #909090;
+	border:			1px solid #888582;
 	border-radius:		3px;
 	color:			#1a1a1a;
 }
 
 #TaskBar QToolButton:on
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d4d2, stop:1 #c2bfbc);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.15 #d5d3d1, stop:0.5 #cfcdcb, stop:1 #c2bfbc);
 	color:			#1a1a1a;
-	border:			1px solid #909090;
+	border:			1px solid #888582;
 	border-radius:		3px;
 }
 
@@ -64,13 +64,13 @@ LXQtPanelPlugin > QToolButton
 {
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d4d2, stop:1 #c2bfbc);
 	color:			#1a1a1a;
-	border:			1px solid #909090;
+	border:			1px solid #888582;
 	border-radius:		3px;
 }
 
 #TaskBar QToolButton[urgent="true"]
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #716c81, stop:1 #646071);
 	color:			#ffffff;
 	border:			1px solid #000000;
 	border-radius:		3px;
@@ -80,7 +80,7 @@ LXQtPanelPlugin > QToolButton
 #QuickLaunchPlaceHolder
 {
 	background-color:	transparent;
-	color:			909090;
+	color:			#888582;
 	border:			0px;
 
 	margin-left:		0px;
@@ -160,7 +160,7 @@ LXQtPanelPlugin > QToolButton
 {
 	color:			#000000;
 	background:		#ffffff;
-	border:			1px solid #909090;
+	border:			1px solid #888582;
 	border-radius:		3px;
 	padding:		2px;
 }
@@ -178,8 +178,7 @@ LXQtPanelPlugin > QToolButton
 #MainMenu QMenu::item
 {
 	border:			1px solid transparent;
-	border-radius:		3px;
-	
+
 	padding-left:		8px;
 	padding-right:		6px;
 	padding-top:		2px;
@@ -188,9 +187,8 @@ LXQtPanelPlugin > QToolButton
 
 #MainMenu QMenu::item:selected
 {
-	border:			1px solid #5070a0;
-	border-radius:		3px;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	border:			1px solid #1a1a1a;
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #716c81, stop:1 #646071);
 	color:			#ffffff;
 
 	margin-left:		1px;
