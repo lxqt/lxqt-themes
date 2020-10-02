@@ -194,6 +194,7 @@ LXQtPanelPlugin > QToolButton
 	color:			#ffffff;
 
 	margin-left:		1px;
+	padding-left:		7px;
 }
 
 
