@@ -1,7 +1,7 @@
 Notification {
     color: #ffffff;
     border: 1px solid #aaa29a;
-    border-radius: 3px;
+    border-radius: 1px;
     background: #f6f6f6;
     margin: 0px;
 }
@@ -17,7 +17,7 @@ QLabel {
 
 #closeButton:hover {
     border: 1px solid #aaa29a;
-    border-radius: 3px;
+    border-radius: 1px;
     background: #ffffff;
     qproperty-icon: url(lxqt-notificationd/cancel.svg);
 }

@@ -38,15 +38,15 @@ LXQtPanelPlugin > QToolButton
 
 	padding:		1px;
 
-	background-color:	#f0f0f0;
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #c6c0b9, stop:1 #f9f9f9);
+	color:			#1a1a1a;
 	border:			1px solid #aaa29a;
 	border-radius:		1px;
-	color:			#1a1a1a;
 }
 
 #TaskBar QToolButton:on
 {
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a3a19f stop:1 #f9f9f9);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a3a19f, stop:1 #f9f9f9);
 	color:			#1a1a1a;
 	border:			1px solid #878482;
 	border-radius:		1px;
@@ -57,7 +57,7 @@ LXQtPanelPlugin > QToolButton
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
 	color:			#ffffff;
 	border-top:		2px solid #7d7da6;
-	border-bottm:		2px solid #62627e;
+	border-bottom:		2px solid #62627e;
 	border-left:		2px solid #7d7da6;
 	border-right:		2px solid #7d7da6;
 	border-radius:		1px;
@@ -70,7 +70,7 @@ LXQtPanelPlugin > QToolButton
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
 	color:			#ffffff;
 	border-top:		2px solid #7d7da6;
-	border-bottm:		2px solid #62627e;
+	border-bottom:		2px solid #62627e;
 	border-left:		2px solid #7d7da6;
 	border-right:		2px solid #7d7da6;
 	border-radius:		1px;
@@ -83,7 +83,7 @@ LXQtPanelPlugin > QToolButton
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
 	color:			#ffffff;
 	border-top:		2px solid #7d7da6;
-	border-bottm:		2px solid #62627e;
+	border-bottom:		2px solid #62627e;
 	border-left:		2px solid #7d7da6;
 	border-right:		2px solid #7d7da6;
 	border-radius:		1px;
@@ -203,12 +203,15 @@ LXQtPanelPlugin > QToolButton
 
 #MainMenu QMenu::item:selected
 {
-	border:			1px solid #5070a0;
-	border-radius:		1px;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a5a6f, stop:1 #b1b1cc);
 	color:			#ffffff;
+	border-top:		2px solid #7d7da6;
+	border-bottom:		2px solid #62627e;
+	border-left:		2px solid #7d7da6;
+	border-right:		2px solid #7d7da6;
+	border-radius:		1px;
 
-	margin-left:		1px;
+	margin-left:		0px;
 	padding-left:		7px;
 }
 

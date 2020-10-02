@@ -4,7 +4,7 @@
 {
 	background:	#f6f6f6;
 	border:		1px solid #1a1a1a;
-	border-radius:	3px;
+	border-radius:	1px;
 }
 
 /* Buttons */
@@ -24,14 +24,14 @@ QToolButton::menu-indicator
 {
 	background:	#ffffff;
 	border:		1px solid #1a1a1a;
-	border-radius:	3px;
+	border-radius:	1px;
 }
 
 #closeButton:pressed 
 {
 	background:	#ffffff;
 	border:		1px solid #aaa29a;
-	border-radius:	3px;
+	border-radius:	1px;
 	padding:	3px;
 }
 
@@ -45,14 +45,14 @@ QToolButton::menu-indicator
 {
 	background:	#ffffff;
 	border:		1px solid #aaa29a;
-	border-radius:	3px;
+	border-radius:	1px;
 }
 
 #actionButton:pressed 
 {
 	background:	#ffffff;
 	border:		1px solid #aaa29a;
-	border-radius:	3px;
+	border-radius:	1px;
 	padding:	3px;
 }
 
@@ -64,7 +64,7 @@ QLineEdit
 	color:		#1a1a1a;
 	background:	#ffffff;
 	border:		1px solid #aaa29a;
-	border-radius:	3px;
+	border-radius:	1px;
 	padding:	6px;
 }
 
