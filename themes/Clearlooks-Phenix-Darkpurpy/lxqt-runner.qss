@@ -63,7 +63,7 @@ QLineEdit
 {
 	color:		#1a1a1a;
 	background:	#ffffff;
-	border:		1px solid #888582;
+	border:		1px solid #909090;
 	border-radius:	3px;
 	padding:	6px;
 }
@@ -89,3 +89,32 @@ QLineEdit
 
 #commandList::item::hover {
 }*/
+
+/* Menu */
+
+QMenu
+{
+	border:			1px solid #888582;
+	background:		#f6f6f6;
+	padding:		1px;
+}
+
+QMenu::item
+{
+	border:			1px solid transparent;
+
+	padding-left:		8px;
+	padding-right:		6px;
+	padding-top:		2px;
+	padding-bottom:		2px;
+}
+
+QMenu::item:selected
+{
+	border:			1px solid #5070a0;
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:0, stop:0 #716c81, stop:1 #646071);
+	color:			#ffffff;
+
+
+	margin-left:		0px;
+}
