@@ -1,0 +1,252 @@
+/*
+"Leech" LXQt theme
+By Azuma Hazuki (wanderinghazuki@gmail.com)
+Created 28 September 2020
+*/
+
+LXQtPanel #BackgroundWidget
+{
+	background-color:	#000000;
+	border:			0px solid #555555;
+}
+
+Plugin > QWidget, Plugin > QWidget > QWidget
+{
+	border:			0px;
+	color:			#ffffff; /* Color of text on same */
+}
+
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
+
+LXQtPanelPlugin > QToolButton
+{
+	background:		#000000;
+	margin:			0px;
+	padding:		2px;
+	color:			#ffffff;
+}
+
+/* Taskbar */
+#TaskBar QToolButton
+{
+	margin-left:		1px;
+	margin-right:		1px;
+	margin-top:		2px;
+	margin-bottom:		1px;
+
+	padding:		1px;
+
+	background-color:	#000000;
+	border:			1px solid #555555;
+	border-radius:		2px;
+	color:			#ffffff;
+}
+
+#TaskBar QToolButton:on
+{
+	background-color:	#0f101f;
+	color:			#ffffff;
+	border:			1px solid #5e5f68;
+	border-radius:		2px;
+}
+
+#TaskBar QToolButton:hover
+{
+	background-color:	#16162f;
+	color:			#ffffff;
+	border:			1px solid #636372;
+	border-radius:		2px;
+}
+
+#TaskBar QToolButton:pressed
+{
+	background-color:	#0f101f;
+	color:			#ffffff;
+	border:			1px solid #5e5f68;
+	border-radius:		2px;
+}
+
+#TaskBar QToolButton[urgent="true"]
+{
+	background-color:	#555555;
+	color:			#ffffff;
+	border:			1px solid #969696;
+	border-radius:		2px;
+}
+
+/* Quick Launch (Icon bar) */
+#QuickLaunchPlaceHolder
+{
+	background-color:	transparent;
+	color:			rgba(255, 255, 255, 80%);
+	border:			0px;
+
+	margin-left:		0px;
+	margin-right:		2px;
+	margin-top:		2px;
+	margin-bottom:		2px;
+
+	padding:		4px;
+}
+
+#QuickLaunch QToolButton
+{
+	background-color:	transparent;
+	margin:			1px;
+	padding:		2px;
+}
+
+#QuickLaunch QToolButton:pressed
+{
+	margin:			2px;
+	padding:		2px;
+}
+
+#QuickLaunch QToolButton:hover
+{
+	margin:			1px;
+	padding:		2px;
+}
+
+
+/* Menu Icon */
+#MainMenu
+{
+	margin-left:				1px;
+	margin-right:				0px;
+	margin-top:				1px;
+	margin-bottom:				1px;
+
+	qproperty-icon:				url(mainmenu.svg);
+	background-color:			transparent;
+	color:					#ffffff;
+}
+
+#MainMenu:pressed
+{
+	margin-left:				0px;
+	margin-right:				0px;
+	margin-top:				0px;
+	margin-bottom:				0px;
+
+	background-color:			transparent;
+	color:					#ffffff;
+}
+
+#MainMenu:hover
+{
+	margin-left:				1px;
+	margin-right:				0px;
+	margin-top:				1px;
+	margin-bottom:				1px;
+
+	background-color:			transparent;
+	color:					#ffffff;
+}
+
+
+/* The actual menu... */
+#MainMenu QMenu
+{
+	background:		#000000;
+	color:			#ffffff;
+	border:			1px solid #2f2f2f;
+	padding:		1px;
+}
+
+#MainMenu QLineEdit
+{
+	color:			#ffffff;
+	background:		#000000;
+	border:			1px solid #555555;
+	border-radius:		3px;
+	padding:		2px;
+}
+
+#MainMenu QMenu::icon
+{
+	padding-right: 3px;
+}
+
+#MainMenu QMenu::icon:selected
+{
+	padding-right: 2px;
+}
+
+#MainMenu QMenu::right-arrow
+{
+	image:		url(arrow-right.svg);
+}
+
+#MainMenu QMenu::right-arrow:selected
+{
+	image:		url(arrow-right.svg);
+}
+
+#MainMenu QMenu::item
+{
+	border:			1px solid transparent;
+	border-radius:		3px;
+
+	padding-left:		8px;
+	padding-right:		20px;
+	padding-top:		2px;
+	padding-bottom:		2px;
+}
+
+#MainMenu QMenu::item:selected
+{
+	border:			1px solid #636372;
+	border-radius:		3px;
+	background-color:	#16162f;
+	color:			#ffffff;
+
+	margin-left:		1px;
+	padding-left:		7px;
+}
+
+
+/* System Tray */
+#Tray
+{
+	min-width:		0px;
+	padding:		2px;
+
+	margin-left:		0px;
+	margin-right:		0px;
+	margin-bottom:		2px;
+	margin-top:		2px;
+}
+
+#TrayIcon
+{
+	background-color:	transparent;
+
+	padding:		2px;
+
+	margin-left:		2px;
+	margin-right:		2px;
+	margin-bottom:		2px;
+	margin-top:		2px;
+
+}
+
+/* WorldClock */
+#WorldClock
+{
+	padding:		2px;
+
+	margin-left:		2px;
+	margin-right:		2px;
+	margin-bottom:		2px;
+	margin-top:		2px;
+}
+
+#WorldClockContent
+{
+	padding:		2px;
+
+	color:			#ffffff;
+}

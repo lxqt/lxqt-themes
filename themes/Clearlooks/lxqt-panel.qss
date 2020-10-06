@@ -1,0 +1,252 @@
+/*
+"Clearlooks" LXQt theme
+By Azuma Hazuki (wanderinghazuki@gmail.com)
+Created 28 May 2020
+*/
+
+LXQtPanel #BackgroundWidget
+{
+	background-color:	#edeceb;
+	border:			0px solid #1a1a1a;
+}
+
+Plugin > QWidget, Plugin > QWidget > QWidget
+{
+	border:			0px;
+	color:			rgba(0, 0, 0, 100%); /* Color of text on same */
+}
+
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
+
+LXQtPanelPlugin > QToolButton
+{
+	background:		#edeceb;
+	margin:			0px;
+	padding:		2px;
+	color:			#1a1a1a;
+}
+
+/* Taskbar */
+#TaskBar QToolButton
+{
+	margin-left:		1px;
+	margin-right:		1px;
+	margin-top:		2px;
+	margin-bottom:		1px;
+
+	padding:		1px;
+
+	background-color:	#f0f0f0;
+	border:			1px solid #909090;
+	border-radius:		3px;
+	color:			#1a1a1a;
+}
+
+#TaskBar QToolButton:on
+{
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d4d2, stop:1 #c2bfbc);
+	color:			#1a1a1a;
+	border:			1px solid #909090;
+	border-radius:		3px;
+}
+
+#TaskBar QToolButton:hover
+{
+	background-color:	#ffffff;
+	color:			#000000;
+	border:			1px solid #a0a0a0;
+	border-radius:		3px;
+}
+
+#TaskBar QToolButton:pressed
+{
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d6d4d2, stop:1 #c2bfbc);
+	color:			#1a1a1a;
+	border:			1px solid #909090;
+	border-radius:		3px;
+}
+
+#TaskBar QToolButton[urgent="true"]
+{
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	color:			#ffffff;
+	border:			1px solid #000000;
+	border-radius:		3px;
+}
+
+/* Quick Launch (Icon bar) */
+#QuickLaunchPlaceHolder
+{
+	background-color:	transparent;
+	color:			909090;
+	border:			0px;
+
+	margin-left:		0px;
+	margin-right:		2px;
+	margin-top:		2px;
+	margin-bottom:		2px;
+
+	padding:		3px;
+}
+
+#QuickLaunch QToolButton
+{
+	background-color:	transparent;
+	margin:			1px;
+	padding:		2px;
+}
+
+#QuickLaunch QToolButton:pressed
+{
+	margin:			2px;
+	padding:		2px;
+}
+
+#QuickLaunch QToolButton:hover
+{
+	margin:			1px;
+	padding:		2px;
+}
+
+
+/* Menu Icon */
+#MainMenu
+{
+	margin-left:				1px;
+	margin-right:				0px;
+	margin-top:				1px;
+	margin-bottom:				1px;
+
+	qproperty-icon:				url(mainmenu.svg);
+	background-color:			transparent;
+	color:					#1a1a1a;
+}
+
+#MainMenu:pressed
+{
+	margin-left:				0px;
+	margin-right:				0px;
+	margin-top:				0px;
+	margin-bottom:				0px;
+
+	background-color:			transparent;
+	color:					#1a1a1a;
+}
+
+#MainMenu:hover
+{
+	margin-left:				1px;
+	margin-right:				0px;
+	margin-top:				1px;
+	margin-bottom:				1px;
+
+	background-color:			transparent;
+	color:					#1a1a1a;
+}
+
+
+/* The actual menu... */
+#MainMenu QMenu
+{
+	background:		#ffffff;
+	color:			#1a1a1a;
+	border:			1px solid #1a1a1a;
+	padding:		1px;
+}
+
+#MainMenu QLineEdit
+{
+	color:			#000000;
+	background:		#ffffff;
+	border:			1px solid #909090;
+	border-radius:		3px;
+	padding:		2px;
+}
+
+#MainMenu QMenu::icon
+{
+	padding-right:		3px;
+}
+
+#MainMenu QMenu::icon:selected
+{
+	padding-right:		2px;
+}
+
+#MainMenu QMenu::right-arrow
+{
+	image: url(arrow-right.svg);
+}
+
+#MainMenu QMenu::right-arrow:selected
+{
+	image: url(arrow-right-selected.svg);
+}
+
+#MainMenu QMenu::item
+{
+	border:			1px solid transparent;
+	border-radius:		3px;
+	
+	padding-left:		8px;
+	padding-right:		20px;
+	padding-top:		2px;
+	padding-bottom:		2px;
+}
+
+#MainMenu QMenu::item:selected
+{
+	border:			1px solid #5070a0;
+	border-radius:		3px;
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	color:			#ffffff;
+
+	margin-left:		1px;
+	padding-left:		7px;
+}
+
+
+/* System Tray */
+#Tray
+{
+	min-width:		0px;
+	padding:		2px;
+
+	margin-left:		0px;
+	margin-right:		0px;
+	margin-bottom:		2px;
+	margin-top:		2px;
+}
+
+#TrayIcon
+{
+	background-color:	transparent;
+
+	padding:		2px;
+
+	margin-left:		2px;
+	margin-right:		2px;
+	margin-bottom:		2px;
+	margin-top:		2px;
+
+}
+
+/* WorldClock */
+#WorldClock
+{
+	padding:		2px;
+
+	margin-left:		2px;
+	margin-right:		2px;
+	margin-bottom:		2px;
+	margin-top:		2px;
+}
+
+#WorldClockContent
+{
+	padding:		2px;
+
+	color:			#1a1a1a;
+}
