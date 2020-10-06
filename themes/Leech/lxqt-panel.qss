@@ -175,13 +175,23 @@ LXQtPanelPlugin > QToolButton
 	padding-right: 2px;
 }
 
+#MainMenu QMenu::right-arrow
+{
+	image:		url(arrow-right.svg);
+}
+
+#MainMenu QMenu::right-arrow:selected
+{
+	image:		url(arrow-right.svg);
+}
+
 #MainMenu QMenu::item
 {
 	border:			1px solid transparent;
 	border-radius:		3px;
 
 	padding-left:		8px;
-	padding-right:		6px;
+	padding-right:		20px;
 	padding-top:		2px;
 	padding-bottom:		2px;
 }
