@@ -274,8 +274,8 @@ QMenu::item {
 }
 
 QMenu::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(30, 30, 30), stop:1 rgb(10, 10, 10));
-    color: #80C0FF;
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
+    color: #4DA6FF;
 }
 
 QMenu::item:disabled {
