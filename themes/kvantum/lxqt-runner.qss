@@ -1,0 +1,44 @@
+Dialog {
+    background-color: transparent;
+}
+
+#commandList {
+    background-color: palette(window);
+}
+
+#panel {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(100, 100, 100, 80%), stop:0.11 rgba(80, 80, 80, 80%), stop:0.12 rgba(80, 80, 80, 80%), stop:1 rgba(0, 0, 0, 72%));
+    border-radius: 5px;
+}
+
+#closeButton,
+#actionButton {
+    margin: 0px 3px 0px 3px;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#closeButton:hover,
+#actionButton:hover {
+    background: rgba(255, 255, 255, 20%);
+}
+
+#closeButton:pressed,
+#actionButton:pressed {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 40%));
+    border: none;
+}
+
+#closeButton {
+  qproperty-icon: url(lxqt-runner/close.svg);
+}
+
+#actionButton {
+    qproperty-icon: url(lxqt-runner/down.svg);
+}
+
+#actionButton::menu-indicator  {
+    image: none;
+}

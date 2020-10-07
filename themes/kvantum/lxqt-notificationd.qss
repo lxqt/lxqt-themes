@@ -1,0 +1,41 @@
+Notification {
+    /*background-color:rgba(0, 0, 0, 75%);
+    border-top: 1px solid rgba(50, 50, 50, 80%);
+    border-left: 1px solid rgba(40, 40, 40, 80%);*/
+    
+    background-color:rgba(20, 20, 20, 90%);
+    border-top: 1px solid rgba(50, 50, 50, 70%);
+    border-left: 1px solid rgba(40, 40, 40, 70%);
+
+    border-radius: 2px;
+    margin: 0px;
+}
+
+QLabel {
+    color: white;
+}
+
+#appLabel {
+    color: #c8c8c8;
+    /*font: normal;*/
+    font-style: italic;
+}
+
+#closeButton {
+    qproperty-icon: url(lxqt-runner/close.svg);
+}
+
+QToolButton {
+    margin: 0px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+QToolButton:hover {
+    background: rgba(255, 255, 255, 20%);
+}
+
+QToolButton:pressed {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 40%));
+}
