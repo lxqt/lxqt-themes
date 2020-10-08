@@ -218,11 +218,11 @@ QToolTip {
  */
 #MainMenu QLineEdit,
 #ColorPicker QLineEdit {
-    background: rgb(20, 20, 20);
-    border: 1px solid rgb(0, 0, 0);
-    border-left-color: rgb(10, 10, 10);
-    border-bottom-color: rgb(60, 60, 60);
-    border-right-color: rgb(40, 40, 40);
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
+    border: 1px solid #000000;
+    border-left-color: #0a0a0a;
+    border-bottom-color: #414141;
+    border-right-color: #3c3c3c;
     border-radius: 2px;
     padding: 6px 3px 6px 3px;
     margin: 1px;
@@ -290,11 +290,19 @@ QMenu::right-arrow {
     padding: 0px 2px 0px 0px;
 }
 
+QMenu::right-arrow:selected {
+    image: url(/lxqt-panel/arrow-right-selected.svg);
+}
+
 QMenu::left-arrow {
     image: url(/lxqt-panel/arrow-left.svg);
     height: 10px;
     width: 10px;
     padding: 0px 0px 0px 2px;
+}
+
+QMenu::left-arrow:selected {
+    image: url(/lxqt-panel/arrow-left-selected.svg);
 }
 
 QMenu::indicator {
