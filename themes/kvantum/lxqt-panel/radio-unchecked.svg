@@ -1,0 +1,19 @@
+<svg width="16" version="1.0" xmlns="http://www.w3.org/2000/svg" height="16" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs id="defs782">
+<linearGradient id="linearGradient7165">
+<stop offset="0" style="stop-color:#464646" id="stop561"/>
+<stop offset="1" style="stop-color:#0a0a0a" id="stop563"/>
+</linearGradient>
+<linearGradient id="linearGradient3771-38">
+<stop offset="0" style="stop-color:#fff;stop-opacity:0" id="stop702"/>
+<stop offset="0.75337994" style="stop-color:#fff;stop-opacity:0" id="stop704"/>
+<stop offset="1" style="stop-color:#fff" id="stop706"/>
+</linearGradient>
+<linearGradient xlink:href="#linearGradient7165" id="linearGradient6534" y1="272.08563" x1="660.96808" y2="246.80051" gradientUnits="userSpaceOnUse" x2="660.96808"/>
+<radialGradient fx="8" fy="8" cx="8" cy="8" gradientTransform="translate(109.5,407)" xlink:href="#linearGradient3771-38" id="radialGradient6388" r="7.5" gradientUnits="userSpaceOnUse"/>
+</defs>
+<g style="color:#000" id="radio-normal" transform="matrix(1.0666667,0,0,1.0666667,-117.33334,-434.66668)">
+<ellipse cx="660.96808" cy="255.0668" rx="4.5078058" ry="7.2937827" style="fill:url(#linearGradient6534)" id="ellipse1050" transform="matrix(1.6637806,0,0,1.0282724,-982.20587,152.72185)"/>
+<path style="opacity:.18;fill:url(#radialGradient6388)" id="path1052" d="m 117.5,407.5 c -4.14214,0 -7.5,3.35787 -7.5,7.5 0,4.14213 3.35786,7.5 7.5,7.5 4.14214,0 7.5,-3.35787 7.5,-7.5 0,-4.14213 -3.35786,-7.5 -7.5,-7.5 z m 0,2.5 c 2.76142,0 5,2.23858 5,5 0,2.76142 -2.23858,5 -5,5 -2.76142,0 -5,-2.23858 -5,-5 0,-2.76142 2.23858,-5 5,-5 z"/>
+</g>
+</svg>
