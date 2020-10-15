@@ -241,10 +241,10 @@ QToolTip {
 QMenu {
     margin: 0px;
     padding: 0px;
-    border: 1px solid rgba(75, 75, 75, 92%);
-    border-bottom-color: rgba(20, 20, 20, 92%);
-    border-right-color: rgba(40, 40, 40, 92%);
-    border-left-color: rgba(60, 60, 60, 92%);
+    border: 1px solid rgba(90, 90, 90, 50%);
+    border-bottom-color: rgba(20, 20, 20, 50%);
+    border-right-color: rgba(40, 40, 40, 50%);
+    border-left-color: rgba(70, 70, 70, 50%);
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
     border-radius: 3px;
     color: white;
