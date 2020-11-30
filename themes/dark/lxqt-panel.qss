@@ -305,7 +305,8 @@ QMenu QToolButton {
 }
 
 QMenu::separator {
-    background-color: transparent;
+    background-color: #4c4c4c;
+    height: 1px;
 }
 
 QMenu::item {
