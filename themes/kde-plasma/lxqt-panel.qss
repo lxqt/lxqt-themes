@@ -411,7 +411,7 @@ TrayIcon {
 
 QCalendarWidget #qt_calendar_navigationbar,
 QCalendarWidget #qt_calendar_navigationbar * {
-    background:rgba(240, 240, 240, 100%);
+    background:rgba(190, 190, 190, 100%);
     color: rgba(54, 54, 54, 100%);
 }
 QCalendarWidget QToolButton {
@@ -453,8 +453,9 @@ QCalendarWidget #qt_calendar_prevmonth {
 }
 
 QCalendarWidget QWidget {
-    alternate-background-color: rgba(240, 240, 240, 100%);
+    alternate-background-color: rgba(210, 210, 210, 100%);;
 }
+
 QTableViewItem {
     border: 1px solid rgba(30, 145, 255, 100%);
 }

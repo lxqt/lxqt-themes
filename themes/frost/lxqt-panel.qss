@@ -146,6 +146,10 @@ QCalendarWidget QToolButton::menu-indicator {
     image: none;
 }
 
+QCalendarWidget QWidget {
+    alternate-background-color: #cacaca;
+}
+
 QCalendarWidget #qt_calendar_nextmonth {
     qproperty-icon: url(calendar-popup/right-arrow.svg);
     qproperty-iconSize: 18px;
