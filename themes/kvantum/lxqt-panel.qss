@@ -342,8 +342,11 @@ TrayIcon {
  * Main menu
  */
 #MainMenu {
+    color: white;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid transparent;
     qproperty-icon: url(/lxqt-panel/mainmenu.svg);
-    color: #EEEEEE;
 }
 
 #MainMenu ActionView {
