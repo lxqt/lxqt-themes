@@ -1,4 +1,9 @@
-lxqt-themes-0.15.0 / 2020-04-21
+lxqt-themes-0.17.0 / 2021-04-15
+===============================
+  * Added alternate background color to the calendar widget in some themes.
+  * Added a visible menu separator to the Dark theme.
+
+lxqt-themes-0.16.0 / 2020-11-01
 ===============================
   * Added the themes Clearlooks, Leech and Kvantum.
 
