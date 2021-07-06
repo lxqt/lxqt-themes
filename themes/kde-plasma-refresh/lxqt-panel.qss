@@ -1,4 +1,4 @@
-/*This is a port of the design proposal for Plasma Next made by the KDE Visual Design Group. Ported by Inti Alonso.*/
+/*This is a port of the design proposal for Plasma Next made by the KDE Visual Design Group. Ported by Inti Alonso. Improvements by The Senate.*/
 
 /*
  * General panel settings
@@ -23,7 +23,7 @@ QToolTip {
 
 Plugin,
 LXQtPanelPlugin {
-    padding: 0;
+    padding: 0px 0;
     spacing: 20px;
     qproperty-moveMarkerColor: rgba(30, 145, 255, 50%);
 }
@@ -44,8 +44,8 @@ LXQtPanelPlugin > QToolButton {
 }
 
 QMenu {
-    border: 0px solid rgba(155, 155, 155, 100%);
-    background:rgba(240, 240, 240, 90%);
+    border: 0px solid rgba(30, 145, 255, 30%);
+    background:rgba(240, 240, 240, 87%);
     margin: 0px;
 }
 
@@ -58,7 +58,7 @@ QMenu::item:disabled {
 }
 
 QMenu::item:selected {
-    background: rgba(30, 145, 255, 50%);
+    background: rgba(30, 145, 255, 75%);
     color: #313639;
 }
 
@@ -77,8 +77,8 @@ QMenu::right-arrow {
 
 #MainMenu {
     color: rgba(54, 54, 54, 100%);
-    margin: 3px;
-    padding-top: 4px;
+    margin: 0px;
+    padding: 4px;
     border-top: 5px solid transparent;
     qproperty-icon: url(mainmenu.svg);
 }
@@ -156,20 +156,20 @@ QMenu::right-arrow {
  */
 #VolumePlugin QToolButton {
     margin: 3px;
-    padding-top: 2px;
+    padding-bottom: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
-#VolumePlugin QToolButton:hover {
+/*#VolumePlugin QToolButton:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
 }
-
+*/
 
 VolumePopup {
-    border: 1px solid rgba(155, 155, 155, 100%);
+    border: 0px solid rgba(155, 155, 155, 100%);
     background:rgba(240, 240, 240, 100%);
-    padding: 4px;
+    padding: 3px;
 }
 
 VolumePopup  > QPushButton {
@@ -184,7 +184,7 @@ VolumePopup  > QPushButton {
 VolumePopup  > QPushButton:hover {
     color: rgba(54, 54, 54, 100%);
     background: rgba(30, 145, 255, 30%);
-    border: 1px solid rgba(30, 145, 255, 100%);
+    border: 1px solid rgba(30, 145, 255, 50%);
 }
 
 VolumePopup  > QSlider {
@@ -249,7 +249,7 @@ VolumePopup  > QSlider::sub-page:vertical {
  * Mount plugin
  */
 #LXQtMountPlugin MountButton{
-    margin: 3px;
+    margin: 16px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
@@ -295,15 +295,20 @@ VolumePopup  > QSlider::sub-page:vertical {
     margin: 6px;
 }
 
+#LXQtMountPopup:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+    color: rgba(54, 54, 54, 100%);
+}
 
 /*
  * ShowDesktop
  */
 
 #ShowDesktop {
-    margin: 3px;
-    padding-top: 2px;
+    margin: 2px;
+    padding-top: 0px;
     border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
@@ -319,6 +324,7 @@ VolumePopup  > QSlider::sub-page:vertical {
 #KbIndicator > QLabel {
     margin: 3px;
     padding-top: 2px;
+    padding: 4px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
@@ -331,6 +337,11 @@ VolumePopup  > QSlider::sub-page:vertical {
 #KbIndicator:disabled {
     background: transparent;
     color: rgba(54, 54, 54, 60%);
+}
+
+#KbIndicator:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+    color: rgba(54, 54, 54, 100%);
 }
 
 /*
@@ -347,7 +358,7 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 
 /*
- * Tray
+ * Tray (obsolete)
  */
 
 #Tray {
@@ -393,6 +404,7 @@ TrayIcon {
 
 #WorldClockContent {
     margin: 2px;
+    padding-top: 2px;
     color: rgba(54, 54, 54, 100%);
 }
 
