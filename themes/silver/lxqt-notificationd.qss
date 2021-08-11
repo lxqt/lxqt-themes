@@ -40,7 +40,7 @@ QToolButton:pressed {
 }
 
 #appLabel {
-   color: ##334241;
+   color: #334241;
 }
 
 #closeButton {
