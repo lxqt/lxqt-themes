@@ -35,7 +35,6 @@ Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LXQtPanelPlugin > QToolButton {
     margin: 0px;
-    border: 1px solid #2b2b29;
     border-radius: 4px;
     qproperty-iconSize: 24px;
     color: #f2f1f0;
@@ -47,12 +46,6 @@ LXQtPanelPlugin > QToolButton:hover {
     margin: 0px;
     background: #363532;
     border: 1px solid #2b2b29;
-}
-
-Plugin > QToolButton:pressed,
-Plugin > QWidget > QToolButton:pressed,
-LXQtPanelPlugin > QToolButton:pressed {
-    padding: 4px;
 }
 
 /*
@@ -159,7 +152,7 @@ QCalendarWidget QWidget {
 }
 
 #TaskBar QToolButton:pressed {
-    padding: 4px;
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eb7140, stop:1 #f88657);
 }
 
 #TaskBar QToolButton[urgent="true"] {
@@ -477,10 +470,6 @@ TrayIcon {
     margin: 2px;
 }
 
-#VolumePlugin QToolButton:pressed {
-    padding: 4px;
-}
-
 VolumePopup {
     background:#3c3b37;
     padding: 4px;
@@ -528,6 +517,55 @@ VolumePopup  > QSlider::sub-page:vertical {
      border-radius: 3px;
  }
 
+/*
+ * Backlight
+ */
+
+#Backlight > SliderDialog > QToolButton {
+    color: #f2f1f0;
+    background: #363532;
+    padding: 2px 2px;
+    margin: 1px;
+    qproperty-iconSize: 24px;
+    border-radius: 2px;
+}
+
+#Backlight > SliderDialog > QToolButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+#Backlight > SliderDialog {
+    background: #3c3b37;
+    padding: 4px;
+}
+
+#Backlight > SliderDialog > QSlider {
+    min-width: 16px;
+    max-width: 16px;
+    margin-top: 4px;
+}
+
+#Backlight > SliderDialog > QSlider::groove:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    width: 5px;
+    border-radius: 3px;
+}
+
+#Backlight > SliderDialog > QSlider::handle:vertical {
+    height: 10px;
+    background: #C2C2C2;
+    border-radius: 2px;
+    margin: 0 -4px; /* expand outside the groove */
+}
+#Backlight > SliderDialog > QSlider::add-page:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    border: 1px solid #2D2D2D;
+    border-radius: 3px;
+}
+#Backlight > SliderDialog > QSlider::sub-page:vertical {
+    background: rgba(0, 0, 0, 80%);
+    border-radius: 3px;
+}
 /*
  * Spacer
  */
