@@ -103,6 +103,54 @@ VolumePopup  > QSlider::sub-page:vertical {
      border-radius: 3px;
  }
 
+/*
+ *Backlight Plugin
+ */
+
+#Backlight QToolButton {
+    color: #f2f1f0;
+    background: #363532;
+    padding: 2px;
+    margin: 1px;
+    qproperty-iconSize: 24px;
+}
+
+#Backlight QToolButton:pressed {
+    padding: 4px;
+}
+
+#Backlight QToolButton:hover {
+    border: 1px solid rgba(255, 255, 255, 10%);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 20%);
+}
+
+#Backlight > SliderDialog {
+    background: hsv(0, 0, 41);
+}
+
+#Backlight > SliderDialog > QSlider::groove:vertical {
+    background: hsv(0, 0, 41);
+    width: 5px;
+    border-radius: 3px;
+}
+
+#Backlight > SliderDialog > QSlider::handle:vertical {
+    height: 10px;
+    background: #DEDEDE;
+    border-radius: 4px;
+    margin: 0 -4px; /* expand outside the groove */
+}
+
+#Backlight > SliderDialog > QSlider::add-page:vertical {
+    background: qlineargradient(x1: 0, y1: 0,    x2: 0, y2: 1,
+    stop: 0 #787676, stop: 1 #ABABAB);
+    border: 1px solid rgba(0, 0, 0, 80%);
+}
+
+#Backlight > SliderDialog > QSlider::sub-page:vertical {
+    background: rgba(0, 0, 0, 80%);
+}
 
 /*
  * Desktopswitch
