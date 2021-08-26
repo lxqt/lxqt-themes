@@ -36,7 +36,6 @@ Search field
    border-radius:3px;
    color:#4b5053;
    border-radius:2px;
-   font:14px dejavu-sans;
    selection-background-color:grey;
 }
 
