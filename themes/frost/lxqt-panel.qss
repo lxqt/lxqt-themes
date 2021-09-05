@@ -349,6 +349,7 @@ TrayIcon {
 /*
  * Volume plugin
  */
+
 #VolumePlugin QToolButton{
     border: 0px;
     margin: 2px;
@@ -384,17 +385,17 @@ VolumePopup  > QPushButton:hover {
 }
 
 VolumePopup  > QSlider::groove:vertical {
-    background: hsv(0, 0, 9);
-    width: 8px;
+    background: palette(window);
+    width: 5px;
     border-radius: 3px;
 }
 
 VolumePopup  > QSlider::handle:vertical {
     height: 10px;
-    background: #C2C2C2;
+    background: palette(highlight);
     border-radius: 2px;
     margin: 0 -4px; /* expand outside the groove */
- }
+}
 
 VolumePopup  > QSlider::add-page:vertical {
     background: palette(highlight);
@@ -404,8 +405,65 @@ VolumePopup  > QSlider::add-page:vertical {
 }
 
 VolumePopup  > QSlider::sub-page:vertical {
-background: rgba(0, 0, 0, 80%);
-border-radius: 3px;
+    background: palette(window);
+    border: 1px solid palette(text);
+    border-radius: 3px;
+}
+
+/*
+ * Backlight
+ */
+
+#Backlight > SliderDialog > QToolButton {
+    color: palette(window);
+    background: palette(text);
+    padding: 2px 2px;
+    margin: 2px;
+    border: none;
+    qproperty-iconSize: 20px;
+}
+
+#Backlight > SliderDialog > QToolButton:hover {
+    background: palette(highlight);
+    color: palette(highlighted-text);
+}
+
+#Backlight > SliderDialog {
+    background: palette(text);
+    margin: 2px;
+    padding: 2px;
+}
+
+#Backlight > SliderDialog > QSlider {
+    background: palette(text);
+    margin: 2px;
+    padding: 2px;
+}
+
+#Backlight > SliderDialog > QSlider::groove:vertical {
+    background: palette(window);
+    width: 5px;
+    border-radius: 3px;
+}
+
+#Backlight > SliderDialog > QSlider::handle:vertical {
+    height: 10px;
+    background: palette(highlight);
+    border-radius: 2px;
+    margin: 0 -4px; /* expand outside the groove */
+}
+
+#Backlight > SliderDialog > QSlider::add-page:vertical {
+    background: palette(highlight);
+    border: 1px solid palette(text);
+    border-radius: 3px;
+    color: palette(highlighted-text);
+}
+
+#Backlight > SliderDialog > QSlider::sub-page:vertical {
+    background: palette(window);
+    border: 1px solid palette(text);
+    border-radius: 3px;
 }
 
  /*
