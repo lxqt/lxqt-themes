@@ -198,6 +198,9 @@ statusnotifier
 StatusNotifierButton {
    background: none;
 }
+#StatusNotifier QToolButton:hover {
+   color: #13d4ff;
+}
 
 /*
 Volume plugin
@@ -345,6 +348,10 @@ KbIndicator
    border-radius: 1px;
    color:#1b2b39;
    background: #1899da;
+}
+
+#KbIndicator QToolButton:hover {
+   color: white;
 }
 
 /*
@@ -520,4 +527,11 @@ Backlight Plugin
 #Backlight > SliderDialog > QSlider::sub-page:vertical {
    background: rgba(0, 0, 0, 80%);
    border-radius: 3px;
+}
+
+/*
+Cpu Load Plugin
+*/
+#LXQtCpuLoad {
+    qproperty-fontColor: white;
 }
