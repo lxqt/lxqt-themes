@@ -482,6 +482,10 @@ VolumePopup > QSlider::groove:vertical {
     width: 3px;
 }
 
+VolumePopup  > QSlider::sub-page:vertical {
+   background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
+}
+
 VolumePopup > QSlider::handle:vertical {
     border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
     background-color: transparent;
@@ -534,6 +538,10 @@ VolumePopup > QSlider::handle:vertical {
     width: 3px;
 }
 
+VolumePopup  > QSlider::sub-page:vertical {
+   background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
+}
+
 #Backlight > SliderDialog > QSlider::handle:vertical {
     border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
     background-color: transparent;
@@ -555,9 +563,9 @@ VolumePopup > QSlider::handle:vertical {
     background: transparent;
     color: #ffffff;
     border: 0px;
-    margin: 1px;
-    padding: 1px;
-    border-radius: 3px;
+    margin: 0px;
+    padding: 3px;
+    border-radius: 0px;
     border: none;
 }
 
@@ -582,11 +590,11 @@ VolumePopup > QSlider::handle:vertical {
 #KbIndicator #CapsLockLabel,
 #KbIndicator #NumLockLabel,
 #KbIndicator #ScrollLockLabel {
-    color: transparent;
+    color: #ffffff;
 }
 
 #KbIndicator > QLabel:enabled {
-    background: #a01217;
+    background: rgb(85, 162, 230, 40%);
     color: #ffffff;
 }
 
