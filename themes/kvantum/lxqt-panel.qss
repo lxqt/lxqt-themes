@@ -648,6 +648,134 @@ VolumePopup > QSlider::handle:vertical {
 }
 
 /*
+ * Calendar
+ */
+QCalendarWidget QAbstractItemView:enabled {
+    color: white;
+    background: #3c3c3c;
+    selection-background-color: #3a72a0;
+    selection-color: white;
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+    color: #969696;
+}
+
+QCalendarWidget QWidget {
+    alternate-background-color: #1e1e1e;
+}
+
+QCalendarWidget #qt_calendar_navigationbar {
+    background-color: #3c3c3c;
+    color: #f2f1f0;
+}
+
+QCalendarWidget #qt_calendar_nextmonth {
+    max-height:20px;
+    min-height:20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    qproperty-icon: url(/lxqt-panel/arrow-right.svg);
+    margin: 3px;
+    padding:3px
+}
+
+QCalendarWidget #qt_calendar_nextmonth:hover {
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+QCalendarWidget #qt_calendar_prevmonth {
+    max-height:20px;
+    min-height:20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    qproperty-icon: url(/lxqt-panel/arrow-left.svg);
+    margin: 3px;
+    padding:3px
+}
+
+QCalendarWidget #qt_calendar_prevmonth:hover {
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
+   image: none;
+}
+
+QCalendarWidget #qt_calendar_monthbutton,
+QCalendarWidget #qt_calendar_yearbutton {
+    margin: 3px 6px 3px 6px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+    background-color: transparent;
+}
+QCalendarWidget #qt_calendar_monthbutton:hover,
+QCalendarWidget #qt_calendar_yearbutton:hover {
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+QCalendarWidget QMenu { /* it was changed in "QCalendarWidget QWidget" */
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+}
+
+QCalendarWidget QSpinBox {
+    border: 1px solid #246cb4;
+    border-radius: 3px;
+    margin: 3px 6px 3px 6px;
+    padding: 0px 3px 0px 3px;
+    color: white;
+    background-color: #3c3c3c;
+    selection-background-color: #3a72a0;
+    selection-color: white;
+}
+
+QCalendarWidget QSpinBox::up-button {
+    padding-right: 1px;
+    padding-top: 1px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom-width: 0;
+    width: 11px;
+    subcontrol-origin: border;
+    subcontrol-position: right top;
+}
+
+QCalendarWidget QSpinBox::up-arrow {
+    image: url(/lxqt-panel/arrow-up.svg);
+    width: 8px;
+    height: 8px;
+}
+
+QCalendarWidget QSpinBox::up-arrow:hover,
+QCalendarWidget QSpinBox::up-arrow:pressed {
+    image: url(/lxqt-panel/arrow-up-selected.svg);
+}
+
+QCalendarWidget QSpinBox::down-button {
+    padding-right: 1px;
+    padding-top: 1px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-top-width: 0;
+    width: 11px;
+    subcontrol-origin: border;
+    subcontrol-position: right bottom;
+}
+
+QCalendarWidget QSpinBox::down-arrow {
+    image: url(/lxqt-panel/arrow-down.svg);
+    width: 8px;
+    height: 8px;
+}
+
+QCalendarWidget QSpinBox::down-arrow:hover,
+QCalendarWidget QSpinBox::down-arrow:pressed {
+    image: url(/lxqt-panel/arrow-down-selected.svg);
+}
+
+/*
  * Spacer
  */
 
