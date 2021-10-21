@@ -252,7 +252,6 @@ QMenu {
 
 QMenu::icon {
     background-color: transparent;
-    padding: 0px 6px 0px 6px;
 }
 
 QMenu QToolButton {
@@ -265,12 +264,14 @@ QMenu QToolButton {
 
 QMenu::separator {
     background-color: transparent;
+    height: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 QMenu::item {
     background: transparent;
     color: white;
-    padding: 6px 12px 6px 12px;
 }
 
 QMenu::item:selected {
@@ -287,7 +288,6 @@ QMenu::right-arrow {
     image: url(/lxqt-panel/arrow-right.svg);
     height: 10px;
     width: 10px;
-    padding: 0px 2px 0px 0px;
 }
 
 QMenu::right-arrow:selected {
@@ -298,7 +298,6 @@ QMenu::left-arrow {
     image: url(/lxqt-panel/arrow-left.svg);
     height: 10px;
     width: 10px;
-    padding: 0px 0px 0px 2px;
 }
 
 QMenu::left-arrow:selected {
@@ -308,7 +307,7 @@ QMenu::left-arrow:selected {
 QMenu::indicator {
     width: 14px;
     width: 14px;
-    padding-left: 6px;
+    background-color: transparent;
 }
 
 QMenu::indicator:non-exclusive:unchecked {
@@ -394,6 +393,13 @@ TrayIcon {
 #MainMenu QScrollBar::handle:vertical:hover {
     background-color: #2878c8;
     border: 1px solid #2878c8;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
 }
 
 /*
