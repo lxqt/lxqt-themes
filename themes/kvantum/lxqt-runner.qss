@@ -138,6 +138,7 @@ QMenu::indicator:exclusive:checked {
     margin: 1px;
     color: white;
     selection-background-color: #5a5a5a;
+    selection-color: white;
 }
 
 #commandEd:focus {
@@ -148,6 +149,7 @@ QMenu::indicator:exclusive:checked {
     border: none;
     background: black;
     color: white;
+    selection-color: white;
 }
 
 #commandList::item {
@@ -203,4 +205,3 @@ Dialog QScrollBar::sub-line:vertical {
     background: transparent;
     width: 0px;
 }
-

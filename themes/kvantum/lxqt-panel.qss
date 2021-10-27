@@ -228,6 +228,7 @@ QToolTip {
     margin: 1px;
     color: white;
     selection-background-color: #5a5a5a;
+    selection-color: white;
 }
 
 #MainMenu QLineEdit:focus,
@@ -352,6 +353,7 @@ TrayIcon {
     border: none;
     background: black;
     color: white;
+    selection-color: white;
 }
 
 #MainMenu ActionView::item {
