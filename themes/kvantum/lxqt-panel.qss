@@ -228,6 +228,7 @@ QToolTip {
     margin: 1px;
     color: white;
     selection-background-color: #5a5a5a;
+    selection-color: white;
 }
 
 #MainMenu QLineEdit:focus,
@@ -306,7 +307,7 @@ QMenu::left-arrow:selected {
 
 QMenu::indicator {
     width: 14px;
-    width: 14px;
+    height: 14px;
     background-color: transparent;
 }
 
@@ -352,6 +353,7 @@ TrayIcon {
     border: none;
     background: black;
     color: white;
+    selection-color: white;
 }
 
 #MainMenu ActionView::item {
@@ -371,22 +373,22 @@ TrayIcon {
 }
 
 #MainMenu ActionView::item:selected:hover {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.1 #0064c8, stop:0.99 #0050a0, stop:1 #001428);
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
     color: white;
 }
 
 #MainMenu QScrollBar:vertical {
     background-color: transparent;
-    width: 12px;
+    width: 14px;
     margin: 2px 2px 2px 2px;
     border: 1px solid transparent;
 }
 
 #MainMenu QScrollBar::handle:vertical {
     background-color: #787878;
-    border: 1px solid #787878;
-    min-height: 8px;
-    border-radius: 4px;
+    border: 0px solid #787878;
+    min-height: 40px;
+    border-radius: 3px;
     margin: 1px;
 }
 
@@ -395,8 +397,8 @@ TrayIcon {
     border: 1px solid #2878c8;
 }
 
-QScrollBar::add-line:vertical,
-QScrollBar::sub-line:vertical {
+#MainMenu QScrollBar::add-line:vertical,
+#MainMenu QScrollBar::sub-line:vertical {
     border: 0px solid transparent;
     background: transparent;
     width: 0px;
