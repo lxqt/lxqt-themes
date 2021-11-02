@@ -2,13 +2,9 @@ Dialog {
     background-color: transparent;
 }
 
-#commandList {
-    background-color: palette(window);
-}
-
 #panel {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(100, 100, 100, 80%), stop:0.11 rgba(80, 80, 80, 80%), stop:0.12 rgba(80, 80, 80, 80%), stop:1 rgba(0, 0, 0, 72%));
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 #closeButton,
@@ -41,4 +37,171 @@ Dialog {
 
 #actionButton::menu-indicator  {
     image: none;
+}
+
+QMenu {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgba(90, 90, 90, 50%);
+    border-bottom-color: rgba(20, 20, 20, 50%);
+    border-right-color: rgba(40, 40, 40, 50%);
+    border-left-color: rgba(70, 70, 70, 50%);
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+    border-radius: 3px;
+    color: white;
+}
+
+QMenu::icon {
+    background-color: transparent;
+}
+
+QMenu QToolButton {
+    background-color: #1e1e1e;
+    padding: 5px;
+    border: none;
+    color: white;
+    font: bold italic;
+}
+
+QMenu::separator {
+    background-color: transparent;
+    height: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+QMenu::item {
+    background: transparent;
+    color: white;
+}
+
+QMenu::item:selected {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
+    color: #4DA6FF;
+}
+
+QMenu::item:disabled {
+    color: rgba(255, 255, 255, 50%);
+    background-color: transparent;
+}
+
+QMenu::right-arrow {
+    image: url(/lxqt-panel/arrow-right.svg);
+    height: 10px;
+    width: 10px;
+}
+
+QMenu::right-arrow:selected {
+    image: url(/lxqt-panel/arrow-right-selected.svg);
+}
+
+QMenu::left-arrow {
+    image: url(/lxqt-panel/arrow-left.svg);
+    height: 10px;
+    width: 10px;
+}
+
+QMenu::left-arrow:selected {
+    image: url(/lxqt-panel/arrow-left-selected.svg);
+}
+
+QMenu::indicator {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(/lxqt-panel/unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(/lxqt-panel/checked.svg);
+}
+
+QMenu::indicator:exclusive:unchecked {
+    image: url(/lxqt-panel/radio-unchecked.svg);
+}
+
+QMenu::indicator:exclusive:checked {
+    image: url(/lxqt-panel/radio-checked.svg);
+}
+
+#commandEd {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
+    border: 1px solid #000000;
+    border-left-color: #0a0a0a;
+    border-bottom-color: #414141;
+    border-right-color: #3c3c3c;
+    border-radius: 2px;
+    padding: 3px 6px 3px 6px;
+    margin: 1px;
+    color: white;
+    selection-background-color: #5a5a5a;
+    selection-color: white;
+}
+
+#commandEd:focus {
+    border: 1px solid #246cb4;
+}
+
+#commandList {
+    border: none;
+    background: black;
+    color: white;
+    selection-color: white;
+}
+
+#commandList::item {
+    background: #2E2E2E;
+    color: white;
+    padding: 3px;
+}
+
+#commandList::item:alternate {
+    background: rgba(30, 30, 30, 100%);
+    color: white;
+    padding: 3px;
+}
+
+#commandList::item:selected {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
+    color: white;
+}
+
+#commandList::item:hover {
+    background: #3c3c3c;
+    color: #80C0FF;
+}
+
+#commandList::item:selected:hover {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
+    color: white;
+}
+
+Dialog QScrollBar:vertical {
+    background-color: transparent;
+    width: 14px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+Dialog QScrollBar::handle:vertical {
+    background-color: #787878;
+    border: 0px solid #787878;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+Dialog QScrollBar::handle:vertical:hover {
+    background-color: #2878c8;
+    border: 1px solid #2878c8;
+}
+
+Dialog QScrollBar::add-line:vertical,
+Dialog QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
 }

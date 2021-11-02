@@ -29,10 +29,17 @@ QToolButton::menu-indicator {
     qproperty-icon: url(lxqt-runner/application-menu.svg);
 }
 
+QLineEdit {
+    selection-background-color: #1e91ff;
+    selection-color: #eee;
+}
+
 #commandList {
     background:rgba(240, 240, 240, 100%);
     border: 1px solid rgba(155, 155, 155, 100%);
     margin: 0 1px 1px 1px;
+    selection-background-color: rgba(30, 145, 255, 50%);
+    selection-color: #313639;
 }
 
 QMenu {

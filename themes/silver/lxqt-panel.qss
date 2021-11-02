@@ -450,8 +450,8 @@ VolumePopup  > QSlider::sub-page:vertical {
    border-top: 2px solid transparent;
 }
 #DesktopSwitch QToolButton[urgent="true"] {
-   color: palette(highlighted-text);
-   background: palette(highlight);
+   color: black;
+   background: #e63109;
 }
 /*
  * KbIndicator

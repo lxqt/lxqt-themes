@@ -46,6 +46,8 @@ Search field
    color: #323232;
    background: #cbd7da#f3f8f9;
    border-radius: 2px;
+   selection-color: #d4d4d4;
+   selection-background-color: #414141;
 }
 
 /*
@@ -54,10 +56,11 @@ Search results list
 #commandList {
    border: 1px solid #1899da;
    border-top: none;
-   color: #e5e5e5;
+   color: #cfcfcf;
    background: #2e5371;
    alternate-background-color: #284762;
    selection-background-color: #1899da;
+   selection-color: #f3f3f3;
 }
 
 /*
