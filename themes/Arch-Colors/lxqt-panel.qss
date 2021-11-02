@@ -377,6 +377,11 @@ DesktopSwitch
    color:black;
 }
 
+#DesktopSwitch QToolButton[urgent="true"] {
+   color: #fff047;
+   border-bottom: 3px solid #fff047;
+}
+
 /*
 Quicklaunch
 */

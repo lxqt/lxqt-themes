@@ -1,6 +1,6 @@
 /* Panel */
 
-#panel 
+#panel
 {
 	background:	#000000;
 	border:		1px solid #5e5f68;
@@ -9,25 +9,25 @@
 
 /* Buttons */
 
-QToolButton::menu-indicator 
+QToolButton::menu-indicator
 {
 	image:		none;
 }
 
-#closeButton 
+#closeButton
 {
 	qproperty-icon:	url(lxqt-runner/close.svg);
 	margin:		2px;
 }
 
-#closeButton:hover 
+#closeButton:hover
 {
 	background:	#16162f;
 	border:		1px solid #5e5f68;
 	border-radius:	2px;
 }
 
-#closeButton:pressed 
+#closeButton:pressed
 {
 	background:	#16162f;
 	border:		1px solid #5e5f68;
@@ -35,20 +35,20 @@ QToolButton::menu-indicator
 	padding:	1px;
 }
 
-#actionButton 
+#actionButton
 {
 	qproperty-icon:	url(lxqt-runner/down-arrow.svg);
 	margin:		2px;
 }
 
-#actionButton:hover 
+#actionButton:hover
 {
 	background:	#16162f;
 	border:		1px solid #5e5f68;
 	border-radius:	2px;
 }
 
-#actionButton:pressed 
+#actionButton:pressed
 {
 	background:	#16162f;
 	border:		1px solid #5e5f68;
@@ -59,26 +59,29 @@ QToolButton::menu-indicator
 
 /* Command Box */
 
-QLineEdit 
+QLineEdit
 {
 	color:		#ffffff;
 	background:	#000000;
 	border:		1px solid #5e5f68;
 	border-radius:	2px;
 	padding:	6px;
+	selection-color: white;
+	selection-background-color: grey;
 }
 
 /*
  *Search results list
  */
 
-/* The list doesn't seem to be stylable completely; so, we left it to the widget style. */
 
 #commandList {
-    border: none;
-    /*background: rgba(0, 0, 0, 50%);
-    alternate-background-color: #3c3c3c;
-    color: white;*/
+	border: none;
+	background: rgba(0, 0, 0, 50%);
+	alternate-background-color: #3c3c3c;
+	color: #c6c6c6;
+	selection-color: white;
+	selection-background-color:#0f101f;
 }
 
 /*#commandList::item {

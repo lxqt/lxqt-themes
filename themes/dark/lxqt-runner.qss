@@ -49,6 +49,7 @@ QLineEdit {
     padding: 6px;
     margin-bottom: 1px;
     color: white;
+    selection-color: white;
     selection-background-color: #640b0c;
 }
 
@@ -56,23 +57,14 @@ QLineEdit {
  *Search results list
  */
 
-/* The list doesn't seem to be stylable completely; so, we left it to the widget style. */
-
 #commandList {
     border: none;
-    /*background: rgba(0, 0, 0, 50%);
+    background: rgba(0, 0, 0, 50%);
     alternate-background-color: #3c3c3c;
-    color: white;*/
+    color: #eeeeee;
+    selection-background-color: #640b0c;
+    selection-color: white;
 }
-
-/*#commandList::item {
-}
-
-#commandList::item:selected {
-}
-
-#commandList::item::hover {
-}*/
 
 /*
  * Menu
