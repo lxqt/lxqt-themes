@@ -37,8 +37,13 @@ QMenu
 	border:			1px solid #1a1a1a;
 	padding:		1px;
 }
+
 QMenu QToolButton {
-	color:			#1a1a1a;
+	background-color: #80a0d0;
+	color: white;
+	/* padding and border guarantee that it won't be drawn by widget style */
+	padding: 3px;
+	border: none;
 	font: bold;
 }
 
@@ -78,8 +83,34 @@ QMenu::item:selected
 	border-radius:		3px;
 	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
 	color:			#ffffff;
-	margin-left:		1px;
 	padding-left:		7px;
+}
+
+QMenu::item:disabled {
+    color: rgba(0, 0, 0, 50%);
+    background-color: transparent;
+}
+
+QMenu::indicator {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(/unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:unchecked:selected {
+    image: url(/unchecked-selected.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(/checked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked:selected {
+    image: url(/checked-selected.svg);
 }
 
 /* Taskbar */
@@ -217,6 +248,8 @@ QMenu::item:selected
 	border:			1px solid #909090;
 	border-radius:		3px;
 	padding:		2px;
+	selection-background-color: #80a0d0;
+	selection-color: white;
 }
 
 #MainMenu QMenu::icon
@@ -304,3 +337,59 @@ QMenu::item:selected
 
 	color:			#1a1a1a;
 }
+
+/*
+ * KbIndicator
+ */
+#KbIndicator {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#KbIndicator > QLabel {
+    background: transparent;
+    color: black;
+    border: 0px;
+    margin: 0px;
+    padding: 3px;
+    border-radius: 0px;
+    border: none;
+}
+
+#KbIndicator > QToolButton {
+    background: transparent;
+    color: black;
+    border: 0px;
+    margin: 0px;
+    padding: 1px;
+    border-radius: 0px;
+    border: none;
+}
+
+#KbIndicator > QToolButton:hover {
+    background: transparent;
+}
+
+#KbIndicator > QToolButton:pressed {
+    background: transparent;
+}
+
+#KbIndicator #CapsLockLabel,
+#KbIndicator #NumLockLabel,
+#KbIndicator #ScrollLockLabel {
+    color: black;
+}
+
+#KbIndicator > QLabel:enabled {
+    background: #80a0d0;
+    color: white;
+}
+
+#KbIndicator #CapsLockLabel:enabled,
+#KbIndicator #NumLockLabel:enabled,
+#KbIndicator #ScrollLockLabel:enabled {
+    color: #ffffff;
+    font: bold;
+}
+
