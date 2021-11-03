@@ -187,6 +187,7 @@ QMenu::indicator {
     width: 14px;
     height: 14px;
     background-color: transparent;
+    padding-left: 2px;
 }
 
 QMenu::indicator:non-exclusive:unchecked {
@@ -359,4 +360,58 @@ QMenu::item:disabled
 #KbIndicator #ScrollLockLabel:enabled {
     color: #ffffff;
     font: bold;
+}
+
+/*
+DesktopSwitch
+*/
+#DesktopSwitch QToolButton {
+	margin-left:		1px;
+	margin-right:		1px;
+	margin-top:		2px;
+	margin-bottom:		1px;
+
+	padding:		1px;
+
+	background-color:	#000000;
+	border:			1px solid #555555;
+	border-radius:		2px;
+	color:			#ffffff;
+}
+
+#DesktopSwitch QToolButton:hover {
+	background-color:	#16162f;
+	color:			#ffffff;
+	border:			1px solid #636372;
+	border-radius:		2px;
+
+}
+
+#DesktopSwitch QToolButton:on {
+	background-color:	#0f101f;
+	color:			#ffffff;
+	border:			1px solid #5e5f68;
+	border-radius:		2px;
+}
+
+#DesktopSwitch QToolButton:on:hover {
+	background-color:	#16162f;
+	color:			#ffffff;
+	border:			1px solid #636372;
+	border-radius:		2px;
+}
+
+
+#Desktopswitch QToolButton:pressed {
+	background-color:	#0f101f;
+	color:			#ffffff;
+	border:			1px solid #5e5f68;
+	border-radius:		2px;
+}
+
+#DesktopSwitch QToolButton[urgent="true"] {
+	background-color:	#555555;
+	color:			#ffffff;
+	border:			1px solid #969696;
+	border-radius:		2px;
 }
