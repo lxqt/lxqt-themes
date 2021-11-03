@@ -95,6 +95,7 @@ QMenu::indicator {
     width: 14px;
     height: 14px;
     background-color: transparent;
+    padding-left: 3px;
 }
 
 QMenu::indicator:non-exclusive:unchecked {
