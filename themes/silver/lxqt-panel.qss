@@ -76,10 +76,6 @@ QMenu::item:selected {
    color:black;
 }
 
-QMenu::item:selected:disabled {
-   background-color: palette(text);
-}
-
 QMenu::item:disabled {
    color: #6D6D6D;
 }
@@ -170,28 +166,64 @@ QCalendarWidget #qt_calendar_prevmonth {
    padding-top: 1px;
 }
 #MainMenu QLineEdit {
-   border: none;
-   margin: 10px;
+   border: 1px solid grey;
+   margin: 5px;
    padding: 2px 7px 2px 2px;
    border-radius: 3px;
+   background:#ececec;
+   color: #393939;
+
 }
 #MainMenu ActionView {
    border: none;
-   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf,80%);
-   margin-right:5px;
-   margin-top:5px;
+   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
+   margin-right: 5px;
+   margin-top: 5px;
 }
 #MainMenu ActionView::item {
    border: 1px solid transparent;
    padding: 2px;
-   color:black;
+   color: #282828;
 }
 #MainMenu ActionView::item:selected {
-    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
    stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
    stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
    stop: 0.96 #989898, stop: 1 #dcdcdc);
    color:black;
+}
+#MainMenu ActionView::item:hover {
+   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+   stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
+   stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
+   stop: 0.96 #d1d1d1, stop: 1#ececec);
+   color:black;
+}
+
+#MainMenu QScrollBar:vertical {
+    background-color: #898f8d;
+    width: 10px;
+    border: 1px solid transparent;
+}
+
+#MainMenu QScrollBar::handle:vertical {
+    background-color: #787878;
+    border: 0px solid #787878;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#MainMenu QScrollBar::handle:vertical:hover {
+    background-color: #616e7e;
+    border: 1px solid #616e7e;
+}
+
+#MainMenu QScrollBar::add-line:vertical,
+#MainMenu QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
 }
 /*
  * QuickLaunch
