@@ -29,6 +29,14 @@ QMenu::icon {
     border-right-width: 0px;
 }
 
+QMenu QToolButton {
+    background-color: #463113;
+    padding: 3px;
+    border: none;
+    color: white;
+    font: bold;
+}
+
 QMenu::right-arrow {
     image: url(arrow-right.svg);
     border: 5px solid transparent;
@@ -56,6 +64,20 @@ QMenu::item:disabled {
    color:#b1b1b1;
 }
 
+QMenu::indicator {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 6px solid transparent;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(checked.svg);
+}
 
 /*
  * General plugins settings
@@ -262,7 +284,18 @@ QCalendarWidget QWidget {
 }
 
 #MainMenu ActionView::item {
-    padding: 2px 0;
+    padding: 2px;
+    border: none;
+}
+
+#MainMenu ActionView::item:hover {
+    background: rgba(248, 134, 87, 20%);
+    color: #f2f1f0;
+}
+
+#MainMenu ActionView::item:selected {
+    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    color: #f2f1f0;
 }
 
 #MainMenu QLineEdit {
@@ -271,6 +304,8 @@ QCalendarWidget QWidget {
     color: #f2f1f0;
     margin-bottom: 1px;
     padding: 3px;
+    selection-background-color: #eb7140;
+    selection-color: #f2f1f0;
 }
 
 #MainMenu QScrollBar::handle {
@@ -351,7 +386,7 @@ QCalendarWidget QWidget {
 }
 
 #DesktopSwitch QToolButton[urgent="true"] {
-    color: #b12113;
+    color: #ff5555;
     background: transparent;;
 }
 

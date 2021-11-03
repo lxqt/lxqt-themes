@@ -8,7 +8,9 @@
     padding: 2px;
 }
 
-
+/*
+ * Menu
+ */
 
 QMenu {
     background-color: #3c3b37;
@@ -41,6 +43,10 @@ QMenu::item:selected {
     background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
+QMenu::item:disabled {
+   color:#b1b1b1;
+}
+
 /*
  * Buttons
  */
@@ -68,24 +74,49 @@ QToolButton::menu-indicator {
     qproperty-icon: url(lxqt-runner/navigation-menu.svg);
 }
 
+/*
+ * Line-edit
+ */
+
 #commandEd {
-    border: 1px solid #2b2b29;
+    border: none;
     padding: 0px;
     margin: 0px;
-    background: #ececec;
-    color: #2b2b29;
-    selection-background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
-    selection-color: white;
+    background: #3c3b37;
+    color: #f2f1f0;
+    selection-background-color: #eb7140;
+    selection-color: #f2f1f0;
 }
 
+/*
+ * List
+ */
+
 #commandList {
-   border: 1px solid #878a8a;
-   color: #b4b4b4;
+   border: none;
+   color: #f2f1f0;
+   background: #3c3b37;
+   alternate-background-color:	#464540;
    selection-color: #f2f1f0;
    selection-background-color:#eb7140;
 }
 
 #commandList::item {
-    margin: 2px;
-    padding: 2px;
+    background: #3c3b37;
+    color: #f2f1f0;
+}
+
+#commandList::item:alternate {
+    background: #4b4a45;
+    color: #f2f1f0;
+}
+
+#commandList::item:hover {
+    background: rgba(248, 134, 87, 20%);
+    color: #f2f1f0;
+}
+
+#commandList::item:selected {
+    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    color: #f2f1f0;
 }
