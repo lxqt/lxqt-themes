@@ -156,6 +156,14 @@ QMenu
 	padding:		4px;
 }
 
+QMenu QToolButton {
+    background-color: #16162f;
+    padding: 3px;
+    border: none;
+    color: white;
+    font: bold;
+}
+
 QMenu::item
 {
 	border:				1px solid transparent;
@@ -174,6 +182,21 @@ QMenu::item:selected
 	background-color:	#16162f;
 	color:				#ffffff;
 }
+
+QMenu::indicator {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(checked.svg);
+}
+
 QMenu::item:disabled
 {
 	color:			#9e9e9e
@@ -281,4 +304,59 @@ QMenu::item:disabled
 	padding:		2px;
 
 	color:			#ffffff;
+}
+
+/*
+ * KbIndicator
+ */
+#KbIndicator {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#KbIndicator > QLabel {
+    background: transparent;
+    color: #ffffff;
+    border: 0px;
+    margin: 0px;
+    padding: 3px;
+    border-radius: 0px;
+    border: none;
+}
+
+#KbIndicator > QToolButton {
+    background: transparent;
+    color: #ffffff;
+    border: 0px;
+    margin: 0px;
+    padding: 1px;
+    border-radius: 0px;
+    border: none;
+}
+
+#KbIndicator > QToolButton:hover {
+    background: transparent;
+}
+
+#KbIndicator > QToolButton:pressed {
+    background: transparent;
+}
+
+#KbIndicator #CapsLockLabel,
+#KbIndicator #NumLockLabel,
+#KbIndicator #ScrollLockLabel {
+    color: #ffffff;
+}
+
+#KbIndicator > QLabel:enabled {
+    background: #383878;
+    color: #ffffff;
+}
+
+#KbIndicator #CapsLockLabel:enabled,
+#KbIndicator #NumLockLabel:enabled,
+#KbIndicator #ScrollLockLabel:enabled {
+    color: #ffffff;
+    font: bold;
 }
