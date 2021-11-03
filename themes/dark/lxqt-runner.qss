@@ -42,7 +42,7 @@ QToolButton::menu-indicator {
  *Search line-edit
  */
 
-QLineEdit {
+#commandEd {
     background: black;
     border: 2px solid black;
     border-radius: 3px;
@@ -59,11 +59,31 @@ QLineEdit {
 
 #commandList {
     border: none;
-    background: rgba(0, 0, 0, 50%);
-    alternate-background-color: #3c3c3c;
-    color: #eeeeee;
-    selection-background-color: #640b0c;
+    background: black;
+    alternate-background-color: #1e1e1e;
+    color: white;
+    selection-background-color: #eb7140;
     selection-color: white;
+}
+
+#commandList::item {
+    background: black;
+    color: white;
+}
+
+#commandList::item:alternate {
+    background: #1e1e1e;
+    color: white;
+}
+
+#commandList::item:hover {
+    background: #500709;
+    color: white;
+}
+
+#commandList::item:selected {
+    background: #640b0c;
+    color: white;
 }
 
 /*
