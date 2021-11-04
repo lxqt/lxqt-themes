@@ -94,6 +94,10 @@ QMenu QToolButton {
    border-top:1px solid #888888;
    font: bold ;
 }
+QMenu::indicator:non-exclusive:checked {
+    image: url(checked.svg);
+    padding-left: 5px;
+}
 QMenu::indicator:non-exclusive:unchecked {
    image: url(unchecked.svg);
    padding-left: 5px;

@@ -96,7 +96,16 @@ QToolButton::menu-indicator
 }
 
 #commandList::item:hover {
-    background: #3c3c3c;
+	border:				1px solid #727283;
+	border-radius:		3px;
+	background-color:	#101022;
+    color: #80C0FF;
+}
+
+#commandList::item:selected:hover {
+	border:				1px solid #727283;
+	border-radius:		3px;
+	background-color:	#1d1d3e;
     color: #80C0FF;
 }
 

@@ -46,11 +46,19 @@ LXQtPanelPlugin > QToolButton
 
 #TaskBar QToolButton:on
 {
-	background-color:	#0f101f;
+	background-color:	#24274b;
 	color:			#ffffff;
 	border:			1px solid #5e5f68;
 	border-radius:		2px;
 }
+
+#TaskBar QToolButton:on:hover {
+	background-color:	#292c55;
+	color:			#ffffff;
+	border:			1px solid #5e5f68;
+	border-radius:		2px;
+}
+
 
 #TaskBar QToolButton:hover
 {
@@ -416,14 +424,14 @@ DesktopSwitch
 }
 
 #DesktopSwitch QToolButton:on {
-	background-color:	#0f101f;
+	background-color:	#24274b;
 	color:			#ffffff;
 	border:			1px solid #5e5f68;
 	border-radius:		2px;
 }
 
 #DesktopSwitch QToolButton:on:hover {
-	background-color:	#16162f;
+	background-color:	#292c55;
 	color:			#ffffff;
 	border:			1px solid #636372;
 	border-radius:		2px;
