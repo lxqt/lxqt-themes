@@ -53,6 +53,10 @@ QMenu QToolButton {
     background-color: transparent;
     color: black;
     font: bold;
+	/* padding and border guarantee that it won't be drawn by widget style */
+	padding: 1px;
+	border: none;
+	font: bold;
 }
 
 QMenu::item {
@@ -77,6 +81,20 @@ QMenu::right-arrow {
     image: url(right-arrow.svg);
 }
 
+QMenu::indicator {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+    image: url(/unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+    image: url(checked.svg);
+}
+
 /*
  * Main menu
  */
@@ -94,19 +112,38 @@ QMenu::right-arrow {
 }
 
 #MainMenu QLineEdit {
-    background: palette(window);
-    border: none;
-    padding: 6px;
-    margin-bottom: 1px;
+    color: #000000;
+    background: #f0f0f0;
+    border: 1px solid #9b9b9b;
+    border-radius: 0px;
+    padding: 3px;
+    selection-color: #eee;;
+    selection-background-color:#1e91ff;
+}
+
+#MainMenu QLineEdit:focus {
+    border: 1px solid #1e91ff;
 }
 
 #MainMenu ActionView {
-    background: palette(window);
-    border: none;
+    background: #f0f0f0;
+    border: 1px solid #9b9b9b;
+    color: #313639;
 }
 
 #MainMenu ActionView::item {
-    padding: 3px 0;
+    border: 1px solid transparent;
+    color: #313639;
+}
+
+#MainMenu ActionView::item:hover {
+    background: rgba(30, 145, 255, 10%);
+    color: #313639;
+}
+
+#MainMenu ActionView::item:selected {
+    background: rgba(30, 145, 255, 50%);
+    color: #313639;
 }
 
 /*
