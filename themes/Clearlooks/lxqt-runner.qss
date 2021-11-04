@@ -1,6 +1,6 @@
 /* Panel */
 
-#panel 
+#panel
 {
 	background:	#edeceb;
 	border:		1px solid #1a1a1a;
@@ -9,25 +9,25 @@
 
 /* Buttons */
 
-QToolButton::menu-indicator 
+QToolButton::menu-indicator
 {
 	image:		none;
 }
 
-#closeButton 
+#closeButton
 {
 	qproperty-icon:	url(lxqt-runner/close.svg);
 	margin:		2px;
 }
 
-#closeButton:hover 
+#closeButton:hover
 {
 	background:	#ffffff;
 	border:		1px solid #1a1a1a;
 	border-radius:	3px;
 }
 
-#closeButton:pressed 
+#closeButton:pressed
 {
 	background:	#ffffff;
 	border:		1px solid #909090;
@@ -35,20 +35,20 @@ QToolButton::menu-indicator
 	padding:	3px;
 }
 
-#actionButton 
+#actionButton
 {
 	qproperty-icon:	url(lxqt-runner/down-arrow.svg);
 	margin:		2px;
 }
 
-#actionButton:hover 
+#actionButton:hover
 {
 	background:	#ffffff;
 	border:		1px solid #909090;
 	border-radius:	3px;
 }
 
-#actionButton:pressed 
+#actionButton:pressed
 {
 	background:	#ffffff;
 	border:		1px solid #909090;
@@ -59,53 +59,88 @@ QToolButton::menu-indicator
 
 /* Command Box */
 
-QLineEdit 
+#commandEd
 {
-	color:		#1a1a1a;
-	background:	#ffffff;
+	color:				#1a1a1a;
+	background:			#ffffff;
+	selection-color:	#ffffff;
+	selection-background-color:#80a0d0;
 	border:		1px solid #909090;
-	border-radius:	3px;
-	padding:	6px;
+	border-radius:		3px;
+	padding:			6px;
 }
 
 /*
  *Search results list
  */
 
-/* The list doesn't seem to be stylable completely; so, we left it to the widget style. */
-
 #commandList {
-    border: none;
-    /*background: rgba(0, 0, 0, 50%);
-    alternate-background-color: #3c3c3c;
-    color: white;*/
+	border:				none;
+	background-color:			#f4f4f4;
+	alternate-background-color:	#e5e5e5;
+	color:				#6b6b6b;
+	selection-color:	#ffffff;;
+	selection-background-color:	#80a0d0;
 }
 
-/*#commandList::item {
+#commandList::item {
+    background: #f4f4f4;
+    color: #6b6b6b;
+}
+
+#commandList::item:alternate {
+    background: #e5e5e5;
+    color: #6b6b6b;
+}
+
+#commandList::item:hover {
+    background: rgba(160, 192, 224, 30%);
+    color: #6b6b6b;
 }
 
 #commandList::item:selected {
+	border: 1px solid #5070a0;
+	border-radius: 3px;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+    color: white;
 }
 
-#commandList::item::hover {
-}*/
-
-/* Menu */
+/* Menus */
 
 QMenu
 {
-	border:			1px solid #909090;
-	background:		#edeceb;
+	background:		#ffffff;
+	color:			#1a1a1a;
+	border:			1px solid #1a1a1a;
 	padding:		1px;
+}
+
+QMenu::icon
+{
+	padding-right:		3px;
+}
+
+QMenu::icon:selected
+{
+	padding-right:		2px;
+}
+
+QMenu::right-arrow
+{
+	image: url(arrow-right.svg);
+}
+
+QMenu::right-arrow:selected
+{
+	image: url(arrow-right-selected.svg);
 }
 
 QMenu::item
 {
 	border:			1px solid transparent;
 	border-radius:		3px;
-
 	padding-left:		8px;
-	padding-right:		6px;
+	padding-right:		20px;
 	padding-top:		2px;
 	padding-bottom:		2px;
 }
@@ -114,9 +149,12 @@ QMenu::item:selected
 {
 	border:			1px solid #5070a0;
 	border-radius:		3px;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:0, stop:0 #a0c0e0, stop:1 #80a0d0);
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
 	color:			#ffffff;
+	padding-left:		7px;
+}
 
-
-	margin-left:		0px;
+QMenu::item:disabled {
+    color: rgba(0, 0, 0, 50%);
+    background-color: transparent;
 }

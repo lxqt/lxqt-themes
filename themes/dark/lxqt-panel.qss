@@ -440,13 +440,13 @@ QMenu::indicator:non-exclusive:checked {
     padding: 4px 3px 4px 10px;
 }
 
-#MainMenu ActionView::item:selected {
-    background: #640b0c;
+#MainMenu ActionView::item:hover {
+    background: #500709;
     color: white;
 }
 
-#MainMenu ActionView::item:hover {
-    background: #500709;
+#MainMenu ActionView::item:selected {
+    background: #640b0c;
     color: white;
 }
 

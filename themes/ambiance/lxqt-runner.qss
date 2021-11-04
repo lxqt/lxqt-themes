@@ -9,6 +9,45 @@
 }
 
 /*
+ * Menu
+ */
+
+QMenu {
+    background-color: #3c3b37;
+    border: 1px solid #515048;
+}
+
+QMenu::icon {
+    background-color: transparent;
+    border: 10px solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+
+QMenu::right-arrow {
+    image: url(arrow-right.svg);
+    border: 5px solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+QMenu::item {
+    color: #f2f1f0;
+    padding: 7px 40px 7px 24px;
+}
+
+QMenu::item:selected {
+    color: #f2f1f0;
+    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+QMenu::item:disabled {
+   color:#b1b1b1;
+}
+
+/*
  * Buttons
  */
 
@@ -21,7 +60,6 @@ QToolButton {
 
 QToolButton:hover {
     padding: 2px;
-
 }
 
 QToolButton::menu-indicator {
@@ -36,21 +74,49 @@ QToolButton::menu-indicator {
     qproperty-icon: url(lxqt-runner/navigation-menu.svg);
 }
 
+/*
+ * Line-edit
+ */
+
 #commandEd {
-    border: 1px solid #2b2b29;
+    border: none;
     padding: 0px;
     margin: 0px;
-    background: white;
-    color: #2b2b29;
-    selection-background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
-    selection-color: white;
+    background: #3c3b37;
+    color: #f2f1f0;
+    selection-background-color: #eb7140;
+    selection-color: #f2f1f0;
 }
 
+/*
+ * List
+ */
+
 #commandList {
-    border: 1px solid #2b2b29;
+   border: none;
+   color: #f2f1f0;
+   background: #3c3b37;
+   alternate-background-color:	#464540;
+   selection-color: #f2f1f0;
+   selection-background-color:#eb7140;
 }
 
 #commandList::item {
-    margin: 2px;
-    padding: 2px;
+    background: #3c3b37;
+    color: #f2f1f0;
+}
+
+#commandList::item:alternate {
+    background: #4b4a45;
+    color: #f2f1f0;
+}
+
+#commandList::item:hover {
+    background: rgba(248, 134, 87, 20%);
+    color: #f2f1f0;
+}
+
+#commandList::item:selected {
+    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    color: #f2f1f0;
 }

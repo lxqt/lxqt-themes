@@ -44,8 +44,10 @@ Search field
    padding: 4px;
    margin: 5px;
    color: #323232;
-   background: #cbd7da#f3f8f9;
+   background: #f3f8f9;
    border-radius: 2px;
+   selection-color: #d4d4d4;
+   selection-background-color: #414141;
 }
 
 /*
@@ -54,10 +56,31 @@ Search results list
 #commandList {
    border: 1px solid #1899da;
    border-top: none;
-   color: #e5e5e5;
-   background: #2e5371;
-   alternate-background-color: #284762;
+   color: #cfcfcf;
+   background: #041b27;
+   alternate-background-color: #062a3c;
    selection-background-color: #1899da;
+   selection-color: #f3f3f3;
+}
+
+#commandList::item {
+    background: #041b27;
+    color: #cfcfcf;
+}
+
+#commandList::item:alternate {
+    background: #062a3c;
+    color: #cfcfcf;
+}
+
+#commandList::item:hover {
+   background: #003d5b;
+   color: #d7e3e6;
+}
+
+#commandList::item:selected {
+   background: #1899da;
+   color: white
 }
 
 /*
@@ -83,4 +106,14 @@ QMenu::icon {
 QMenu::item:selected {
    background: #1899da;
    color:#d7e3e6;
+}
+
+QMenu::item:disabled {
+    color: rgba(215, 227, 230, 50%);
+}
+
+QMenu::separator {
+   height: 1px;
+   background: #1899da;
+   margin: 0;
 }

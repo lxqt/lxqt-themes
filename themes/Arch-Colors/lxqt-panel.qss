@@ -68,6 +68,14 @@ QMenu {
    border-radius:3px;
 }
 
+QMenu QToolButton {
+    background-color: #003a55;
+    padding: 5px;
+    border: none;
+    color: #53bcec;
+    font: bold italic;
+}
+
 QMenu::item {
    color: #d7e3e6;
    background: #041b27;
@@ -148,12 +156,17 @@ Mainmenu search field & results
 }
 
 #MainMenu ActionView::item:hover {
-   background: #1899da;
+   background: #003d5b;
    color: #d7e3e6;
 }
 
 #MainMenu ActionView::item:pressed {
    text-decoration:none;
+}
+
+#MainMenu ActionView::item:selected {
+   background: #1899da;
+   color: white
 }
 
 /*
@@ -375,6 +388,11 @@ DesktopSwitch
 
 #DesktopSwitch QToolButton:on:hover {
    color:black;
+}
+
+#DesktopSwitch QToolButton[urgent="true"] {
+   color: #fff047;
+   border-bottom: 3px solid #fff047;
 }
 
 /*
