@@ -170,12 +170,12 @@ QCalendarWidget #qt_calendar_prevmonth {
    padding-top: 1px;
 }
 #MainMenu QLineEdit {
-   border: 1px solid grey;
-   margin: 5px;
-   padding: 2px 7px 2px 2px;
-   border-radius: 3px;
-   background:#ececec;
-   color: #393939;
+   border: 1px solid #b0b0b0;
+   border-radius:2px;
+   margin: 2px;
+   padding: 1px;
+   background: #d1d8d8;
+   color: #363737;
 
 }
 #MainMenu ActionView {
