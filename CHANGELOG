@@ -1,3 +1,13 @@
+lxqt-themes-1.0.0 / 2021-11-04
+===============================
+ * Updated AUTHORS.
+ * Added silver theme.
+ * Added arch-colors theme.
+ * Added backlight-plugin style to some themes.
+ * Removed non-lxqt components.
+ * Fixed selection colors in most themes.
+ * Many fixes to all themes.
+
 lxqt-themes-0.17.0 / 2021-04-15
 ===============================
   * Added alternate background color to the calendar widget in some themes.
