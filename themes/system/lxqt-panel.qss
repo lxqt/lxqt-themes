@@ -27,6 +27,18 @@ LXQtPanel #BackgroundWidget{
 }
 
 /*
+KbIndicator
+ */
+
+#KbIndicator QLabel:disabled {
+    color: palette(text);
+}
+#KbIndicator QLabel:enabled {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
+/*
  * Spacer
  */
 
