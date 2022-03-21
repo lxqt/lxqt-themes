@@ -60,7 +60,7 @@ Search results list
    background: #041b27;
    alternate-background-color: #062a3c;
    selection-background-color: #1899da;
-   selection-color: #f3f3f3;
+   selection-color: #0a0a2b;
 }
 
 #commandList::item {
@@ -105,7 +105,7 @@ QMenu::icon {
 
 QMenu::item:selected {
    background: #1899da;
-   color:#d7e3e6;
+   color:#0a0a2b;
 }
 
 QMenu::item:disabled {
