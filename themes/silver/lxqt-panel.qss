@@ -574,24 +574,3 @@ VolumePopup  > QSlider::sub-page:vertical {
    margin-right: 2px;
    margin-left: 2px;
 }
-/*
- * Color Picker
- */
-#ColorPickerPlugin QToolButton{
-   qproperty-icon: url(color-picker.svg);
-   margin: 0px;
-   padding: 2px;
-}
-#ColorPickerPlugin QToolButton:hover {
-   padding:3px;
-   border: 1px solid #939393;
-   border-radius:3px;
-}
-#ColorPickerPlugin QLineEdit {
-   border: 1px solid black;
-   border-radius:2px;
-   margin: 2px;
-   padding: 1px;
-   background: #bdc3c3;
-   color: #363737;
-}

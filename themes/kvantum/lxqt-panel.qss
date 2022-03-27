@@ -216,8 +216,7 @@ QToolTip {
 /*
  * Line-edit
  */
-#MainMenu QLineEdit,
-#ColorPicker QLineEdit {
+#MainMenu QLineEdit {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
     border: 1px solid #000000;
     border-left-color: #0a0a0a;
@@ -231,8 +230,7 @@ QToolTip {
     selection-color: white;
 }
 
-#MainMenu QLineEdit:focus,
-#ColorPicker QLineEdit:focus {
+#MainMenu QLineEdit:focus {
     border: 1px solid #246cb4;
 }
 
