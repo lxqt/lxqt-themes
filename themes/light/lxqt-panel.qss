@@ -61,7 +61,7 @@ LXQtPanel[position="Left"] Plugin[NeedsHandle="true"] {
     padding: 5px 0 0 0;
 }
 
-Plugin > QToolButton, 
+Plugin > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 Plugin > QWidget > QToolButton {
     margin: 0;
@@ -137,6 +137,7 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 
 #QuickLaunchPlaceHolder {
     color: #555555;
+    padding: 0 5px;
 }
 
 /*

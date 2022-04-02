@@ -333,6 +333,7 @@ QCalendarWidget QWidget {
 
 #QuickLaunchPlaceHolder {
     color: #eb7140;
+    padding:0 5px;
 }
 
 /*

@@ -179,7 +179,8 @@ QMenu::indicator:non-exclusive:checked {
  * QuickLaunch
  */
 #QuickLaunchPlaceHolder {
-    color: rgba(30, 145, 255, 50%);
+    color: #1e91ff;
+    padding: 0 5px;
 }
 
 #QuickLaunch QToolButton{

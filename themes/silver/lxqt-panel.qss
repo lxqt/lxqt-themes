@@ -234,7 +234,8 @@ QCalendarWidget #qt_calendar_prevmonth {
  */
 #QuickLaunchPlaceHolder {
    color: #e4ebec;
-   margin:5px;
+   background-color:qlineargradient(x1:1, y1:1, x2:0, y2:1, stop:0 #2e2f2f, stop:1 #4b4c4c);
+   padding: 0 5px;
 }
 #QuickLaunch QToolButton{
    border: 0px;

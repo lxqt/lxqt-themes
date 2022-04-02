@@ -131,7 +131,8 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 }
 
 #QuickLaunchPlaceHolder {
-    color: #555555;
+    color: #bababa;
+    padding: 0 5px;
 }
 
 /*
