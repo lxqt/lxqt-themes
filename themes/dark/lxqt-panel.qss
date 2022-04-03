@@ -188,6 +188,7 @@ VolumePopup  > QSlider::sub-page:vertical {
  */
 #QuickLaunchPlaceHolder {
     color: #AAAAAA;
+    padding: 0 5px;
 }
 
 #QuickLaunch QToolButton{

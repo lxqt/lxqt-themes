@@ -232,6 +232,7 @@ QCalendarWidget QSpinBox {
 #QuickLaunchPlaceHolder {
     color: palette(window);
     background: palette(text);
+    padding: 0 5px;
 }
 
 #QuickLaunch QToolButton{
