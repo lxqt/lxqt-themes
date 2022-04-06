@@ -270,6 +270,8 @@ QMenu::separator {
 }
 
 QMenu::item {
+    border: 7px solid transparent;
+    padding: 0px 20px 0px 20px;
     background: transparent;
     color: white;
 }
