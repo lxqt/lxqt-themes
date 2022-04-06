@@ -1,0 +1,49 @@
+/*
+ * Popup
+ */
+
+Notification {
+   background-color:rgba(5, 0, 0, 70%);
+   color: #cbcbcb;
+   border: 1px solid black;
+   border-radius:5px;
+   padding: 1px;
+}
+
+QLabel {
+   color: white;
+}
+
+QToolButton {
+   margin: 1px;
+   border: 0px solid transparent;
+   padding: 0px;
+   font-size: 9pt;
+   color: hsv(0, 0, 64);
+}
+
+QToolButton:focus {
+   border: 0px solid hsv(0, 0, 160);
+}
+
+QToolButton:hover {
+   border: 0px solid hsv(0, 0, 240);
+   padding: 2px;
+}
+
+QToolButton:focus:hover {
+   border: 1px dashed hsv(0, 0, 255);
+}
+
+QToolButton:pressed {
+   background: hsv(0, 0, 160);
+}
+
+#appLabel {
+   color: #e6e6e6;
+}
+
+#closeButton {
+   qproperty-icon: url(lxqt-runner/close.svg);
+   qproperty-iconSize: 18px;
+}
