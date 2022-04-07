@@ -85,6 +85,28 @@ QMenu::separator {
    margin:0px;
    height:1px
 }
+
+
+QMenu::right-arrow
+{
+	image: url(arrow-right.svg);
+}
+
+QMenu::right-arrow:selected
+{
+	image: url(arrow-right-selected.svg);
+}
+
+QMenu::left-arrow
+{
+	image: url(arrow-left.svg);
+}
+
+QMenu::left-arrow:selected
+{
+	image: url(arrow-left-selected.svg);
+}
+
 QMenu QToolButton {
    background-color: #dedede;
    color: #272727;

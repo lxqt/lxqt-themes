@@ -390,6 +390,11 @@ QMenu::right-arrow {
     image: url(arrow-right.svg);
 }
 
+QMenu::left-arrow
+{
+	image: url(arrow-left.svg);
+}
+
 QMenu::indicator {
     width: 13px;
     height: 13px;

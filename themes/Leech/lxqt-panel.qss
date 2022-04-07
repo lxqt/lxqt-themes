@@ -242,6 +242,16 @@ QMenu::item:disabled
 	image:		url(arrow-right.svg);
 }
 
+QMenu::left-arrow
+{
+	image: url(arrow-left.svg);
+}
+
+QMenu::left-arrow:selected
+{
+	image: url(arrow-left.svg);
+}
+
 #MainMenu QMenu::item
 {
 	border:			1px solid transparent;
