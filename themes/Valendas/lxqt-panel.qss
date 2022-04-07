@@ -73,6 +73,7 @@ QMenu::item {
    border: 1px solid transparent;
    padding: 5px 30px 5px 10px;
    background:rgba(5, 0, 0, 55%);
+   border-right: 3px solid transparent;
 }
 
 QMenu::item:selected, QMenu::item:hover {
@@ -88,6 +89,21 @@ QMenu::item:disabled {
 
 QMenu::right-arrow {
    image: url(arrow-right.svg);
+}
+
+QMenu::right-arrow:selected
+{
+   image: url(arrow-right-selected.svg);
+}
+
+QMenu::left-arrow
+{
+   image: url(arrow-left.svg);
+}
+
+QMenu::left-arrow:selected
+{
+   image: url(arrow-left-selected.svg);
 }
 
 QMenu::separator {
