@@ -1,0 +1,576 @@
+/*
+Valendas - Translucent dark theme for LXQt by stefonarch (standreas@riseup.net)
+A compositor has to be enabled for transparency; not all widget styles support menu transparency
+++++++++++++++++++
+
+/*
+General panel settings
+*/
+LXQtPanel #BackgroundWidget{
+   background-color:rgba(40, 40, 40, 60%);
+}
+
+QToolTip {
+   border: 0px solid #4C4C4C;
+   background:rgba(50, 50, 50, 60%);
+   color: #dce7f5;
+   padding: 2px;
+   margin: 0px;
+   border: 1px solid white;
+   border-radius: 5px;
+}
+
+/*
+General plugins settings
+*/
+Plugin,
+LXQtPanelPlugin {
+   padding: 0;
+   spacing: 20px;
+   qproperty-moveMarkerColor:silver;
+}
+
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
+LXQtPanelPlugin > QToolButton {
+   margin: 2px;
+   border: 1px solid transparent;
+   outline: none;
+   qproperty-iconSize: 24px;
+   color: #e7eef5;
+   background:transparent;
+}
+
+Plugin > QToolButton:hover,
+Plugin > QWidget > QToolButton:hover,
+LXQtPanelPlugin > QToolButton:hover {
+   color: #eef5fc;
+   background:rgba(5, 0, 0, 45%)
+}
+
+Plugin > QToolButton:pressed,
+Plugin > QWidget > QToolButton:pressed,
+LXQtPanelPlugin > QToolButton:pressed {
+   padding: 1px;
+}
+/*
+Menus
+*/
+QMenu {
+   background:rgba(100, 100, 100, 40%);
+   border-radius:3px;
+}
+
+QMenu::icon {
+   background-color: transparent;
+   border: 1px solid transparent;
+   padding-left: 2px;
+}
+
+QMenu::item {
+   color: #e6e8e8;
+   border: 1px solid transparent;
+   padding: 5px 30px 5px 10px;
+   background:rgba(5, 0, 0, 55%);
+   border-right: 3px solid transparent;
+}
+
+QMenu::item:selected, QMenu::item:hover {
+   background:rgba(185, 200, 210, 80%);
+   color: black;
+   border-bottom:1px solid black;
+   border-top:1px solid black;
+}
+
+QMenu::item:disabled {
+   color:#a9abab;
+}
+
+QMenu::right-arrow {
+   image: url(arrow-right.svg);
+}
+
+QMenu::right-arrow:selected
+{
+   image: url(arrow-right-selected.svg);
+}
+
+QMenu::left-arrow
+{
+   image: url(arrow-left.svg);
+}
+
+QMenu::left-arrow:selected
+{
+   image: url(arrow-left-selected.svg);
+}
+
+QMenu::separator {
+   background:#e1e1e1;
+   margin:0px;
+   height:1px
+}
+QMenu QToolButton {
+   background-color: rgba(5, 0, 0, 80%);
+   padding: 5px;
+   border: transparent;
+   font: bold;
+   color:#dcdcdc;
+   border-bottom:1px solid white;
+}
+/*
+Main menu plugin
+*/
+#MainMenuPlugin {
+   padding: 0px;
+
+}
+#MainMenu {
+   qproperty-icon: url(mainmenu.svg);
+   background-color:rgba(0,0,0, 10%);
+   margin-right:5px;
+   color:#ebebeb;
+}
+#MainMenu:hover {
+   background-color:rgba(5, 0, 0, 45%);
+}
+#MainMenu:pressed {
+   padding: 1px;
+}
+#MainMenu QLineEdit {
+   margin: 0;
+   padding: 6px;
+   color: white;
+   border-radius: 0px;
+   background:rgba(5, 0, 0, 75%);
+}
+#MainMenu ActionView {
+   border: none;
+   background-color:rgba(5, 0, 0, 45%);
+   margin-right:5px;
+   margin-top:5px;
+}
+#MainMenu ActionView::item {
+   background-color:#7e7e7e;
+   border: 1px solid transparent;
+   padding: 2px;
+   color: black;
+}
+#MainMenu ActionView::item:hover {
+   background-color:rgba(5, 0, 0, 60%);
+   color: white;
+}
+#MainMenu ActionView::item:selected{
+   background-color:rgba(5, 0, 0, 70%);
+   color:white;
+}
+/*
+QuickLaunch
+*/
+#QuickLaunchPlaceHolder {
+   color: #e4ebec;
+   background:#3a3a3a;
+   padding: 0 5px;
+   font-size: 11pt;
+}
+#QuickLaunch QToolButton{
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   background-color:rgba(0,0,0, 10%);
+   border: 1px solid transparent;
+   border-radius:4px;
+}
+#QuickLaunch QToolButton:hover{
+   background-color:rgba(5, 0, 0, 45%);
+   border: 1px solid grey;
+   border-radius:3px;
+}
+#QuickLaunch QToolButton:pressed {
+   border-top: 2px;
+}
+/*
+TaskBar
+*/
+#TaskBar QToolButton{
+   margin: 2px 1px;
+   padding: 2px;
+   background-color:rgba( 80, 80, 80, 80%);
+   border-radius:3px;
+   border: 1px solid #26233a;
+}
+#TaskBar QToolButton:on{
+   background-color:rgba( 40, 40, 40, 80%);
+   border: 1px solid #939393;
+   font:bold;
+}
+#TaskBar QToolButton:hover{
+   background-color:rgba(70, 70, 70, 80%);
+}
+#TaskBar QToolButton:pressed {
+   padding: 4px;
+}
+#TaskBar QToolButton[urgent="true"] {
+   border-bottom: 2px solid #e23b1d;
+   font-weight: bold;
+}
+#TaskBar LXQtGroupPopup {
+   background: rgba(100, 100, 100, 80%);
+   border: 1px solid black;
+}
+/*
+Tray Plugin
+*/
+#Tray {
+   min-width: 6px;
+}
+
+TrayIcon {
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   background:none;
+}
+/*
+Mount plugin
+*/
+#LXQtMountPlugin QToolButton{
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   border: 1px solid transparent;
+   border-radius:3px;
+}
+#LXQtMountPlugin QToolButton:hover {
+   background-color:rgba(5, 0, 0, 45%);
+   border: 1px solid black;
+   border-radius:3px;
+}
+#LXQtMountPlugin QToolButton:pressed {
+   border-top: 2px;
+}
+#LXQtMountPopup {
+   border: 0px solid #4C4C4C;
+   background:rgba(50, 50, 50, 50%);
+   color: #dce7f5;
+   padding: 2px;
+   margin: 0px;
+   border: 1px solid white;
+   border-radius: 5px;
+}
+#LXQtMountPopup > MenuDiskItem {
+   border-radius: 3px;
+}
+#LXQtMountPopup > MenuDiskItem:hover {
+   background-color:rgba(5, 0, 0, 45%);
+}
+#LXQtMountPopup #EjectButton,
+#LXQtMountPopup #DiskButton {
+   qproperty-iconSize: 22px;
+   background-color: transparent;
+   border: none;
+   color: #b9b9b9;
+   padding: 6px;
+   border-radius:3px;
+}
+#LXQtMountPopup #EjectButton:hover,
+#LXQtMountPopup #DiskButton:hover {
+   background-color: grey;
+   color:black;
+}
+#LXQtMountPopup #NoDiskLabel {
+   margin: 6px;
+   color: #dce7f5;
+}
+
+/*
+Volume plugin
+*/
+#VolumePlugin QToolButton{
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   background-color:rgba(5, 0, 0, 10%);
+   border-radius:5px;
+}
+#VolumePlugin QToolButton:hover {
+   background-color:rgba(5, 0, 0, 45%);
+   border: 1px solid black;
+}
+#VolumePlugin QToolButton:pressed {
+   padding: 4px;
+}
+VolumePopup {
+   background-color:#2e2f2f;
+   margin: 2px;
+   padding: 2px;
+   border-radius:3px;
+}
+VolumePopup  > QPushButton {
+   color: white;
+   background:rgba(0,0,0,30%);
+   padding: 2px 10px;
+   margin: 3px;
+   border: none;
+   qproperty-iconSize: 20px;
+}
+VolumePopup  > QPushButton:hover {
+   background-color:rgba(0,0,0,70%);
+   color:white;
+   border-radius:3px;
+}
+VolumePopup  > QSlider::groove:vertical {
+   background: hsv(0, 0, 9);
+   width: 8px;
+   border-radius: 3px;
+}
+VolumePopup  > QSlider::handle:vertical {
+   height: 10px;
+   background: grey;
+   border-radius: 2px;
+   margin: 0 -4px; /* expand outside the groove */
+ }
+VolumePopup  > QSlider::add-page:vertical {
+   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
+   border: 1px solid palette(text);
+   border-radius: 3px;
+}
+VolumePopup  > QSlider::sub-page:vertical {
+   background: rgba(5, 0, 0, 80%);
+   border-radius: 3px;
+}
+
+/*
+ * Backlight
+ */
+#BacklightPlugin QToolButton:hover {
+   background-color:rgba(5, 0, 0, 45%);
+   border: 1px solid black;
+}
+#BacklightPlugin QToolButton:pressed {
+   padding: 4px;
+}
+#Backlight > SliderDialog > QToolButton {
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   background-color:rgba(5, 0, 0, 30%);
+   border-radius:5px;
+}
+#Backlight > SliderDialog > QToolButton:hover {
+   background-color:rgba(0,0,0,70%);
+   color: white;
+   border-radius:3px;
+}
+#Backlight > SliderDialog {
+   background-color:#2e2f2f;
+   margin: 2px;
+   padding: 2px;
+}
+#Backlight > SliderDialog > QSlider {
+    margin: 2px;
+    padding: 2px;
+}
+#Backlight > SliderDialog > QSlider::groove:vertical {
+   background: hsv(0, 0, 9);
+   width: 8px;
+   border-radius: 3px;
+}
+#Backlight > SliderDialog > QSlider::handle:vertical {
+   height: 10px;
+   background: grey;
+   border-radius: 2px;
+   margin: 0 -4px; /* expand outside the groove */
+}
+#Backlight > SliderDialog > QSlider::add-page:vertical {
+   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
+   border: 1px solid palette(text);
+   border-radius: 3px;
+}
+#Backlight > SliderDialog > QSlider::sub-page:vertical {
+   background: rgba(5, 0, 0, 80%);
+   border-radius: 3px;
+}
+
+/*
+Calendar Widget
+*/
+QCalendarWidget QAbstractItemView:enabled {
+   color: #f1f3f3;
+   selection-background-color: #a6abab;
+   selection-color:black;
+   border-radius: 4px;
+   background-color:rgba(5, 0, 0, 50%);
+   border: 1px solid black;
+   border-radius:3px;
+}
+QCalendarWidget QAbstractItemView:disabled {
+   color: #7e7e7e;
+}
+QCalendarWidget QWidget {
+   alternate-background-color: #151414;/*  week and day frame */
+   background-color:black;/* background of  buttons and year/month */
+   border-radius:2px;
+}
+/* months menu background should be restored -- it's changed above because of inheritance */
+QCalendarWidget QMenu {
+   background:rgba(100, 100, 100, 50%);
+}
+QCalendarWidget #qt_calendar_navigationbar {
+   background:black;
+   padding: 2px;
+}
+/* oppress hook icon */
+QCalendarWidget QToolButton::menu-indicator {
+   image: none;
+}
+QCalendarWidget QToolButton {
+   color: #daebec;
+   padding:2px;
+   margin: 2px;
+}
+QCalendarWidget QToolButton:hover {
+   border: 1px solid grey;
+}
+QCalendarWidget #qt_calendar_nextmonth {
+   qproperty-icon: url(calendar-popup/right-arrow.svg);
+   qproperty-iconSize: 18px;
+}
+QCalendarWidget #qt_calendar_prevmonth {
+   qproperty-icon: url(calendar-popup/left-arrow.svg);
+   qproperty-iconSize: 18px;
+}
+QCalendarWidget QSpinBox {
+   color: #d7e3e6;
+   background-color: #0a121a;
+}
+/*
+ShowDesktop
+*/
+#ShowDesktop {
+   border: 0px;
+   margin: 2px;
+   padding: 2px;
+   background:rgba(5, 0, 0, 10%);
+}
+#ShowDesktop:hover {
+   background-color:rgba(5, 0, 0, 55%);
+   border: 1px solid black;
+   border-radius:3px;
+}
+#ShowDesktop:pressed {
+   padding: 4px;
+}
+/*
+Desktopswitch
+*/
+#DesktopSwitch QToolButton {
+   margin: 2px;
+   color: #cccccc;
+   background-color:rgba(5, 0, 0, 10%);
+   padding:3px;
+   border-radius:3px;
+}
+#DesktopSwitch QToolButton:on {
+   background-color:rgba( 5, 0, 0, 50%);
+   color:white;
+   border: 1px solid #939393;
+   padding:3px;
+}
+#DesktopSwitch QToolButton:hover {
+   background-color:rgba(5, 0, 0, 45%);
+   border: 1px solid #939393;
+}
+#DesktopSwitch QToolButton:pressed {
+   border-top: 2px solid #4c4c4c;
+}
+#DesktopSwitch QToolButton[urgent="true"] {
+   border-bottom: 2px solid #e23b1d;
+   font-weight: bold;
+}
+
+/*
+KbIndicator
+ */
+#KbIndicator QLabel {
+   padding: 3px;
+   border: 0px;
+   margin:2px;
+}
+#KbIndicator QLabel:disabled {
+   color: #c1c1c1;
+}
+#KbIndicator QLabel:enabled {
+   background-color:rgba( 5, 0, 0, 50%);
+   border: 1px solid #939393;
+   color:white;
+   padding:3px;
+   border-radius:3px;
+}
+
+/*
+WorldClock
+*/
+#WorldClock {
+   color: #eef5fc;
+   background:#2f2f2f;
+}
+#WorldClock QLabel {
+   margin: 2px;
+   padding:4px;
+   color: #eef5fc;
+   background:#2f2f2f;
+}
+/*
+ * SysStat
+*/
+#SysStat {
+   padding: 1px 1px 1px 1px;
+}
+#SysStat > QLabel {
+   font-size: 6pt;
+}
+#SysStat_Graph {
+   qproperty-gridColor: rgba(255, 255, 255, 25%);
+   qproperty-titleColor: rgba(255, 255, 255, 75%);
+   qproperty-cpuSystemColor: rgb(128, 0, 0);
+   qproperty-cpuUserColor: rgb(0, 0, 128);
+   qproperty-cpuNiceColor: rgb(0, 128, 0);
+   qproperty-cpuOtherColor: rgb(128, 128, 0);
+   qproperty-frequencyColor: rgb(96, 96, 96);
+   qproperty-memAppsColor: rgb(0, 0, 128);
+   qproperty-memBuffersColor: rgb(0, 128, 0);
+   qproperty-memCachedColor: rgb(128, 128, 0);
+   qproperty-swapUsedColor: rgb(128, 0, 0);
+   qproperty-netReceivedColor: rgb(0, 0, 128);
+   qproperty-netTransmittedColor: rgb(128, 128, 0);
+}
+/*
+ * CPU monitor
+ */
+#LXQtCpuLoad {
+   qproperty-fontColor: #cacaca;
+}
+/*
+ * Spacer
+ */
+#Spacer {
+   background-position: center center;
+}
+#Spacer[type="lined"] {
+   background-image: url(/spacer-plugin/spacer-line.svg);
+}
+#Spacer[type="dotted"] {
+   background-image: url(/spacer-plugin/spacer-dots.svg);
+}
+#Spacer[orientation="horizontal"] {
+   background-repeat: repeat-y;
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+#Spacer[orientation="vertical"] {
+   background-repeat: repeat-x;
+   margin-right: 2px;
+   margin-left: 2px;
+}
