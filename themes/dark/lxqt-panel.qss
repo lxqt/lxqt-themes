@@ -363,7 +363,7 @@ QMenu::item {
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-right-width: 5px;
-    padding: 6px 24px 6px 24px;
+    padding: 6px 40px 6px 24px;
     background: transparent;
     color: white;
 }
