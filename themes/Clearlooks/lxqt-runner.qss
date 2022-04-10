@@ -135,6 +135,16 @@ QMenu::right-arrow:selected
 	image: url(arrow-right-selected.svg);
 }
 
+QMenu::left-arrow
+{
+	image: url(arrow-left.svg);
+}
+
+QMenu::left-arrow:selected
+{
+	image: url(arrow-left-selected.svg);
+}
+
 QMenu::item
 {
 	border:			1px solid transparent;

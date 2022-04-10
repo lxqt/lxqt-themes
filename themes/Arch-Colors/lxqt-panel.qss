@@ -97,8 +97,25 @@ QMenu::item:disabled {
    color: #5b6d73;
 }
 
-QMenu::right-arrow {
+
+QMenu::right-arrow
+{
    image: url(arrow-right.svg);
+}
+
+QMenu::right-arrow:selected
+{
+   image: url(arrow-right-selected.svg);
+}
+
+QMenu::left-arrow
+{
+   image: url(arrow-left.svg);
+}
+
+QMenu::left-arrow:selected
+{
+   image: url(arrow-left-selected.svg);
 }
 
 QMenu::separator {
