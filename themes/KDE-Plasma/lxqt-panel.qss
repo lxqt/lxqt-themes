@@ -102,14 +102,11 @@ QMenu::indicator:non-exclusive:checked {
 
 #MainMenu {
     color: rgba(54, 54, 54, 100%);
-    margin: 3px;
-    margin-right: 0px;
-    padding-top: 2px;
+    margin: 3px 1px 3px 1px;
     border-top: 3px solid transparent;
     qproperty-icon: url(mainmenu.svg);
 }
 
-#MainMenu:on,
 #MainMenu:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
 }
@@ -225,9 +222,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 #QuickLaunch QToolButton{
-    margin: 3px;
-    margin-right: 0px;
-    padding-top: 2px;
+    margin: 3px 1px 3px 1px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
@@ -242,9 +237,7 @@ QMenu::indicator:non-exclusive:checked {
  */
 
 #VolumePlugin QToolButton {
-    margin: 3px;
-    margin-right: 0px;
-    padding-top: 2px;
+    margin: 3px 1px 3px 1px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
