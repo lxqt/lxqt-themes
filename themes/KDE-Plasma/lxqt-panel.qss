@@ -49,14 +49,15 @@ QMenu {
     margin: 0px;
     color: #313639;
 }
+
 QMenu QToolButton {
     background-color: transparent;
     color: black;
     font: bold;
-	/* padding and border guarantee that it won't be drawn by widget style */
-	padding: 1px;
-	border: none;
-	font: bold;
+    /* padding and border guarantee that it won't be drawn by widget style */
+    padding: 1px;
+    border: none;
+    font: bold;
 }
 
 QMenu::item {
@@ -101,14 +102,13 @@ QMenu::indicator:non-exclusive:checked {
 
 #MainMenu {
     color: rgba(54, 54, 54, 100%);
-    margin: 3px;
-    padding-top: 2px;
+    margin: 3px 1px 3px 1px;
     border-top: 3px solid transparent;
     qproperty-icon: url(mainmenu.svg);
 }
 
 #MainMenu:hover {
-    border-top: 3px solid #1E91FE;
+    border-top: 3px solid rgba(30, 145, 255, 50%);
 }
 
 #MainMenu QLineEdit {
@@ -147,21 +147,58 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 /*
+ * DirectoryMenu
+ */
+
+#DirectoryMenu {
+    margin: 3px;
+	padding-top: 2px;
+	border-top: 3px solid transparent;
+}
+
+#DirectoryMenu:hover {
+	border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+/*
+ * Backlight
+ */
+
+#Backlight {
+    margin: 3px;
+    padding-top: 2px;
+    border-top: 3px solid transparent;
+}
+
+#Backlight:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+/*
+ * Sensors
+ */
+
+#Sensors {
+    margin: 3px;
+}
+
+/*
  * TaskBar
  */
-#TaskBar QToolButton{
+
+#TaskBar QToolButton {
     margin: 3px;
     padding-top: 2px;
     border-top: 3px solid #DEDEDE;
     color: rgba(54, 54, 54, 60%);
 }
 
-#TaskBar QToolButton:on{
+#TaskBar QToolButton:on {
     border-top: 3px solid rgba(30, 145, 255, 100%);
     color: rgba(54, 54, 54, 100%);
 }
 
-#TaskBar QToolButton:hover{
+#TaskBar QToolButton:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
@@ -178,14 +215,14 @@ QMenu::indicator:non-exclusive:checked {
  /*
  * QuickLaunch
  */
+
 #QuickLaunchPlaceHolder {
     color: #1e91ff;
     padding: 0 5px;
 }
 
 #QuickLaunch QToolButton{
-    margin: 3px;
-    padding-top: 2px;
+    margin: 3px 1px 3px 1px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
@@ -198,9 +235,9 @@ QMenu::indicator:non-exclusive:checked {
 /*
  * Volume plugin
  */
+
 #VolumePlugin QToolButton {
-    margin: 3px;
-    padding-top: 2px;
+    margin: 3px 1px 3px 1px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
@@ -292,14 +329,15 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Mount plugin
  */
-#LXQtMountPlugin MountButton{
+
+#LXQtMountPlugin QToolButton {
     margin: 3px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
-#LXQtMountPlugin MountButton:hover{
+#LXQtMountPlugin QToolButton:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
@@ -435,9 +473,15 @@ TrayIcon {
  * WorldClock
  */
 
-#WorldClockContent {
-    margin: 2px;
+#WorldClock {
+    margin: 3px;
+    padding-top: 2px;
+    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 100%);
+}
+
+#WorldClock:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
 }
 
 /*
@@ -447,7 +491,6 @@ TrayIcon {
 #LXQtCpuLoad {
     qproperty-fontColor: #cacaca;
 }
-
 
 /*
  * Calendar Widget
