@@ -1,3 +1,16 @@
+lxqt-themes-1.1.0 / 2022-04-15
+===============================
+ * Common wallpapers directory for themes.
+ * Added new wallpapers.
+ * Added missing kbindicator styling.
+ * Added palettes matching some themes.
+ * Removed colorpicker styling.
+ * Fixed/improved quicklaunch placeholder styling.
+ * Circumvented the problems of Qt stylesheet in kvantum theme.
+ * Added Valendas theme.
+ * Added missing menu arrows for RTL as well as selected menu arrows.
+ * Fixed the top bars and corrected some file names in KDE-Plasma theme.
+
 lxqt-themes-1.0.0 / 2021-11-04
 ===============================
  * Updated AUTHORS.
