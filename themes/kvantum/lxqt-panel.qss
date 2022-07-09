@@ -2,72 +2,74 @@
  * General panel settings
  */
 LXQtPanel {
-    color: white;
+	color: white;
 }
+
 LXQtPanel #BackgroundWidget {
-    color:white;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+	color: white;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /* PositionBottom */
 LXQtPanel[position="Bottom"] #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /* PositionLeft */
 LXQtPanel[position="Left"] #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /* PositionRight */
 LXQtPanel[position="Right"] #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /*
  * General plugins settings
  */
 Plugin {
-    padding: 0;
-    spacing: 20px;
+	padding: 0;
+	spacing: 20px;
 }
 
 Plugin[NeedsHandle="true"] {
-    background-color: transparent;
-    background-repeat: no-repeat;
+	background-color: transparent;
+	background-repeat: no-repeat;
 }
 
 LXQtPanel[position="Bottom"] Plugin[NeedsHandle="true"],
 LXQtPanel[position="Top"] Plugin[NeedsHandle="true"] {
-    background-image: url(lxqt-panel/plugin-handle-horizontal.svg);
-    background-position: left center;
-    margin-left: 3px;
-    padding: 0 0 0 5px; /* top right bottom left */
+	background-image: url(lxqt-panel/plugin-handle-horizontal.svg);
+	background-position: left center;
+	margin-left: 3px;
+	padding: 0 0 0 5px;
+	/* top right bottom left */
 }
 
 LXQtPanel[position="Right"] Plugin[NeedsHandle="true"],
 LXQtPanel[position="Left"] Plugin[NeedsHandle="true"] {
-    background-image: url(lxqt-panel/plugin-handle-vertical.svg);
-    background-position: center top;
-    margin-top: 3px;
-    padding: 5px 0 0 0;
+	background-image: url(lxqt-panel/plugin-handle-vertical.svg);
+	background-position: center top;
+	margin-top: 3px;
+	padding: 5px 0 0 0;
 }
 
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 Plugin > QWidget > QToolButton {
-    margin: 3px 1px 0 1px;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    qproperty-iconSize: 22px;
+	margin: 3px 1px 0 1px;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	qproperty-iconSize: 22px;
 }
 
 Plugin > QToolButton:pressed,
 Plugin > QWidget > QToolButton:pressed {
-    margin: 3px 1px 0 1px;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
-    border: none;
+	margin: 3px 1px 0 1px;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+	border: none;
 }
 
 LXQtPanel[position="Top"] Plugin > QToolButton,
@@ -75,7 +77,7 @@ LXQtPanel[position="Top"] Plugin > QWidget > QToolButton > QWidget > QToolButton
 LXQtPanel[position="Top"] Plugin > QWidget > QToolButton,
 LXQtPanel[position="Top"] Plugin > QToolButton:pressed,
 LXQtPanel[position="Top"] Plugin > QWidget > QToolButton:pressed {
-    margin: 0 1px 3px 1px;
+	margin: 0 1px 3px 1px;
 }
 
 LXQtPanel[position="Left"] Plugin > QToolButton,
@@ -88,99 +90,98 @@ LXQtPanel[position="Right"] Plugin > QWidget > QToolButton > QWidget > QToolButt
 LXQtPanel[position="Right"] Plugin > QWidget > QToolButton,
 LXQtPanel[position="Right"] Plugin > QToolButton:pressed,
 LXQtPanel[position="Right"] Plugin > QWidget > QToolButton:pressed {
-    margin: 1px;
+	margin: 1px;
 }
 
 /*
  * Desktopswitch
  */
 #DesktopSwitch {
-    margin: 2px;
+	margin: 2px;
 }
 
 #DesktopSwitch QToolButton {
-    margin: 0px;
-    color: #ffffff;
-    border-radius: 0px;
-    border: 1px solid rgba(130, 130, 130, 40%);
-    background: transparent;
+	margin: 0px;
+	color: #ffffff;
+	border-radius: 0px;
+	border: 1px solid rgba(130, 130, 130, 40%);
+	background: transparent;
 }
 
 LXQtPanel[position="0"] #DesktopSwitch QToolButton,
-LXQtPanel[position="1"] #DesktopSwitch QToolButton
-{
-    margin-bottom: 0px;
-    margin-top: 0px;
+LXQtPanel[position="1"] #DesktopSwitch QToolButton {
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 #DesktopSwitch QToolButton:on,
 #DesktopSwitch QToolButton:hover:on {
-    background: rgba(255, 255, 255, 45%);
-    border: 1px solid transparent;
-    color: #000000;
-    font: bold;
+	background: rgba(255, 255, 255, 45%);
+	border: 1px solid transparent;
+	color: #000000;
+	font: bold;
 }
 
 #DesktopSwitch QToolButton:hover {
-    background: rgba(255, 255, 255, 5%);
+	background: rgba(255, 255, 255, 5%);
 }
 
 #DesktopSwitch QToolButton:pressed {
-    background: rgba(255, 255, 255, 10%);
-    color: #ffffff;
+	background: rgba(255, 255, 255, 10%);
+	color: #ffffff;
 }
 
 #QuickLaunchPlaceHolder {
-    color: #bababa;
-    padding: 0 5px;
+	color: #bababa;
+	padding: 0 5px;
 }
 
 /*
  * QuickLaunch
  */
 #QuickLaunch QToolButton:hover {
-    background: rgba(255, 255, 255, 20%);
+	background: rgba(255, 255, 255, 20%);
 }
 
 #QuickLaunch QToolButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
 }
 
 /*
  * TaskBar
  */
 #TaskBar QToolButton {
-    margin: 3px 4px 0px 4px;
-    border-radius: 3px;
-    border: 1px solid transparent;
-    color: white;
+	margin: 3px 4px 0px 4px;
+	border-radius: 3px;
+	border: 1px solid transparent;
+	color: white;
 }
 
 #TaskBar QToolButton:on {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a5f84, stop:0.31 #345372, stop:0.32 #2e4964, stop:1 #4584be);
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a5f84, stop:0.31 #345372, stop:0.32 #2e4964, stop:1 #4584be);
 }
 
 #TaskBar QToolButton:hover {
-    background: rgba(255, 255, 255, 20%);
+	background: rgba(255, 255, 255, 20%);
 }
 
 #TaskBar QToolButton:hover:on {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #436d98, stop:0.31 #385a7c, stop:0.32 #375778, stop:1 #488cc8);
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #436d98, stop:0.31 #385a7c, stop:0.32 #375778, stop:1 #488cc8);
 }
 
 #TaskBar QToolButton[urgent="true"] {
-    color: #ffffff;
-    background: #7d0f11;
-    border: 0px solid #c86c00;
+	color: #ffffff;
+	background: #7d0f11;
+	border: 0px solid #c86c00;
 }
 
 #TaskBar LXQtGroupPopup {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(69, 69, 69, 80%), stop:0.25 rgba(63, 63, 63, 80%), stop: 0.5 rgba(53, 53, 53, 80%), stop: 0.75 rgba(45, 45, 45, 80%), stop:1 rgba(22, 22, 22, 80%));
-    border-radius: 3px;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(69, 69, 69, 80%), stop:0.25 rgba(63, 63, 63, 80%), stop: 0.5 rgba(53, 53, 53, 80%), stop: 0.75 rgba(45, 45, 45, 80%), stop:1 rgba(22, 22, 22, 80%));
+	border-radius: 3px;
 }
 
 #TaskBar LXQtGroupPopup > QToolButton:hover {
-    background: rgba(255, 255, 255, 10%);
+	background: rgba(255, 255, 255, 10%);
 }
 
 LXQtPanel[position="Left"] #TaskBar QToolButton,
@@ -191,597 +192,598 @@ LXQtPanel[position="Right"] #TaskBar QToolButton,
 LXQtPanel[position="Right"] #TaskBar QToolButton:on,
 LXQtPanel[position="Right"] #TaskBar QToolButton:hover,
 LXQtPanel[position="Right"] #TaskBar QToolButton[urgent="true"] {
-    margin: 4px 1px 4px 1px;
+	margin: 4px 1px 4px 1px;
 }
 
 LXQtPanel[position="Top"] #TaskBar QToolButton,
 LXQtPanel[position="Top"] #TaskBar QToolButton:on,
 LXQtPanel[position="Top"] #TaskBar QToolButton:hover,
 LXQtPanel[position="Top"] #TaskBar QToolButton[urgent="true"] {
-    margin: 0px 4px 3px 4px;
+	margin: 0px 4px 3px 4px;
 }
 
 /*
  * Tooltip
  */
 QToolTip {
-    border: 1px solid rgba(10, 10, 10, 90%);
-    border-top-color: rgba(50, 50, 50, 70%);
-    border-left-color: rgba(40, 40, 40, 70%);
-    background: rgba(20, 20, 20, 90%);
-    padding: 2px;
-    margin: 0px;
-    color: #ffffff
+	border: 1px solid rgba(10, 10, 10, 90%);
+	border-top-color: rgba(50, 50, 50, 70%);
+	border-left-color: rgba(40, 40, 40, 70%);
+	background: rgba(20, 20, 20, 90%);
+	padding: 2px;
+	margin: 0px;
+	color: #ffffff
 }
 
 /*
  * Line-edit
  */
 #MainMenu QLineEdit {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
-    border: 1px solid #000000;
-    border-left-color: #0a0a0a;
-    border-bottom-color: #414141;
-    border-right-color: #3c3c3c;
-    border-radius: 2px;
-    padding: 3px 6px 3px 6px;
-    margin: 1px;
-    color: white;
-    selection-background-color: #5a5a5a;
-    selection-color: white;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
+	border: 1px solid #000000;
+	border-left-color: #0a0a0a;
+	border-bottom-color: #414141;
+	border-right-color: #3c3c3c;
+	border-radius: 2px;
+	padding: 3px 6px 3px 6px;
+	margin: 1px;
+	color: white;
+	selection-background-color: #5a5a5a;
+	selection-color: white;
 }
 
 #MainMenu QLineEdit:focus {
-    border: 1px solid #246cb4;
+	border: 1px solid #246cb4;
 }
 
 /*
  * Menus
  */
 QMenu {
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid rgba(90, 90, 90, 50%);
-    border-bottom-color: rgba(20, 20, 20, 50%);
-    border-right-color: rgba(40, 40, 40, 50%);
-    border-left-color: rgba(70, 70, 70, 50%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
-    border-radius: 3px;
-    color: white;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid rgba(90, 90, 90, 50%);
+	border-bottom-color: rgba(20, 20, 20, 50%);
+	border-right-color: rgba(40, 40, 40, 50%);
+	border-left-color: rgba(70, 70, 70, 50%);
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+	border-radius: 3px;
+	color: white;
 }
 
 QMenu::icon {
-    background-color: transparent;
+	background-color: transparent;
 }
 
 QMenu QToolButton {
-    background-color: #1e1e1e;
-    padding: 5px;
-    border: none;
-    color: white;
-    font: bold italic;
+	background-color: #1e1e1e;
+	padding: 5px;
+	border: none;
+	color: white;
+	font: bold italic;
 }
 
 QMenu::separator {
-    background-color: transparent;
-    height: 1px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+	background-color: transparent;
+	height: 1px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 QMenu::item {
-    border: 7px solid transparent;
-    padding: 0px 20px 0px 20px;
-    background: transparent;
-    color: white;
+	border: 7px solid transparent;
+	padding: 0px 20px 0px 20px;
+	background: transparent;
+	color: white;
 }
 
 QMenu::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
-    color: #4DA6FF;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
+	color: #4DA6FF;
 }
 
 QMenu::item:disabled {
-    color: rgba(255, 255, 255, 50%);
-    background-color: transparent;
+	color: rgba(255, 255, 255, 50%);
+	background-color: transparent;
 }
 
 QMenu::right-arrow {
-    image: url(/lxqt-panel/arrow-right.svg);
-    height: 10px;
-    width: 10px;
+	image: url(/lxqt-panel/arrow-right.svg);
+	height: 10px;
+	width: 10px;
 }
 
 QMenu::right-arrow:selected {
-    image: url(/lxqt-panel/arrow-right-selected.svg);
+	image: url(/lxqt-panel/arrow-right-selected.svg);
 }
 
 QMenu::left-arrow {
-    image: url(/lxqt-panel/arrow-left.svg);
-    height: 10px;
-    width: 10px;
+	image: url(/lxqt-panel/arrow-left.svg);
+	height: 10px;
+	width: 10px;
 }
 
 QMenu::left-arrow:selected {
-    image: url(/lxqt-panel/arrow-left-selected.svg);
+	image: url(/lxqt-panel/arrow-left-selected.svg);
 }
 
 QMenu::indicator {
-    width: 14px;
-    height: 14px;
-    background-color: transparent;
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
 }
 
 QMenu::indicator:non-exclusive:unchecked {
-    image: url(/lxqt-panel/unchecked.svg);
+	image: url(/lxqt-panel/unchecked.svg);
 }
 
 QMenu::indicator:non-exclusive:checked {
-    image: url(/lxqt-panel/checked.svg);
+	image: url(/lxqt-panel/checked.svg);
 }
 
 QMenu::indicator:exclusive:unchecked {
-    image: url(/lxqt-panel/radio-unchecked.svg);
+	image: url(/lxqt-panel/radio-unchecked.svg);
 }
 
 QMenu::indicator:exclusive:checked {
-    image: url(/lxqt-panel/radio-checked.svg);
+	image: url(/lxqt-panel/radio-checked.svg);
 }
 
 /*
  * Tray (obsolete)
  */
 #Tray {
-    min-width: 6px;
+	min-width: 6px;
 }
 
 TrayIcon {
-    margin: 2px;
+	margin: 2px;
 }
 
 /*
  * Main menu
  */
 #MainMenu {
-    color: white;
-    margin: 1px;
-    padding: 1px;
-    border: 1px solid transparent;
-    qproperty-icon: url(/lxqt-panel/mainmenu.svg);
+	color: white;
+	margin: 1px;
+	padding: 1px;
+	border: 1px solid transparent;
+	qproperty-icon: url(/lxqt-panel/mainmenu.svg);
 }
 
 #MainMenu ActionView {
-    border: none;
-    background: black;
-    color: white;
-    selection-color: white;
+	border: none;
+	background: black;
+	color: white;
+	selection-color: white;
 }
 
 #MainMenu ActionView::item {
-    background: #2E2E2E;
-    color: white;
-    padding: 3px;
+	background: #2E2E2E;
+	color: white;
+	padding: 3px;
 }
 
 #MainMenu ActionView::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
-    color: white;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
+	color: white;
 }
 
 #MainMenu ActionView::item:hover {
-    background: #3c3c3c;
-    color: #80C0FF;
+	background: #3c3c3c;
+	color: #80C0FF;
 }
 
 #MainMenu ActionView::item:selected:hover {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
-    color: white;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
+	color: white;
 }
 
 #MainMenu QScrollBar:vertical {
-    background-color: transparent;
-    width: 14px;
-    margin: 2px 2px 2px 2px;
-    border: 1px solid transparent;
+	background-color: transparent;
+	width: 14px;
+	margin: 2px 2px 2px 2px;
+	border: 1px solid transparent;
 }
 
 #MainMenu QScrollBar::handle:vertical {
-    background-color: #787878;
-    border: 0px solid #787878;
-    min-height: 40px;
-    border-radius: 3px;
-    margin: 1px;
+	background-color: #787878;
+	border: 0px solid #787878;
+	min-height: 40px;
+	border-radius: 3px;
+	margin: 1px;
 }
 
 #MainMenu QScrollBar::handle:vertical:hover {
-    background-color: #2878c8;
-    border: 1px solid #2878c8;
+	background-color: #2878c8;
+	border: 1px solid #2878c8;
 }
 
 #MainMenu QScrollBar::add-line:vertical,
 #MainMenu QScrollBar::sub-line:vertical {
-    border: 0px solid transparent;
-    background: transparent;
-    width: 0px;
+	border: 0px solid transparent;
+	background: transparent;
+	width: 0px;
 }
 
 /*
  * Mount plugin
  */
 #LXQtMountPopup {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #595959, stop:0.25 #535353, stop: 0.5 #494949, stop: 0.75 #414141, stop:1 #2A2A2A);
-    border: 1px solid #2A2A2A;
-    padding: 2px;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #595959, stop:0.25 #535353, stop: 0.5 #494949, stop: 0.75 #414141, stop:1 #2A2A2A);
+	border: 1px solid #2A2A2A;
+	padding: 2px;
 }
 
 #LXQtMountPopup * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 #LXQtMountPopup > MenuDiskItem {
-    padding: 2px;
-    color: #ffffff;
+	padding: 2px;
+	color: #ffffff;
 }
 
 #LXQtMountPopup > MenuDiskItem:hover {
-    border-radius: 3px;
-    border: 1px solid #D3D3D3;
+	border-radius: 3px;
+	border: 1px solid #D3D3D3;
 }
 
 #LXQtMountPopup #EjectButton,
 #LXQtMountPopup #DiskButton {
-    qproperty-iconSize: 22px;
-    background-color: transparent;
-    border: none;
+	qproperty-iconSize: 22px;
+	background-color: transparent;
+	border: none;
 }
 
 #LXQtMountPopup #NoDiskLabel {
-    margin: 4px;
-    color: #ffffff;
+	margin: 4px;
+	color: #ffffff;
 }
 
 /*
  * Volume plugin
  */
 VolumePopup > QPushButton {
-    margin: 3px;
-    padding: 3px 6px;
-    border: none;
-    border-radius: 3px;
-    background: transparent;
-    color: white;
-    qproperty-iconSize: 22px;
+	margin: 3px;
+	padding: 3px 6px;
+	border: none;
+	border-radius: 3px;
+	background: transparent;
+	color: white;
+	qproperty-iconSize: 22px;
 }
 
 VolumePopup > QPushButton:hover {
-    background: rgba(255, 255, 255, 10%);
-    border: none;
+	background: rgba(255, 255, 255, 10%);
+	border: none;
 }
 
 VolumePopup > QPushButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
-    border: none;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+	border: none;
 }
 
 VolumePopup > QPushButton:focus {
-    outline: 1px solid rgba(255, 255, 255, 10%);
-    outline-radius: 3px;
+	outline: 1px solid rgba(255, 255, 255, 10%);
+	outline-radius: 3px;
 }
 
 VolumePopup {
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid rgba(90, 90, 90, 100%);
-    border-bottom-color: rgba(20, 20, 20, 100%);
-    border-right-color: rgba(40, 40, 40, 100%);
-    border-left-color: rgba(70, 70, 70, 100%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
-    border-radius: 0px;
-    color: white;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid rgba(90, 90, 90, 100%);
+	border-bottom-color: rgba(20, 20, 20, 100%);
+	border-right-color: rgba(40, 40, 40, 100%);
+	border-left-color: rgba(70, 70, 70, 100%);
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
+	border-radius: 0px;
+	color: white;
 }
 
 VolumePopup > QSlider {
-    min-width: 16px;
-    max-width: 16px;
+	min-width: 16px;
+	max-width: 16px;
 }
 
 VolumePopup > QSlider::groove:vertical {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
-    width: 3px;
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
+	width: 3px;
 }
 
-VolumePopup  > QSlider::sub-page:vertical {
-   background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
+VolumePopup > QSlider::sub-page:vertical {
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
 }
 
 VolumePopup > QSlider::handle:vertical {
-    border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
-    background-color: transparent;
-    width: 16px;
-    height: 17px;
-    margin: 0px -7px;
+	border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
+	background-color: transparent;
+	width: 16px;
+	height: 17px;
+	margin: 0px -7px;
 }
 
 /*
  * Backlight plugin
  */
 #Backlight > SliderDialog > QToolButton {
-    margin: 3px;
-    padding: 3px 6px;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    qproperty-iconSize: 22px;
+	margin: 3px;
+	padding: 3px 6px;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	qproperty-iconSize: 22px;
 }
 
 #Backlight > SliderDialog > QToolButton:hover {
-    background: rgba(255, 255, 255, 10%);
-    border: none;
+	background: rgba(255, 255, 255, 10%);
+	border: none;
 }
 
 #Backlight > SliderDialog > QToolButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
-    border: none;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+	border: none;
 }
 
 #Backlight > SliderDialog {
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid rgba(90, 90, 90, 100%);
-    border-bottom-color: rgba(20, 20, 20, 100%);
-    border-right-color: rgba(40, 40, 40, 100%);
-    border-left-color: rgba(70, 70, 70, 100%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
-    border-radius: 0px;
-    color: white;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid rgba(90, 90, 90, 100%);
+	border-bottom-color: rgba(20, 20, 20, 100%);
+	border-right-color: rgba(40, 40, 40, 100%);
+	border-left-color: rgba(70, 70, 70, 100%);
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
+	border-radius: 0px;
+	color: white;
 }
 
 #Backlight > SliderDialog > QSlider {
-    min-width: 16px;
-    max-width: 16px;
+	min-width: 16px;
+	max-width: 16px;
 }
 
 #Backlight > SliderDialog > QSlider::groove:vertical {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
-    width: 3px;
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
+	width: 3px;
 }
 
 #Backlight > SliderDialog > QSlider::sub-page:vertical {
-   background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
 }
 
 #Backlight > SliderDialog > QSlider::handle:vertical {
-    border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
-    background-color: transparent;
-    width: 16px;
-    height: 17px;
-    margin: 0px -7px;
+	border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
+	background-color: transparent;
+	width: 16px;
+	height: 17px;
+	margin: 0px -7px;
 }
 
 /*
  * KbIndicator
  */
 #KbIndicator {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 }
 
 #KbIndicator > QLabel {
-    background: transparent;
-    color: #ffffff;
-    border: 0px;
-    margin: 0px;
-    padding: 3px;
-    border-radius: 0px;
-    border: none;
+	background: transparent;
+	color: #ffffff;
+	border: 0px;
+	margin: 0px;
+	padding: 3px;
+	border-radius: 0px;
+	border: none;
 }
 
 #KbIndicator > QToolButton {
-    background: transparent;
-    color: #ffffff;
-    border: 0px;
-    margin: 0px;
-    padding: 1px;
-    border-radius: 3px;
-    border: none;
+	background: transparent;
+	color: #ffffff;
+	border: 0px;
+	margin: 0px;
+	padding: 1px;
+	border-radius: 3px;
+	border: none;
 }
 
 #KbIndicator > QToolButton:hover {
-    background: transparent;
+	background: transparent;
 }
 
 #KbIndicator > QToolButton:pressed {
-    background: transparent;
+	background: transparent;
 }
 
 #KbIndicator #CapsLockLabel,
 #KbIndicator #NumLockLabel,
 #KbIndicator #ScrollLockLabel {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 #KbIndicator > QLabel:enabled {
-    background: rgb(85, 162, 230, 40%);
-    color: #ffffff;
+	background: rgb(85, 162, 230, 40%);
+	color: #ffffff;
 }
 
 #KbIndicator #CapsLockLabel:enabled,
 #KbIndicator #NumLockLabel:enabled,
 #KbIndicator #ScrollLockLabel:enabled {
-    color: #ffffff;
-    font: bold;
+	color: #ffffff;
+	font: bold;
 }
 
 /*
  * #SysStat
  */
 #SysStat {
-    padding: 1px 1px 1px 1px;
+	padding: 1px 1px 1px 1px;
 }
 
-#SysStat > QLabel {
-}
+#SysStat > QLabel {}
 
 #SysStat_Graph {
-    qproperty-gridColor: rgba(255, 255, 255, 25%);
-    qproperty-titleColor: rgba(255, 255, 255, 75%);
-    qproperty-cpuSystemColor: rgb(220, 0, 0);
-    qproperty-cpuUserColor: rgb(74, 141, 200);
-    qproperty-cpuNiceColor: rgb(0, 220, 0);
-    qproperty-cpuOtherColor: rgb(220, 220, 0);
-    qproperty-frequencyColor: rgb(160, 160, 160);
-    qproperty-memAppsColor: rgb(74, 141, 200);
-    qproperty-memBuffersColor: rgb(0, 220, 0);
-    qproperty-memCachedColor: rgb(220, 220, 0);
-    qproperty-swapUsedColor: rgb(220, 0, 0);
-    qproperty-netReceivedColor: rgb(74, 141, 200);
-    qproperty-netTransmittedColor: rgb(220, 220, 0);
+	qproperty-gridColor: rgba(255, 255, 255, 25%);
+	qproperty-titleColor: rgba(255, 255, 255, 75%);
+	qproperty-cpuSystemColor: rgb(220, 0, 0);
+	qproperty-cpuUserColor: rgb(74, 141, 200);
+	qproperty-cpuNiceColor: rgb(0, 220, 0);
+	qproperty-cpuOtherColor: rgb(220, 220, 0);
+	qproperty-frequencyColor: rgb(160, 160, 160);
+	qproperty-memAppsColor: rgb(74, 141, 200);
+	qproperty-memBuffersColor: rgb(0, 220, 0);
+	qproperty-memCachedColor: rgb(220, 220, 0);
+	qproperty-swapUsedColor: rgb(220, 0, 0);
+	qproperty-netReceivedColor: rgb(74, 141, 200);
+	qproperty-netTransmittedColor: rgb(220, 220, 0);
 }
 
 /*
  * WorldClock
  */
 #WorldClockContent {
-    color: #ffffff;
-    font: bold;
-    padding: 2px;
+	color: #ffffff;
+	font: bold;
+	padding: 2px;
 }
 
 /*
  * CPU monitor
  */
 #LXQtCpuLoad {
-    qproperty-fontColor: #ffffff;
+	qproperty-fontColor: #ffffff;
 }
 
 /*
  * Calendar
  */
 QCalendarWidget QAbstractItemView:enabled {
-    color: white;
-    background: #3c3c3c;
-    selection-background-color: #3a72a0;
-    selection-color: white;
+	color: white;
+	background: #3c3c3c;
+	selection-background-color: #3a72a0;
+	selection-color: white;
 }
 
 QCalendarWidget QAbstractItemView:disabled {
-    color: #969696;
+	color: #969696;
 }
 
 QCalendarWidget QWidget {
-    alternate-background-color: #1e1e1e;
+	alternate-background-color: #1e1e1e;
 }
 
 QCalendarWidget #qt_calendar_navigationbar {
-    background-color: #3c3c3c;
-    color: #f2f1f0;
+	background-color: #3c3c3c;
+	color: #f2f1f0;
 }
 
 QCalendarWidget #qt_calendar_nextmonth {
-    max-height:20px;
-    min-height:20px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    qproperty-icon: url(/lxqt-panel/arrow-right.svg);
-    margin: 3px;
-    padding:3px
+	max-height: 20px;
+	min-height: 20px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	qproperty-icon: url(/lxqt-panel/arrow-right.svg);
+	margin: 3px;
+	padding: 3px
 }
 
 QCalendarWidget #qt_calendar_nextmonth:hover {
-    background-color: rgba(255, 255, 255, 10%);
+	background-color: rgba(255, 255, 255, 10%);
 }
 
 QCalendarWidget #qt_calendar_prevmonth {
-    max-height:20px;
-    min-height:20px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    qproperty-icon: url(/lxqt-panel/arrow-left.svg);
-    margin: 3px;
-    padding:3px
+	max-height: 20px;
+	min-height: 20px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	qproperty-icon: url(/lxqt-panel/arrow-left.svg);
+	margin: 3px;
+	padding: 3px
 }
 
 QCalendarWidget #qt_calendar_prevmonth:hover {
-    background-color: rgba(255, 255, 255, 10%);
+	background-color: rgba(255, 255, 255, 10%);
 }
 
 QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
-   image: none;
+	image: none;
 }
 
 QCalendarWidget #qt_calendar_monthbutton,
 QCalendarWidget #qt_calendar_yearbutton {
-    margin: 3px 6px 3px 6px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    padding: 3px;
-    color: white;
-    background-color: transparent;
-}
-QCalendarWidget #qt_calendar_monthbutton:hover,
-QCalendarWidget #qt_calendar_yearbutton:hover {
-    background-color: rgba(255, 255, 255, 10%);
+	margin: 3px 6px 3px 6px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	padding: 3px;
+	color: white;
+	background-color: transparent;
 }
 
-QCalendarWidget QMenu { /* it was changed in "QCalendarWidget QWidget" */
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+QCalendarWidget #qt_calendar_monthbutton:hover,
+QCalendarWidget #qt_calendar_yearbutton:hover {
+	background-color: rgba(255, 255, 255, 10%);
+}
+
+QCalendarWidget QMenu {
+	/* it was changed in "QCalendarWidget QWidget" */
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
 }
 
 QCalendarWidget QSpinBox {
-    border: 1px solid #246cb4;
-    border-radius: 3px;
-    margin: 3px 6px 3px 6px;
-    padding: 0px 3px 0px 3px;
-    color: white;
-    background-color: #3c3c3c;
-    selection-background-color: #3a72a0;
-    selection-color: white;
+	border: 1px solid #246cb4;
+	border-radius: 3px;
+	margin: 3px 6px 3px 6px;
+	padding: 0px 3px 0px 3px;
+	color: white;
+	background-color: #3c3c3c;
+	selection-background-color: #3a72a0;
+	selection-color: white;
 }
 
 QCalendarWidget QSpinBox::up-button {
-    padding-right: 1px;
-    padding-top: 1px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-bottom-width: 0;
-    width: 11px;
-    subcontrol-origin: border;
-    subcontrol-position: right top;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-bottom-width: 0;
+	width: 11px;
+	subcontrol-origin: border;
+	subcontrol-position: right top;
 }
 
 QCalendarWidget QSpinBox::up-arrow {
-    image: url(/lxqt-panel/arrow-up.svg);
-    width: 8px;
-    height: 8px;
+	image: url(/lxqt-panel/arrow-up.svg);
+	width: 8px;
+	height: 8px;
 }
 
 QCalendarWidget QSpinBox::up-arrow:hover,
 QCalendarWidget QSpinBox::up-arrow:pressed {
-    image: url(/lxqt-panel/arrow-up-selected.svg);
+	image: url(/lxqt-panel/arrow-up-selected.svg);
 }
 
 QCalendarWidget QSpinBox::down-button {
-    padding-right: 1px;
-    padding-top: 1px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-top-width: 0;
-    width: 11px;
-    subcontrol-origin: border;
-    subcontrol-position: right bottom;
+	padding-right: 1px;
+	padding-top: 1px;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-top-width: 0;
+	width: 11px;
+	subcontrol-origin: border;
+	subcontrol-position: right bottom;
 }
 
 QCalendarWidget QSpinBox::down-arrow {
-    image: url(/lxqt-panel/arrow-down.svg);
-    width: 8px;
-    height: 8px;
+	image: url(/lxqt-panel/arrow-down.svg);
+	width: 8px;
+	height: 8px;
 }
 
 QCalendarWidget QSpinBox::down-arrow:hover,
 QCalendarWidget QSpinBox::down-arrow:pressed {
-    image: url(/lxqt-panel/arrow-down-selected.svg);
+	image: url(/lxqt-panel/arrow-down-selected.svg);
 }
 
 /*
@@ -789,25 +791,25 @@ QCalendarWidget QSpinBox::down-arrow:pressed {
  */
 
 #Spacer {
-    background-position: center center;
+	background-position: center center;
 }
 
 #Spacer[type="lined"] {
-    background-image: url(/spacer-plugin/spacer-line.svg);
+	background-image: url(/spacer-plugin/spacer-line.svg);
 }
 
 #Spacer[type="dotted"] {
-    background-image: url(/spacer-plugin/spacer-dots.svg);
+	background-image: url(/spacer-plugin/spacer-dots.svg);
 }
 
 #Spacer[orientation="horizontal"] {
-    background-repeat: repeat-y;
-    margin-top: 2px;
-    margin-bottom: 2px;
+	background-repeat: repeat-y;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 #Spacer[orientation="vertical"] {
-    background-repeat: repeat-x;
-    margin-right: 2px;
-    margin-left: 2px;
+	background-repeat: repeat-x;
+	margin-right: 2px;
+	margin-left: 2px;
 }
