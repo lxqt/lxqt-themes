@@ -3,20 +3,20 @@
  */
 
 #PasswordDialog {
-	background: #041b27;
-	padding: 1px;
-	margin: 2px;
-	border: 1px solid #1899da;
-	border-radius: 1px;
+    background: #041b27;
+    padding: 1px;
+    margin: 2px;
+    border: 1px solid #1899da;
+    border-radius: 1px;
 }
 
 #descriptionL,
 #descCommandL,
 #commandL,
 #descPasswordL {
-	color: #f1f7f9
+    color: #f1f7f9
 }
 
 #errorL {
-	color: #989995
+    color: #989995
 }

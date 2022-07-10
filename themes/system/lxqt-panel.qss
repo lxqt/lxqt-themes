@@ -7,23 +7,23 @@
  */
 
 LXQtPanel #BackgroundWidget {
-	background: palette(window);
+    background: palette(window);
 }
 
 /*
  * TaskBar
  */
 #TaskBar QToolButton[urgent="true"] {
-	color: palette(highlighted-text);
-	background: palette(highlight);
+    color: palette(highlighted-text);
+    background: palette(highlight);
 }
 
 /*
  * Desktopswitch
  */
 #DesktopSwitch QToolButton[urgent="true"] {
-	color: palette(highlighted-text);
-	background: palette(highlight);
+    color: palette(highlighted-text);
+    background: palette(highlight);
 }
 
 /*
@@ -31,12 +31,12 @@ KbIndicator
  */
 
 #KbIndicator QLabel:disabled {
-	color: palette(text);
+    color: palette(text);
 }
 
 #KbIndicator QLabel:enabled {
-	color: palette(highlighted-text);
-	background: palette(highlight);
+    color: palette(highlighted-text);
+    background: palette(highlight);
 }
 
 /*
@@ -44,27 +44,27 @@ KbIndicator
  */
 
 #Spacer {
-	background-position: center center;
+    background-position: center center;
 }
 
 #Spacer[type="lined"] {
-	background-image: url(/spacer-plugin/spacer-line.svg);
+    background-image: url(/spacer-plugin/spacer-line.svg);
 }
 
 #Spacer[type="dotted"] {
-	background-image: url(/spacer-plugin/spacer-dots.svg);
+    background-image: url(/spacer-plugin/spacer-dots.svg);
 }
 
 #Spacer[orientation="horizontal"] {
-	background-repeat: repeat-y;
-	margin-top: 2px;
-	margin-bottom: 2px;
+    background-repeat: repeat-y;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 #Spacer[orientation="vertical"] {
-	background-repeat: repeat-x;
-	margin-right: 2px;
-	margin-left: 2px;
+    background-repeat: repeat-x;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 /*
@@ -72,5 +72,5 @@ KbIndicator
  */
 
 #MainMenu {
-	qproperty-icon: url(mainmenu.svg);
+    qproperty-icon: url(mainmenu.svg);
 }
