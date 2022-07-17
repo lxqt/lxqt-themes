@@ -314,6 +314,35 @@ QCalendarWidget QWidget {
 }
 
 /*
+Wing menu plugin
+*/
+
+#WingMenuPlugin QWidget{
+    background: #43423c;
+}
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item,#WingMenuPlugin ApplicationsView::item:selected {
+    color: #f2f1f0;
+    background-color: #43423c;
+    font: normal;
+}
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover {
+    color: #f2f1f0;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+#WingMenuPlugin QLineEdit {
+    background: #3c3b37;
+    border: none;
+    color: #f2f1f0;
+    margin-bottom: 1px;
+    padding: 3px;
+    selection-background-color: #eb7140;
+    selection-color: #f2f1f0;
+    max-width: 250px;
+}
+
+
+/*
  * QuickLaunch
  */
 #QuickLaunch QToolButton {

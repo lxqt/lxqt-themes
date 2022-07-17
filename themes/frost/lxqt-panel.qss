@@ -232,6 +232,28 @@ QCalendarWidget QSpinBox {
 }
 
 /*
+Wing menu plugin
+*/
+
+#WingMenuPlugin QWidget{
+    background: palette(text);
+    color: palette(window);
+}
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item,#WingMenuPlugin ApplicationsView::item:selected {
+    background: palette(text);
+    color: palette(window);
+}
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover {
+    background: palette(highlight);
+    color: palette(highlighted-text);
+}
+
+#WingMenuPlugin QLineEdit {
+    color: #c3c3c3;
+    max-width:250px;
+}
+
+/*
  * QuickLaunch
  */
 #QuickLaunchPlaceHolder {
