@@ -134,6 +134,7 @@ QMenu::indicator:non-exclusive:checked {
 #MainMenu ActionView::item {
     border: 1px solid transparent;
     color: #313639;
+    font: normal;
 }
 
 #MainMenu ActionView::item:hover {
@@ -144,6 +145,34 @@ QMenu::indicator:non-exclusive:checked {
 #MainMenu ActionView::item:selected {
     background: rgba(30, 145, 255, 50%);
     color: #313639;
+}
+
+/*
+Wing menu plugin
+*/
+#WingMenuPlugin:hover{
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item{
+    color: #313639;
+    background: palette(window);
+    font: normal;
+}
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
+    background: rgba(30, 145, 255, 50%);
+    color: #313639;
+}
+
+#WingMenuPlugin QLineEdit {
+    color: #6b6b6b;
+    background: #f0f0f0;
+    border: 1px solid #9b9b9b;
+    border-radius: 0px;
+    padding: 3px;
+    selection-color: #eee;
+    selection-background-color: #1e91ff;
+    max-width: 270px;
 }
 
 /*

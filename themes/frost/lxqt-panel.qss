@@ -232,6 +232,60 @@ QCalendarWidget QSpinBox {
 }
 
 /*
+Wing menu plugin
+*/
+
+#WingMenuPlugin QWidget{
+    background: palette(text);
+    color: palette(window);
+}
+
+#WingMenuPlugin QToolButton{
+    border:none;
+    padding:0px;/* needed for breeze and oygen widget style, otherwise centered*/
+    }
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item,#WingMenuPlugin ApplicationsView{
+    background: palette(text);
+    color: palette(window);
+}
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected{
+    background: palette(highlight);
+    color: palette(highlighted-text);
+
+}
+
+#WingMenuPlugin QLineEdit {
+    max-width:250px;
+    padding:2px 10px 2px 10px;
+}
+
+#WingMenuPlugin QScrollBar:vertical {
+    background-color: transparent;
+    width: 14px;
+    margin: 1px;
+    border: 1px solid transparent;
+}
+
+#WingMenuPlugin QScrollBar::handle:vertical {
+    background: palette(window);
+    border: 0px solid #787878;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#WingMenuPlugin QScrollBar::handle:vertical:hover {
+    background: palette(highlight);
+}
+
+#WingMenuPlugin QScrollBar::add-line:vertical,
+#WingMenuPlugin QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+/*
  * QuickLaunch
  */
 #QuickLaunchPlaceHolder {

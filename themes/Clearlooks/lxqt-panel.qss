@@ -328,6 +328,70 @@ QMenu::indicator:non-exclusive:checked:selected {
 background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #728eb9);
 }
 
+
+/*
+Wing menu plugin
+*/
+
+#WingMenuPlugin QWidget{
+	background:#e3e2e1;
+}
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item,#WingMenuPlugin ApplicationsView::item:selected {
+	background:		#edeceb;
+	color:			#1a1a1a;
+	font:			normal;
+}
+#WingMenuPlugin QToolButton:hover {
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	color:			#ffffff;
+
+}
+#WingMenuPlugin ApplicationsView::item:hover {
+	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+	color:			#ffffff;
+}
+
+
+#WingMenuPlugin QLineEdit
+{
+	color:			#565656;
+	background:		#ffffff;
+	border:			1px solid #909090;
+	border-radius:		3px;
+	padding:		2px;
+	selection-background-color: #80a0d0;
+	selection-color: white;
+	max-width: 250px;
+}
+
+#WingMenuPlugin QScrollBar:vertical {
+    background-color: transparent;
+    width: 14px;
+    margin: 1px;
+    border: 1px solid transparent;
+}
+
+#WingMenuPlugin QScrollBar::handle:vertical {
+    background-color: #bebebe;
+    border: 0px solid #bebebe;
+    min-height: 40px;
+    border-radius: 2px;
+    margin: 1px;
+}
+
+#WingMenuPlugin QScrollBar::handle:vertical:hover {
+    background-color: palette(highlight);
+}
+
+#WingMenuPlugin QScrollBar::add-line:vertical,
+#WingMenuPlugin QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+
+
 /* System Tray */
 #Tray
 {
