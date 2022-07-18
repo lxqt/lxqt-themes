@@ -240,6 +240,16 @@ Wing Menu
     color: #EEEEEE;
 
 }
+#WingMenuPlugin QToolButton{
+    border:none;
+    padding:0px;/* needed for breeze and oygen widget style, otherwise centered*/
+    }
+
+#WingMenuPlugin QToolButton:hover{
+    color: palette(highlighted-text);
+    background: palette(highlight);
+    }
+
 
 #WingMenuPlugin QLineEdit{
     max-width:250px;

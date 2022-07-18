@@ -299,6 +299,7 @@ Wing menu plugin
    color: #363737;
    max-width:250px;
    padding:3px;
+   padding:3px 10px 3px 10px;
 }
 
 #WingMenuPlugin QScrollBar:vertical {

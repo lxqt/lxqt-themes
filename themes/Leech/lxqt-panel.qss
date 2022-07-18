@@ -166,11 +166,22 @@ Wing menu plugin
 	padding-bottom:		2px;
 }
 #WingMenuPlugin ApplicationsView{
-	background:		#0f122d;
 	color:			#ffffff;
+	padding:		2px;
+	border-left:	1px solid #4c4c4c;
+	border-right:	1px solid #4c4c4c;
+	border-top:		none;
+	border-bottom:	none;
 }
 #WingMenuPlugin ApplicationsView::item{
 	border:				1px solid transparent;
+}
+
+#WingMenuPlugin ApplicationsView:hover{
+	border-left:	1px solid #4c4c4c;
+	border-right:	1px solid #4c4c4c;
+	border-top:		none;
+	border-bottom:	none;
 }
 #WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
 	border:				1px solid #636372;

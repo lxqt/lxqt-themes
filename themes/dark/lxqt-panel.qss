@@ -472,23 +472,25 @@ Wing menu plugin
     background: #640b0c;
 }
 #WingMenuPlugin ApplicationsView{
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    padding-left: 3px;
-    padding-right: 3px;
+    background:transparent;
+    border-left:1px solid #4c4c4c;
+    border-right:1px solid #4c4c4c;
+}
+#WingMenuPlugin ApplicationsView:hover { /*oppress blue border with Oxygen or Breeze widget style*/
+    border-left:1px solid #4c4c4c;
+    border-right:1px solid #4c4c4c;
+    border-bottom:none;
+    border-top:none;
 }
 #WingMenuPlugin QLineEdit {
-    background: #232323;
-    border: 1px solid #6c6c6c;
-    padding: 3px;
-    margin-bottom: 1px;
+    border-top: 1px solid #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+    padding: 4px;
     color: #d1d1d1;
     selection-background-color: #640b0c;
     max-width: 250px;
 }
-#WingMenuPlugin ApplicationsView {
-background: rgba(0, 0, 0, 60%);
-}
+
 
 #WingMenuPlugin QScrollBar:vertical {
     background-color: transparent;
