@@ -119,9 +119,7 @@ QMenu::indicator:non-exclusive:checked:selected {
     margin-right: 1px;
     margin-top: 2px;
     margin-bottom: 1px;
-
     padding: 1px;
-
     background-color: #f0f0f0;
     border: 1px solid #909090;
     border-radius: 3px;
@@ -179,14 +177,12 @@ QMenu::indicator:non-exclusive:checked:selected {
     padding: 2px;
 }
 
-
 /* Menu Icon */
 #MainMenu {
     margin-left: 1px;
     margin-right: 0px;
     margin-top: 1px;
     margin-bottom: 1px;
-
     qproperty-icon: url(mainmenu.svg);
     background-color: transparent;
     color: #1a1a1a;
@@ -197,7 +193,6 @@ QMenu::indicator:non-exclusive:checked:selected {
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-
     background-color: transparent;
     color: #1a1a1a;
 }
@@ -207,11 +202,9 @@ QMenu::indicator:non-exclusive:checked:selected {
     margin-right: 0px;
     margin-top: 1px;
     margin-bottom: 1px;
-
     background-color: transparent;
     color: #1a1a1a;
 }
-
 
 /* The actual menu... */
 #MainMenu QMenu {
@@ -301,7 +294,6 @@ QMenu::indicator:non-exclusive:checked:selected {
 #Tray {
     min-width: 0px;
     padding: 2px;
-
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 2px;
@@ -310,9 +302,7 @@ QMenu::indicator:non-exclusive:checked:selected {
 
 #TrayIcon {
     background-color: transparent;
-
     padding: 2px;
-
     margin-left: 2px;
     margin-right: 2px;
     margin-bottom: 2px;
@@ -323,7 +313,6 @@ QMenu::indicator:non-exclusive:checked:selected {
 /* WorldClock */
 #WorldClock {
     padding: 2px;
-
     margin-left: 2px;
     margin-right: 2px;
     margin-bottom: 2px;
@@ -332,7 +321,6 @@ QMenu::indicator:non-exclusive:checked:selected {
 
 #WorldClockContent {
     padding: 2px;
-
     color: #1a1a1a;
 }
 
@@ -396,9 +384,7 @@ QMenu::indicator:non-exclusive:checked:selected {
     margin-right: 1px;
     margin-top: 2px;
     margin-bottom: 1px;
-
     padding: 1px;
-
     background-color: #f0f0f0;
     border: 1px solid #909090;
     border-radius: 3px;

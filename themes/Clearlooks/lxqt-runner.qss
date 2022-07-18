@@ -71,7 +71,6 @@ QToolButton::menu-indicator {
     alternate-background-color: #e5e5e5;
     color: #6b6b6b;
     selection-color: #ffffff;
-    ;
     selection-background-color: #80a0d0;
 }
 
