@@ -1,9 +1,8 @@
 /*
  * Panel
  */
-
 #panel {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
     border: 1px solid #2b2b29;
     padding: 2px;
 }
@@ -11,7 +10,6 @@
 /*
  * Menu
  */
-
 QMenu {
     background-color: #3c3b37;
     border: 1px solid #515048;
@@ -40,17 +38,16 @@ QMenu::item {
 
 QMenu::item:selected {
     color: #f2f1f0;
-    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QMenu::item:disabled {
-   color:#b1b1b1;
+   color: #b1b1b1;
 }
 
 /*
  * Buttons
  */
-
 QToolButton {
     margin: 0px;
     border: 0px solid transparent;
@@ -77,7 +74,6 @@ QToolButton::menu-indicator {
 /*
  * Line-edit
  */
-
 #commandEd {
     border: none;
     padding: 0px;
@@ -91,14 +87,13 @@ QToolButton::menu-indicator {
 /*
  * List
  */
-
 #commandList {
    border: none;
    color: #f2f1f0;
    background: #3c3b37;
-   alternate-background-color:	#464540;
+   alternate-background-color: #464540;
    selection-color: #f2f1f0;
-   selection-background-color:#eb7140;
+   selection-background-color: #eb7140;
 }
 
 #commandList::item {
@@ -117,6 +112,6 @@ QToolButton::menu-indicator {
 }
 
 #commandList::item:selected {
-    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
     color: #f2f1f0;
 }
