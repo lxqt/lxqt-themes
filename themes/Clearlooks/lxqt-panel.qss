@@ -9,17 +9,17 @@ LXQtPanel #BackgroundWidget {
     border: 0px solid #1a1a1a;
 }
 
-Plugin>QWidget,
-Plugin>QWidget>QWidget {
+Plugin > QWidget,
+Plugin > QWidget > QWidget {
     border: 0px;
     color: rgba(0, 0, 0, 100%); /* Color of text on same */
 }
 
-Plugin>QToolButton,
-Plugin>QWidget>QToolButton,
-Plugin>QWidget>QToolButton>QWidget>QToolButton,
+Plugin > QToolButton,
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton,
 
-LXQtPanelPlugin>QToolButton {
+LXQtPanelPlugin > QToolButton {
     background: #edeceb;
     margin: 0px;
     padding: 2px;
@@ -345,7 +345,7 @@ QMenu::indicator:non-exclusive:checked:selected {
     padding: 0px;
 }
 
-#KbIndicator>QLabel {
+#KbIndicator > QLabel {
     background: transparent;
     color: black;
     border: 0px;
@@ -355,7 +355,7 @@ QMenu::indicator:non-exclusive:checked:selected {
     border: none;
 }
 
-#KbIndicator>QToolButton {
+#KbIndicator > QToolButton {
     background: transparent;
     color: black;
     border: 0px;
@@ -365,11 +365,11 @@ QMenu::indicator:non-exclusive:checked:selected {
     border: none;
 }
 
-#KbIndicator>QToolButton:hover {
+#KbIndicator > QToolButton:hover {
     background: transparent;
 }
 
-#KbIndicator>QToolButton:pressed {
+#KbIndicator > QToolButton:pressed {
     background: transparent;
 }
 
@@ -379,7 +379,7 @@ QMenu::indicator:non-exclusive:checked:selected {
     color: black;
 }
 
-#KbIndicator>QLabel:enabled {
+#KbIndicator > QLabel:enabled {
     background: #80a0d0;
     color: white;
 }
