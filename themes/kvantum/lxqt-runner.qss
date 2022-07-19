@@ -3,7 +3,7 @@ Dialog {
 }
 
 #panel {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(100, 100, 100, 80%), stop:0.11 rgba(80, 80, 80, 80%), stop:0.12 rgba(80, 80, 80, 80%), stop:1 rgba(0, 0, 0, 72%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(100, 100, 100, 80%), stop:0.11 rgba(80, 80, 80, 80%), stop:0.12 rgba(80, 80, 80, 80%), stop:1 rgba(0, 0, 0, 72%));
     border-radius: 3px;
 }
 
@@ -23,19 +23,19 @@ Dialog {
 
 #closeButton:pressed,
 #actionButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 40%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 40%));
     border: none;
 }
 
 #closeButton {
-  qproperty-icon: url(lxqt-runner/close.svg);
+    qproperty-icon: url(lxqt-runner/close.svg);
 }
 
 #actionButton {
     qproperty-icon: url(lxqt-runner/down.svg);
 }
 
-#actionButton::menu-indicator  {
+#actionButton::menu-indicator {
     image: none;
 }
 
@@ -46,7 +46,7 @@ QMenu {
     border-bottom-color: rgba(20, 20, 20, 50%);
     border-right-color: rgba(40, 40, 40, 50%);
     border-left-color: rgba(70, 70, 70, 50%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
     border-radius: 3px;
     color: white;
 }
@@ -76,7 +76,7 @@ QMenu::item {
 }
 
 QMenu::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
     color: #4DA6FF;
 }
 
@@ -128,7 +128,7 @@ QMenu::indicator:exclusive:checked {
 }
 
 #commandEd {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
     border: 1px solid #000000;
     border-left-color: #0a0a0a;
     border-bottom-color: #414141;
@@ -165,7 +165,7 @@ QMenu::indicator:exclusive:checked {
 }
 
 #commandList::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
     color: white;
 }
 
@@ -175,7 +175,7 @@ QMenu::indicator:exclusive:checked {
 }
 
 #commandList::item:selected:hover {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
     color: white;
 }
 
