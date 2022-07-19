@@ -2,32 +2,32 @@
  * Popup
  */
 Notification {
-   background: #041b27;
-   border-radius:4px;
-   padding: 1px;
-   margin: 0px;
+    background: #041b27;
+    border-radius: 4px;
+    padding: 1px;
+    margin: 0px;
 }
 
-/*message*/
+/* message */
 QLabel {
-   color:#e5f3f9;
+    color: #e5f3f9;
 }
 
-/*title*/
+/* title */
 #appLabel {
-   color:#1899da;
+    color: #1899da;
 }
 
 QToolButton {
-   padding:4px;
+    padding: 4px;
 }
 
 QToolButton:pressed {
-   background:#1899da;
-   border-radius:2px;
+    background: #1899da;
+    border-radius: 2px;
 }
 
 #closeButton {
-   qproperty-icon: url(lxqt-runner/close.svg);
-   qproperty-iconSize: 18px;
+    qproperty-icon: url(lxqt-runner/close.svg);
+    qproperty-iconSize: 18px;
 }
