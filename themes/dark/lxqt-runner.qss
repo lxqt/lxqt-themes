@@ -1,27 +1,26 @@
 /*
  * Panel
  */
-
 #panel {
-    background:rgba(0, 0, 0, 50%);
+    background: rgba(0, 0, 0, 50%);
     border: 1px solid rgba(0, 0, 0, 50%);
 }
 
 /*
  * Buttons
  */
-
 QToolButton::menu-indicator {
-   image: none;
+    image: none;
 }
 
 #closeButton {
     qproperty-icon: url(lxqt-runner/close.svg);
     margin: 2px;
 }
+
 #closeButton:hover {
-   border: 1px solid rgba(0, 0, 0, 50%);
-   background: rgba(255, 255, 255, 20%);
+    border: 1px solid rgba(0, 0, 0, 50%);
+    background: rgba(255, 255, 255, 20%);
 }
 
 #actionButton {
@@ -29,19 +28,20 @@ QToolButton::menu-indicator {
     color: rgba(41, 41, 41, 0%);
     margin: 2px;
 }
+
 #actionButton:hover {
-   border: 1px solid rgba(0, 0, 0, 50%);
-   background: rgba(255, 255, 255, 20%);
+    border: 1px solid rgba(0, 0, 0, 50%);
+    background: rgba(255, 255, 255, 20%);
 }
+
 #actionButton:pressed {
-   border: 1px solid rgba(0, 0, 0, 50%);
-   background: rgba(255, 255, 255, 20%);
+    border: 1px solid rgba(0, 0, 0, 50%);
+    background: rgba(255, 255, 255, 20%);
 }
 
 /*
  *Search line-edit
  */
-
 #commandEd {
     background: black;
     border: 2px solid black;
@@ -56,7 +56,6 @@ QToolButton::menu-indicator {
 /*
  *Search results list
  */
-
 #commandList {
     border: none;
     background: black;
@@ -89,7 +88,6 @@ QToolButton::menu-indicator {
 /*
  * Menu
  */
-
 QMenu {
     margin: 0px;
     padding: 2px;
@@ -97,7 +95,7 @@ QMenu {
     border-bottom-color: black;
     border-right-color: black;
     background: black;
-    /*qproperty-icon: url(mainmenu.svg);*/
+/*  qproperty-icon: url(mainmenu.svg); */
     color: white;
 }
 
@@ -157,5 +155,3 @@ QMenu::indicator:non-exclusive:unchecked {
 QMenu::indicator:non-exclusive:checked {
     image: url(checked.svg);
 }
-
-
