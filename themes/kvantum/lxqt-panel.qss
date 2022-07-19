@@ -621,7 +621,8 @@ VolumePopup > QSlider::handle:vertical {
     padding: 1px 1px 1px 1px;
 }
 
-#SysStat > QLabel {}
+#SysStat > QLabel {
+}
 
 #SysStat_Graph {
     qproperty-gridColor: rgba(255, 255, 255, 25%);
