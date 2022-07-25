@@ -1,86 +1,77 @@
 /* Panel */
 
-#panel
-{
-	background:	#edeceb;
-	border:		1px solid #1a1a1a;
-	border-radius:	3px;
+#panel {
+    background: #edeceb;
+    border: 1px solid #1a1a1a;
+    border-radius: 3px;
 }
 
 /* Buttons */
 
-QToolButton::menu-indicator
-{
-	image:		none;
+QToolButton::menu-indicator {
+    image: none;
 }
 
-#closeButton
-{
-	qproperty-icon:	url(lxqt-runner/close.svg);
-	margin:		2px;
+#closeButton {
+    qproperty-icon: url(lxqt-runner/close.svg);
+    margin: 2px;
 }
 
-#closeButton:hover
-{
-	background:	#ffffff;
-	border:		1px solid #1a1a1a;
-	border-radius:	3px;
+#closeButton:hover {
+    background: #ffffff;
+    border: 1px solid #1a1a1a;
+    border-radius: 3px;
 }
 
-#closeButton:pressed
-{
-	background:	#ffffff;
-	border:		1px solid #909090;
-	border-radius:	3px;
-	padding:	3px;
+#closeButton:pressed {
+    background: #ffffff;
+    border: 1px solid #909090;
+    border-radius: 3px;
+    padding: 3px;
 }
 
-#actionButton
-{
-	qproperty-icon:	url(lxqt-runner/down-arrow.svg);
-	margin:		2px;
+#actionButton {
+    qproperty-icon: url(lxqt-runner/down-arrow.svg);
+    margin: 2px;
 }
 
-#actionButton:hover
-{
-	background:	#ffffff;
-	border:		1px solid #909090;
-	border-radius:	3px;
+#actionButton:hover {
+    background: #ffffff;
+    border: 1px solid #909090;
+    border-radius: 3px;
 }
 
-#actionButton:pressed
-{
-	background:	#ffffff;
-	border:		1px solid #909090;
-	border-radius:	3px;
-	padding:	3px;
+#actionButton:pressed {
+    background: #ffffff;
+    border: 1px solid #909090;
+    border-radius: 3px;
+    padding: 3px;
 }
 
 
 /* Command Box */
 
-#commandEd
-{
-	color:				#1a1a1a;
-	background:			#ffffff;
-	selection-color:	#ffffff;
-	selection-background-color:#80a0d0;
-	border:		1px solid #909090;
-	border-radius:		3px;
-	padding:			6px;
+#commandEd {
+    color: #1a1a1a;
+    background: #ffffff;
+    selection-color: #ffffff;
+    selection-background-color: #80a0d0;
+    border: 1px solid #909090;
+    border-radius: 3px;
+    padding: 6px;
 }
 
 /*
- *Search results list
+ * Search results list
  */
 
 #commandList {
-	border:				none;
-	background-color:			#f4f4f4;
-	alternate-background-color:	#e5e5e5;
-	color:				#6b6b6b;
-	selection-color:	#ffffff;;
-	selection-background-color:	#80a0d0;
+    border: none;
+    background-color: #f4f4f4;
+    alternate-background-color: #e5e5e5;
+    color: #6b6b6b;
+    selection-color: #ffffff;
+    selection-background-color: #80a0d0;
 }
 
 #commandList::item {
@@ -99,69 +90,60 @@ QToolButton::menu-indicator
 }
 
 #commandList::item:selected {
-	border: 1px solid #5070a0;
-	border-radius: 3px;
+    border: 1px solid #5070a0;
+    border-radius: 3px;
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
     color: white;
 }
 
 /* Menus */
 
-QMenu
-{
-	background:		#ffffff;
-	color:			#1a1a1a;
-	border:			1px solid #1a1a1a;
-	padding:		1px;
+QMenu {
+    background: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+    padding: 1px;
 }
 
-QMenu::icon
-{
-	padding-right:		3px;
+QMenu::icon {
+    padding-right: 3px;
 }
 
-QMenu::icon:selected
-{
-	padding-right:		2px;
+QMenu::icon:selected {
+    padding-right: 2px;
 }
 
-QMenu::right-arrow
-{
-	image: url(arrow-right.svg);
+QMenu::right-arrow {
+    image: url(arrow-right.svg);
 }
 
-QMenu::right-arrow:selected
-{
-	image: url(arrow-right-selected.svg);
+QMenu::right-arrow:selected {
+    image: url(arrow-right-selected.svg);
 }
 
-QMenu::left-arrow
-{
-	image: url(arrow-left.svg);
+QMenu::left-arrow {
+    image: url(arrow-left.svg);
 }
 
-QMenu::left-arrow:selected
-{
-	image: url(arrow-left-selected.svg);
+QMenu::left-arrow:selected {
+    image: url(arrow-left-selected.svg);
 }
 
-QMenu::item
-{
-	border:			1px solid transparent;
-	border-radius:		3px;
-	padding-left:		8px;
-	padding-right:		20px;
-	padding-top:		2px;
-	padding-bottom:		2px;
+QMenu::item {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-QMenu::item:selected
-{
-	border:			1px solid #5070a0;
-	border-radius:		3px;
-	background-color:	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
-	color:			#ffffff;
-	padding-left:		7px;
+QMenu::item:selected {
+    border: 1px solid #5070a0;
+    border-radius: 3px;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+    color: #ffffff;
+    padding-left: 7px;
 }
 
 QMenu::item:disabled {
