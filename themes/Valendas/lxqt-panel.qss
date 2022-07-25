@@ -176,30 +176,30 @@ Wing menu plugin
 }
 #WingMenuPlugin QWidget{
     color:#ebebeb;
-    background:#454545;
+    background-color:rgba(5, 0, 0, 25%);
 }
 #WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item {
     font:normal;
     border:none;
+    background-color:transparent;
 }
 #WingMenuPlugin ApplicationsView{
-    background:#4f4f4f;
     border-left:1px solid grey;
     border-right:1px solid grey;
 }
 
 
 #WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
-    background-color: #c3d3c9;
+    background-color:rgba(195, 211, 201, 65%);
     color: black;
 
 }
 
 #WingMenuPlugin QLineEdit {
-    color:#dfdfdf;
+    color:black;
     border: 1px solid transparent;
     border-radius:3px;
-    background:#4f4f4f;
+    background-color:rgba(195, 211, 201, 65%);
     max-width:200px;
     padding:3px 20px;
 }

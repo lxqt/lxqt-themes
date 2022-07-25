@@ -461,11 +461,12 @@ Wing menu plugin
 */
 
 #WingMenuPlugin QWidget{
-    background: rgba(0, 0, 0, 80%);
+    background: rgba(0, 0, 0, 40%);
 }
-#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView::item{
-    color: white;
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item {
     font:normal;
+    border:none;
+    background-color:transparent;
 }
 #WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
     color: #f2f1f0;
