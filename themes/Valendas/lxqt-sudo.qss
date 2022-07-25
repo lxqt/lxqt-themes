@@ -3,16 +3,19 @@
  */
 
 QLabel {
-   background:rgba(0, 0, 0, 75%);
+   background: rgba(0, 0, 0, 75%);
 }
 #PasswordDialog {
-   background:rgba(0, 0, 0, 75%);
+   background: rgba(0, 0, 0, 75%);
 }
 
-#descriptionL,#descCommandL,#commandL,#descPasswordL {
+#descriptionL,
+#descCommandL,
+#commandL,
+#descPasswordL {
     color: #f1f3f3;
 }
 
 #errorL {
-    color:#989995
+    color: #989995
 }
