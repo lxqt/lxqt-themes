@@ -159,7 +159,7 @@ Wing menu plugin
     background: palette(window);
     font: normal;
 }
-#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
     background: rgba(30, 145, 255, 50%);
     color: #313639;
 }

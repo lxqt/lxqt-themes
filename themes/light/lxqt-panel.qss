@@ -245,7 +245,7 @@ Wing Menu
     padding:0px;/* needed for breeze and oygen widget style, otherwise centered*/
     }
 
-#WingMenuPlugin QToolButton:hover{
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked{
     color: palette(highlighted-text);
     background: palette(highlight);
     }

@@ -463,13 +463,14 @@ Wing menu plugin
 #WingMenuPlugin QWidget{
     background: rgba(0, 0, 0, 80%);
 }
-#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView::item,#WingMenuPlugin ApplicationsView::item:selected{
+#WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView::item{
     color: white;
     font:normal;
 }
-#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
     color: #f2f1f0;
     background: #640b0c;
+    border:transparent;
 }
 #WingMenuPlugin ApplicationsView{
     background:transparent;

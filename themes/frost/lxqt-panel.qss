@@ -248,7 +248,7 @@ Wing menu plugin
     background: palette(text);
     color: palette(window);
 }
-#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected{
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected{
     background: palette(highlight);
     color: palette(highlighted-text);
 

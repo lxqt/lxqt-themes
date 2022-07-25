@@ -203,7 +203,7 @@ Wing menu plugin
     background:#072e41;
     color: #d7e3e6;
 }
-#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
+#WingMenuPlugin QToolButton:on,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
     background: #1899da;
     color: #0a0a2b;
 }

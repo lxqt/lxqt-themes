@@ -417,7 +417,7 @@ Wing menu plugin
     color: white;
     font:normal;
 }
-#WingMenuPlugin QToolButton:hover,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
+#WingMenuPlugin QToolButton:hover,#WingMenuPlugin QToolButton:checked,#WingMenuPlugin ApplicationsView::item:hover,#WingMenuPlugin ApplicationsView::item:selected {
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
     color: #4DA6FF;
 }
