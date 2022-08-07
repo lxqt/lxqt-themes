@@ -319,6 +319,7 @@ Wing menu plugin
 
 #WingMenuPlugin QWidget{
     background: #43423c;
+    color: #f2f1f0;
 }
 
 #WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item{

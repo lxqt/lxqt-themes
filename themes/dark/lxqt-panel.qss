@@ -461,7 +461,8 @@ Wing menu plugin
 */
 
 #WingMenuPlugin QWidget{
-    background: rgba(0, 0, 0, 40%);
+    background: rgba(0, 0, 0, 60%);
+    color: #f2f1f0;
 }
 #WingMenuPlugin QToolButton,#WingMenuPlugin ApplicationsView,#WingMenuPlugin ApplicationsView::item {
     font:normal;
@@ -477,6 +478,7 @@ Wing menu plugin
     background:transparent;
     border-left:1px solid #4c4c4c;
     border-right:1px solid #4c4c4c;
+    color: #f2f1f0;
 }
 #WingMenuPlugin ApplicationsView:hover { /*oppress blue border with Oxygen or Breeze widget style*/
     border-left:1px solid #4c4c4c;
