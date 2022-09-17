@@ -10,55 +10,55 @@
 Buttons
 */
 QToolButton::menu-indicator {
-   image: none;
+    image: none;
 }
 
 QToolButton {
-   margin: 0px;
-   border: 0px solid transparent;
-   padding: 0px;
+    margin: 0px;
+    border: 0px solid transparent;
+    padding: 0px;
 }
 
 QToolButton:hover {
-   margin: 1px;
-   padding: 1px;
+    margin: 1px;
+    padding: 1px;
 
 }
 
 #closeButton {
-   qproperty-icon: url(lxqt-runner/close.svg);
+    qproperty-icon: url(lxqt-runner/close.svg);
 }
 
 #actionButton {
-   qproperty-icon: url(lxqt-runner/down-arrow.svg);
+    qproperty-icon: url(lxqt-runner/down-arrow.svg);
 }
 
 /*
 Search field
 */
 #commandEd {
-   border: 1px solid #878a8a;
-   padding: 4px;
-   margin: 5px;
-   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
-   border-radius:3px;
-   color: #4b5053;
-   selection-color: white;
-   border-radius:2px;
-   selection-background-color:grey;
+    border: 1px solid #878a8a;
+    padding: 4px;
+    margin: 5px;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
+    border-radius: 3px;
+    color: #4b5053;
+    selection-color: white;
+    border-radius: 2px;
+    selection-background-color: grey;
 }
 
 /*
 Search results list
 */
 #commandList {
-   border: 1px solid #878a8a;
-   color: #4c4c4c;
-   background: #bfbfbf;
-   alternate-background-color:rgba(220, 220,220, 25%);
-   selection-color: black;
-   selection-background-color: #989898;
-   padding:4px;
+    border: 1px solid #878a8a;
+    color: #4c4c4c;
+    background: #bfbfbf;
+    alternate-background-color: rgba(220, 220, 220, 25%);
+    selection-color: black;
+    selection-background-color: #989898;
+    padding: 4px;
 }
 
 #commandList::item {
@@ -67,68 +67,68 @@ Search results list
 }
 
 #commandList::item:alternate {
-    background: rgba(220, 220,220, 25%);
+    background: rgba(220, 220, 220, 25%);
     color: #4c4c4c;
 }
 
 #commandList::item:hover {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-    stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
-    stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
-    stop: 0.96 #d1d1d1, stop: 1#ececec);
+            stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
+            stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
+            stop: 0.96 #d1d1d1, stop: 1#ececec);
     color: black;
 }
 
 #commandList::item:selected {
-   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-   stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
-   stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
-   stop: 0.96 #989898, stop: 1 #dcdcdc);
-   color: black;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+            stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
+            stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
+            stop: 0.96 #989898, stop: 1 #dcdcdc);
+    color: black;
 }
 
 /*
 Menus
 */
 QMenu {
-   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
-   border-radius:3px;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
+    border-radius: 3px;
 }
 
 QMenu::icon {
-   background-color: transparent;
-   border: 1px solid transparent;
-   padding-left: 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-left: 5px;
 }
 
 QMenu::item {
-   color: black;
-   border: 1px solid transparent;
-   padding: 5px 30px 5px 10px;
+    color: black;
+    border: 1px solid transparent;
+    padding: 5px 30px 5px 10px;
 }
 
 QMenu::item:selected {
-   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-   stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
-   stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
-   stop: 0.96 #989898, stop: 1 #dcdcdc);
-   color:black;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+        stop:0 #f7f7f7, stop:0.08 #f1f1f1,
+        stop:0.35 #c3c3c3, stop:0.4 #b1b1b1,
+        stop:0.96 #989898, stop:1 #dcdcdc);
+    color: black;
 }
 
 QMenu::item:selected:disabled {
-   background-color: palette(text);
+    background-color: palette(text);
 }
 
 QMenu::item:disabled {
-   color: #6D6D6D;
+    color: #6D6D6D;
 }
 
 QMenu::right-arrow {
-   image: url(arrow-right.svg);
+    image: url(arrow-right.svg);
 }
 
 QMenu::separator {
-   background:#d0d0d0;
-   margin:0px;
-   height:1px
+    background: #d0d0d0;
+    margin: 0px;
+    height: 1px
 }
