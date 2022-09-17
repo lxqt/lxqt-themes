@@ -2,7 +2,7 @@
  * General panel settings
  */
 LXQtPanel #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
 }
 
 QToolTip {
@@ -12,10 +12,10 @@ QToolTip {
     margin: 0px;
     color: #f2f1f0;
 }
+
 /*
 * Menus
 */
-
 QMenu {
     background-color: #3c3b37;
     border: 1px solid #515048;
@@ -52,16 +52,16 @@ QMenu::item {
 
 QMenu::item:selected {
     color: #f2f1f0;
-    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QMenu::item:hover {
     color: #f2f1f0;
-    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QMenu::item:disabled {
-   color:#b1b1b1;
+   color: #b1b1b1;
 }
 
 QMenu::indicator {
@@ -82,7 +82,6 @@ QMenu::indicator:non-exclusive:checked {
 /*
  * General plugins settings
  */
-
 Plugin,
 LXQtPanelPlugin {
     padding: 0;
@@ -90,8 +89,8 @@ LXQtPanelPlugin {
     qproperty-moveMarkerColor: #eb7140;
 }
 
-Plugin  > QWidget,
-Plugin  > QWidget > QWidget{
+Plugin > QWidget,
+Plugin > QWidget > QWidget {
     color: #f2f1f0;
 }
 
@@ -117,7 +116,6 @@ LXQtPanelPlugin > QToolButton:hover {
 /*
  * Calendar (from any of the two clocks)
  */
-
 QCalendarWidget #qt_calendar_navigationbar,
 #WorldClock QCalendarWidget #qt_calendar_navigationbar * {
     background-color: #3c3b37;
@@ -125,27 +123,27 @@ QCalendarWidget #qt_calendar_navigationbar,
 }
 
 QCalendarWidget #qt_calendar_nextmonth {
-    max-height:20px;
-    min-height:20px;
+    max-height: 20px;
+    min-height: 20px;
     qproperty-icon: url(/arrow-right.svg);
     margin-right: 3px;
 }
 
 QCalendarWidget #qt_calendar_nextmonth:hover {
     border: 1px solid #ca5f34;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QCalendarWidget #qt_calendar_prevmonth {
-    max-height:20px;
-    min-height:20px;
+    max-height: 20px;
+    min-height: 20px;
     qproperty-icon: url(/arrow-left.svg);
     margin-left: 3px;
 }
 
 QCalendarWidget #qt_calendar_prevmonth:hover {
     border: 1px solid #ca5f34;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
@@ -153,17 +151,17 @@ QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
 }
 
 QCalendarWidget #qt_calendar_monthbutton {
-    padding:2px;
+    padding: 2px;
     margin: 2px;
 }
 QCalendarWidget #qt_calendar_monthbutton:hover {
     border: 1px solid #ca5f34;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QCalendarWidget #qt_calendar_yearbutton:hover {
     border: 1px solid #ca5f34;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QCalendarWidget QMenu {
@@ -174,7 +172,7 @@ QCalendarWidget QMenu {
 
 QCalendarWidget QMenu::item:selected {
     color: #f2f1f0;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 QCalendarWidget QSpinBox {
@@ -202,7 +200,7 @@ QCalendarWidget QWidget {
 /*
  * TaskBar
  */
-#TaskBar QToolButton{
+#TaskBar QToolButton {
     padding: 1px;
     margin: 2px;
 }
@@ -213,11 +211,11 @@ QCalendarWidget QWidget {
 
 #TaskBar QToolButton:hover, #TaskBar QToolButton:on {
     border: 1px solid #ca5f34;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 #TaskBar QToolButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eb7140, stop:1 #f88657);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eb7140, stop:1 #f88657);
 }
 
 #TaskBar QToolButton[urgent="true"] {
@@ -226,13 +224,13 @@ QCalendarWidget QWidget {
 }
 
 #TaskBar LXQtGroupPopup {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #515048, stop:1 #3C3B37);
     border: 1px solid #f88657;
 }
+
 /*
  * Main menu
  */
-
 #MainMenu {
     margin: 2px;
     padding: 1px;
@@ -274,7 +272,7 @@ QCalendarWidget QWidget {
 
 #MainMenu QMenu::item:selected {
     color: #f2f1f0;
-    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 #MainMenu ActionView {
@@ -294,7 +292,7 @@ QCalendarWidget QWidget {
 }
 
 #MainMenu ActionView::item:selected {
-    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
     color: #f2f1f0;
 }
 
@@ -333,13 +331,12 @@ QCalendarWidget QWidget {
 
 #QuickLaunchPlaceHolder {
     color: #eb7140;
-    padding:0 5px;
+    padding: 0 5px;
 }
 
 /*
  * Clock
  */
-
 #Clock {
     background: transparent;
     margin: 2px;
@@ -351,12 +348,12 @@ QCalendarWidget QWidget {
     border: 1px solid #2b2b29;
 }
 
-#Clock #TimeLabel{
+#Clock #TimeLabel {
     color: #f2f1f0;
     margin-right: 2px;
     margin-left: 2px;
 }
-#Clock #DateLabel{
+#Clock #DateLabel {
     color: #f2f1f0;
     margin-right: 2px;
     margin-left: 2px;
@@ -374,7 +371,7 @@ QCalendarWidget QWidget {
 
 #DesktopSwitch QToolButton:on {
     border: 1px solid #ca5f34;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 #DesktopSwitch QToolButton:hover {
@@ -405,9 +402,8 @@ TrayIcon {
 /*
  * Mount plugin
  */
-
 #LXQtMountPlugin QToolButton {
-    border:none;
+    border: none;
     padding: 1px;
     margin: 2px;
 }
@@ -426,7 +422,7 @@ TrayIcon {
 }
 
 #LXQtMountPopup > MenuDiskItem:hover {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
 #LXQtMountPopup #EjectButton,
@@ -447,9 +443,8 @@ TrayIcon {
 /*
  * ShowDesktop
  */
-
 #ShowDesktop {
-    border:none;
+    border: none;
     padding: 1px;
     margin: 2px;
 }
@@ -511,7 +506,6 @@ TrayIcon {
 /*
  * WorldClock
  */
-
 #WorldClock {
     margin: 2px;
     border: none;
@@ -544,9 +538,8 @@ TrayIcon {
 /*
  * Volume plugin
  */
-
 #VolumePlugin QToolButton {
-    border:none;
+    border: none;
     padding: 1px;
     margin: 2px;
 }
@@ -601,7 +594,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Backlight
  */
-
 #Backlight > SliderDialog > QToolButton {
     color: #f2f1f0;
     background: #363532;
@@ -647,10 +639,10 @@ VolumePopup  > QSlider::sub-page:vertical {
     background: rgba(0, 0, 0, 80%);
     border-radius: 3px;
 }
+
 /*
  * Spacer
  */
-
 #Spacer {
     background-position: center center;
 }
