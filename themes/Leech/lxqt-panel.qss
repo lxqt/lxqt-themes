@@ -175,7 +175,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 QMenu::item:disabled {
-    color: #9e9e9e
+    color: #9e9e9e;
 }
 
 /* The actual menu... */
