@@ -4,24 +4,25 @@
 LXQtPanel {
     color: white;
 }
+
 LXQtPanel #BackgroundWidget {
-    color:white;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+    color: white;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /* PositionBottom */
 LXQtPanel[position="Bottom"] #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /* PositionLeft */
 LXQtPanel[position="Left"] #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /* PositionRight */
 LXQtPanel[position="Right"] #BackgroundWidget {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(80, 80, 80, 80%), stop:0.11 rgba(60, 60, 60, 80%), stop:0.12 rgba(60, 60, 60, 80%), stop:1 rgba(0, 0, 0, 72%));
 }
 
 /*
@@ -66,7 +67,7 @@ Plugin > QWidget > QToolButton {
 Plugin > QToolButton:pressed,
 Plugin > QWidget > QToolButton:pressed {
     margin: 3px 1px 0 1px;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
     border: none;
 }
 
@@ -107,8 +108,7 @@ LXQtPanel[position="Right"] Plugin > QWidget > QToolButton:pressed {
 }
 
 LXQtPanel[position="0"] #DesktopSwitch QToolButton,
-LXQtPanel[position="1"] #DesktopSwitch QToolButton
-{
+LXQtPanel[position="1"] #DesktopSwitch QToolButton {
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -143,7 +143,7 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 }
 
 #QuickLaunch QToolButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
 }
 
 /*
@@ -157,7 +157,7 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 }
 
 #TaskBar QToolButton:on {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a5f84, stop:0.31 #345372, stop:0.32 #2e4964, stop:1 #4584be);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a5f84, stop:0.31 #345372, stop:0.32 #2e4964, stop:1 #4584be);
 }
 
 #TaskBar QToolButton:hover {
@@ -165,7 +165,7 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 }
 
 #TaskBar QToolButton:hover:on {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #436d98, stop:0.31 #385a7c, stop:0.32 #375778, stop:1 #488cc8);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #436d98, stop:0.31 #385a7c, stop:0.32 #375778, stop:1 #488cc8);
 }
 
 #TaskBar QToolButton[urgent="true"] {
@@ -175,7 +175,7 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 }
 
 #TaskBar LXQtGroupPopup {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(69, 69, 69, 80%), stop:0.25 rgba(63, 63, 63, 80%), stop: 0.5 rgba(53, 53, 53, 80%), stop: 0.75 rgba(45, 45, 45, 80%), stop:1 rgba(22, 22, 22, 80%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(69, 69, 69, 80%), stop:0.25 rgba(63, 63, 63, 80%), stop: 0.5 rgba(53, 53, 53, 80%), stop: 0.75 rgba(45, 45, 45, 80%), stop:1 rgba(22, 22, 22, 80%));
     border-radius: 3px;
 }
 
@@ -218,7 +218,7 @@ QToolTip {
  * Line-edit
  */
 #MainMenu QLineEdit {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
     border: 1px solid #000000;
     border-left-color: #0a0a0a;
     border-bottom-color: #414141;
@@ -245,7 +245,7 @@ QMenu {
     border-bottom-color: rgba(20, 20, 20, 50%);
     border-right-color: rgba(40, 40, 40, 50%);
     border-left-color: rgba(70, 70, 70, 50%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
     border-radius: 3px;
     color: white;
 }
@@ -277,7 +277,7 @@ QMenu::item {
 }
 
 QMenu::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(90, 90, 90), stop:0.05 rgb(60, 60, 60), stop:0.95 rgb(25, 25, 25), stop:1 rgb(10, 10, 10));
     color: #4DA6FF;
 }
 
@@ -364,7 +364,7 @@ TrayIcon {
 }
 
 #MainMenu ActionView::item:selected {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #0064c8, stop:0.95 #0050a0, stop:1 #001428);
     color: white;
 }
 
@@ -374,7 +374,7 @@ TrayIcon {
 }
 
 #MainMenu ActionView::item:selected:hover {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #55aaff, stop:0.05 #006edc, stop:0.95 #005ab4, stop:1 #001e3c);
     color: white;
 }
 
@@ -409,7 +409,7 @@ TrayIcon {
  * Mount plugin
  */
 #LXQtMountPopup {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #595959, stop:0.25 #535353, stop: 0.5 #494949, stop: 0.75 #414141, stop:1 #2A2A2A);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #595959, stop:0.25 #535353, stop: 0.5 #494949, stop: 0.75 #414141, stop:1 #2A2A2A);
     border: 1px solid #2A2A2A;
     padding: 2px;
 }
@@ -460,7 +460,7 @@ VolumePopup > QPushButton:hover {
 }
 
 VolumePopup > QPushButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
     border: none;
 }
 
@@ -476,7 +476,7 @@ VolumePopup {
     border-bottom-color: rgba(20, 20, 20, 100%);
     border-right-color: rgba(40, 40, 40, 100%);
     border-left-color: rgba(70, 70, 70, 100%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
     border-radius: 0px;
     color: white;
 }
@@ -487,12 +487,12 @@ VolumePopup > QSlider {
 }
 
 VolumePopup > QSlider::groove:vertical {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
     width: 3px;
 }
 
-VolumePopup  > QSlider::sub-page:vertical {
-   background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
+VolumePopup > QSlider::sub-page:vertical {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
 }
 
 VolumePopup > QSlider::handle:vertical {
@@ -521,7 +521,7 @@ VolumePopup > QSlider::handle:vertical {
 }
 
 #Backlight > SliderDialog > QToolButton:pressed {
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
     border: none;
 }
 
@@ -532,7 +532,7 @@ VolumePopup > QSlider::handle:vertical {
     border-bottom-color: rgba(20, 20, 20, 100%);
     border-right-color: rgba(40, 40, 40, 100%);
     border-left-color: rgba(70, 70, 70, 100%);
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 100%), stop:0.02 rgba(73, 73, 73, 100%), stop:0.2 rgba(58, 58, 58, 100%), stop:1 rgba(52, 52, 52, 100%));
     border-radius: 0px;
     color: white;
 }
@@ -543,12 +543,12 @@ VolumePopup > QSlider::handle:vertical {
 }
 
 #Backlight > SliderDialog > QSlider::groove:vertical {
-    background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
     width: 3px;
 }
 
 #Backlight > SliderDialog > QSlider::sub-page:vertical {
-   background-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
 }
 
 #Backlight > SliderDialog > QSlider::handle:vertical {
@@ -680,13 +680,13 @@ QCalendarWidget #qt_calendar_navigationbar {
 }
 
 QCalendarWidget #qt_calendar_nextmonth {
-    max-height:20px;
-    min-height:20px;
+    max-height: 20px;
+    min-height: 20px;
     border: 1px solid transparent;
     border-radius: 3px;
     qproperty-icon: url(/lxqt-panel/arrow-right.svg);
     margin: 3px;
-    padding:3px
+    padding: 3px
 }
 
 QCalendarWidget #qt_calendar_nextmonth:hover {
@@ -694,13 +694,13 @@ QCalendarWidget #qt_calendar_nextmonth:hover {
 }
 
 QCalendarWidget #qt_calendar_prevmonth {
-    max-height:20px;
-    min-height:20px;
+    max-height: 20px;
+    min-height: 20px;
     border: 1px solid transparent;
     border-radius: 3px;
     qproperty-icon: url(/lxqt-panel/arrow-left.svg);
     margin: 3px;
-    padding:3px
+    padding: 3px
 }
 
 QCalendarWidget #qt_calendar_prevmonth:hover {
@@ -708,7 +708,7 @@ QCalendarWidget #qt_calendar_prevmonth:hover {
 }
 
 QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
-   image: none;
+    image: none;
 }
 
 QCalendarWidget #qt_calendar_monthbutton,
@@ -720,13 +720,14 @@ QCalendarWidget #qt_calendar_yearbutton {
     color: white;
     background-color: transparent;
 }
+
 QCalendarWidget #qt_calendar_monthbutton:hover,
 QCalendarWidget #qt_calendar_yearbutton:hover {
     background-color: rgba(255, 255, 255, 10%);
 }
 
 QCalendarWidget QMenu { /* it was changed in "QCalendarWidget QWidget" */
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(75, 75, 75, 92%), stop:0.02 rgba(73, 73, 73, 92%), stop:0.2 rgba(58, 58, 58, 92%), stop:1 rgba(52, 52, 52, 92%));
 }
 
 QCalendarWidget QSpinBox {
@@ -787,7 +788,6 @@ QCalendarWidget QSpinBox::down-arrow:pressed {
 /*
  * Spacer
  */
-
 #Spacer {
     background-position: center center;
 }
