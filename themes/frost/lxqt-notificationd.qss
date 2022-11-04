@@ -1,5 +1,5 @@
 Notification {
-    background:palette(text);
+    background: palette(text);
     padding: 1px;
     margin: 0px;
 }

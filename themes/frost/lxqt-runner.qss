@@ -1,7 +1,6 @@
 /*
  * Panel
  */
-
 #panel {
     border: 1px solid palette(text);
     background: palette(text);
@@ -12,9 +11,8 @@
 /*
  * Buttons
  */
-
 QToolButton::menu-indicator {
-   image: none;
+    image: none;
 }
 
 QToolButton {
@@ -41,9 +39,8 @@ QToolButton:hover {
 }
 
 /*
- *Search field
+ * Search field
  */
-
 #commandEd {
     border: 1px solid palette(text);
     padding: 0px;
@@ -55,9 +52,8 @@ QToolButton:hover {
 }
 
 /*
- *Search results list
+ * Search results list
  */
-
 #commandList {
     border: 1px solid #4C4C4C;
 }
@@ -70,7 +66,6 @@ QToolButton:hover {
 /*
  * Menus
  */
-
 QMenu {
     background-color: palette(text);
 }
