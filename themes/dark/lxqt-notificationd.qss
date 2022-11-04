@@ -18,7 +18,7 @@ QLabel {
 #closeButton:hover {
     border: 1px solid rgba(0, 0, 0, 50%);
     padding: 2px;
-   background: rgba(255, 255, 255, 20%);
+    background: rgba(255, 255, 255, 20%);
     qproperty-icon: url(lxqt-notificationd/cancel.png);
 }
 
