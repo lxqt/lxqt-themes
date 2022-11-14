@@ -6,7 +6,7 @@
  * General panel settings
  */
 
-LXQtPanel #BackgroundWidget{
+LXQtPanel #BackgroundWidget {
     background: palette(text);
 }
 
@@ -15,7 +15,7 @@ LXQtPanel #BackgroundWidget{
  * Menu titles
  */
 
-QMenu  > QToolButton:pressed {
+QMenu > QToolButton:pressed {
     background: palette(highlight);
     color: palette(highlighted-text);
 }
@@ -39,8 +39,8 @@ LXQtPanelPlugin {
     qproperty-moveMarkerColor: palette(highlight);
 }
 
-Plugin  > QWidget,
-Plugin  > QWidget > QWidget {
+Plugin > QWidget,
+Plugin > QWidget > QWidget {
     color: palette(window);
 }
 
@@ -71,7 +71,6 @@ LXQtPanelPlugin > QToolButton:pressed {
 /*
  * Menus
  */
-
 QMenu {
     background-color: palette(text);
     padding: 0;
@@ -106,15 +105,13 @@ QMenu::right-arrow {
     image: url(arrow-right.svg);
 }
 
-QMenu::left-arrow
-{
-	image: url(arrow-left.svg);
+QMenu::left-arrow {
+    image: url(arrow-left.svg);
 }
 
 /*
  * Calendar Widget
 */
-
 QCalendarWidget QAbstractItemView:enabled {
     color: palette(text);
     background: palette(window);
@@ -129,8 +126,9 @@ QCalendarWidget QAbstractItemView:disabled {
 QCalendarWidget QWidget {
     alternate-background-color: palette(window);
 }
+
 QCalendarWidget #qt_calendar_navigationbar {
-    background-color:palette(text);
+    background-color: palette(text);
     color: palette(window);
     padding: 2px;
 }
@@ -138,7 +136,7 @@ QCalendarWidget #qt_calendar_navigationbar {
 QCalendarWidget QToolButton {
     color: palette(window);
     background: palette(text);
-    padding:2px;
+    padding: 2px;
     margin: 2px;
 }
 
@@ -186,7 +184,6 @@ QCalendarWidget QSpinBox {
 /*
  * Main menu plugin
  */
-
 #MainMenuPlugin {
     padding: 0px;
 }
@@ -226,7 +223,8 @@ QCalendarWidget QSpinBox {
     padding: 3px 0;
 }
 
-#MainMenu ActionView::item:selected, ActionView::item:hover {
+#MainMenu ActionView::item:selected,
+ActionView::item:hover {
     background: palette(highlight);
     color: palette(highlighted-text);
 }
@@ -240,14 +238,14 @@ QCalendarWidget QSpinBox {
     padding: 0 5px;
 }
 
-#QuickLaunch QToolButton{
+#QuickLaunch QToolButton {
     border: 0px;
     margin: 2px;
     padding: 2px;
 }
 
-#QuickLaunch QToolButton:hover{
-   background: rgba(0, 0, 0, 45%);
+#QuickLaunch QToolButton:hover {
+    background: rgba(0, 0, 0, 45%);
 }
 
 #QuickLaunch QToolButton:pressed {
@@ -257,18 +255,18 @@ QCalendarWidget QSpinBox {
 /*
  * TaskBar
  */
-#TaskBar QToolButton{
+#TaskBar QToolButton {
     border-left: 3px solid #4C4C4C;
     margin: 2px;
     padding: 2px;
 }
 
-#TaskBar QToolButton:on{
+#TaskBar QToolButton:on {
     background: rgba(0, 0, 0, 45%);
     border-left: 3px solid palette(highlight);
 }
 
-#TaskBar QToolButton:hover{
+#TaskBar QToolButton:hover {
     border-left: 3px solid #4C4C4C;
     background: palette(highlight);
     color: palette(highlighted-text);
@@ -288,6 +286,7 @@ QCalendarWidget QSpinBox {
     color: palette(window);
     border: 1px solid palette(highlight);
 }
+
 /*
  * Tray Plugin
  */
@@ -304,7 +303,7 @@ TrayIcon {
 /*
  * Mount plugin
  */
-#LXQtMountPlugin QToolButton{
+#LXQtMountPlugin QToolButton {
     border: 0px;
     margin: 2px;
     padding: 2px;
@@ -328,8 +327,7 @@ TrayIcon {
     border-radius: 0px;
 }
 
-#LXQtMountPopup > MenuDiskItem:hover {
-}
+#LXQtMountPopup > MenuDiskItem:hover {}
 
 #LXQtMountPopup #EjectButton,
 #LXQtMountPopup #DiskButton {
@@ -355,8 +353,7 @@ TrayIcon {
 /*
  * Volume plugin
  */
-
-#VolumePlugin QToolButton{
+#VolumePlugin QToolButton {
     border: 0px;
     margin: 2px;
     padding: 2px;
@@ -376,7 +373,7 @@ VolumePopup {
     padding: 2px;
 }
 
-VolumePopup  > QPushButton {
+VolumePopup > QPushButton {
     color: palette(window);
     background: palette(text);
     padding: 2px 10px;
@@ -385,32 +382,32 @@ VolumePopup  > QPushButton {
     qproperty-iconSize: 20px;
 }
 
-VolumePopup  > QPushButton:hover {
+VolumePopup > QPushButton:hover {
     background: palette(highlight);
     color: palette(highlighted-text);
 }
 
-VolumePopup  > QSlider::groove:vertical {
+VolumePopup > QSlider::groove:vertical {
     background: palette(window);
     width: 5px;
     border-radius: 3px;
 }
 
-VolumePopup  > QSlider::handle:vertical {
+VolumePopup > QSlider::handle:vertical {
     height: 10px;
     background: palette(highlight);
     border-radius: 2px;
     margin: 0 -4px; /* expand outside the groove */
 }
 
-VolumePopup  > QSlider::add-page:vertical {
+VolumePopup > QSlider::add-page:vertical {
     background: palette(highlight);
     border: 1px solid palette(text);
     border-radius: 3px;
     color: palette(highlighted-text);
 }
 
-VolumePopup  > QSlider::sub-page:vertical {
+VolumePopup > QSlider::sub-page:vertical {
     background: palette(window);
     border: 1px solid palette(text);
     border-radius: 3px;
@@ -419,7 +416,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Backlight
  */
-
 #Backlight > SliderDialog > QToolButton {
     color: palette(window);
     background: palette(text);
@@ -472,10 +468,10 @@ VolumePopup  > QSlider::sub-page:vertical {
     border-radius: 3px;
 }
 
- /*
+/*
  * Clock
  */
-#Clock{
+#Clock {
     margin: 2px;
     padding: 2px;
 }
@@ -488,11 +484,11 @@ VolumePopup  > QSlider::sub-page:vertical {
     padding: 4px
 }
 
-#Clock > QWidget{
+#Clock > QWidget {
     margin: 2px;
 }
 
-#Clock QLabel{
+#Clock QLabel {
     margin: 2px;
     color: palette(window);
     qproperty-alignment: alignCenter;
@@ -552,7 +548,7 @@ VolumePopup  > QSlider::sub-page:vertical {
     border: 0px;
 }
 
-#KbIndicator >  QLabel:disabled {
+#KbIndicator > QLabel:disabled {
     color: #999999;
 }
 
@@ -563,7 +559,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * WorldClock
  */
-
 #WorldClock {
     margin: 2px;
 }
@@ -580,7 +575,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * SysStat
  */
-
 #SysStat {
     padding: 1px 1px 1px 1px;
 }
@@ -608,7 +602,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * CPU monitor
  */
-
 #LXQtCpuLoad {
     qproperty-fontColor: #cacaca;
 }
@@ -616,7 +609,7 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * DOM
  */
-#DomPlugin QToolButton{
+#DomPlugin QToolButton {
     qproperty-icon: url(/debug.png);
     margin: 2px;
     padding: 2px;
@@ -633,7 +626,6 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Spacer
  */
-
 #Spacer {
     background-position: center center;
 }
@@ -644,7 +636,7 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #Spacer[type="dotted"] {
     background-image: url(/spacer-plugin/spacer-dots.svg);
- }
+}
 
 #Spacer[orientation="horizontal"] {
     background-repeat: repeat-y;

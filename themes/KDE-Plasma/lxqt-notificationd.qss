@@ -1,7 +1,7 @@
 Notification {
     color: #313639;
     border: 1px solid rgba(155, 155, 155, 100%);
-    background:rgba(240, 240, 240, 100%);
+    background: rgba(240, 240, 240, 100%);
     margin: 0px;
     border-radius: 5px;
 }

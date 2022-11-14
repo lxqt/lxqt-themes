@@ -1,5 +1,5 @@
 #panel {
-    background:rgba(240, 240, 240, 100%);
+    background: rgba(240, 240, 240, 100%);
     border: 1px solid rgba(155, 155, 155, 100%);
 }
 
@@ -36,13 +36,12 @@ QToolButton::menu-indicator {
     border-radius: 0px;
     padding: 3px;
     selection-color: #eee;;
-    selection-background-color:#1e91ff;
+    selection-background-color: #1e91ff;
 }
 
 #commandEd:focus {
     border: 1px solid #1e91ff;
 }
-
 
 #commandList {
     background-color: #f0f0f0;
@@ -75,7 +74,7 @@ QToolButton::menu-indicator {
 
 QMenu {
     border: 1px solid rgba(155, 155, 155, 100%);
-    background:rgba(240, 240, 240, 100%);
+    background: rgba(240, 240, 240, 100%);
     margin: 0px;
 }
 

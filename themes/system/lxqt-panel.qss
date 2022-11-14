@@ -6,7 +6,7 @@
  * General panel settings
  */
 
-LXQtPanel #BackgroundWidget{
+LXQtPanel #BackgroundWidget {
     background: palette(window);
 }
 
@@ -29,10 +29,10 @@ LXQtPanel #BackgroundWidget{
 /*
 KbIndicator
  */
-
 #KbIndicator QLabel:disabled {
     color: palette(text);
 }
+
 #KbIndicator QLabel:enabled {
     color: palette(highlighted-text);
     background: palette(highlight);
@@ -41,7 +41,6 @@ KbIndicator
 /*
  * Spacer
  */
-
 #Spacer {
     background-position: center center;
 }
@@ -69,7 +68,6 @@ KbIndicator
 /*
  * Main menu plugin
  */
-
 #MainMenu {
     qproperty-icon: url(mainmenu.svg);
 }

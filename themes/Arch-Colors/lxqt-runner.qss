@@ -1,119 +1,119 @@
 /*
-Panel
+ * Panel
  */
 #panel {
-   background:#041b27;
-   border: 1px solid #1899da;
-   border-radius: 1px;
-   padding: 1px;
-   margin: 0px;
+    background: #041b27;
+    border: 1px solid #1899da;
+    border-radius: 1px;
+    padding: 1px;
+    margin: 0px;
 }
 
 /*
-Buttons
-*/
+ * Buttons
+ */
 QToolButton::menu-indicator {
-   image: none;
+    image: none;
 }
 
 QToolButton {
-   margin: 0px;
-   border: 0px solid transparent;
-   padding: 0px;
-   qproperty-iconSize: 20px;
+    margin: 0px;
+    border: 0px solid transparent;
+    padding: 0px;
+    qproperty-iconSize: 20px;
 }
 
 QToolButton:hover {
-   margin: 1px;
-   padding: 1px;
+    margin: 1px;
+    padding: 1px;
 }
 
 #closeButton {
-   qproperty-icon: url(lxqt-runner/close.svg);
+    qproperty-icon: url(lxqt-runner/close.svg);
 }
 
 #actionButton {
-   qproperty-icon: url(lxqt-runner/down-arrow.svg);
+    qproperty-icon: url(lxqt-runner/down-arrow.svg);
 }
 
 /*
-Search field
-*/
+ * Search field
+ */
 #commandEd {
-   border: 1px solid black;
-   padding: 4px;
-   margin: 5px;
-   color: #323232;
-   background: #f3f8f9;
-   border-radius: 2px;
-   selection-color: #d4d4d4;
-   selection-background-color: #414141;
+    border: 1px solid black;
+    padding: 4px;
+    margin: 5px;
+    color: #323232;
+    background: #f3f8f9;
+    border-radius: 2px;
+    selection-color: #d4d4d4;
+    selection-background-color: #414141;
 }
 
 /*
-Search results list
-*/
+ * Search results list
+ */
 #commandList {
-   border: 1px solid #1899da;
-   border-top: none;
-   color: #cfcfcf;
-   background: #041b27;
-   alternate-background-color: #062a3c;
-   selection-background-color: #1899da;
-   selection-color: #0a0a2b;
+    border: 1px solid #1899da;
+    border-top: none;
+    color: #cfcfcf;
+    background: #041b27;
+    alternate-background-color: #062a3c;
+    selection-background-color: #1899da;
+    selection-color: #0a0a2b;
 }
 
 #commandList::item {
-    background: #041b27;
-    color: #cfcfcf;
+     background: #041b27;
+     color: #cfcfcf;
 }
 
 #commandList::item:alternate {
-    background: #062a3c;
-    color: #cfcfcf;
+     background: #062a3c;
+     color: #cfcfcf;
 }
 
 #commandList::item:hover {
-   background: #003d5b;
-   color: #d7e3e6;
+    background: #003d5b;
+    color: #d7e3e6;
 }
 
 #commandList::item:selected {
-   background: #1899da;
-   color: white
+    background: #1899da;
+    color: white
 }
 
 /*
-Menu
-*/
+ * Menu
+ */
 QMenu {
-   background: #1899da;
-   border-radius: 2px;
+    background: #1899da;
+    border-radius: 2px;
 }
 
 QMenu::item {
-   color: #d7e3e6;
-   background: #041b27;
-   padding: 5px 35px 5px 30px;
+    color: #d7e3e6;
+    background: #041b27;
+    padding: 5px 35px 5px 30px;
 }
 
 QMenu::icon {
-   background-color: transparent;
-   border: 1px solid transparent;
-   margin-left: 13px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-left: 13px;
 }
 
 QMenu::item:selected {
-   background: #1899da;
-   color:#0a0a2b;
+    background: #1899da;
+    color:#0a0a2b;
 }
 
 QMenu::item:disabled {
-    color: rgba(215, 227, 230, 50%);
+     color: rgba(215, 227, 230, 50%);
 }
 
 QMenu::separator {
-   height: 1px;
-   background: #1899da;
-   margin: 0;
+    height: 1px;
+    background: #1899da;
+    margin: 0;
 }
