@@ -101,7 +101,7 @@ QMenu::indicator:non-exclusive:checked {
  */
 #MainMenu {
     color: rgba(54, 54, 54, 100%);
-    margin: 3px 1px 3px 1px;
+    margin: 3px 2px;
     border-top: 3px solid transparent;
     qproperty-icon: url(mainmenu.svg);
 }
@@ -149,7 +149,7 @@ QMenu::indicator:non-exclusive:checked {
  * DirectoryMenu
  */
 #DirectoryMenu {
-    margin: 3px;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid transparent;
 }
@@ -162,7 +162,7 @@ QMenu::indicator:non-exclusive:checked {
  * Backlight
  */
 #Backlight {
-    margin: 3px;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid transparent;
 }
@@ -182,7 +182,7 @@ QMenu::indicator:non-exclusive:checked {
  * TaskBar
  */
 #TaskBar QToolButton {
-    margin: 3px;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid #DEDEDE;
     color: rgba(54, 54, 54, 60%);
@@ -217,7 +217,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 #QuickLaunch QToolButton {
-    margin: 3px 1px 3px 1px;
+    margin: 3px 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
@@ -231,7 +231,7 @@ QMenu::indicator:non-exclusive:checked {
  * Volume plugin
  */
 #VolumePlugin QToolButton {
-    margin: 3px 1px 3px 1px;
+    margin: 3px 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
@@ -294,10 +294,10 @@ VolumePopup > QSlider::sub-page:vertical {
 }
 
 /*
- * Desktopswitch
+ * Desktop switcher
  */
 #DesktopSwitch QToolButton {
-    margin: 3px;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
@@ -322,7 +322,7 @@ VolumePopup > QSlider::sub-page:vertical {
  * Mount plugin
  */
 #LXQtMountPlugin QToolButton {
-    margin: 3px;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
@@ -386,8 +386,12 @@ VolumePopup > QSlider::sub-page:vertical {
 /*
  * KbIndicator
  */
+#KbIndicator > QToolButton {
+    margin: 3px 2px;
+}
+
 #KbIndicator > QLabel {
-    margin: 3px;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
@@ -459,7 +463,7 @@ TrayIcon {
  * WorldClock
  */
 #WorldClock {
-    margin: 3px 0 0 0;
+    margin: 3px 2px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 100%);
