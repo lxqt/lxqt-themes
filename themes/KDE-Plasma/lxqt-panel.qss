@@ -459,7 +459,7 @@ TrayIcon {
  * WorldClock
  */
 #WorldClock {
-    margin: 3px;
+    margin: 3px 0 0 0;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 100%);
