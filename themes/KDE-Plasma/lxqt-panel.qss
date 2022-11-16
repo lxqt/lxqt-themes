@@ -96,8 +96,6 @@ QMenu::indicator:non-exclusive:checked {
     image: url(checked.svg);
 }
 
-QToolButton { /*background: green;*/ }
-
 /*
  * Main menu
  */
