@@ -99,15 +99,52 @@ QMenu::indicator:non-exclusive:checked {
 /*
  * Main menu
  */
+
 #MainMenu {
-    color: rgba(54, 54, 54, 100%);
-    margin: 3px 1px 3px 1px;
-    border-top: 3px solid transparent;
     qproperty-icon: url(mainmenu.svg);
+    color: rgba(54, 54, 54, 100%);
 }
 
-#MainMenu:hover {
+LXQtPanel[position="Bottom"] #MainMenu,
+LXQtPanel[position="Top"] #MainMenu {
+    margin: 3px 2px;
+}
+
+LXQtPanel[position="Left"] #MainMenu,
+LXQtPanel[position="Right"] #MainMenu{
+    margin: 2px 3px;
+}
+
+LXQtPanel[position="Bottom"] #MainMenu {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #MainMenu:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #MainMenu {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #MainMenu:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #MainMenu {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #MainMenu:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #MainMenu {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #MainMenu:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
 }
 
 #MainMenu QLineEdit {
@@ -148,27 +185,95 @@ QMenu::indicator:non-exclusive:checked {
 /*
  * DirectoryMenu
  */
-#DirectoryMenu {
-    margin: 3px;
-    padding-top: 2px;
+LXQtPanel[position="Bottom"] #DirectoryMenu,
+LXQtPanel[position="Top"] #DirectoryMenu {
+    margin: 3px 2px;
+	padding: 0 2px;
+}
+
+LXQtPanel[position="Left"] #DirectoryMenu,
+LXQtPanel[position="Right"] #DirectoryMenu {
+    margin: 2px 3px;
+	padding: 2px 0;
+}
+
+LXQtPanel[position="Bottom"] #DirectoryMenu {
     border-top: 3px solid transparent;
 }
 
-#DirectoryMenu:hover {
+LXQtPanel[position="Bottom"] #DirectoryMenu:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #DirectoryMenu {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #DirectoryMenu:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #DirectoryMenu {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #DirectoryMenu:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #DirectoryMenu {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #DirectoryMenu:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
 }
 
 /*
  * Backlight
  */
-#Backlight {
-    margin: 3px;
-    padding-top: 2px;
+LXQtPanel[position="Bottom"] #Backlight,
+LXQtPanel[position="Top"] #Backlight {
+	margin: 3px 2px;
+	padding: 3px 0;
+}
+
+LXQtPanel[position="Left"] #Backlight,
+LXQtPanel[position="Right"] #Backlight {
+	margin: 2px 3px;
+	padding: 0 3px;
+}
+
+LXQtPanel[position="Bottom"] #Backlight {
     border-top: 3px solid transparent;
 }
 
-#Backlight:hover {
+LXQtPanel[position="Bottom"] #Backlight:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #Backlight {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #Backlight:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #Backlight {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #Backlight:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #Backlight {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #Backlight:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
 }
 
 /*
@@ -182,19 +287,21 @@ QMenu::indicator:non-exclusive:checked {
  * TaskBar
  */
 #TaskBar QToolButton {
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid #DEDEDE;
     color: rgba(54, 54, 54, 60%);
+	margin: 3px 2px;
+}
+
+LXQtPanel[position="Top"] #TaskBar QToolButton,
+LXQtPanel[position="Left"] #TaskBar QToolButton,
+LXQtPanel[position="Right"] #TaskBar QToolButton {
+	margin: 1px 2px;
 }
 
 #TaskBar QToolButton:on {
-    border-top: 3px solid rgba(30, 145, 255, 100%);
     color: rgba(54, 54, 54, 100%);
 }
 
 #TaskBar QToolButton:hover {
-    border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
 
@@ -208,6 +315,36 @@ QMenu::indicator:non-exclusive:checked {
     border: 1px solid rgba(30, 145, 255, 100%);
 }
 
+LXQtPanel[position="Left"] #TaskBar QToolButton,
+LXQtPanel[position="Top"] #TaskBar QToolButton {
+    border-bottom: 3px solid #DEDEDE;
+}
+
+LXQtPanel[position="Left"] #TaskBar QToolButton:on,
+LXQtPanel[position="Top"] #TaskBar QToolButton:on {
+    border-bottom: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Left"] #TaskBar QToolButton:hover,
+LXQtPanel[position="Top"] #TaskBar QToolButton:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #TaskBar QToolButton,
+LXQtPanel[position="Bottom"] #TaskBar QToolButton {
+    border-top: 3px solid #DEDEDE;
+}
+
+LXQtPanel[position="Right"] #TaskBar QToolButton:on,
+LXQtPanel[position="Bottom"] #TaskBar QToolButton:on {
+    border-top: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Right"] #TaskBar QToolButton:hover,
+LXQtPanel[position="Bottom"] #TaskBar QToolButton:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
 /*
  * QuickLaunch
  */
@@ -217,29 +354,103 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 #QuickLaunch QToolButton {
-    margin: 3px 1px 3px 1px;
-    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
 #QuickLaunch QToolButton:hover {
-    border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
+}
+
+LXQtPanel[position="Bottom"] #QuickLaunch QToolButton,
+LXQtPanel[position="Top"] #QuickLaunch QToolButton {
+    margin: 3px 2px;
+}
+
+LXQtPanel[position="Left"] #QuickLaunch QToolButton,
+LXQtPanel[position="Right"] #QuickLaunch QToolButton {
+    margin: 2px 3px;
+}
+
+LXQtPanel[position="Bottom"] #QuickLaunch QToolButton {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #QuickLaunch QToolButton:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #QuickLaunch QToolButton {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #QuickLaunch QToolButton:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #QuickLaunch QToolButton {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #QuickLaunch QToolButton:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #QuickLaunch QToolButton {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #QuickLaunch QToolButton:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
 }
 
 /*
  * Volume plugin
  */
 #VolumePlugin QToolButton {
-    margin: 3px 1px 3px 1px;
-    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
-#VolumePlugin QToolButton:hover {
+LXQtPanel[position="Bottom"] #VolumePlugin QToolButton,
+LXQtPanel[position="Top"] #VolumePlugin QToolButton {
+    margin: 3px 2px;
+}
+
+LXQtPanel[position="Left"] #VolumePlugin QToolButton,
+LXQtPanel[position="Right"] #VolumePlugin QToolButton {
+    margin: 2px 3px;
+}
+
+LXQtPanel[position="Bottom"] #VolumePlugin QToolButton {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #VolumePlugin QToolButton:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
 }
 
+LXQtPanel[position="Top"] #VolumePlugin QToolButton {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #VolumePlugin QToolButton:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #VolumePlugin QToolButton {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #VolumePlugin QToolButton:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #VolumePlugin QToolButton {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #VolumePlugin QToolButton:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
+}
 
 VolumePopup {
     border: 1px solid rgba(155, 155, 155, 100%);
@@ -294,22 +505,27 @@ VolumePopup > QSlider::sub-page:vertical {
 }
 
 /*
- * Desktopswitch
+ * Desktop switcher
  */
+LXQtPanel[position="Bottom"] #DesktopSwitch QToolButton,
+LXQtPanel[position="Top"] #DesktopSwitch QToolButton {
+    margin: 3px 2px;
+}
+
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton,
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
+    margin: 2px 3px;
+}
+
 #DesktopSwitch QToolButton {
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
 #DesktopSwitch QToolButton:hover {
-    border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
 
 #DesktopSwitch QToolButton:on {
-    border-top: 3px solid rgba(30, 145, 255, 100%);
     color: rgba(54, 54, 54, 100%);
 }
 
@@ -318,19 +534,108 @@ VolumePopup > QSlider::sub-page:vertical {
     background: palette(highlight);
 }
 
+LXQtPanel[position="Bottom"] #DesktopSwitch QToolButton {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #DesktopSwitch QToolButton:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Bottom"] #DesktopSwitch QToolButton:on {
+    border-top: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Top"] #DesktopSwitch QToolButton {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #DesktopSwitch QToolButton:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #DesktopSwitch QToolButton:on {
+    border-bottom: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:on {
+    border-right: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:on {
+    border-left: 3px solid rgba(30, 145, 255, 100%);
+}
+
 /*
  * Mount plugin
  */
 #LXQtMountPlugin QToolButton {
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
 #LXQtMountPlugin QToolButton:hover {
-    border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
+}
+
+LXQtPanel[position="Bottom"] #LXQtMountPlugin QToolButton {
+    margin: 3px 2px;
+}
+
+LXQtPanel[position="Top"] #LXQtMountPlugin QToolButton {
+    margin: 1px/*bug*/ 2px;
+}
+
+LXQtPanel[position="Left"] #LXQtMountPlugin QToolButton,
+LXQtPanel[position="Right"] #LXQtMountPlugin QToolButton {
+    margin: 2px 3px;
+}
+
+LXQtPanel[position="Bottom"] #LXQtMountPlugin QToolButton {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #LXQtMountPlugin QToolButton:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #LXQtMountPlugin QToolButton {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #LXQtMountPlugin QToolButton:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #LXQtMountPlugin QToolButton {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #LXQtMountPlugin QToolButton:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #LXQtMountPlugin QToolButton {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #LXQtMountPlugin QToolButton:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
 }
 
 #LXQtMountPopup {
@@ -371,36 +676,110 @@ VolumePopup > QSlider::sub-page:vertical {
  * ShowDesktop
  */
 #ShowDesktop {
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
 }
 
 #ShowDesktop:hover {
-    border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
 
+LXQtPanel[position="Bottom"] #ShowDesktop {
+	margin: 3px 2px;
+}
+
+LXQtPanel[position="Top"] #ShowDesktop {
+    margin: 1px/*bug*/ 2px;
+}
+
+LXQtPanel[position="Left"] #ShowDesktop {
+    margin: 2px 1px/*bug*/; 
+}
+
+LXQtPanel[position="Right"] #ShowDesktop {
+    margin: 2px 3px; 
+}
+
+LXQtPanel[position="Bottom"] #ShowDesktop {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #ShowDesktop:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #ShowDesktop {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #ShowDesktop:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #ShowDesktop {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #ShowDesktop:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #ShowDesktop {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #ShowDesktop:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
+}
 
 /*
  * KbIndicator
  */
+
 #KbIndicator > QLabel {
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
+	background: transparent;
     color: rgba(54, 54, 54, 60%);
+    margin: 3px;
+    /*padding-top: 2px;*/
 }
 
 #KbIndicator > QLabel:enabled {
-    border-top: 3px solid rgba(30, 145, 255, 100%);
     color: rgba(54, 54, 54, 100%);
 }
 
 #KbIndicator:disabled {
-    background: transparent;
     color: rgba(54, 54, 54, 60%);
+}
+
+LXQtPanel[position="Bottom"] #KbIndicator > QLabel {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #KbIndicator > QLabel:enabled {
+    border-top: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Top"] #KbIndicator > QLabel {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #KbIndicator > QLabel:enabled {
+    border-bottom: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Left"] #KbIndicator > QLabel {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #KbIndicator > QLabel:enabled {
+    border-right: 3px solid rgba(30, 145, 255, 100%);
+}
+
+LXQtPanel[position="Right"] #KbIndicator > QLabel {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #KbIndicator > QLabel:enabled {
+    border-left: 3px solid rgba(30, 145, 255, 100%);
 }
 
 /*
@@ -459,14 +838,49 @@ TrayIcon {
  * WorldClock
  */
 #WorldClock {
-    margin: 3px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 100%);
 }
 
-#WorldClock:hover {
+LXQtPanel[position="Bottom"] #WorldClock,
+LXQtPanel[position="Top"] #WorldClock {
+    margin: 3px 0;
+}
+
+LXQtPanel[position="Left"] #WorldClock,
+LXQtPanel[position="Right"] #WorldClock {
+    margin: 0 3px;
+}
+
+LXQtPanel[position="Bottom"] #WorldClock {
+    border-top: 3px solid transparent;
+}
+
+LXQtPanel[position="Bottom"] #WorldClock:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Top"] #WorldClock {
+    border-bottom: 3px solid transparent;
+}
+
+LXQtPanel[position="Top"] #WorldClock:hover {
+    border-bottom: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Left"] #WorldClock {
+    border-right: 3px solid transparent;
+}
+
+LXQtPanel[position="Left"] #WorldClock:hover {
+    border-right: 3px solid rgba(30, 145, 255, 50%);
+}
+
+LXQtPanel[position="Right"] #WorldClock {
+    border-left: 3px solid transparent;
+}
+
+LXQtPanel[position="Right"] #WorldClock:hover {
+    border-left: 3px solid rgba(30, 145, 255, 50%);
 }
 
 /*
