@@ -1,0 +1,588 @@
+/*
+"Adwaita" LXQt theme
+By Azuma Hazuki (wanderinghazuki@gmail.com)
+Created 23 December 2022
+*/
+
+/* Colors for the bulk panel */
+LXQtPanel, LXQtPanel #BackgroundWidget {
+        color:                          #000000;
+        background:                     #f6f5f4;
+}
+
+/* Catch-all settings for panel plugins and their subwidgets 
+   not otherwise styled in this theme: 
+   #ColorPicker
+   #Custom and #CustomButton
+   #DirectoryMenu
+   #Dom
+   #LXQtMount
+   #NetworkMonitor
+   #Sensors
+   #ShowDesktop
+   #Spacer
+*/	
+
+Plugin, Plugin > QToolButton, Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton {
+        color:                          #000000;
+        background:                     #f6f5f4;
+
+	padding:			0px;
+
+	margin-left:			2px;
+	margin-right:			2px;
+
+	/* prevents unexpected borders/boxes on hover */
+	border:				0px solid transparent;
+}
+
+/* General menu settings */
+QMenu {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				1px solid #1e1e1e;
+
+	min-width:			100px;
+}
+
+QMenu::icon {
+	color:				#000000;
+	background:			transparent;
+
+	padding-left:			7px;
+}
+
+QMenu::item
+{
+	color:				#000000;
+	background:			#f6f5f4;
+
+	padding-left:			6px;
+	padding-right:			12px;
+	padding-top:			4px;
+	padding-bottom:			4px;
+}
+
+QMenu::item:selected
+{
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+QMenu::item:disabled {
+	color:				#a0a0a0;
+	background:			#f6f5f4;
+}
+
+QMenu::indicator {
+	width:				14px;
+	height:				14px;
+	background:			transparent;
+	padding-left:			5px;
+}
+
+QMenu::indicator:non-exclusive { image: url(unchecked.png);}
+QMenu::indicator:non-exclusive:checked { image:	url(checked.png);}
+QMenu::indicator:non-exclusive:checked:selected { image: url(checked.png);}
+QMenu::indicator:non-exclusive:unchecked { image: url(unchecked.png);}
+QMenu::indicator:non-exclusive:unchecked:selected { image: url(unchecked.png);}
+
+QMenu QToolButton {
+	color:				#000000;
+	background:			#e1dedb;
+
+	padding:			4px;
+
+        border:				none;
+}
+
+/* Main menu icon and search settings */
+#MainMenu {
+	color:				#000000;
+	background:			#f6f5f4;
+
+        qproperty-icon:                 url(mainmenu.svg);
+
+	padding-left:			4px;
+	padding-right:			2px;
+	padding-top:			2px;
+	padding-bottom:			2px;
+}
+
+#MainMenu:pressed, #MainMenu:hover {
+	color:				#000000;
+	background:			#f6f5f4;
+}
+
+#MainMenu QLineEdit {
+	color:				#000000;
+	background:			#faf9f8;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#3584e4;
+
+	padding:			4px;
+
+	margin:				2px;
+
+	border:				1px solid #cdc7c2;
+	border-radius:			4px;
+}
+
+#MainMenu QMenu::icon
+{
+	padding-right:			3px;
+}
+
+#MainMenu QMenu::icon:selected
+{
+	padding-right:			3px;
+}
+
+#MainMenu QMenu::item
+{
+	padding-left:			8px;
+	padding-right:			12px;
+	padding-top:			4px;
+	padding-bottom:			4px;
+}
+
+#MainMenu QMenu::item:selected
+{
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+#MainMenu ActionView {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	min-width:			100px;
+}
+
+#MainMenu ActionView::item {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	padding-left:			6px;
+	padding-right:			12px;
+	padding-top:			4px;
+	padding-bottom:			4px;
+}
+
+#MainMenu ActionView::item:hover,
+#MainMenu ActionView::item:selected,
+#MainMenu ActionView::item:selected:hover {
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+/* Taskbar and Desktop Switcher; these use the same theming, so define them together */
+#TaskBar, 
+#DesktopSwitch {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	padding:			0px;
+
+	margin-top:			1px;
+}
+
+#TaskBar QToolButton, 
+#DesktopSwitch QToolButton {
+	color:				#000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.05 #f6f5f4, stop:1.0 #edebe9);
+
+	padding:			4px;
+
+        border-top:			1px solid #cdc7c2;
+        border-bottom:			1px solid #bfb8b1;
+        border-left:			1px solid #cdc7c2;
+        border-right:			1px solid #cdc7c2;
+
+	border-radius:			4px;
+
+	margin:				0px;
+}
+
+#TaskBar QToolButton:on,
+#DesktopSwitch QToolButton:on {
+	color:				#000000;
+	background:			#d6d1cd;
+
+	border:				1px solid #cdc7c2;
+}
+
+#TaskBar QToolButton:hover,
+#TaskBar QToolButton:on:hover,
+#DesktopSwitch QToolButton:hover,
+#DesktopSwitch QToolButton:on:hover {
+	color:				#000000;
+	background:			#ffffff;
+
+	border:				1px solid #cdc7c2;
+}
+
+#TaskBar QToolButton:pressed,
+#TaskBar QToolButton[urgent="true"],
+#TaskBar QToolButton[urgent="true"]:hover,
+#DesktopSwitch QToolButton:pressed,
+#DesktopSwitch QToolButton[urgent="true"],
+#DesktopSwitch QToolButton[urgent="true"]:hover {
+	color:				#000000;
+	background:			#d6d1cd;
+
+	border:				1px solid #cdc7c2;
+}
+
+/* QuickLaunch (item icons) bar */
+#QuickLaunch,
+#QuickLaunchPlaceHolder {
+        color:                          #000000;
+        background:                     #f6f5f4;
+}
+
+#QuickLaunch QToolButton {
+        color:                          #000000;
+        background:                     #f6f5f4;
+
+        margin:				2px;
+}
+
+/* Clock plugin */
+#WorldClock, #WorldClockContent {
+	color:				#000000;
+	background:			#f6f5f4;
+}
+
+/* Systray and applets, which may reside inside or outside */
+#StatusNotifierPlugin {
+	color:				#000000;
+	background:			#transparent;
+
+	min-width:			0px;
+	min-height:			20px;
+}
+
+/* Backlight and Volume */
+#Backlight, #Volume {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	padding:			0px;
+
+	margin-left:			2px;
+	margin-right:			2px;
+
+	border:				0px solid transparent;
+}
+
+#Backlight SliderDialog, VolumePopup {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				1px solid #1e1e1e;
+
+	margin:				0px;
+	padding:			0px;
+}
+
+#Backlight > SliderDialog > QSlider,
+VolumePopup > QSlider {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	min-width:			16px;
+	max-width:			16px;
+	min-height:			100px;
+	max-height:			100px;
+}
+
+#Backlight > SliderDialog > QSlider::groove:vertical, 
+VolumePopup > QSlider::groove:vertical {
+	color:				#000000;
+	background:			#3584e4;
+
+	width:				4px;
+
+	border:				1px solid #185fb4;
+}
+
+#Backlight > SliderDialog > QSlider::sub-page:vertical,
+VolumePopup > QSlider::sub-page:vertical {
+	color:				#000000;
+	background:			#e1dedb;
+
+	border:				1px solid #cdc7c2;
+}
+
+#Backlight > SliderDialog > QSlider::handle:vertical,
+VolumePopup > QSlider::handle:vertical {
+	color:				#ff0000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.05 #f6f5f4, stop:1.0 #edebe9);
+
+	width:				12px;
+	height:				12px;
+
+	border:				1px solid #1e1e1e;
+	border-radius:			12px;
+
+	margin-top:			-1px;
+	margin-bottom:			-1px;
+	margin-left:			-4px;
+	margin-right:			-4px;
+}
+
+#Backlight > SliderDialog > QToolButton,
+#Backlight > SliderDialog > QToolButton:pressed,
+#Backlight > SliderDialog > QToolButton:hover {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				0px solid transparent;
+
+	padding:			4px;
+
+	qproperty-iconSize:		24px;
+}
+
+VolumePopup > QPushButton {
+	color:				#000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.05 #f6f5f4, stop:1.0 #edebe9);
+
+	padding:			4px;
+
+        border-top:			1px solid #cdc7c2;
+        border-bottom:			1px solid #bfb8b1;
+        border-left:			1px solid #cdc7c2;
+        border-right:			1px solid #cdc7c2;
+
+	border-radius:			4px;
+
+	margin:				0px;
+
+	qproperty-iconSize:		24px;
+}
+
+
+VolumePopup > QPushButton:pressed {
+	color:				#000000;
+	background:			#d6d1cd;
+
+	border:				1px solid #cdc7c2;
+}
+
+VolumePopup > QPushButton:hover {
+	color:				#000000;
+	background:			#ffffff;
+
+	border:				1px solid #cdc7c2;
+}
+
+/* Keyboard indicators - Caps/Num/Scroll Lock and Keymap */
+#KbIndicator > QLabel, #KbIndicator > QToolButton {padding: 2px;}
+
+#KbIndicator #LayoutLabel {background: transparent;}
+
+#KbIndicator #CapsLockLabel {color: #a0a0a0; font: normal;}
+#KbIndicator #CapsLockLabel:enabled {color: #000000; font: bold;}
+#KbIndicator #CapsLockLabel:!enabled {color: #000000; font: normal;}
+#KbIndicator #CapsLockLabel:disabled {color: #a0a0a0; font: normal;}
+
+#KbIndicator #NumLockLabel {color: #a0a0a0; font: normal;}
+#KbIndicator #NumLockLabel:enabled {color: #000000; font: bold;}
+#KbIndicator #NumLockLabel:!enabled {color: #000000; font: normal;}
+#KbIndicator #NumLockLabel:disabled {color: #a0a0a0; font: normal;}
+
+#KbIndicator #ScrollLockLabel {color: #a0a0a0; font: normal;}
+#KbIndicator #ScrollLockLabel:enabled {color: #000000; font: bold;}
+#KbIndicator #ScrollLockLabel:!enabled {color: #000000; font: normal;}
+#KbIndicator #ScrollLockLabel:disabled {color: #a0a0a0; font: normal;}
+
+/* Sensors theming appears not to work yet... */
+#Sensors {}
+
+/* WingMenu (WhiskerMenu-like 2-pane menu) settings */
+#WingMenuPlugin QWidget {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	padding-left:			4px;
+	padding-right:			0px;
+	padding-top:			2px;
+	padding-bottom:			2px;
+}
+
+#WingMenuPlugin ApplicationsView {
+	color:				#000000;
+	background:			#faf9f8;
+
+	border:				1px solid #cdc7c2;
+
+	padding:			0px;
+
+	margin-right:			2px;
+}
+
+#WingMenuPlugin ApplicationsView::item {
+	color:				#000000;
+	background:			#faf9f8;
+
+	padding-left:			6px;
+	padding-right:			12px;
+	padding-top:			4px;
+	padding-bottom:			4px;
+}
+
+#WingMenuPlugin ApplicationsView::item:hover, 
+#WingMenuPlugin ApplicationsView::item:selected {
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+#WingMenuPlugin QLineEdit {
+	color:				#000000;
+	background:			#faf9f8;
+
+	selection-color:		#000000;
+	selection-background-color:	#3584e4;
+
+	padding:			4px;
+
+	margin:				2px;
+
+	border:				1px solid #cdc7c2;
+	border-radius:			4px;
+}
+
+#WingMenuPlugin QScrollBar {
+	background:			#f6f5f4;
+	border:				1px solid transparent;
+
+	width:				16px;
+}
+
+#WingMenuPlugin QScrollBar:hover {
+	background:			#cecece;
+	border:				1px solid #cdc7c2;
+}
+
+#WingMenuPlugin QScrollBar::handle {
+	background:			#7e8182;
+
+	width:				8px;
+
+	border:				1px solid #7e8182;
+	border-radius:			3px;
+
+	margin-right:			4px;
+}
+
+#WingMenuPlugin QScrollBar::add-line,
+#WingMenuPlugin QScrollBar::sub-line,
+#WingMenuPlugin QScrollBar::add-page,
+#WingMenuPlugin QScrollBar::sub-page {
+	color:				transparent;
+	background:			transparent;
+
+	border:				none;
+}
+
+#WingMenuPlugin #CategoryButton {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	font:				normal;
+
+	border:				0px solid transparent;
+	border-radius:			0px;
+
+	margin-top:			0px;
+	margin-bottom:			0px;
+	margin-left:			0px;
+	margin-right:			2px;
+}
+
+#WingMenuPlugin #CategoryButton:hover {
+	color:				#ffffff;
+	background:			#3584e4;
+}
+
+#WingMenuPlugin QToolButton {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				1px solid transparent;
+
+	padding:			4px;
+	margin:				0px;
+}
+
+#WingMenuPlugin QToolButton:hover {
+	color:				#000000;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.05 #f6f5f4, stop:1.0 #edebe9);
+
+        border-top:			1px solid #cdc7c2;
+        border-bottom:			1px solid #bfb8b1;
+        border-left:			1px solid #cdc7c2;
+        border-right:			1px solid #cdc7c2;
+	border-radius:			4px;
+}
+
+#WingMenuPlugin QToolButton:pressed {
+	color:				#000000;
+	background:			#d6d1cd;
+
+	border:				1px solid #cdc7c2;
+	border-radius:			4px;
+}
+
+/* Hard-coded colors for the CPU and system resource graph plugins */
+#CpuLoadPlugin, #SysStatPlugin {
+        min-width:                      16px;
+        min-height:                     16px;
+
+        color:                          #000000;
+        background:                     #000000;
+
+        border:				1px solid #cdc7c2;
+}
+
+#CpuLoad, #SysStat {
+        color:                          #00ff00;
+        background:                     #000000;
+
+        qproperty-fontColor:            #00ff00;
+
+        padding:                        2px;
+}
+
+#SysStat > QLabel {
+        color:                          #000000;
+        background:                     #f6f5f4;
+}
+
+#SysStat_Graph {
+	color:				#00ff00;
+        background:                     #000000;
+
+        qproperty-gridColor:            rgba(0, 255, 0, 25%);
+        qproperty-titleColor:           rgba(255, 255, 255, 75%);
+
+        qproperty-cpuSystemColor:       #000000;
+        qproperty-cpuUserColor:         #00ff00;
+        qproperty-cpuNiceColor:         #000000;
+        qproperty-cpuOtherColor:        #000000;
+        qproperty-frequencyColor:       rgba(0, 255, 0, 25%);
+
+        qproperty-memAppsColor:         #00ff00;
+        qproperty-memBuffersColor:      #000000;
+        qproperty-memCachedColor:       #008000;
+
+        qproperty-swapUsedColor:        #000000;
+
+        qproperty-netReceivedColor:     #00ff00;
+        qproperty-netTransmittedColor:  #000000;
+}
