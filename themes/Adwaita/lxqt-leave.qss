@@ -31,10 +31,10 @@ QPushButton, QToolButton {
         color:                          #000000;
         background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.05 #f6f5f4, stop:1.0 #edebe9);
 
-        padding-left:                   10px;
-        padding-right:                  10px;
-        padding-top:                    2px;
-        padding-bottom:			2px;
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
 
 	margin-left:			10px;
 	margin-right:			10px;
