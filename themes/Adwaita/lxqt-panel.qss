@@ -56,7 +56,7 @@ QMenu {
 	color:				#000000;
 	background:			#f6f5f4;
 
-	border:				1px solid #1e1e1e;
+	border:				1px solid #cdc7c2;
 
 	min-width:			100px;
 }
@@ -271,10 +271,85 @@ QMenu QToolButton {
 	background:			#f6f5f4;
 }
 
+/* Calendar settings */
+QCalendarWidget QAbstractItemView {
+	color:				#000000;
+	background:			#ffffff;
+
+	alternate-background-color:	#f6f5f4;
+
+	border-left:			1px solid #cdc7c2;
+	border-right:			1px solid #cdc7c2;
+	border-top:			1px solid #e6e6e6;
+	border-bottom:			1px solid #cdc7c2;
+
+	border-radius:			0px;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#3584e4;	
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+	color:				#a0a0a0;
+}
+
+QCalendarWidget QMenu {
+	color:                          #000000;
+	background:                     #f6f5f4;
+
+	border:                         1px solid #cdc7c2;
+}
+
+QCalendarWidget QToolButton,
+QCalendarWidget QToolButton:hover,
+QCalendarWidget QToolButton:pressed {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				none;
+
+	margin:				1px;
+}
+
+QCalendarWidget QToolButton::menu-indicator { /* Remove the down arrow */
+	image:				none;
+}
+
+QCalendarWidget #qt_calendar_navigationbar {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border-left:			1px solid #cdc7c2;
+	border-right:			1px solid #cdc7c2;
+	border-top:			1px solid #cdc7c2;
+	border-bottom:			none;
+
+	border-radius:			0px;
+}
+
+QCalendarWidget #qt_calendar_prevmonth {
+	qproperty-icon:			url(calendar-popup/left-arrow.svg);
+	qproperty-iconSize:		16px;
+
+	border:				none;
+}
+
+QCalendarWidget #qt_calendar_nextmonth {
+	qproperty-icon:			url(calendar-popup/right-arrow.svg);
+	qproperty-iconSize:		16px;
+
+	border:				none;
+}
+
 /* Systray and applets, which may reside inside or outside */
 #StatusNotifierPlugin {
 	color:				#000000;
-	background:			#transparent;
+	background:			transparent;
 
 	min-width:			0px;
 	min-height:			20px;
@@ -297,7 +372,7 @@ QMenu QToolButton {
 	color:				#000000;
 	background:			#f6f5f4;
 
-	border:				1px solid #1e1e1e;
+	border:				1px solid #cdc7c2;
 
 	margin:				0px;
 	padding:			0px;
@@ -334,13 +409,13 @@ VolumePopup > QSlider::sub-page:vertical {
 
 #Backlight > SliderDialog > QSlider::handle:vertical,
 VolumePopup > QSlider::handle:vertical {
-	color:				#ff0000;
+	color:				#000000;
 	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.05 #f6f5f4, stop:1.0 #edebe9);
 
 	width:				12px;
 	height:				12px;
 
-	border:				1px solid #1e1e1e;
+	border:				1px solid #cdc7c2;
 	border-radius:			12px;
 
 	margin-top:			-1px;

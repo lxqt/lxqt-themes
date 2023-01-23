@@ -271,10 +271,85 @@ QMenu QToolButton {
 	background:			#373737;
 }
 
+/* Calendar settings */
+QCalendarWidget QAbstractItemView {
+	color:				#ffffff;
+	background:			#373737;
+
+	alternate-background-color:	#373737;
+
+	border-left:			1px solid #1e1e1e;
+	border-right:			1px solid #1e1e1e;
+	border-top:			1px solid #1b1b1b;
+	border-bottom:			1px solid #1e1e1e;
+
+	border-radius:			0px;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+	color:				#ffffff;
+	background:			#2d2d2d;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#15539e;	
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+	color:				#a0a0a0;
+}
+
+QCalendarWidget QMenu {
+	color:                          #ffffff;
+	background:                     #373737;
+
+	border:                         1px solid #1e1e1e;
+}
+
+QCalendarWidget QToolButton,
+QCalendarWidget QToolButton:hover,
+QCalendarWidget QToolButton:pressed {
+	color:				#ffffff;
+	background:			#373737;
+
+	border:				none;
+
+	margin:				1px;
+}
+
+QCalendarWidget QToolButton::menu-indicator { /* Remove the down arrow */
+	image:				none;
+}
+
+QCalendarWidget #qt_calendar_navigationbar {
+	color:				#ffffff;
+	background:			#373737;
+
+	border-left:			1px solid #1e1e1e;
+	border-right:			1px solid #1e1e1e;
+	border-top:			1px solid #1e1e1e;
+	border-bottom:			none;;
+
+	border-radius:			0px;
+}
+
+QCalendarWidget #qt_calendar_prevmonth {
+	qproperty-icon:			url(calendar-popup/left-arrow.svg);
+	qproperty-iconSize:		16px;
+
+	border:				none;
+}
+
+QCalendarWidget #qt_calendar_nextmonth {
+	qproperty-icon:			url(calendar-popup/right-arrow.svg);
+	qproperty-iconSize:		16px;
+
+	border:				none;
+}
+
 /* Systray and applets, which may reside inside or outside */
 #StatusNotifierPlugin {
 	color:				#ffffff;
-	background:			#transparent;
+	background:			transparent;
 
 	min-width:			0px;
 	min-height:			20px;
