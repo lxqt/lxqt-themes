@@ -1,152 +1,131 @@
 /* Panel */
-
 #panel {
-    background: #edeceb;
-    border: 1px solid #1a1a1a;
-    border-radius: 3px;
+	color:				#1a1a1a;
+	background:			#f0f0f0;
 }
 
 /* Buttons */
-
 QToolButton::menu-indicator {
-    image: none;
+	image:				none;
 }
 
 #closeButton {
-    qproperty-icon: url(lxqt-runner/close.svg);
-    margin: 2px;
-}
+	border:				1px solid transparent;
+	background:			#f0f0f0;
 
-#closeButton:hover {
-    background: #ffffff;
-    border: 1px solid #1a1a1a;
-    border-radius: 3px;
-}
+	qproperty-icon:			url(lxqt-runner/close.svg);
+	margin:				2px;
 
-#closeButton:pressed {
-    background: #ffffff;
-    border: 1px solid #909090;
-    border-radius: 3px;
-    padding: 3px;
+	padding:			2px;
 }
 
 #actionButton {
-    qproperty-icon: url(lxqt-runner/down-arrow.svg);
-    margin: 2px;
+	border:				1px solid transparent;
+	background:			#f0f0f0;
+
+	qproperty-icon:			url(lxqt-runner/down-arrow.svg);
+	margin:				2px;
+
+	padding:			2px;
 }
 
-#actionButton:hover {
-    background: #ffffff;
-    border: 1px solid #909090;
-    border-radius: 3px;
+#closeButton:hover, #actionButton:hover {
+        color:                          #1a1a1a;
+        background:                     #ffffff;
+
+        border:                         1px solid #a0a0a0;
+	border-radius:			3px;
 }
 
-#actionButton:pressed {
-    background: #ffffff;
-    border: 1px solid #909090;
-    border-radius: 3px;
-    padding: 3px;
-}
+#closeButton:pressed, #actionButton:pressed {
+        color:                          #1a1a1a;
+        background:                     #d6d1cd;
 
+        border:                         1px solid #909090;
+	border-radius:			3px;
+}
 
 /* Command Box */
-
 #commandEd {
-    color: #1a1a1a;
-    background: #ffffff;
-    selection-color: #ffffff;
-    selection-background-color: #80a0d0;
-    border: 1px solid #909090;
-    border-radius: 3px;
-    padding: 6px;
+        color:                          #1a1a1a;
+        background:                     #ffffff;
+
+        selection-color:                #ffffff;
+        selection-background-color:     #80a0d0;
+
+        padding:                        2px;
+
+        margin:                         2px;
+
+        border:                         1px solid #a0a0a0;
+        border-radius:                  3px;
 }
 
-/*
- * Search results list
- */
-
+/* Search results list */
 #commandList {
-    border: none;
-    background-color: #f4f4f4;
-    alternate-background-color: #e5e5e5;
-    color: #6b6b6b;
-    selection-color: #ffffff;
-    selection-background-color: #80a0d0;
+	background:			#ffffff;
+	color:				#1a1a1a;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#80a0d0;
+
+	alternate-background-color:	#ffffff;
+
+	border:				none;
 }
 
-#commandList::item {
-    background: #f4f4f4;
-    color: #6b6b6b;
+#commandList::item, #commandList::item:alternate {
+	color:				#1a1a1a;
+	background:			#ffffff;
+
+	border:				0px solid transparent;;
 }
 
-#commandList::item:alternate {
-    background: #e5e5e5;
-    color: #6b6b6b;
-}
+#commandList::item:hover, #commandList::item:selected {
+	color:				#ffffff;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
 
-#commandList::item:hover {
-    background: rgba(160, 192, 224, 30%);
-    color: #6b6b6b;
-}
-
-#commandList::item:selected {
-    border: 1px solid #5070a0;
-    border-radius: 3px;
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
-    color: white;
+	border:				1px solid #5070a0;
+	border-radius:			3px;
 }
 
 /* Menus */
-
 QMenu {
-    background: #ffffff;
-    color: #1a1a1a;
-    border: 1px solid #1a1a1a;
-    padding: 1px;
+	color:				#1a1a1a;
+	background:			#ffffff;
+
+	min-width:			100px;
+
+	border:				1px solid #1a1a1a;
 }
 
 QMenu::icon {
-    padding-right: 3px;
-}
-
-QMenu::icon:selected {
-    padding-right: 2px;
-}
-
-QMenu::right-arrow {
-    image: url(arrow-right.svg);
-}
-
-QMenu::right-arrow:selected {
-    image: url(arrow-right-selected.svg);
-}
-
-QMenu::left-arrow {
-    image: url(arrow-left.svg);
-}
-
-QMenu::left-arrow:selected {
-    image: url(arrow-left-selected.svg);
+	padding-left:			7px;
 }
 
 QMenu::item {
-    border: 1px solid transparent;
-    border-radius: 3px;
-    padding-left: 8px;
-    padding-right: 20px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+        color:                          #1a1a1a;
+        background:                     #ffffff;
+
+	border:				1px solid transparent;
+
+        padding-left:                   8px;
+        padding-right:                  20px;
+        padding-top:                    2px;
+        padding-bottom:                 2px;
+
+	margin:				1px;
 }
 
 QMenu::item:selected {
-    border: 1px solid #5070a0;
-    border-radius: 3px;
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
-    color: #ffffff;
-    padding-left: 7px;
+	color:				#ffffff;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+
+	border:				1px solid #5070a0;
+	border-radius:			3px;
 }
 
 QMenu::item:disabled {
-    color: rgba(0, 0, 0, 50%);
-    background-color: transparent;
+	color:				#a0a0a0;
+	background:			transparent;
 }
