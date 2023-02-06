@@ -230,12 +230,12 @@ QMenu::right-arrow:selected { image: url(arrow-right.svg); }
         color:                          #e0e0e0;
         background:                     transparent;
 
-	padding:			2px;
+	padding:			1px;
 	margin:				1px;
 }
 
 #QuickLaunch QToolButton:pressed {
-	padding:			3px;
+	padding:			1px;
         margin:				2px;
 }
 
