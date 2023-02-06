@@ -1,0 +1,704 @@
+/*
+"Leech" LXQt theme - v 2.0
+By Azuma Hazuki (wanderinghazuki@gmail.com)
+Created 28 September 2020
+Updated 5 February 2023
+*/
+
+LXQtPanel, LXQtPanel #BackgroundWidget {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				0px solid #555555;
+}
+
+/* Catch-all settings for panel plugins and their subwidgets 
+   not otherwise styled in this theme: 
+   #ColorPicker
+   #Custom and #CustomButton
+   #DirectoryMenu
+   #Dom
+   #LXQtMount
+   #NetworkMonitor
+   #Sensors
+   #ShowDesktop
+   #Spacer
+*/	
+
+Plugin > QWidget, Plugin > QWidget > QWidget {
+	border:				0px solid #555555;
+	color:				#e0e0e0;
+	background:			#000000;
+}
+
+Plugin > QToolButton, 
+Plugin > QWidget > QToolButton,
+Plugin > QWidget > QToolButton > QWidget > QToolButton {
+	color:				#e0e0e0;
+	background:                     #000000;
+
+	/* prevents unexpected borders/boxes on hover */
+	border:				0px solid #555555;
+
+	padding:			2px;
+	margin-left:			0px;
+}
+
+/* Tooltip (popups/"balloon help" settings) */
+QToolTip {
+	color:				#e0e0e0;
+	background:			#1c2d1c;
+
+	border:				1px solid #2f2f2f;
+
+	padding:			2px;
+}
+
+/* General and main menu settings */
+#MainMenu, #MainMenu:hover, #MainMenu:pressed {
+	color:				#e0e0e0;
+	background:			transparent;
+        qproperty-icon:                 url(mainmenu.svg);
+
+	padding:			1px;
+}
+
+#MainMenu QLineEdit {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	selection-color:		#000000;
+	selection-background-color:	#c0c0c0;
+
+	border:				1px solid #555555;
+	border-radius:			2px;
+
+	padding:			2px;
+	margin:				2px;
+}
+
+QMenu, #MainMenu QMenu, #MainMenu ActionView {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid #2f2f2f;
+
+	min-width:			100px;
+}
+
+QMenu QToolButton {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	font:				bold;
+
+        border:				0px solid #555555;
+
+	padding:			3px;
+	margin:				0px;
+}
+
+QMenu::icon, #MainMenu QMenu::icon, #MainMenu ActionView::icon { padding-right: 3px; }
+
+QMenu::item, #MainMenu QMenu::item, #MainMenu ActionView::item {
+	border:				1px solid transparent;
+	border-radius:			2px;
+
+	padding-left:			8px;
+	padding-right:			20px;
+	padding-top:			2px;
+	padding-bottom:			2px;
+
+	margin:				1px;
+}
+
+QMenu::item:selected, #MainMenu QMenu::item:selected, #MainMenu ActionView::item:selected {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #636372;
+	border-radius:			2px;
+}
+
+QMenu::item:disabled, #MainMenu QMenu::item:disabled, #MainMenu ActionView::item:disabled {
+	color:				#808080;
+	background:			transparent;
+}
+
+QMenu::indicator {
+	width:				14px;
+	height:				14px;
+	background:			transparent;
+	padding-left:			2px;
+}
+
+QMenu::indicator:non-exclusive { image: url(unchecked.svg); }
+QMenu::indicator:non-exclusive:checked { image:	url(checked.svg); }
+QMenu::indicator:non-exclusive:checked:selected { image: url(checked.svg); }
+QMenu::indicator:non-exclusive:unchecked { image: url(unchecked.svg); }
+QMenu::indicator:non-exclusive:unchecked:selected { image: url(unchecked.svg); }
+
+QMenu::left-arrow { image: url(arrow-left.svg); }
+QMenu::right-arrow { image: url(arrow-right.svg); }
+QMenu::left-arrow:selected { image: url(arrow-left.svg); }
+QMenu::right-arrow:selected { image: url(arrow-right.svg); }
+
+#MainMenu ActionView::item:hover,
+#MainMenu ActionView::item:selected,
+#MainMenu ActionView::item:selected:hover {
+	color:				#e0e0e0;
+	background-color:		#16162f;
+
+	border:				1px solid #636372;
+	border-radius:			2px;
+}
+
+/* Taskbar */ 
+#TaskBar, #DesktopSwitch {
+	color:				#e0e0e0;
+	background:			transparent;
+}
+
+#TaskBar QToolButton, #DesktopSwitch QToolButton {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	padding:			1px;
+
+	border:				1px solid #555555;
+	border-radius:			2px;
+
+	margin-left:			1px;
+	margin-right:			1px;
+	margin-top:			2px;
+	margin-bottom:			1px;
+}
+
+#TaskBar QToolButton:on, #DesktopSwitch QToolButton:on {
+	color:				#f0f0f0;
+	background:			#24274b;
+
+	border-left:			1px solid #6a6b73;
+	border-right:			1px solid #6a6b73;
+	border-top:			1px solid #5e5f68;
+	border-bottom:			1px solid #6a6b73;
+}
+
+#TaskBar QToolButton:pressed, #DesktopSwitch QToolButton:pressed {
+	color:				#f0f0f0;
+	background:			#0f101f;
+
+	border-left:			1px solid #6a6b73;
+	border-right:			1px solid #6a6b73;
+	border-top:			1px solid #5e5f68;
+	border-bottom:			1px solid #6a6b73;
+}
+
+#TaskBar QToolButton:hover, #DesktopSwitch QToolButton:hover {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #636372;
+}
+
+#TaskBar QToolButton:on:hover, #DesktopSwitch QToolButton:on:hover {
+	color:				#e0e0e0;
+	background:			#292c55;
+
+	border:				1px solid #636372;
+}
+
+#TaskBar QToolButton[urgent="true"],
+#TaskBar QToolButton[urgent="true"]:hover {
+	color:				#e0e0e0;
+	background:			#555555;
+
+	border:				1px solid #969696;
+}
+
+/* QuickLaunch (item icons) bar */
+#QuickLaunch,
+#QuickLaunchPlaceHolder {
+        color:                          #e0e0e0;
+        background:                     transparent;
+
+	padding:			1px;
+}
+
+#QuickLaunch QToolButton,
+#QuickLaunch QToolButton:hover {
+        color:                          #e0e0e0;
+        background:                     transparent;
+
+	padding:			2px;
+	margin:				1px;
+}
+
+#QuickLaunch QToolButton:pressed {
+	padding:			3px;
+        margin:				2px;
+}
+
+/* Clock plugin */
+#WorldClock {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	padding:			2px;
+	margin:				2px;
+} 
+
+#WorldClockContent {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	margin-left:			2px;
+	margin-right:			2px;
+}
+
+/* Calendar settings */
+QCalendarWidget QAbstractItemView {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	alternate-background-color:	#16162f;
+
+	border:				1px solid #16162f;
+	border-radius:			0px;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	selection-color:		#000000;
+	selection-background-color:	#c0c0c0;
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+	color:				#808080;
+}
+
+QCalendarWidget QMenu {
+	color:                          #e0e0e0;
+	background:                     #000000;
+
+	border:                         1px solid #2f2f2f;
+}
+
+QCalendarWidget QToolButton,
+QCalendarWidget QToolButton:hover,
+QCalendarWidget QToolButton:pressed {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	border:				none;
+
+	padding:			3px;
+	margin:				1px;
+}
+
+QCalendarWidget QToolButton::menu-indicator { /* Remove the down arrow */
+	image:				none;
+}
+
+QCalendarWidget #qt_calendar_navigationbar {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	font:				bold;
+
+	border:				1px solid #161616;
+}
+
+QCalendarWidget #qt_calendar_prevmonth {
+	qproperty-icon:			url(calendar-popup/left-arrow.svg);
+	qproperty-iconSize:		16px;
+
+	border:				none;
+}
+
+QCalendarWidget #qt_calendar_nextmonth {
+	qproperty-icon:			url(calendar-popup/right-arrow.svg);
+	qproperty-iconSize:		16px;
+
+	border:				none;
+}
+
+/* Systray and applets, which may reside inside or outside */
+#StatusNotifierPlugin {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	min-width:			0px;
+	min-height:			20px;
+}
+
+/* Backlight and Volume */
+#Backlight, #Volume {
+	color:				#e0e0e0;
+	background:			#transparent;
+
+	border:				1px solid transparent;
+}
+
+#Backlight SliderDialog, VolumePopup {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid #2f2f2f;
+}
+
+#Backlight > SliderDialog > QSlider,
+VolumePopup > QSlider {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	min-width:			14px;
+	max-width:			14px;
+	min-height:			100px;
+	max-height:			100px;
+}
+
+#Backlight > SliderDialog > QSlider::groove:vertical, 
+VolumePopup > QSlider::groove:vertical {
+	color:				#e0e0e0;
+	background:			#212121;
+
+	width:				12px;
+
+	border:				1px solid #494949;
+	border-radius:			2px;
+}
+
+#Backlight > SliderDialog > QSlider::sub-page:vertical,
+VolumePopup > QSlider::sub-page:vertical {
+	color:				#e0e0e0;
+	background:			#212121;
+
+	border:				1px solid #494949;
+	border-radius:			2px;
+}
+
+#Backlight > SliderDialog > QSlider::handle:vertical,
+VolumePopup > QSlider::handle:vertical {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	width:				12px;
+	height:				36px;
+
+	border:				1px solid #494949;
+	border-radius:			2px;
+
+	background-image:		url(grip.png);
+	background-repeat:		no-repeat;
+	background-position:		center;
+	background-attachment:		fixed;
+
+	margin:				-1px;
+}
+
+#Backlight > SliderDialog > QSlider::handle:vertical:hover,
+VolumePopup > QSlider::handle:vertical:hover,
+#Backlight > SliderDialog > QSlider::handle:vertical:pressed,
+VolumePopup > QSlider::handle:vertical:pressed {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	width:				12px;
+	height:				36px;
+
+	border:				1px solid #7b7b88;
+	border-radius:			2px;
+
+	background-image:		url(grip-hover.png);
+	background-repeat:		no-repeat;
+	background-position:		center;
+	background-attachment:		fixed;
+
+	margin:				-1px;
+}
+
+#Backlight > SliderDialog > QToolButton,
+#Backlight > SliderDialog > QToolButton:pressed,
+#Backlight > SliderDialog > QToolButton:hover {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	border:				0px solid transparent;
+
+	padding:			3px;
+
+	qproperty-iconSize:		16px;
+}
+
+VolumePopup > QPushButton {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	padding:			3px;
+
+	margin:				3px;
+
+        border:				0px solid transparent;
+	border-radius:			2px;
+
+	qproperty-iconSize:		16px;
+}
+
+
+VolumePopup > QPushButton:pressed {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #2f2f2f;
+}
+
+VolumePopup > QPushButton:hover {
+	color:				#e0e0e0;
+	background:			transparent;
+}
+
+/* Keyboard indicators - Caps/Num/Scroll Lock and Keymap */
+#KbIndicator > QLabel, #KbIndicator > QToolButton { padding: 2px; }
+
+#KbIndicator #LayoutLabel { background: transparent; }
+
+#KbIndicator #CapsLockLabel { color: #52501b; font: normal; }
+#KbIndicator #CapsLockLabel:enabled { color: #e0e0e0; font: bold; }
+#KbIndicator #CapsLockLabel:!enabled { color: #e0e0e0; font: normal; }
+#KbIndicator #CapsLockLabel:disabled { color: #52501b; font: normal; }
+
+#KbIndicator #NumLockLabel { color: #52501b; font: normal; }
+#KbIndicator #NumLockLabel:enabled { color: #e0e0e0; font: bold; }
+#KbIndicator #NumLockLabel:!enabled { color: #e0e0e0; font: normal; }
+#KbIndicator #NumLockLabel:disabled { color: #52501b; font: normal; }
+
+#KbIndicator #ScrollLockLabel { color: #52501b; font: normal; }
+#KbIndicator #ScrollLockLabel:enabled { color: #e0e0e0; font: bold; }
+#KbIndicator #ScrollLockLabel:!enabled { color: #e0e0e0; font: normal; }
+#KbIndicator #ScrollLockLabel:disabled { color: #52501b; font: normal; }
+
+/* Sensors theming appears not to work yet... */
+#Sensors {}
+
+/* WingMenu (WhiskerMenu-like 2-pane menu) settings */
+#WingMenuPlugin QWidget {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	padding:			0px;
+}
+
+#WingMenuPlugin QMenu {
+	background:			#000000;
+	border:				1px solid #2f2f2f;
+}
+
+#WingMenuPlugin ApplicationsView {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid #2f2f2f;
+
+	padding:			0px;
+
+	margin-right:			2px;
+}
+
+#WingMenuPlugin ApplicationsView::item {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid transparent;
+	border-radius:			2px;
+
+	padding-left:			8px;
+	padding-right:			20px;
+	padding-top:			4px;
+	padding-bottom:			4px;
+}
+
+#WingMenuPlugin ApplicationsView::item:hover, 
+#WingMenuPlugin ApplicationsView::item:selected {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #555555;
+}
+
+#WingMenuPlugin QLineEdit {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	selection-color:		#000000;
+	selection-background-color:	#c0c0c0;
+
+	padding:			2px;
+	margin:				2px;
+
+	border:				1px solid #2f2f2f;
+	border-radius:			2px;
+}
+
+#WingMenuPlugin QScrollBar {
+	background:			#000000;
+	border:				1px solid transparent;
+
+	width:				14px;
+	max-width:			14px;
+}
+
+#WingMenuPlugin QScrollBar::groove:vertical {
+	color:				#e0e0e0;
+	background:			#212121;
+
+	width:				12px;
+
+	border:				1px solid #494949;
+}
+
+#WingMenuPlugin QScrollBar::handle:vertical {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	width:				12px;
+
+	background-image:		url(grip.png);
+	background-repeat:		no-repeat;
+	background-position:		center;
+	background-attachment:		fixed;
+
+	border:				1px solid #494949;
+	border-radius:			2px;
+}
+
+#WingMenuPlugin QScrollBar::handle:vertical:hover,
+#WingMenuPlugin QScrollBar::handle:vertical:pressed {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	width:				12px;
+
+	background-image:		url(grip-hover.png);
+	background-repeat:		no-repeat;
+	background-position:		center;
+	background-attachment:		fixed;
+
+	border:				1px solid #7b7b88;
+	border-radius:			2px;
+}
+
+#WingMenuPlugin QScrollBar::add-page,
+#WingMenuPlugin QScrollBar::sub-page {
+	background:			#212121;
+
+	border:				1px solid #494949;	
+}
+
+#WingMenuPlugin QScrollBar::add-line,
+#WingMenuPlugin QScrollBar::sub-line {
+	color:				transparent;
+	background:			transparent;
+
+	border:				none;
+}
+
+#WingMenuPlugin #CategoryButton {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	font:				normal;
+
+	border:				1px solid transparent;
+	border-radius:			2px;
+
+	margin-top:			0px;
+	margin-bottom:			0px;
+	margin-left:			0px;
+	margin-right:			2px;
+}
+
+#WingMenuPlugin #CategoryButton:hover {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #555555;
+	border-radius:			2px;
+}
+
+#WingMenuPlugin QToolButton {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid transparent;
+	border-radius:			2px;
+
+	padding:			2px;
+	margin:				0px;
+}
+
+#WingMenuPlugin QToolButton:hover {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #636372;
+}
+
+#WingMenuPlugin QToolButton:pressed {
+	color:				#e0e0e0;
+	background:			#0f101f;
+
+	border:				1px solid #5e5f68;
+}
+
+/* Hard-coded colors for the CPU and system resource graph plugins */
+#CpuLoadPlugin, #SysStatPlugin {
+        min-width:                      16px;
+        min-height:                     16px;
+
+        color:                          #e0e0e0;
+        background:                     #000000;
+
+        border:				1px solid #2f2f2f;
+
+	margin:				1px;
+}
+
+#CpuLoad, #SysStat {
+        color:                          #16162f;
+        background:                     #000000;
+
+        qproperty-fontColor:            #555555;
+
+        padding:                        2px;
+}
+
+#SysStat > QLabel {
+        color:                          #e0e0e0;
+        background:                     #000000;
+}
+
+#SysStat_Graph {
+	color:				#16162f;
+        background:                     #000000;
+
+        qproperty-gridColor:            rgba(255, 255, 255, 25%);
+        qproperty-titleColor:           rgba(255, 255, 255, 75%);
+
+        qproperty-cpuSystemColor:       #16162f;
+        qproperty-cpuUserColor:         #2b2b5e;
+        qproperty-cpuNiceColor:         #16162f;
+        qproperty-cpuOtherColor:        #0b0b18;
+        qproperty-frequencyColor:       rgba(22, 22, 48, 100%);
+
+        qproperty-memAppsColor:         #2b2b5e;
+        qproperty-memBuffersColor:      #16162f;
+        qproperty-memCachedColor:       #0b0b18;
+
+        qproperty-swapUsedColor:        #16162f;
+
+        qproperty-netReceivedColor:     #2b2b5e;
+        qproperty-netTransmittedColor:  #16162f;
+}

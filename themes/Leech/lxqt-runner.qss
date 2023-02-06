@@ -1,0 +1,148 @@
+/* Panel */
+#panel {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid #2f2f2f;
+
+	border-radius:			2px;
+}
+
+QToolTip {
+	color:				#e0e0e0;
+	background:			#1c2d1c;
+
+	border:				1px solid #2f2f2f;
+
+	padding:			2px;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+	image:				none;
+}
+
+#closeButton {
+	border:				1px solid transparent;
+	background:			#000000;
+
+	qproperty-icon:			url(lxqt-runner/close.svg);
+	margin:				2px;
+
+	padding:			2px;
+}
+
+#actionButton {
+	border:				1px solid transparent;
+	background:			#000000;
+
+	qproperty-icon:			url(lxqt-runner/down-arrow.svg);
+	margin:				2px;
+
+	padding:			2px;
+}
+
+#closeButton:hover, #actionButton:hover {
+        color:                          #e0e0e0;
+        background:                     #24274b;
+
+        border:                         1px solid #636372;
+	border-radius:			2px;
+
+	qproperty-iconSize:		16px;
+}
+
+#closeButton:pressed, #actionButton:pressed {
+        color:                          #e0e0e0;
+        background:                     #0f101f;
+
+        border:                         1px solid #5e5f68;
+	border-radius:			2px;
+
+	qproperty-iconSize:		16px;
+}
+
+/* Command Box */
+#commandEd {
+        color:                          #e0e0e0;
+        background:                     #000000;
+
+        selection-color:                #000000;
+        selection-background-color:     #c0c0c0;
+
+        padding:                        2px;
+
+        margin:                         2px;
+
+        border:                         1px solid #555555;
+        border-radius:                  2px;
+}
+
+/* Search results list */
+#commandList {
+	background:			#000000;
+	color:				#e0e0e0;
+
+	selection-color:		#e0e0e0;
+	selection-background-color:	#16162f;
+
+	alternate-background-color:	#161616;
+
+	border:				none;
+}
+
+#commandList::item, #commandList::item:alternate {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				0px solid transparent;;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #555555;
+	border-radius:			2px;
+}
+
+/* Menus */
+QMenu {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	min-width:			100px;
+
+	border:				1px solid #2f2f2f;
+}
+
+QMenu::icon {
+	padding-left:			7px;
+}
+
+QMenu::item {
+        color:                          #e0e0e0;
+        background:                     #000000;
+
+	border:				1px solid transparent;
+
+        padding-left:                   8px;
+        padding-right:                  20px;
+        padding-top:                    2px;
+        padding-bottom:                 2px;
+
+	margin:				1px;
+}
+
+QMenu::item:selected {
+	color:				#e0e0e0;
+	background:			#16162f;
+
+	border:				1px solid #555555;
+	border-radius:			2px;
+}
+
+QMenu::item:disabled {
+	color:				#52501b;
+	background:			transparent;
+}

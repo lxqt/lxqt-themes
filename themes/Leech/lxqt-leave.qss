@@ -1,0 +1,59 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#e0e0e0;
+	background:			#000000;
+
+	border:				1px solid #2f2f2f;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#e0e0e0;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#e0e0e0;
+	background:			#000000; /* This doesn't work for some reason... */
+	background-image:		url(lxqt-leave/bg.png); /* ...but this does! */
+
+	border:				1px solid #2f2f2f;
+	border-radius:			2px;
+
+	padding:			2px;
+}
+
+/* Button settings */
+QPushButton, QToolButton {
+        color:                          #e0e0e0;
+        background:                     #000000;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+
+        border:				1px solid #555555;
+
+        border-radius:                  3px;
+}
+
+QPushButton:hover, QToolButton:hover {
+        color:                          #f0f0f0;
+        background:                     #16162f;
+
+        border:                         1px solid #636372;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+        color:                          #f0f0f0;
+        background:                     #0f101f;
+
+        border:                         1px solid #5e5f68;
+}
