@@ -1,0 +1,119 @@
+/* Panel */
+#panel {
+	color:				#ffffff;
+	background:			#373737;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+	image:				none;
+}
+
+#closeButton {
+	border:				1px solid transparent;
+	background:			#373737;
+
+	qproperty-icon:			url(lxqt-runner/close.svg);
+	margin:				2px;
+
+	padding:			4px;
+}
+
+#actionButton {
+	border:				1px solid transparent;
+	background:			#373737;
+
+	qproperty-icon:			url(lxqt-runner/down-arrow.svg);
+	margin:				2px;
+
+	padding:			4px;
+}
+
+#closeButton:hover, #actionButton:hover {
+        color:                          #ffffff;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3b3b3b, stop: 0.05 #373737, stop:1.0 #373737);
+
+        border:                         1px solid #1b1b1b;
+	border-radius:			4px;
+}
+
+#closeButton:pressed, #actionButton:pressed {
+        color:                          #ffffff;
+        background:                     #1e1e1e;
+
+        border:                         1px solid #1b1b1b;
+	border-radius:			4px;
+}
+
+/* Command Box */
+#commandEd {
+        color:                          #ffffff;
+        background:                     #2d2d2d;
+
+        selection-color:                #ffffff;
+        selection-background-color:     #15539e;
+
+        padding:                        4px;
+
+        margin:                         2px;
+
+        border:                         1px solid #1b1b1b;
+        border-radius:                  4px;
+}
+
+/* Search results list */
+#commandList {
+	background:			#000000;
+	color:				#ffffff;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#15539e;
+
+	alternate-background-color:	#000000;
+
+	border:				none;
+}
+
+#commandList::item, #commandList::item:alternate {
+	color:				#ffffff;
+	background:			#000000;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+	color:				#ffffff;
+	background:			#15539e;
+}
+
+/* Menus */
+QMenu {
+	color:				#ffffff;
+	background:			#373737;
+
+	min-width:			100px;
+
+	border:				1px solid #1e1e1e;
+}
+
+QMenu::icon {
+	padding-left:			7px;
+}
+
+QMenu::item {
+        color:                          #ffffff;
+        background:                     #373737;
+
+        padding-left:                   6px;
+        padding-right:                  12px;
+        padding-top:                    4px;
+        padding-bottom:                 4px;
+}
+
+QMenu::item:selected {
+	color:				#ffffff;
+	background:			#15539e;
+}
+
+QMenu::item:disabled {
+	color:				#a0a0a0;
+	background:			transparent;
+}
