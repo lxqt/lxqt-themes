@@ -1,28 +1,40 @@
 Notification {
-    color: #ffffff;
-    border: 1px solid #5e5f68;
-    border-radius: 2px;
-    background: #000000;
-    margin: 0px;
+	color:			#e0e0e0;
+	background:		#000000;
+
+	border:			1px solid #2f2f2f;
 }
 
 QLabel {
-    color: #ffffff;
+	color:			#e0e0e0;
 }
 
 #closeButton {
-    border: none;
-    qproperty-icon: url(lxqt-notificationd/cancel.svg);
-    color: #ffffff;
+	qproperty-icon:		url(lxqt-notificationd/close.png);
+	qproperty-iconSize:	16px;
+
+        color:                          #e0e0e0;
+        background:                     #000000;
+
+        border:                         4px solid transparent;
 }
 
 #closeButton:hover {
-    border: 1px solid #5e5f68;
-    border-radius: 2px;
-    background: #16162f;
-    qproperty-icon: url(lxqt-notificationd/cancel.svg);
+        color:                          #e0e0e0;
+        background:                     #16162f;
+
+        border:                         4px solid transparent;
+        border-image:                   url(button.png) 4;
+}
+
+#closeButton:pressed {
+        color:                          #e0e0e0;
+        background:                     #16162f;
+
+        border:                         4px solid transparent;
+        border-image:                   url(active.png) 4;
 }
 
 #appLabel {
-    font-weight: bold;
+	font-weight:		bold;
 }
