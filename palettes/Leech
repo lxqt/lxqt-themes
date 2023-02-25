@@ -1,9 +1,9 @@
 [Palette]
-base_color=#262626
-highlight_color=#3d427e
-highlighted_text_color=#ffffff
-link_color=#756cf0
-link_visited_color=#d346a9
-text_color=#ececec
-window_color=#323232
-window_text_color=#f9f9f9
+base_color=#000000
+highlight_color=#16162f
+highlighted_text_color=#e0e0e0
+link_color=#0000ff
+link_visited_color=#8000ff
+text_color=#e0e0e0
+window_color=#161616
+window_text_color=#e0e0e0
