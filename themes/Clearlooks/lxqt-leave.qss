@@ -1,0 +1,91 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#1a1a1a;
+	background:			#edeceb;
+
+	border:				1px solid #aaaaaa;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#1a1a1a;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#1a1a1a;
+	background:			#ffffff; /* This doesn't work for some reason... */
+	background-image:		url(lxqt-leave/bg.png); /* ...but this does! */
+
+	border:				1px solid #aaaaaa;
+}
+
+/* Button settings */
+QPushButton {
+        color:                          #1a1a1a;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+
+        border:				5px solid transparent;
+	border-image:			url(button.png) 5;
+}
+
+QToolButton {
+        color:                          #1a1a1a;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+
+        border:				5px solid transparent;
+	border-image:			url(button.png) 5;
+}
+
+QPushButton:hover, QToolButton:hover {
+        color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #ffffff, stop:1 #f0efee);
+
+        border:                         5px solid transparent;
+        border-image:                   url(button.png) 5;
+}
+
+QPushButton:pressed {
+        color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+
+        border:                         5px solid transparent;
+        border-image:                   url(active.png) 5;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    5px;
+        padding-bottom:			4px;
+}
+
+QToolButton:pressed {
+        color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+
+        border:                         5px solid transparent;
+        border-image:                   url(active.png) 5;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    6px;
+        padding-bottom:			4px;
+}
