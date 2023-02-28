@@ -25,8 +25,11 @@ QAbstractItemView {
 
 /* Button settings */
 QPushButton {
-        color:                          #1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+	color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
+
+	border:                         1px solid #918e8c;
+	border-radius:                  3px;
 
         padding-left:                   24px;
         padding-right:                  24px;
@@ -35,14 +38,14 @@ QPushButton {
 
 	margin-left:			10px;
 	margin-right:			10px;
-
-        border:				5px solid transparent;
-	border-image:			url(button.png) 5;
 }
 
 QToolButton {
-        color:                          #1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+	color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
+
+	border:                         1px solid #918e8c;
+	border-radius:                  3px;
 
         padding-left:                   6px;
         padding-right:                  6px;
@@ -51,41 +54,18 @@ QToolButton {
 
 	margin-left:			10px;
 	margin-right:			10px;
-
-        border:				5px solid transparent;
-	border-image:			url(button.png) 5;
 }
 
 QPushButton:hover, QToolButton:hover {
-        color:                          #1a1a1a;
-	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #ffffff, stop:1 #f0efee);
+	color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #ffffff, stop:0.50 #fafaf9, stop:1 #edeceb);
 
-        border:                         5px solid transparent;
-        border-image:                   url(button.png) 5;
+	border:                         1px solid #918e8c;
 }
 
-QPushButton:pressed {
-        color:                          #1a1a1a;
-	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+QPushButton:pressed, QToolButton:pressed {
+	color:                          #1a1a1a;
+	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-        border:                         5px solid transparent;
-        border-image:                   url(active.png) 5;
-
-        padding-left:                   24px;
-        padding-right:                  24px;
-        padding-top:                    5px;
-        padding-bottom:			4px;
-}
-
-QToolButton:pressed {
-        color:                          #1a1a1a;
-	background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
-
-        border:                         5px solid transparent;
-        border-image:                   url(active.png) 5;
-
-        padding-left:                   6px;
-        padding-right:                  6px;
-        padding-top:                    6px;
-        padding-bottom:			4px;
+	border:                         1px solid #888582;
 }

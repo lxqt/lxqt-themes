@@ -1,7 +1,7 @@
 /*
 "Clearlooks" LXQt theme
 By Azuma Hazuki (wandering hazuki at gmail.com)
-Refactored on 26 Feb. 2023
+Refactored on 27 Feb. 2023
 */
 
 LXQtPanel, LXQtPanel #BackgroundWidget {
@@ -65,7 +65,7 @@ QToolTip {
 #StatusNotifierPlugin > QToolButton,
 #StatusNotifierPlugin StatusNotifierButton {
 	padding:			2px;
-	margin-left:			1px;
+	margin-right:			1px;
 }
 
 #MainMenu {
@@ -74,26 +74,25 @@ QToolTip {
 
 	qproperty-icon:			url(mainmenu.svg);
 
-	border:				5px solid transparent;
+	border:				1px solid transparent;
+	border-radius:			3px;
 
-	padding:			0px;
+	padding-left:			4px;
+	margin:				1px;
 }
 
 #MainMenu:hover {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
 
-	border-image:			url(button.png) 5;
+	border:				1px solid #918e8c;
 }
 
 #MainMenu:pressed {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border-image:			url(active.png) 5;
-
-	padding-right:			-1px;
-	padding-bottom:			-2px;
+	border:				1px solid #888582;
 }
 
 #MainMenu QLineEdit {
@@ -137,7 +136,7 @@ QMenu QToolButton {
 	border-top:			1px solid #4b8e99;
 	border-bottom:			1px solid #4b8e99;
 	
-	padding:			3px;
+	padding:			2px;
 	margin:				0px;
 }
 
@@ -194,54 +193,45 @@ QMenu::item:disabled,
 #TaskBar QToolButton,
 #DesktopSwitch QToolButton {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
 
-	border:				5px solid transparent;
-	border-image:			url(button.png) 5;
+	border:				1px solid #918e8c;
+	border-radius:			3px;
 
-	padding:			0px;
+	margin:				1px;
+	padding:			3px;
 }
 
 #TaskBar QToolButton:on,
 #DesktopSwitch QToolButton:on {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border:				5px solid transparent;
-	border-image:			url(active.png) 5;
-
-	padding-top:			1px;
+	border:				1px solid #918e8c;
 }
 
 #TaskBar QToolButton:hover,
 #DesktopSwitch QToolButton:hover {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #ffffff, stop:1 #f0efee);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #ffffff, stop:0.50 #fafaf9, stop:1 #edeceb);
 
-	border:				5px solid transparent;
-	border-image:			url(hover.png) 5;
+	border:				1px solid #918e8c;
 }
 
 #TaskBar QToolButton:pressed,
 #DesktopSwitch QToolButton:pressed {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border:				5px solid transparent;
-	border-image:			url(active.png) 5;
-
-	padding-top:			1px;
+	border:				1px solid #888582;
 }
 
 #TaskBar QToolButton:on:hover,
 #DesktopSwitch QToolButton:on:hover {
 	color:				#1a1a1a; 
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #ffffff, stop:1 #f0efee);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #ffffff, stop:0.50 #fafaf9, stop:1 #edeceb);
 
-	border:				5px solid transparent;
-	border-image:			url(hover-on.png) 5;
-
-	padding-top:			1px;
+	border:				1px solid #918e8c;
 }
 
 #TaskBar QToolButton[urgent="true"],
@@ -249,27 +239,25 @@ QMenu::item:disabled,
 #DesktopSwitch QToolButton[urgent="true"],
 #DesktopSwitch QToolButton[urgent="true"]:hover {
 	color:				#ffffff;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #95b7e1, stop:1 #7ca3d3);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #afc9ea, stop:0.05 #97b8e2, stop:0.49 #8bafdc, stop:0.50 #86abd9, stop:1 #79a1d1);
 
-	border:				5px solid transparent;
-	border-image:			url(urgent.png) 5;
+	border:				1px solid #4d367f;
 }
 
 #QuickLaunch QToolButton {
 	color:				#1a1a1a;
 	background:			#edeceb;
 
-	border:				5px solid transparent;
+	border:				1px solid transparent;
+	border-radius:			3px;	
 
-	padding:			0px;
+	padding:			0px 2px 0px 2px;
 }
 
 #Dom,
 #ColorPicker,
 #ShowDesktop {
-	border:				5px solid transparent;
-
-	padding:			0px;
+	border:				1px solid transparent;
 }
 
 #Dom:hover,
@@ -278,8 +266,10 @@ QMenu::item:disabled,
 #ColorPickerPickerButton:hover,
 #ShowDesktop:hover,
 #QuickLaunch QToolButton:hover {
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
-	border-image:			url(button.png) 5;
+	color:				#1a1a1a;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
+
+	border:				1px solid #918e8c;
 }
 
 #Dom:pressed,
@@ -288,40 +278,35 @@ QMenu::item:disabled,
 #ColorPickerPickerButton:pressed,
 #ShowDesktop:pressed,
 #QuickLaunch QToolButton:pressed {
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
-	border-image:			url(active.png) 5;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	padding-bottom:			-2px;
+	border:				1px solid #888582;
 }
 
 #WingMenuPlugin {
 	color:				#1a1a1a;
 	background:			#edeceb;
 
-	border:				5px solid transparent;
+	border:				1px solid transparent;
+	border-radius:			3px;
 
 	qproperty-icon:			url(mainmenu.svg);
 
-	padding:			0px;
+	margin:				1px;
+	padding:			3px;
 }
 
 #WingMenuPlugin:hover {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
 
-	border:				5px solid transparent;
-	border-image:			url(button.png) 5;
+	border:				1px solid #918e8c;
 }
 
 #WingMenuPlugin:pressed {
-	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border:				5px solid transparent;
-	border-image:			url(active.png) 5;
-
-	padding-right:			-1px;
-	padding-bottom:			-2px;
+	border:				1px solid #888582;
 }
 
 #WingMenuPlugin QWidget {
@@ -371,43 +356,35 @@ QMenu::item:disabled,
 	color:				#1a1a1a;
 	background:			#edeceb;
 
-	border:				5px solid transparent;
-	border-image:			none;
+	border:				1px solid transparent;
+	border-radius:			3px;
 
 	font:				normal;
 
 	margin-right:			1px;
-
-	padding:			0px;
 }
 
 #WingMenuPlugin QToolButton:hover, 
 #WingMenuPlugin #CategoryButton:hover, 
 #WingMenuPlugin #CategoryButton:selected {
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
-	border:				5px solid transparent;
-	border-image:			url(button.png) 5;
+	color:				#1a1a1a;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
+
+	border:				1px solid #918e8c;
 }
 
 #WingMenuPlugin QToolButton:pressed {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border:				5px solid transparent;
-	border-image:			url(active.png) 5;
-
-	padding-bottom:			-2px;
+	border:				1px solid #888582;
 }
 
 #WingMenuPlugin #CategoryButton:pressed {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border:				5px solid transparent;
-	border-image:			url(active.png) 5;
-
-	padding-right:			-1px;
-	padding-bottom:			-2px;
+	border:				1px solid #888582;
 }
 
 #WingMenuPlugin QLineEdit {
@@ -511,12 +488,12 @@ QMenu::item:disabled,
 #Backlight > SliderDialog > QSlider,
 VolumePopup > QSlider {
         color:                          #1a1a1a;
-        background:                     #ffffff;
+        background:                     transparent;
 
 	border:				1px solid transparent;
 
-        min-width:                      15px;
-        max-width:                      15px;
+        min-width:                      13px;
+        max-width:                      13px;
         min-height:                     140px;
         max-height:                     140px;
 }
@@ -524,66 +501,80 @@ VolumePopup > QSlider {
 #Backlight > SliderDialog > QSlider::groove:vertical, 
 VolumePopup > QSlider::groove:vertical {
 	color:				#1a1a1a;
+	background:			transparent;
 
-	background:			#ffff00;
-	background-image:		url(groove.png);
+	background-image:		url(subpage-on-fill.png);
 	background-repeat:		repeat-y;
-	background-attachment:		fixed;
-	background-position:		center center;
 
-	border:				1px solid #a19d9a;
+	border:				2px solid transparent;
+	border-image:			url(subpage-on.png) 2;
 
-	width:				13px;
+	width:				3px;
 }
 
 #Backlight > SliderDialog > QSlider::sub-page:vertical,
 VolumePopup > QSlider::sub-page:vertical {
+	color:				#1a1a1a;
+	background:			transparent;
+
+	background-image:		url(subpage-off-fill.png);
+	background-repeat:		repeat-y;
+
+	border:				2px solid transparent;
+	border-image:			url(subpage-off.png) 2;
+
+	width:				3px;
 }
 
 #Backlight > SliderDialog > QSlider::handle:vertical,
 VolumePopup > QSlider::handle:vertical {
 	color:				transparent;
-	background:			qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a2c1e6, stop:0.49 #98b9e2, stop:0.50 #90b3de, stop:1 #84aad8);
+	background:			transparent;
 
-	border:				2px solid transparent;
-	border-image:			url(scrollbar.png) 2;
-
-	background-image:		url(handle.png);
+	background-image:		url(slider.png);
 	background-repeat:		no-repeat;
 	background-position:		center;
 	background-attachment:		fixed;
 
-	width:				15px;
-	height:				24px;
+	width:				13px;
+	height:				21px;
 
-	margin:				-1px;
+	margin-left:			-5px;
+	margin-right:			-5px;
+	margin-top:			-2px;
+	margin-bottom:			-2px;
 }
-
 
 VolumePopup > QSlider::handle:vertical:hover,
 VolumePopup > QSlider::handle:vertical:pressed,
 #Backlight > SliderDialog > QSlider::handle:vertical:hover,
 #Backlight > SliderDialog > QSlider::handle:vertical:pressed {
-	background:			qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #adc9eb, stop:0.49 #a2c1e7, stop:0.50 #9abbe3, stop:1 #8db1dd);
-	border-image:			url(scrollbar-hover.png) 2;
+	color:				transparent;
+	background:			transparent;
 
-	background-image:		url(handle.png);
+	background-image:		url(slider-on.png);
 	background-repeat:		no-repeat;
 	background-position:		center;
 	background-attachment:		fixed;
+
+	width:				13px;
+	height:				21px;
+
+	margin-left:			-5px;
+	margin-right:			-5px;
 }
 
 #Backlight > SliderDialog > QToolButton,
 VolumePopup > QPushButton {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #fefefe, stop:1 #ebeae9);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
 
-	border:				5px solid transparent; 
-	border-image:			url(button.png) 5;
+	border:				1px solid #918e8c; 
+	border-radius:			3px;
 
         qproperty-iconSize:             16px;
 
-	padding:			4px;
+	padding:			3px;
 
 	margin:				2px;
 }
@@ -591,22 +582,17 @@ VolumePopup > QPushButton {
 #Backlight > SliderDialog > QToolButton:hover,
 VolumePopup > QPushButton:hover {
 	color:				#1a1a1a; 
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #ffffff, stop:1 #f0efee);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #ffffff, stop:0.50 #fafaf9, stop:1 #edeceb);
 
-	border:				5px solid transparent;
-	border-image:			url(hover-on.png) 5;
+	border:				1px solid #918e8c;
 }
 
 #Backlight > SliderDialog > QToolButton:pressed,
 VolumePopup > QPushButton:pressed {
 	color:				#1a1a1a;
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	border:				5px solid transparent;
-	border-image:			url(active.png) 5;
-
-	padding-right:			3px;
-	padding-bottom:			2px;
+	border:				1px solid #888582;
 }
 
 QCalendarWidget QWidget {
@@ -650,21 +636,22 @@ QCalendarWidget QToolButton {
         color:                          #1a1a1a;
 	background:			#edeceb;
 
-        border:                         5px solid transparent;
+        border:                         1px solid transparent;
+	border-radius:			3px;
 
 	margin:				2px;
 }
 
 QCalendarWidget QToolButton:hover {
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #ffffff, stop:1 #f0efee);
-	border-image:			url(hover.png) 5;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #fbfbfa, stop:0.50 #f5f5f4, stop:1 #e8e7e6);
+
+	border:				1px solid #918e8c;
 }
 
 QCalendarWidget QToolButton:pressed {
-	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1 stop:0 #d8d6d4, stop:1 #c2c0bd);
-	border-image:			url(active.png) 5;
+	background:			qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.49 #cfcdcb, stop:0.50 #cbc8c6, stop:1 #c0bdba);
 
-	padding-top:			1px;
+	border:				1px solid #888582;
 }
 
 QCalendarWidget QToolButton::menu-indicator { /* Remove the down arrow */
@@ -677,7 +664,7 @@ QCalendarWidget #qt_calendar_navigationbar {
 
         border:                         1px solid #aaaaaa;
 
-	padding:			5px;
+	padding:			2px;
 }
 
 QCalendarWidget #qt_calendar_prevmonth {
