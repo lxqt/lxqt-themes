@@ -251,13 +251,20 @@ QMenu::item:disabled,
 	border:				1px solid transparent;
 	border-radius:			3px;	
 
-	padding:			0px 2px 0px 2px;
+	padding-left:			1px;
+	padding-right:			1px;
+
+	margin:				1px;
 }
 
 #Dom,
 #ColorPicker,
 #ShowDesktop {
 	border:				1px solid transparent;
+
+	padding-left:			1px;
+	padding-right:			1px;
+	margin:				1px;
 }
 
 #Dom:hover,
@@ -292,8 +299,8 @@ QMenu::item:disabled,
 
 	qproperty-icon:			url(mainmenu.svg);
 
+	padding-left:			4px;
 	margin:				1px;
-	padding:			3px;
 }
 
 #WingMenuPlugin:hover {
