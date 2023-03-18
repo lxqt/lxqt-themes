@@ -1,0 +1,81 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#ffffff;
+	background:			#353535;
+
+	border:				1px solid #1b1b1b;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#ffffff;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#ffffff;
+	background:			#1e1e1e; /* This doesn't work for some reason... */
+	background-image:		url(assets/menus/bg.png); /* ...but this does! */
+
+	border:				1px solid #1b1b1b;
+}
+
+/* Button settings */
+QPushButton {
+	color:                          #ffffff;
+        background:             	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.05 #393939, stop:0.06 #353535, stop:1 #323232);
+
+        border-top:             	1px solid #1b1b1b;
+        border-bottom:          	1px solid #070707;
+        border-left:            	1px solid #1b1b1b;
+        border-right:           	1px solid #1b1b1b;
+        border-radius:          	4px;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+	color:                          #ffffff;
+        background:             	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.05 #393939, stop:0.06 #353535, stop:1 #323232);
+
+        border-top:			1px solid #1b1b1b;
+        border-bottom:			1px solid #070707;
+        border-left:			1px solid #1b1b1b;
+        border-right:			1px solid #1b1b1b;
+
+        border-radius:			4px;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QPushButton:hover, QToolButton:hover {
+        background:             qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.05 #3b3b3b, stop:0.06 #373737, stop:0.96 #373737, stop:1 #343434);
+        border-top:             1px solid #1b1b1b;
+        border-bottom:          1px solid #070707;
+        border-left:            1px solid #1b1b1b;
+        border-right:           1px solid #1b1b1b;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+        background:             #1e1e1e;
+
+        border-top:             1px solid #1b1b1b;
+        border-bottom:          1px solid #070707;
+        border-left:            1px solid #1b1b1b;
+        border-right:           1px solid #1b1b1b;
+}
