@@ -19,7 +19,6 @@ Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LXQtPanelPlugin > QToolButton {
-    background: #000000;
     margin: 0px;
     padding: 2px;
     color: #ffffff;

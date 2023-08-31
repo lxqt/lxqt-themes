@@ -326,8 +326,7 @@ TrayIcon {
 }
 
 #VolumePlugin QToolButton:hover {
-    background-color: rgba(5, 0, 0, 45%);
-    border: 1px solid black;
+    background-color:rgb(90, 90, 90, 80%);
 }
 
 #VolumePlugin QToolButton:pressed {
@@ -580,16 +579,9 @@ QCalendarWidget QSpinBox {
 /*
  * WorldClock
  */
-#WorldClock {
-    color: #eef5fc;
-    background: #2f2f2f;
-}
-
-#WorldClock QLabel {
-    margin: 2px;
-    padding: 4px;
-    color: #eef5fc;
-    background: #2f2f2f;
+#WorldClockContent {
+    color: #ffffff;
+    padding: 2px 4px;
 }
 
 /*
