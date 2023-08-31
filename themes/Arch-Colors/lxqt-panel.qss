@@ -30,7 +30,7 @@ Plugin > QWidget > QWidget {
 }
 
 Plugin > QToolButton,
-Plugin > QWidget > QToolButton, /* colors affect also statusnotifierbuttons but not trayicons */
+Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LXQtPanelPlugin > QToolButton {
     margin: 2px;
@@ -43,7 +43,7 @@ LXQtPanelPlugin > QToolButton {
 Plugin > QToolButton:hover,
 Plugin > QWidget > QToolButton:hover,
 LXQtPanelPlugin > QToolButton:hover {
-    color: #0a0a2b;
+    background: #1899da;
 }
 
 Plugin > QToolButton:pressed,
@@ -235,7 +235,6 @@ StatusNotifierButton {
 #VolumePlugin QToolButton {
     margin: 2px;
     padding: 2px;
-    background: #162635;
 }
 
 #VolumePlugin QToolButton:hover {
@@ -275,7 +274,6 @@ VolumePopup > QSlider::handle:vertical {
     background: #1899da;
     border-radius: 2px;
     margin: 0 -4px; /* expand outside the groove */
-
 }
 
 VolumePopup > QSlider::sub-page:vertical {
@@ -286,24 +284,14 @@ VolumePopup > QSlider::sub-page:vertical {
 /*
  * WorldClock
  */
-#WorldClock {
-    margin: 0px;
-    padding: 0px;
-    background-color: #162635;
-}
-
-#WorldClock QLabel {
-    padding: 2px;
-    margin: 0px;
-    color: #e7eff1;
-    qproperty-alignment: alignCenter;
-    background-color: #162635;
+#WorldClockContent {
+    padding: 2px 4px;
 }
 
 /*
  * Calendar Widget
  */
- 
+
 /* date of actual month */
 QCalendarWidget QAbstractItemView:enabled
 {
