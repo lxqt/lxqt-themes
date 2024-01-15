@@ -146,6 +146,63 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 /*
+ * Fancy menu
+ */
+#FancyMenu {
+    color: rgba(54, 54, 54, 100%);
+    margin: 3px 1px 3px 1px;
+    border-top: 3px solid transparent;
+    qproperty-icon: url(mainmenu.svg);
+}
+
+#FancyMenu:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+#FancyMenu QLineEdit {
+    color: #000000;
+    background: #f0f0f0;
+    border: 1px solid #9b9b9b;
+    border-radius: 0px;
+    padding: 3px;
+    selection-color: #eee;
+    selection-background-color: #1e91ff;
+}
+
+#FancyMenu QLineEdit:focus {
+    border: 1px solid #1e91ff;
+}
+
+#FancyMenu QListView {
+    background: #f0f0f0;
+    border: 1px solid #9b9b9b;
+    color: #313639;
+}
+
+LXQtFancyMenuWindow {
+    background: #f0f0f0;
+}
+/* not working:*/
+LXQtFancyMenuWindow > QToolButton{
+    background: #f0f0f0;
+}
+
+#FancyMenu QListView::item {
+    border: 1px solid transparent;
+    color: #313639;
+}
+
+#FancyMenu QListView::item:hover {
+    background: rgba(30, 145, 255, 10%);
+    color: #313639;
+}
+
+#FancyMenu QListView::item:selected {
+    background: rgba(30, 145, 255, 50%);
+    color: #313639;
+}
+
+/*
  * DirectoryMenu
  */
 #DirectoryMenu {

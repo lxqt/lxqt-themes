@@ -339,7 +339,6 @@ QMenu {
     border-bottom-color: rgba(0, 0, 0, 80%);
     border-right-color: rgba(0, 0, 0, 80%);
     background: rgba(0, 0, 0, 80%);
-/*  qproperty-icon: url(mainmenu.svg); */
     color: white;
 }
 
@@ -454,6 +453,61 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 #MainMenu ActionView::item:selected {
+    background: #640b0c;
+    color: white;
+}
+
+/*
+ * Fancy menu
+ */
+#FancyMenu {
+    margin: 2px;
+    padding: 2px;
+    border: none;
+    background: rgba(0, 0, 0, 80%);
+    qproperty-icon: url(mainmenu.svg);
+    color: white;
+}
+
+LXQtFancyMenuWindow {
+    background: black;
+}
+/* not working:*/
+LXQtFancyMenuWindow > QToolButton{
+    background: black;
+}
+
+#FancyMenu QLineEdit {
+    background: black;
+    border: 1px solid #3c3c3c;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    padding: 3px;
+    margin-bottom: 1px;
+    color: white;
+    selection-background-color: #640b0c;
+}
+
+#FancyMenu QListView {
+    border: 1px solid grey;
+    background: black;
+    color: white;
+}
+
+#FancyMenu QListView::item {
+    background: black;
+    color: white;
+    border: none;
+    padding: 4px 3px 4px 10px;
+}
+
+#FancyMenu QListView::item:hover {
+    background: #500709;
+    color: white;
+}
+
+#FancyMenu QListView::item:selected {
     background: #640b0c;
     color: white;
 }

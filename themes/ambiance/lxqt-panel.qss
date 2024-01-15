@@ -312,6 +312,65 @@ QCalendarWidget QWidget {
 }
 
 /*
+ *Fancy Menu
+*/
+
+#FancyMenu {
+    margin: 2px;
+    padding: 1px;
+    border-radius: 4px;
+    qproperty-icon: url(mainmenu.svg);
+    color: #f2f1f0;
+    border: none;
+}
+
+LXQtFancyMenuWindow{
+    background:  #3c3b37;
+}
+
+#FancyMenu:pressed {
+    padding: 4px;
+}
+
+#FancyMenu  QListView {
+    background-color: #3c3b37;
+    border: 1px solid #5e5e5e;
+}
+
+#FancyMenu  QListView::icon {
+    background-color: transparent;
+    border: 10px solid transparent;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+}
+
+#FancyMenu QListView::item {
+    color: #f2f1f0;
+    padding: 5px 40px 5px 24px;
+}
+
+#FancyMenu QListView::item:selected, QListView::item:hover {
+    color: #f2f1f0;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+#FancyMenu QLineEdit {
+    background: #3c3b37;
+    border: none;
+    color: #f2f1f0;
+    margin-bottom: 1px;
+    padding: 3px;
+    selection-background-color: #eb7140;
+    selection-color: #f2f1f0;
+}
+
+#FancyMenu QScrollBar::handle {
+    background-color: palette(highlighted-text);
+    color: palette(highlighted-text);
+}
+
+/*
  * QuickLaunch
  */
 #QuickLaunch QToolButton {

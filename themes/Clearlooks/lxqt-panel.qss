@@ -290,6 +290,78 @@ QMenu::indicator:non-exclusive:checked:selected {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #728eb9);
 }
 
+/*
+ * Fancy Menu
+*/
+#FancyMenu {
+    margin-left: 1px;
+    margin-right: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    qproperty-icon: url(mainmenu.svg);
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+#FancyMenu:pressed {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+#FancyMenu:hover {
+    margin-left: 1px;
+    margin-right: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    background-color: transparent;
+    color: #1a1a1a;
+}
+
+#FancyMenu QLineEdit {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #909090;
+    border-radius: 3px;
+    padding: 2px;
+    selection-background-color: #80a0d0;
+    selection-color: white;
+}
+
+#FancyMenu QListView {
+    background: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid transparent;
+    padding: 0px;
+}
+
+#FancyMenu QListView::item {
+    border: 1px solid transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+#FancyMenu QListView::item:selected {
+    border: 1px solid #5070a0;
+    border-radius: 3px;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #80a0d0);
+    color: #ffffff;
+}
+
+#FancyMenu QListView::item:hover {
+    border: 1px solid #5070a0;
+    border-radius: 3px;
+    background-color: #c9e1ff;
+}
+
+#FancyMenu QListView::item:selected:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #728eb9);
+}
+
+
 /* System Tray */
 #Tray {
     min-width: 0px;

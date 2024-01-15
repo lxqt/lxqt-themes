@@ -179,7 +179,57 @@ QMenu::indicator:non-exclusive:checked {
 
 #MainMenu ActionView::item:selected {
     background: #1899da;
-    color: white
+    color: white;
+}
+
+/*
+ * Fancymenu
+ */
+#FancyMenu {
+    qproperty-icon: url(mainmenu.svg);
+    background: #162635;
+    margin: 0px;
+    padding: 3px;
+    color: #e7eff1;
+}
+
+LXQtFancyMenuWindow{
+    background: #041b27;
+}
+
+#FancyMenu:hover {
+    color: #d7e3e6;
+}
+
+#FancyMenu  QListView {
+    background: #041b27;
+    border: 1px solid grey;
+}
+
+#FancyMenu QListView::item {
+    background: #041b27;
+    color: #d7e3e6;
+    padding: 5px 30px 5px 3px
+}
+
+#FancyMenu QListView::item:hover {
+    background: #003d5b;
+    color: #d7e3e6;
+}
+
+#FancyMenu QListView::item:pressed {
+    text-decoration: none;
+}
+
+#FancyMenu QListView::item:selected {
+    background: #1899da;
+    color: white;
+}
+
+#FancyMenu QLineEdit {
+    color: white;
+    background:  #041b27;
+    padding:3px;
 }
 
 /*
@@ -303,7 +353,7 @@ VolumePopup > QSlider::sub-page:vertical {
 /*
  * Calendar Widget
  */
- 
+
 /* date of actual month */
 QCalendarWidget QAbstractItemView:enabled
 {
@@ -551,3 +601,4 @@ QCalendarWidget QSpinBox {
 #LXQtCpuLoad {
     qproperty-fontColor: white;
 }
+
