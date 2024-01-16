@@ -350,9 +350,10 @@ LXQtFancyMenuWindow{
     padding: 5px 40px 5px 24px;
 }
 
-#FancyMenu QListView::item:selected, QListView::item:hover {
+#FancyMenu QListView::item:hover, QListView::item:selected {
     color: #f2f1f0;
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    padding: 0px;
 }
 
 #FancyMenu QLineEdit {
