@@ -369,6 +369,15 @@ QMenu::indicator:non-exclusive:checked:selected {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a0c0e0, stop:1 #728eb9);
 }
 
+#FancyMenu QListView::focus {
+    outline:transparent;
+    padding: 0px;
+}
+
+#FancyMenu QListView::item:focus {
+    padding: 0px;
+}
+
 
 /* System Tray */
 #Tray {

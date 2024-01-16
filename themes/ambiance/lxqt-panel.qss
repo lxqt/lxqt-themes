@@ -327,6 +327,10 @@ QCalendarWidget QWidget {
 LXQtFancyMenuWindow{
     background:  #3c3b37;
 }
+/* not working*/
+TopLevelLXQtFancyMenu  > QToolButton{
+    background:red;
+}
 
 #FancyMenu:pressed {
     padding: 4px;
@@ -353,6 +357,15 @@ LXQtFancyMenuWindow{
 #FancyMenu QListView::item:hover, QListView::item:selected {
     color: #f2f1f0;
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+    padding: 0px;
+}
+
+#FancyMenu QListView::focus {
+    outline:transparent;
+    padding: 0px;
+}
+
+#FancyMenu QListView::item:focus {
     padding: 0px;
 }
 

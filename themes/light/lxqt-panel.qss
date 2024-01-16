@@ -275,9 +275,13 @@ LXQtFancyMenuWindow > QToolButton{
     color: palette(highlighted-text);
 }
 
-#FancyMenu QListView::item:hover{
+#FancyMenu QListView::item:hover {
     background: palette(highlight);
     color: palette(highlighted-text);
+    padding: 0px;
+}
+
+#FancyMenu QListView::item:focus {
     padding: 0px;
 }
 
