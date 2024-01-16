@@ -26,6 +26,14 @@ LXQtPanelPlugin > QToolButton {
     color: #1a1a1a;
 }
 
+QToolTip {
+    border: 1px solid palette(text);
+    background: palette(window);
+    color: palette(text);
+    padding: 1px;
+    margin: 0px;
+}
+
 /* Menus */
 
 QMenu {
