@@ -201,13 +201,17 @@ LXQtFancyMenuWindow{
     color: #d7e3e6;
 }
 
-#FancyMenu  QListView {
-    background: #041b27;
+#FancyMenu  #AppView {
+    background:#06293a;
     border: 1px solid grey;
 }
 
+#FancyMenu Separator{
+    background: red;
+    width:4px;
+}
+
 #FancyMenu QListView::item {
-    background: #041b27;
     color: #d7e3e6;
     padding: 5px 30px 5px 3px
 }
@@ -215,6 +219,7 @@ LXQtFancyMenuWindow{
 #FancyMenu QListView::item:hover {
     background: #003d5b;
     color: #d7e3e6;
+    padding: 0px;
 }
 
 #FancyMenu QListView::item:pressed {
@@ -230,6 +235,60 @@ LXQtFancyMenuWindow{
     color: white;
     background:  #041b27;
     padding:3px;
+}
+
+#FancyMenu QScrollBar:vertical {
+    background-color: transparent;
+    width: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar:horizontal {
+    background-color: transparent;
+    height: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar::handle:vertical {
+    background-color: #787878;
+    border: 0px solid #787878;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:horizontal {
+    background-color: #787878;
+    border: 0px solid #787878;
+    min-width: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:hover {
+    background-color: #2878c8;
+    border: 1px solid #2878c8;
+    margin: 0px;
+}
+
+#FancyMenu QScrollBar::add-line:vertical,
+#FancyMenu QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QScrollBar::add-line:horizontal,
+#FancyMenu QScrollBar::sub-line:horizontal {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QAbstractScrollArea::corner {
+    background: transparent;
 }
 
 /*

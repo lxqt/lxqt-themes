@@ -438,13 +438,13 @@ LXQtFancyMenuWindow{
     qproperty-icon: url(/lxqt-panel/mainmenu.svg);
 }
 
-#FancyMenu QListView {
-    background:  #2E2E2E;
+#FancyMenu #AppView {
+    background:  #4a4a4a;
     border: 1px solid #3c3c3c;
 }
 
 #FancyMenu QListView::item {
-    background: #2E2E2E;
+    background: transparent;
     color: white;
     padding: 3px;
 }
@@ -466,12 +466,19 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
-    width: 14px;
+    width: 15px;
     margin: 2px 2px 2px 2px;
     border: 1px solid transparent;
 }
 
-#FancyMenu QScrollBar::handle:vertical {
+#FancyMenu QScrollBar:horizontal {
+    background-color: transparent;
+    height: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar::handle{
     background-color: #787878;
     border: 0px solid #787878;
     min-height: 40px;
@@ -479,16 +486,21 @@ LXQtFancyMenuWindow{
     margin: 1px;
 }
 
-#FancyMenu QScrollBar::handle:vertical:hover {
+#FancyMenu QScrollBar::handle:hover {
     background-color: #2878c8;
     border: 1px solid #2878c8;
+    margin: 0px;
 }
 
-#FancyMenu QScrollBar::add-line:vertical,
-#FancyMenu QScrollBar::sub-line:vertical {
+#FancyMenu QScrollBar::add-line,
+#FancyMenu QScrollBar::sub-line {
     border: 0px solid transparent;
     background: transparent;
     width: 0px;
+}
+
+#FancyMenu QAbstractScrollArea::corner {
+    background: transparent;
 }
 /*
  * Mount plugin

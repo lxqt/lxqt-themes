@@ -470,7 +470,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 LXQtFancyMenuWindow {
-    background: black;
+    background: rgba(0, 0, 0, 60%);
 }
 /* not working:*/
 LXQtFancyMenuWindow > QToolButton{
@@ -479,24 +479,19 @@ LXQtFancyMenuWindow > QToolButton{
 
 #FancyMenu QLineEdit {
     background: black;
-    border: 1px solid #3c3c3c;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-left-width: 0px;
     padding: 3px;
     margin-bottom: 1px;
     color: white;
     selection-background-color: #640b0c;
 }
 
-#FancyMenu QListView {
+#FancyMenu #AppView {
     border: 1px solid grey;
-    background: black;
+    background: rgba(0, 0, 0, 35%);
     color: white;
 }
 
 #FancyMenu QListView::item {
-    background: black;
     color: white;
     border: none;
     padding: 4px 3px 4px 10px;
@@ -511,6 +506,61 @@ LXQtFancyMenuWindow > QToolButton{
     background: #640b0c;
     color: white;
 }
+
+#FancyMenu QScrollBar:vertical {
+    background-color: transparent;
+    width: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar:horizontal {
+    background-color: transparent;
+    height: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar::handle:vertical {
+    background-color: #640b0c;
+    border: 0px solid #640b0c;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:horizontal {
+    background-color: #640b0c;
+    border: 0px solid #640b0c;
+    min-width: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:hover{
+    background-color: #880c10;
+    border: 1px solid #880c10;
+    margin: 0px;
+}
+
+#FancyMenu QScrollBar::add-line:vertical,
+#FancyMenu QScrollBar::sub-line:vertical {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QScrollBar::add-line:horizontal,
+#FancyMenu QScrollBar::sub-line:horizontal {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QAbstractScrollArea::corner {
+    background: transparent;
+}
+
 
 /*
  * Mount plugin

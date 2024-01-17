@@ -181,7 +181,6 @@ QMenu QToolButton {
  */
 #FancyMenuPlugin {
     padding: 0px;
-
 }
 
 #FancyMenu {
@@ -213,9 +212,10 @@ LXQtFancyMenuWindow > QToolButton{
     background: rgba(5, 0, 0, 45%);
 }
 
-#FancyMenu QListView {
-    border: none;
-    background-color: rgba(5, 0, 0, 45%);
+#FancyMenu #AppView {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: rgba(5, 0, 0, 25%);
     margin: 1px;
 }
 
@@ -236,6 +236,44 @@ LXQtFancyMenuWindow > QToolButton{
     color: black;
 }
 
+#FancyMenu QScrollBar:vertical {
+    background-color: transparent;
+    width: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar:horizontal {
+    background-color: transparent;
+    height: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar::handle{
+    background-color: #787878;
+    border: 0px solid #787878;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:hover {
+    background-color: #9e9e9e;
+    border: 1px solid #9e9e9e;
+    margin: 0px;
+}
+
+#FancyMenu QScrollBar::add-line,
+#FancyMenu QScrollBar::sub-line {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QAbstractScrollArea::corner {
+    background: transparent;
+}
 
 /*
  * QuickLaunch
