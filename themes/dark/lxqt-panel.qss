@@ -470,11 +470,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 LXQtFancyMenuWindow {
-    background: rgba(0, 0, 0, 60%);
-}
-/* not working:*/
-LXQtFancyMenuWindow > QToolButton{
-    background: black;
+    background: rgba(0, 0, 0);/*disabled transparency because buggy*/
 }
 
 #FancyMenu QLineEdit {
@@ -577,7 +573,6 @@ LXQtFancyMenuWindow > QToolButton{
 #FancyMenu QAbstractScrollArea::corner {
     background: transparent;
 }
-
 
 /*
  * Mount plugin

@@ -331,21 +331,17 @@ QCalendarWidget QWidget {
 LXQtFancyMenuWindow{
     background:  #3c3b37;
 }
-/* not working*/
-TopLevelLXQtFancyMenu  > QToolButton{
-    background:red;
-}
 
-#FancyMenu  #AppView {
+#FancyMenu #AppView {
     background-color: #504f49;
     border: 1px solid #5e5e5e;
 }
 
-#FancyMenu  #CategoryView {
+#FancyMenu #CategoryView {
     background-color: #32312e;
 }
 
-#FancyMenu  QListView::icon {
+#FancyMenu QListView::icon {
     background-color: transparent;
     border: 10px solid transparent;
     border-top-width: 0px;

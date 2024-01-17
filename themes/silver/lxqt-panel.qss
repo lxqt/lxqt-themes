@@ -376,8 +376,6 @@ LXQtFancyMenuWindow {
     background-color: #afafaf;
 }
 
-
-
 #FancyMenu QScrollBar:vertical {
     background-color: #9e9e9e;
     width: 17px;

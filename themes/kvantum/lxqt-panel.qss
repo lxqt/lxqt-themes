@@ -416,7 +416,6 @@ TrayIcon {
     qproperty-icon: url(/lxqt-panel/mainmenu.svg);
 }
 
-
 LXQtFancyMenuWindow{
     background: #2E2E2E;
 }
@@ -438,7 +437,6 @@ LXQtFancyMenuWindow{
 #FancyMenu QLineEdit:focus {
     border: 1px solid #246cb4;
 }
-
 
 #FancyMenu #AppView {
     background:  #4a4a4a;

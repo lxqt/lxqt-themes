@@ -202,18 +202,13 @@ LXQtFancyMenuWindow{
 }
 
 #FancyMenu  #AppView {
-    background:#06293a;
+    background: #06293a;
     border: 1px solid grey;
-}
-
-#FancyMenu Separator{
-    background: red;
-    width:4px;
 }
 
 #FancyMenu QListView::item {
     color: #d7e3e6;
-    padding: 5px 30px 5px 3px
+    padding: 5px 30px 5px 3px;
 }
 
 #FancyMenu QListView::item:hover {
@@ -234,7 +229,7 @@ LXQtFancyMenuWindow{
 #FancyMenu QLineEdit {
     color: white;
     background:  #041b27;
-    padding:3px;
+    padding: 3px;
 }
 
 #FancyMenu QToolButton {
@@ -677,4 +672,3 @@ QCalendarWidget QSpinBox {
 #LXQtCpuLoad {
     qproperty-fontColor: white;
 }
-

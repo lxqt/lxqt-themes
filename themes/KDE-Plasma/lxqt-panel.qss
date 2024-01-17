@@ -183,7 +183,6 @@ LXQtFancyMenuWindow {
     color: #313639;
 }
 
-
 #FancyMenu QListView::item {
     border: 1px solid transparent;
     color: #313639;

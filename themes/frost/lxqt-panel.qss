@@ -346,7 +346,6 @@ QListView::item:hover {
     background: transparent;
 }
 
-
 /*
  * QuickLaunch
  */
