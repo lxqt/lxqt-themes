@@ -159,6 +159,10 @@ QMenu::indicator:non-exclusive:checked {
     border-top: 3px solid rgba(30, 145, 255, 50%);
 }
 
+LXQtFancyMenuWindow {
+    background: #f0f0f0;
+}
+
 #FancyMenu QLineEdit {
     color: #000000;
     background: #f0f0f0;
@@ -173,19 +177,12 @@ QMenu::indicator:non-exclusive:checked {
     border: 1px solid #1e91ff;
 }
 
-#FancyMenu QListView {
-    background: #f0f0f0;
+#FancyMenu #AppView {
+    background: #eaeaea;
     border: 1px solid #9b9b9b;
     color: #313639;
 }
 
-LXQtFancyMenuWindow {
-    background: #f0f0f0;
-}
-/* not working:*/
-LXQtFancyMenuWindow > QToolButton{
-    background: #f0f0f0;
-}
 
 #FancyMenu QListView::item {
     border: 1px solid transparent;
@@ -200,6 +197,63 @@ LXQtFancyMenuWindow > QToolButton{
 #FancyMenu QListView::item:selected {
     background: rgba(30, 145, 255, 50%);
     color: #313639;
+}
+
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+}
+
+#FancyMenu QToolButton:hover {
+    border: 1px solid rgba(30, 145, 255, 100%);
+}
+
+#FancyMenu QToolButton:pressed {
+    color: rgba(54, 54, 54, 100%);
+    border: 1px solid rgba(30, 145, 255, 100%);
+    background-color: rgba(30, 145, 255, 30%);
+}
+
+#FancyMenu QScrollBar:vertical {
+    background-color: #f0f0f0;
+    width: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+#FancyMenu QScrollBar:horizontal {
+    background-color: #f0f0f0;
+    height: 15px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+}
+
+#FancyMenu QScrollBar::handle{
+    background-color:  rgba(30, 145, 255, 10%);
+    border: 1px solid #2878c8;
+    min-height: 40px;
+    border-radius: 1px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:hover {
+    background-color: #74a5f0;
+    border: 1px solid #74a5f0;
+    margin: 0px;
+}
+
+#FancyMenu QScrollBar::add-line,
+#FancyMenu QScrollBar::sub-line {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QAbstractScrollArea::corner {
+    background: transparent;
 }
 
 /*

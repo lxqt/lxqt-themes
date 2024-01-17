@@ -198,24 +198,21 @@ QMenu QToolButton {
     padding: 1px;
 }
 LXQtFancyMenuWindow {
-   background-color: rgba(5, 0, 0, 55%);
+   background-color: #3b3b3b; /* disabled transparency because buggy */
 }
-/* not working:*/
-LXQtFancyMenuWindow > QToolButton{
-    background: #f0f0f0;
-}
+
 #FancyMenu QLineEdit {
     margin: 0;
     padding: 6px;
     color: white;
     border-radius: 0px;
-    background: rgba(5, 0, 0, 45%);
+    background: #444444;
 }
 
 #FancyMenu #AppView {
     border-left: 1px solid white;
     border-right: 1px solid white;
-    background-color: rgba(5, 0, 0, 25%);
+    background-color: #444444;
     margin: 1px;
 }
 
@@ -228,7 +225,24 @@ LXQtFancyMenuWindow > QToolButton{
 
 #FancyMenu QListView::item:hover {
     background-color: rgba(236, 236, 236, 60%);
-    color: blaclk;
+    color: black;
+}
+
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+}
+
+#FancyMenu QToolButton:hover {
+    background: #444444;
+    border: 1px solid grey;
+}
+
+#FancyMenu QToolButton:pressed {
+    background: #b6b6b6;
+    border: 1px solid grey;
 }
 
 #FancyMenu QListView::item:selected {

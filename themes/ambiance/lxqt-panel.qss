@@ -324,6 +324,10 @@ QCalendarWidget QWidget {
     border: none;
 }
 
+#FancyMenu:pressed {
+    padding: 4px;
+}
+
 LXQtFancyMenuWindow{
     background:  #3c3b37;
 }
@@ -332,13 +336,13 @@ TopLevelLXQtFancyMenu  > QToolButton{
     background:red;
 }
 
-#FancyMenu:pressed {
-    padding: 4px;
-}
-
 #FancyMenu  #AppView {
     background-color: #504f49;
     border: 1px solid #5e5e5e;
+}
+
+#FancyMenu  #CategoryView {
+    background-color: #32312e;
 }
 
 #FancyMenu  QListView::icon {
@@ -351,7 +355,7 @@ TopLevelLXQtFancyMenu  > QToolButton{
 
 #FancyMenu QListView::item {
     color: #f2f1f0;
-    padding: 5px 40px 5px 24px;
+    padding: 5px 0px 5px 14px;
 }
 
 #FancyMenu QListView::item:hover, QListView::item:selected {
@@ -377,6 +381,19 @@ TopLevelLXQtFancyMenu  > QToolButton{
     padding: 3px;
     selection-background-color: #eb7140;
     selection-color: #f2f1f0;
+}
+
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+    background: #504f49;
+}
+
+#FancyMenu QToolButton:hover {
+    background: #eb7140;
+    border: 1px solid black;
 }
 
 #FancyMenu QScrollBar:vertical {
@@ -410,8 +427,8 @@ TopLevelLXQtFancyMenu  > QToolButton{
 }
 
 #FancyMenu QScrollBar::handle:hover {
-    background-color: #b0a89b;
-    border: 1px solid #b0a89b;
+    background-color: #eb7140;
+    border: 1px solid #eb7140;
     margin: 0px;
 }
 

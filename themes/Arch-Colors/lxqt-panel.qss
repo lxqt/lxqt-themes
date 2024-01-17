@@ -237,6 +237,23 @@ LXQtFancyMenuWindow{
     padding:3px;
 }
 
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+}
+
+#FancyMenu QToolButton:hover {
+    border: 1px solid rgba(30, 145, 255, 100%);
+}
+
+#FancyMenu QToolButton:pressed {
+    color: rgba(54, 54, 54, 100%);
+    border: 1px solid rgba(30, 145, 255, 100%);
+    background-color: rgba(30, 145, 255, 30%);
+}
+
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
     width: 15px;

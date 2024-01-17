@@ -283,6 +283,22 @@ QListView::item:hover {
     color: palette(highlighted-text);
 }
 
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+    background: palette(text);
+}
+
+#FancyMenu QToolButton:hover {
+    border: 1px solid palette(highlight);
+}
+
+#FancyMenu QToolButton:pressed {
+   background:  palette(highlight);
+}
+
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
     width: 15px;

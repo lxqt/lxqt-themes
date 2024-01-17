@@ -507,6 +507,23 @@ LXQtFancyMenuWindow > QToolButton{
     color: white;
 }
 
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+    background: transparent;
+}
+
+#FancyMenu QToolButton:hover {
+    background: #500709;
+    border: 1px solid grey;
+}
+
+#FancyMenu QToolButton:pressed {
+    background: #640b0c;
+}
+
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
     width: 15px;
