@@ -149,9 +149,10 @@ QMenu::indicator:non-exclusive:checked {
  * Mainmenu search field & results
  */
 #MainMenu QLineEdit {
-    color: #323232;
-    background: #f3f8f9;
-    border: 1px solid #d7e3e6;
+    color: white;
+    background:  #041b27;
+    padding: 5px;
+    border: none;
 }
 
 #MainMenu ActionView {
@@ -208,13 +209,13 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QListView::item {
     color: #d7e3e6;
-    padding: 5px 30px 5px 3px;
+    padding: 5px 3px 5px 3px;
+    border: 0px;
 }
 
 #FancyMenu QListView::item:hover {
     background: #003d5b;
     color: #d7e3e6;
-    padding: 0px;
 }
 
 #FancyMenu QListView::item:pressed {
@@ -230,6 +231,7 @@ LXQtFancyMenuWindow{
     color: white;
     background:  #041b27;
     padding: 3px;
+    border: none;
 }
 
 #FancyMenu QToolButton {
