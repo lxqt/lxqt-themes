@@ -227,6 +227,11 @@ LXQtFancyMenuWindow{
     color: white;
 }
 
+#FancyMenu QListView::focus {
+    outline:transparent;
+    padding: 0px;
+}
+
 #FancyMenu QLineEdit {
     color: white;
     background:  #041b27;

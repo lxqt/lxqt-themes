@@ -198,6 +198,11 @@ LXQtFancyMenuWindow {
     color: #313639;
 }
 
+#FancyMenu QListView::focus {
+    outline:transparent;
+    padding: 0px;
+}
+
 #FancyMenu QToolButton {
     margin: 3px;
     border-radius: 4px;
