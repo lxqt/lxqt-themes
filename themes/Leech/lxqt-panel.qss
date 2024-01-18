@@ -253,9 +253,6 @@ QMenu::left-arrow:selected {
     border-radius: 3px;
     background-color: #16162f;
     color: #ffffff;
-
-    margin-left: 1px;
-    padding-left: 7px;
 }
 
 #MainMenu ActionView::item:hover {
@@ -321,6 +318,7 @@ LXQtFancyMenuWindow{
     border: 1px solid transparent;
     border-radius: 3px;
     color: #ffffff;
+    padding: 0px;
 }
 
 #FancyMenu QListView::item:selected {
@@ -328,8 +326,6 @@ LXQtFancyMenuWindow{
     border-radius: 3px;
     background-color: #16162f;
     color: #ffffff;
-    margin-left: 1px;
-    padding-left: 7px;
 }
 
 #FancyMenu QListView::item:hover {

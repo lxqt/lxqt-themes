@@ -353,10 +353,6 @@ LXQtFancyMenuWindow {
     padding: 0px;
 }
 
-#FancyMenu QListView::item:focus {
-    padding: 0px;
-}
-
 #FancyMenu QToolButton {
     margin: 3px;
     border-radius: 4px;

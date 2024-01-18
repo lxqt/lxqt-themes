@@ -475,6 +475,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QLineEdit {
     background: black;
+    border: 1px solid #3c3c3c;
     padding: 3px;
     margin-bottom: 1px;
     color: white;

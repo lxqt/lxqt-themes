@@ -353,6 +353,7 @@ LXQtFancyMenuWindow {
     border: 1px solid transparent;
     padding: 0px;
     margin: 0px;
+    color: #1a1a1a;
 }
 
 #FancyMenu QListView::item:selected {

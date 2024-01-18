@@ -470,7 +470,6 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QListView::focus {
     outline:transparent;
-    padding: 0px;
 }
 
 #FancyMenu QToolButton {
