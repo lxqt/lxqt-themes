@@ -789,3 +789,12 @@ VolumePopup  > QSlider::sub-page:vertical {
     margin-right: 2px;
     margin-left: 2px;
 }
+
+/*
+ * CustomCommand Plugin
+ */
+
+#Custom,Custom::hover {
+    border: 0px;
+    padding: 0px 2px;
+}

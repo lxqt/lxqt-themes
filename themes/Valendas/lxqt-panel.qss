@@ -772,3 +772,12 @@ QCalendarWidget QSpinBox {
     margin-right: 2px;
     margin-left: 2px;
 }
+
+
+/*
+ * CustomCommand Plugin
+ */
+
+#Custom::hover {
+    color: white;
+}

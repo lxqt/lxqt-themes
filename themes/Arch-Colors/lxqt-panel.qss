@@ -679,3 +679,15 @@ QCalendarWidget QSpinBox {
 #LXQtCpuLoad {
     qproperty-fontColor: white;
 }
+
+/*
+ * CustomCommand Plugin
+ */
+
+#Custom {
+    color: white;
+}
+
+#Custom::hover {
+    color: #d7e3e6;
+}
