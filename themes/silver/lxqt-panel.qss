@@ -282,7 +282,7 @@ QCalendarWidget #qt_calendar_prevmonth {
 }
 
 #FancyMenu {
-    qproperty-icon: url(mainmenu.svg);
+    qproperty-icon: url(fancymenu.svg);
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
     border-radius: 1px;
     margin-right: 5px;

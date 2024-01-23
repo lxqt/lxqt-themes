@@ -184,7 +184,7 @@ QMenu QToolButton {
 }
 
 #FancyMenu {
-    qproperty-icon: url(mainmenu.svg);
+    qproperty-icon: url(fancymenu.svg);
     background-color: rgba(0, 0, 0,);
     margin-right: 5px;
     color: #ebebeb;
