@@ -1,0 +1,181 @@
+/* Panel */
+#panel {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				1px solid #cdc7c2;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+	image:				none;
+}
+
+#closeButton {
+	color:				#000000;
+	background:			transparent;
+
+	border:				1px solid transparent;
+	border-radius:			4px;
+
+	qproperty-icon:			url(assets/icons/close.svg);
+	qproperty-iconSize:		16px;
+
+	margin:				3px;
+	padding:			3px;
+}
+
+#actionButton {
+	color:				#000000;
+	background:			transparent;
+
+	border:				1px solid transparent;
+	border-radius:			4px;
+
+	qproperty-icon:			url(assets/icons/menu.svg);
+	qproperty-iconSize:		16px;
+
+	margin:				3px;
+	padding:			3px;
+}
+
+#closeButton:hover, #actionButton:hover {
+        background:             qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.05 #ffffff, stop:0.06 #f8f8f7, stop:0.96 #f8f8f7, stop:1 #f7f6f5);
+
+        border-top:             1px solid #cdc7c2;
+        border-bottom:          1px solid #beb7b0;
+        border-left:            1px solid #cdc7c2;
+        border-right:           1px solid #cdc7c2;
+}
+
+#closeButton:pressed, #actionButton:pressed {
+        background:             #d6d1cd;
+
+        border-top:             1px solid #cdc7c2;
+        border-bottom:          1px solid #cbc5c0;
+        border-left:            1px solid #cdc7c2;
+        border-right:           1px solid #cdc7c2;
+}
+
+/* Command Box */
+#commandEd {
+        color:                  	#000000;
+        background:             	#ffffff;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#3584e4;
+
+        border:                 	1px solid #cdc7c2;
+        border-radius:          	4px;
+
+        padding:                	0px 4px;
+        margin:                 	4px;
+
+        min-height:             	28px;
+
+        font:                   	normal;
+}
+
+/* Search results list */
+#commandList {
+	background:			#ffffff;
+	color:				#000000;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#3584e4;
+
+	alternate-background-color:	#ffffff;
+
+	border:				1px solid #cdc7c2;
+}
+
+#commandList::item, #commandList::item:alternate {
+	color:				#000000;
+	background:			#ffffff;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+	color:                          #ffffff;
+        background:                     #3584e4;
+}
+
+/* Menus */
+QMenu {
+        color:                  #000000;
+        background:             #ffffff;
+
+        border:                 none;
+        border-radius:          0px;
+
+        min-width:              100px;
+
+	font:                   normal;
+}
+
+QMenu::icon {
+        padding-left:           3px;
+}
+
+QMenu::item {
+        color:                  #000000;
+        background:             transparent;
+
+        border:                 none;
+        border-radius:          0px;
+
+        padding-left:           5px;
+        padding-right:          5px;
+        margin:                 0px;
+
+        min-width:              100px;
+        min-height:             25px;
+}
+
+QMenu::item:selected {
+        color:                  #ffffff;
+        background:             #3584e4;
+}
+
+QMenu::item:disabled {
+        color:                          #a0a0a0;
+        background:                     transparent;
+}
+
+QMenu::indicator {
+        padding-left:                   4px;
+}
+
+QScrollBar {
+        color:                          #000000;
+       	background:                     #cecece;
+
+       	border-left:                    1px solid #cdc7c2;
+
+       	width:                          14px;
+
+       	padding:                        3px;
+}
+
+QScrollBar::handle {
+        color:                          transparent;
+        background:                     #7e8182;
+
+       	border:                         none;
+       	border-radius:                  3px;
+
+        width:                          8px;
+}
+
+QScrollBar::handle:hover {
+        color:                          transparent;
+        background:                     #565b5c;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+	color:				transparent;
+	background:			transparent;
+
+	width:				0px;
+	height:				0px;
+}

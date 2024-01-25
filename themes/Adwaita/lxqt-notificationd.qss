@@ -1,0 +1,51 @@
+Notification {
+	color:				#000000;
+	background:			#f6f5f4;
+
+	border:				1px solid #cdc7c2;
+}
+
+QLabel {
+	color:				#000000;
+}
+
+#closeButton {
+        color:                  	#000000;
+        background:             	qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.05 #ffffff, stop:0.06 #f5f4f3, stop:1 #edebe9);
+
+        border-top:             	1px solid #cdc7c2;
+        border-bottom:          	1px solid #beb7b0;
+        border-left:            	1px solid #cdc7c2;
+        border-right:           	1px solid #cdc7c2;
+        border-radius:          	4px;
+
+        margin:                 	0px;
+        padding:                	3px;
+
+	qproperty-icon:			url(assets/buttons/cancel.svg);
+	qproperty-iconSize:		16px;
+
+	padding:			3px;
+}
+
+#closeButton:hover {
+        background:             qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0.05 #ffffff, stop:0.06 #f8f8f7, stop:0.96 #f8f8f7, stop:1 #f7f6f5);
+
+        border-top:             1px solid #cdc7c2;
+        border-bottom:          1px solid #beb7b0;
+        border-left:            1px solid #cdc7c2;
+        border-right:           1px solid #cdc7c2;
+}
+
+#closeButton:pressed {
+        background:             #d6d1cd;
+
+        border-top:             1px solid #cdc7c2;
+        border-bottom:          1px solid #cbc5c0;
+        border-left:            1px solid #cdc7c2;
+        border-right:           1px solid #cdc7c2;
+}
+
+#appLabel {
+	font-weight:		bold;
+}
