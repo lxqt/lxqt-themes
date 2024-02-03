@@ -71,3 +71,7 @@ KbIndicator
 #MainMenu, #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
 }
+
+#FancyMenu QListView::item {
+    padding: 3px;
+}

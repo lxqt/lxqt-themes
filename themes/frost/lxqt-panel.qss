@@ -291,7 +291,8 @@ QListView::item:hover {
     background: palette(text);
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     border: 1px solid palette(highlight);
 }
 

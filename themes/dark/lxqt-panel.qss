@@ -517,7 +517,8 @@ LXQtFancyMenuWindow {
     background: transparent;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     background: #500709;
     border: 1px solid grey;
 }
