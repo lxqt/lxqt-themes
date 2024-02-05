@@ -360,7 +360,8 @@ LXQtFancyMenuWindow {
     padding: 4px;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
             stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
             stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,

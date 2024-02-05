@@ -242,10 +242,13 @@ LXQtFancyMenuWindow {
     padding: 4px;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     background: #444444;
     border: 1px solid grey;
 }
+
+#FancyMenu QToolButton:focus
 
 #FancyMenu QToolButton:pressed {
     background: #b6b6b6;

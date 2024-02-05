@@ -480,7 +480,8 @@ LXQtFancyMenuWindow{
     background:  #4a4a4a;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     background: #3c3c3c;
     border: 1px solid grey;
 }
