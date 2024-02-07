@@ -185,13 +185,13 @@ QMenu QToolButton {
 
 #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
-    background-color: rgba(0, 0, 0,);
+    background: transparent;
     margin-right: 5px;
     color: #ebebeb;
 }
 
 #FancyMenu:hover {
-    background-color: rgba(5, 0, 0, 45%);
+    color: white;
 }
 
 #FancyMenu:pressed {
@@ -247,8 +247,6 @@ LXQtFancyMenuWindow {
     background: #444444;
     border: 1px solid grey;
 }
-
-#FancyMenu QToolButton:focus
 
 #FancyMenu QToolButton:pressed {
     background: #b6b6b6;
@@ -705,14 +703,14 @@ QCalendarWidget QSpinBox {
  */
 #WorldClock {
     color: #eef5fc;
-    background: #2f2f2f;
+    background: transparent;
 }
 
 #WorldClock QLabel {
     margin: 2px;
     padding: 4px;
     color: #eef5fc;
-    background: #2f2f2f;
+    background: transparent;
 }
 
 /*

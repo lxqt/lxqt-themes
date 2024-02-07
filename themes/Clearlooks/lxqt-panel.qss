@@ -20,11 +20,12 @@ Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 
 LXQtPanelPlugin > QToolButton {
-    background: #edeceb;
+    background: transparent;
     margin: 0px;
     padding: 2px;
     color: #1a1a1a;
 }
+
 
 QToolTip {
     border: 1px solid palette(text);

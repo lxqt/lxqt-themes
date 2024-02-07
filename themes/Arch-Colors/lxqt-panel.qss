@@ -135,7 +135,7 @@ QMenu::indicator:non-exclusive:checked {
  */
 #MainMenu {
     qproperty-icon: url(mainmenu.svg);
-    background: #162635;
+    background: transparent;
     margin: 0px;
     padding: 3px;
     color: #e7eff1;
@@ -188,9 +188,8 @@ QMenu::indicator:non-exclusive:checked {
  */
 #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
-    background: #162635;
+    background: transparent;
     margin: 0px;
-    padding: 3px;
     color: #e7eff1;
 }
 
@@ -364,12 +363,10 @@ StatusNotifierButton {
 #VolumePlugin QToolButton {
     margin: 2px;
     padding: 2px;
-    background: #162635;
 }
 
 #VolumePlugin QToolButton:hover {
     background: #1899da;
-    border-radius: 2px;
 }
 
 VolumePopup {
@@ -418,7 +415,7 @@ VolumePopup > QSlider::sub-page:vertical {
 #WorldClock {
     margin: 0px;
     padding: 0px;
-    background-color: #162635;
+    background: transparent;
 }
 
 #WorldClock QLabel {
@@ -426,7 +423,7 @@ VolumePopup > QSlider::sub-page:vertical {
     margin: 0px;
     color: #e7eff1;
     qproperty-alignment: alignCenter;
-    background-color: #162635;
+    background: transparent;
 }
 
 /*
@@ -635,6 +632,10 @@ QCalendarWidget QSpinBox {
 /*
  * Backlight Plugin
  */
+
+#BacklightPlugin QToolButton:hover {
+    background: #1899da;
+}
 #Backlight > SliderDialog > QToolButton {
     margin: 2px;
     padding: 2px;
