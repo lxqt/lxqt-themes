@@ -321,13 +321,13 @@ LXQtFancyMenuWindow {
     background: #d5d5d5;
 }
 
-#FancyMenu #AppView::item
-{
+#FancyMenu #AppView::item{
     color: #4a4a4a;
 }
 
 #FancyMenu QListView::item {
     border: 1px solid transparent;
+    border-radius: 3px;
     padding: 2px;
     color: #282828;
 }
@@ -338,13 +338,12 @@ LXQtFancyMenuWindow {
             stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
             stop: 0.96 #989898, stop: 1 #dcdcdc);
     color: black;
+    border: 1px solid grey;
 }
 
 #FancyMenu QListView::item:hover {
-    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-            stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
-            stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
-            stop: 0.96 #d1d1d1, stop: 1#ececec);
+    border: 1px solid white;
+    border-radius:3px;
     color: black;
 }
 

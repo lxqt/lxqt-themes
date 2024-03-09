@@ -188,8 +188,9 @@ QMenu::indicator:non-exclusive:checked {
  */
 #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
-    background: transparent;
+    background: #162635;
     margin: 0px;
+    padding: 3px;
     color: #e7eff1;
 }
 
@@ -213,7 +214,7 @@ LXQtFancyMenuWindow{
 }
 
 #FancyMenu QListView::item:hover {
-    background: #003d5b;
+    background: #0078b0;
     color: #d7e3e6;
 }
 

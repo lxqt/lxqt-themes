@@ -355,8 +355,13 @@ LXQtFancyMenuWindow{
     border: 0px;
 }
 
-#FancyMenu QListView::item:hover, QListView::item:selected {
+#FancyMenu QListView::item:hover {
     color: #f2f1f0;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+#FancyMenu QListView::item:selected {
+    color: black;
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
 }
 
