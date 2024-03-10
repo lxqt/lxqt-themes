@@ -185,13 +185,12 @@ QMenu QToolButton {
 
 #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
-    background: transparent;
     margin-right: 5px;
     color: #ebebeb;
 }
 
 #FancyMenu:hover {
-    color: white;
+    background-color: rgba(5, 0, 0, 45%);
 }
 
 #FancyMenu:pressed {
@@ -225,9 +224,14 @@ LXQtFancyMenuWindow {
     color: white;
 }
 
-#FancyMenu QListView::item:hover {
-    background-color: rgba(236, 236, 236, 60%);
+#FancyMenu QListView::item:selected {
+    background-color: rgba(185, 200, 210, 80%);
     color: black;
+}
+
+#FancyMenu QListView::item:hover {
+    border: 1px solid grey;
+    border-radius: 2px;
 }
 
 #FancyMenu QListView::focus {
@@ -240,6 +244,12 @@ LXQtFancyMenuWindow {
     border-radius: 4px;
     border: 1px solid transparent;
     padding: 4px;
+}
+
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
+    background: #444444;
+    border: 1px solid grey;
 }
 
 #FancyMenu QToolButton:hover,
