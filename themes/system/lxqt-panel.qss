@@ -68,6 +68,6 @@ KbIndicator
 /*
  * Main menu plugin
  */
-#MainMenu {
+#MainMenu, #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
 }

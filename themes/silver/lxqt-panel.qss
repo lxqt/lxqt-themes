@@ -275,6 +275,144 @@ QCalendarWidget #qt_calendar_prevmonth {
 }
 
 /*
+ * Fancy menu plugin
+ */
+#FancyMenuPlugin {
+    padding: 0px;
+}
+
+#FancyMenu {
+    qproperty-icon: url(mainmenu.svg);
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
+    border-radius: 1px;
+    margin-right: 5px;
+    color: black;
+    padding: 0px 5px;
+    margin: 0;
+}
+
+#FancyMenu:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
+}
+
+#FancyMenu:pressed {
+    padding-top: 1px;
+}
+
+LXQtFancyMenuWindow {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #c8c8c8);
+}
+
+#FancyMenu QLineEdit {
+    border-radius: 2px;
+    padding: 1px;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #9c9c9c, stop:1 #bfbfbf);
+    color: #363737;
+}
+
+#FancyMenu QListView {
+    border: none;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a8a8a8, stop:1 #b6b6b6);
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+#FancyMenu #AppView{
+    background: #d5d5d5;
+}
+
+#FancyMenu #AppView::item{
+    color: #4a4a4a;
+}
+
+#FancyMenu QListView::item {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 2px;
+    color: #282828;
+}
+
+#FancyMenu QListView::item:selected {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+            stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
+            stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
+            stop: 0.96 #989898, stop: 1 #dcdcdc);
+    color: black;
+    border: 1px solid grey;
+}
+
+#FancyMenu QListView::item:hover {
+    border: 1px solid white;
+    border-radius:3px;
+    color: black;
+}
+
+#FancyMenu QListView::focus {
+    outline:transparent;
+    padding: 0px;
+}
+
+#FancyMenu QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+}
+
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+            stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
+            stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
+            stop: 0.96 #d1d1d1, stop: 1#ececec);
+    border: 1px solid black;
+}
+
+#FancyMenu QToolButton:pressed {
+    background-color: #afafaf;
+}
+
+#FancyMenu QScrollBar:vertical {
+    background-color: #9e9e9e;
+    width: 17px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+#FancyMenu QScrollBar:horizontal {
+    background-color: #9e9e9e;
+    height: 17px;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+#FancyMenu QScrollBar::handle{
+    background-color: #e2e2e2;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+#FancyMenu QScrollBar::handle:hover {
+    background-color: #dedede;
+    border: 1px solid white;
+    margin: 0px;
+}
+
+#FancyMenu QScrollBar::add-line,
+#FancyMenu QScrollBar::sub-line {
+    border: 0px solid transparent;
+    background: transparent;
+    width: 0px;
+}
+
+#FancyMenu QAbstractScrollArea::corner {
+    background: transparent;
+}
+
+/*
  * QuickLaunch
  */
 #QuickLaunchPlaceHolder {
@@ -678,4 +816,12 @@ VolumePopup > QSlider::sub-page:vertical {
     background-repeat: repeat-x;
     margin-right: 2px;
     margin-left: 2px;
+}
+
+/*
+ * CustomCommand Plugin
+ */
+
+#Custom::hover {
+    color: white;
 }
