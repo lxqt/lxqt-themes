@@ -43,8 +43,8 @@ QToolButton:hover {
     border: 1px solid black;
     padding: 4px;
     margin: 5px;
-    color: #323232;
-    background: #f3f8f9;
+    color: #ffffff;
+    background: #062a3c;
     border-radius: 2px;
     selection-color: #d4d4d4;
     selection-background-color: #414141;

@@ -215,7 +215,7 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QListView::item:hover {
     background: #0078b0;
-    color: #d7e3e6;
+    color: #000000;
 }
 
 #FancyMenu QListView::item:pressed {
@@ -224,7 +224,7 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QListView::item:selected {
     background: #1899da;
-    color: white;
+    color: #000000;
 }
 
 #FancyMenu QListView::focus {
