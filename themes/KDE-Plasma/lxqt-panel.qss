@@ -356,7 +356,6 @@ LXQtFancyMenuWindow {
     border-top: 3px solid rgba(30, 145, 255, 50%);
 }
 
-
 VolumePopup {
     border: 1px solid rgba(155, 155, 155, 100%);
     background: rgba(240, 240, 240, 100%);
@@ -401,7 +400,6 @@ VolumePopup > QSlider::add-page:vertical {
     background: rgba(30, 145, 255, 100%);
     border: 1px solid rgba(155, 155, 155, 100%);
     border-radius: 3px;
-
 }
 
 VolumePopup > QSlider::sub-page:vertical {
@@ -482,7 +480,6 @@ VolumePopup > QSlider::sub-page:vertical {
     margin: 6px;
 }
 
-
 /*
  * ShowDesktop
  */
@@ -497,7 +494,6 @@ VolumePopup > QSlider::sub-page:vertical {
     border-top: 3px solid rgba(30, 145, 255, 50%);
     color: rgba(54, 54, 54, 100%);
 }
-
 
 /*
  * KbIndicator
@@ -530,7 +526,6 @@ VolumePopup > QSlider::sub-page:vertical {
 #Clock #DateLabel {
     color: rgba(54, 54, 54, 60%);
 }
-
 
 /*
  * Tray
@@ -569,7 +564,6 @@ TrayIcon {
     qproperty-netReceivedColor: rgb(0, 0, 128);
     qproperty-netTransmittedColor: rgb(128, 128, 0);
 }
-
 
 /*
  * WorldClock
@@ -674,4 +668,30 @@ QTableViewItem {
     background-repeat: repeat-x;
     margin-right: 2px;
     margin-left: 2px;
+}
+
+/*
+ * ColorPicker
+ */
+#ColorPicker QToolButton {
+    margin: 3px 1px 3px 1px;
+    padding-top: 2px;
+    border-top: 3px solid transparent;
+}
+
+#ColorPicker QToolButton:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+/*
+ * StatusNotifier
+ */
+#StatusNotifier QToolButton {
+    margin: 3px 1px 3px 1px;
+    padding-top: 2px;
+    border-top: 3px solid transparent;
+}
+
+#StatusNotifier QToolButton:hover {
+    border-top: 3px solid rgba(30, 145, 255, 50%);
 }
