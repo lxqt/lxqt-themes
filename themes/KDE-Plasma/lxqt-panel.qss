@@ -436,7 +436,7 @@ VolumePopup > QSlider::sub-page:vertical {
  * Mount plugin
  */
 #LXQtMountPlugin QToolButton {
-    margin: 3px;
+    margin: 3px 1px 3px 1px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
@@ -484,7 +484,7 @@ VolumePopup > QSlider::sub-page:vertical {
  * ShowDesktop
  */
 #ShowDesktop {
-    margin: 3px;
+    margin: 3px 1px 3px 1px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 60%);
@@ -569,7 +569,7 @@ TrayIcon {
  * WorldClock
  */
 #WorldClock {
-    margin: 3px;
+    margin: 3px 1px 3px 1px;
     padding-top: 2px;
     border-top: 3px solid transparent;
     color: rgba(54, 54, 54, 100%);
