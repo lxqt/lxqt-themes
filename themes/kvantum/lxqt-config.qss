@@ -6,11 +6,11 @@ QAbstractItemView {
 }
 
 QToolTip {
-    border: 1px solid rgba(10, 10, 10, 90%);
-    border-top-color: rgba(50, 50, 50, 70%);
-    border-left-color: rgba(40, 40, 40, 70%);
-    background: rgba(20, 20, 20, 90%);
+    border: 1px solid palette(text);
+    background: palette(window);
+    color: palette(text);
     padding: 2px;
     margin: 0px;
-    color: #ffffff
+    border: 1px solid palette(text);
+    border-radius: 3px;
 }

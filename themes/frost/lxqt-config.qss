@@ -7,4 +7,6 @@ QToolTip {
     color: palette(text);
     padding: 1px;
     margin: 0px;
+    border: 1px solid palette(text);
+    border-radius: 3px;
 }

@@ -2,10 +2,11 @@
 Theming by the base Qt widget style and palette */
 
 QToolTip {
-    border: 0px solid #4C4C4C;
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
-    color: #262626;
-    padding: 1px;
+    border: 1px solid palette(text);
+    background: palette(window);
+    color: palette(text);
+    padding: 2px;
     margin: 0px;
+    border: 1px solid palette(text);
+    border-radius: 3px;
 }
- background: #31363b;

@@ -2,11 +2,11 @@
 Theming by the base Qt widget style and palette */
 
 QToolTip {
-    border: 0px solid #4C4C4C;
-    background: rgba(50, 50, 50, 60%);
-    color: #dce7f5;
+    border: 1px solid palette(text);
+    background: palette(window);
+    color: palette(text);
     padding: 2px;
     margin: 0px;
-    border: 1px solid white;
-    border-radius: 5px;
+    border: 1px solid palette(text);
+    border-radius: 3px;
 }

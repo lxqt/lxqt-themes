@@ -10,14 +10,6 @@ LXQtPanel #BackgroundWidget {
     background: palette(window);
 }
 
-QToolTip {
-    border: 1px solid palette(window);
-    background: palette(text);
-    color: palette(window);
-    padding: 1px;
-    margin: 0px;
-}
-
 /*
  * TaskBar
  */
