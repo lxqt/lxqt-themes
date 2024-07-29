@@ -1,16 +1,10 @@
 /* Configuration Center
 Theming by the base Qt widget style and palette */
 
-QAbstractItemView {
-    icon-size: 32px;
-}
-
 QToolTip {
     border: 1px solid palette(text);
     background: palette(window);
     color: palette(text);
-    padding: 2px;
+    padding: 1px;
     margin: 0px;
-    border: 1px solid palette(text);
-    border-radius: 3px;
 }
