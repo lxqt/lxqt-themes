@@ -236,7 +236,7 @@ LXQtFancyMenuWindow {
     border: 1px solid transparent;
 }
 
-#FancyMenu QScrollBar::handle{
+#FancyMenu QScrollBar::handle {
     background-color:  rgba(30, 145, 255, 10%);
     border: 1px solid #2878c8;
     min-height: 40px;
@@ -520,19 +520,6 @@ VolumePopup > QSlider::sub-page:vertical {
 }
 
 /*
- * Clock
- */
-#Clock #TimeLabel {
-    margin-right: 4px;
-    color: rgba(54, 54, 54, 100%);
-}
-
-#Clock #DateLabel {
-    color: rgba(54, 54, 54, 60%);
-}
-
-
-/*
  * Tray
  */
 #Tray {
@@ -570,7 +557,6 @@ TrayIcon {
     qproperty-netTransmittedColor: rgb(128, 128, 0);
 }
 
-
 /*
  * WorldClock
  */
@@ -583,6 +569,12 @@ TrayIcon {
 
 #WorldClock:hover {
     border-top: 3px solid rgba(30, 145, 255, 50%);
+}
+
+#WorldClock QLabel {
+    padding: 2px;
+    color: rgba(54, 54, 54, 100%);
+    background-color: transparent;
 }
 
 /*
