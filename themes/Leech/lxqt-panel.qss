@@ -393,7 +393,7 @@ LXQtFancyMenuWindow{
     margin: 1px;
 }
 
-#FancyMenu QScrollBar::handlehover, {
+#FancyMenu QScrollBar::handlehover {
     background-color: #6e6cac;
     border: 1px solid #6e6cac;
     margin: 0px;
