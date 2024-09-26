@@ -528,19 +528,6 @@ TrayIcon {
 }
 
 /*
- * StatusNotifier
- */
-#StatusNotifier QToolButton {
-    margin: 3px 1px 3px 1px;
-    padding-top: 2px;
-    border-top: 3px solid transparent;
-}
-
-#StatusNotifier QToolButton:hover {
-    border-top: 3px solid rgba(30, 145, 255, 50%);
-}
-
-/*
  * #SysStat
  */
 #SysStat {
