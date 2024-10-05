@@ -7,3 +7,5 @@ link_visited_color=#dd5cee
 text_color=#b8b8b8
 window_color=#041b27
 window_text_color=#e1e6e6
+tooltip_base_color=#041b27
+tooltip_text_color=b8b8b8

@@ -529,6 +529,15 @@ TrayIcon {
 }
 
 /*
+ * StatusNotifier
+ */
+
+#StatusNotifier QToolButton {
+    margin: 2px;
+    padding: 1px;
+}
+
+/*
  * Mount plugin
  */
 #LXQtMountPlugin QToolButton {
@@ -723,6 +732,11 @@ VolumePopup  > QSlider::sub-page:vertical {
 /*
  * Backlight
  */
+#Backlight {
+    margin: 2px;
+    padding: 1px;
+}
+
 #Backlight > SliderDialog > QToolButton {
     color: #f2f1f0;
     background: #363532;
@@ -803,4 +817,13 @@ VolumePopup  > QSlider::sub-page:vertical {
 #Custom,Custom::hover {
     border: 0px;
     padding: 0px 2px;
+}
+
+/*
+ * ColorPicker
+ */
+
+#ColorPicker QToolButton {
+    margin: 2px;
+    padding: 1px;
 }
