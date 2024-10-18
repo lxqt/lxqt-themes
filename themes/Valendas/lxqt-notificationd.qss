@@ -12,6 +12,7 @@ Notification {
 
 QLabel {
     color: white;
+    background: transparent;
 }
 
 QToolButton {
