@@ -44,7 +44,7 @@ QToolButton::menu-indicator {
 
 /* Command Box */
 #commandEd {
-    color: #1a1a1a;
+    color: #000000;
     background: #ffffff;
     selection-color: #ffffff;
     selection-background-color: #86abd9;
@@ -77,26 +77,22 @@ QToolButton::menu-indicator {
 
 /* Menus */
 QMenu {
-    color: #1a1a1a;
+    color: #000000;
     background: #ffffff;
     border: 1px solid #aaaaaa;
-    min-width: 100px;
+    min-width: 120px;
     font: normal;
 }
 
-QMenu::icon {
-padding-left: 7px;
-}
-
 QMenu::item {
+    color: #1a1a1a;
+    background: transparent;
+    border: 1px solid transparent;
     padding-left: 6px;
     padding-right: 9px;
     padding-top: 3px;
     padding-bottom: 3px;
-    color: #1a1a1a;
-    background: transparent;
-    border: 1px solid transparent;
-    min-width: 100px;
+    min-width: 120px;
 }
 
 QMenu::item:selected {
@@ -107,14 +103,14 @@ QMenu::item:selected {
 
 QMenu::item:disabled {
     color: #a0a0a0;
-    background: transparent;
 }
 
-QMenu::indicator {
+QMenu:icon {
     padding-left: 5px;
 }
 
-QScrollBar {
+/* Scrollbars */
+QScrollBar:vertical {
     color: #1a1a1a;
     background: #ffffff;
     background-image: url(assets/scrollbars/groove.png);
@@ -125,7 +121,7 @@ QScrollBar {
     width: 15px;
 }
 
-QScrollBar::handle {
+QScrollBar::handle:vertical {
     color: transparent;
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #a2c1e6, stop:0.49 #98b9e2, stop:0.50 #90b3de, stop:1 #84aad8);
     border: 2px solid transparent;
@@ -139,8 +135,8 @@ QScrollBar::handle {
     margin: 15px -1px;
 }
 
-QScrollBar::handle:hover, 
-QScrollBar::handle:active {
+QScrollBar::handle:hover:vertical,
+QScrollBar::handle:active:vertical {
     background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #adc9eb, stop:0.49 #a2c1e7, stop:0.50 #9abbe3, stop:1 #8db1dd);
     border-image: url(assets/scrollbars/scrollbar-hover.png) 2;
     background-image: url(assets/scrollbars/handle.png);
@@ -149,52 +145,53 @@ QScrollBar::handle:active {
     background-attachment: fixed;
 }
 
-QScrollBar::add-page,
-QScrollBar::sub-page {
-    color: transparent;
-    background: transparent;
-    border: none;
-}
-
-QScrollBar::add-line {
+QScrollBar::add-line:vertical {
     color: #1a1a1a;
     background: transparent;
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/add-line.png);
 }
 
-QScrollBar::add-line:hover {
+QScrollBar::add-line:hover:vertical {
     color: #1a1a1a;
     background: transparent;
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/add-line-hover.png);
 }
 
-QScrollBar::add-line:pressed {
+QScrollBar::add-line:pressed:vertical {
     color: #1a1a1a;
     background: transparent;
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/add-line-pressed.png);
 }
 
-QScrollBar::sub-line {
+QScrollBar::sub-line:vertical {
     color: #1a1a1a;
     background: transparent;
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/sub-line.png);
 }
 
-QScrollBar::sub-line:hover {
+QScrollBar::sub-line:hover:vertical {
     color: #1a1a1a;
     background: transparent;
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/sub-line-hover.png);
 }
 
-QScrollBar::sub-line:pressed {
+QScrollBar::sub-line:pressed:vertical {
     color: #1a1a1a;
     background: transparent;
     border: 2px solid transparent;
     border-image: url(assets/scrollbars/sub-line-pressed.png);
 }
 
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    color: transparent;
+    background: transparent;
+    border: none;
+}
