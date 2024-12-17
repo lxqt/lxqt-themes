@@ -9,8 +9,8 @@ LXQtPanel #BackgroundWidget {
     border: 0px solid #555555;
 }
 
-Plugin > QWidget,
-Plugin > QWidget > QWidget {
+Plugin > QWidget/*,
+Plugin > QWidget > QWidget*/ {
     border: 0px;
     color: #ffffff; /* Color of text on same */
 }
