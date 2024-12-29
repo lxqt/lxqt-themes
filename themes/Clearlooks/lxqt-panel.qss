@@ -9,8 +9,7 @@ LXQtPanel #BackgroundWidget {
     border: 0px solid #1a1a1a;
 }
 
-Plugin > QWidget/*,
-Plugin > QWidget > QWidget*/ {
+Plugin > QWidget {
     border: 0px;
     color: rgba(0, 0, 0, 100%); /* Color of text on same */
 }
