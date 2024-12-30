@@ -9,8 +9,7 @@ LXQtPanel #BackgroundWidget {
     border: 0px solid #1a1a1a;
 }
 
-Plugin > QWidget,
-Plugin > QWidget > QWidget {
+Plugin > QWidget {
     border: 0px;
     color: rgba(0, 0, 0, 100%); /* Color of text on same */
 }
@@ -18,7 +17,6 @@ Plugin > QWidget > QWidget {
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
-
 LXQtPanelPlugin > QToolButton {
     background: transparent;
     margin: 0px;
@@ -573,4 +571,20 @@ LXQtFancyMenuWindow {
     color: #ffffff;
     border: 1px solid #000000;
     border-radius: 3px;
+}
+
+/*
+ * StatusNotifier
+ */
+
+#StatusNotifier QToolButton {
+    border: 0px;
+}
+
+/*
+ * ColorPicker
+ */
+
+#ColorPicker QToolButton {
+    border: 0px;
 }
