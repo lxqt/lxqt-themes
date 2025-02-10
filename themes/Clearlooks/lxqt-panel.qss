@@ -169,6 +169,7 @@ QMenu::indicator:non-exclusive:checked:selected {
 }
 
 #QuickLaunch QToolButton {
+    border: 0px;
     background-color: transparent;
     margin: 1px;
     padding: 2px;
