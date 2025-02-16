@@ -207,6 +207,10 @@ LXQtFancyMenuWindow{
     border: 1px solid grey;
 }
 
+#FancyMenu QLabel {
+    color: #d7e3e6;
+}
+
 #FancyMenu QListView::item {
     color: #d7e3e6;
     padding: 5px 3px 5px 3px;
