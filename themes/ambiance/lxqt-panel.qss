@@ -337,6 +337,10 @@ LXQtFancyMenuWindow{
     border: 1px solid #5e5e5e;
 }
 
+#FancyMenu QLabel {
+    color: #f2f1f0;
+}
+
 #FancyMenu #CategoryView {
     background-color: #32312e;
 }
