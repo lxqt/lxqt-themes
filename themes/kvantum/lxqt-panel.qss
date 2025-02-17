@@ -420,6 +420,10 @@ LXQtFancyMenuWindow{
     background: #2E2E2E;
 }
 
+#FancyMenu QLabel  {
+    color: white;
+}
+
 #FancyMenu QLineEdit {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
     border: 1px solid #000000;

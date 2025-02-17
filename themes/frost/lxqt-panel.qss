@@ -251,6 +251,10 @@ ActionView::item:hover {
     padding: 4px;
 }
 
+#FancyMenu QLabel {
+    color: palette(window);
+}
+
 #FancyMenu QLineEdit {
     background: palette(text);
     border: none;

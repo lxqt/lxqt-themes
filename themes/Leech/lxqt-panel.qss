@@ -294,6 +294,10 @@ QMenu::left-arrow:selected {
     color: #ffffff;
 }
 
+#FancyMenu QLabel {
+    color: #ffffff;
+}
+
 #FancyMenu QLineEdit {
     color: #ffffff;
     background: #000000;

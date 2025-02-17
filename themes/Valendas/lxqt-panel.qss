@@ -200,6 +200,10 @@ LXQtFancyMenuWindow {
    background-color: #3b3b3b; /* disabled transparency because buggy */
 }
 
+#FancyMenu QLabel {
+    color: white;
+}
+
 #FancyMenu QLineEdit {
     margin: 0;
     padding: 6px;
