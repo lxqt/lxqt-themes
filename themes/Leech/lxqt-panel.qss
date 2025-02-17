@@ -556,3 +556,15 @@ DesktopSwitch
     border: 1px solid #969696;
     border-radius: 2px;
 }
+
+/*
+ * Mount plugin
+ */
+
+#LXQtMountPopup #DiskButton {
+    margin-right: 2px;
+}
+
+#LXQtMountPopup #NoDiskLabel {
+    padding: 2px;
+}
