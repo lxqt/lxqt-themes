@@ -594,8 +594,10 @@ LXQtFancyMenuWindow {
  * Mount plugin
  */
 
-#LXQtMountPopup #DiskButton {
-    margin-right: 2px;
+#LXQtMountPopup #DiskButton,
+#LXQtMountPopup #EjectButton
+{
+    margin: 1px;
 }
 
 #LXQtMountPopup #NoDiskLabel {
