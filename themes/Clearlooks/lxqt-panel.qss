@@ -589,3 +589,17 @@ LXQtFancyMenuWindow {
 #ColorPicker QToolButton {
     border: 0px;
 }
+
+/*
+ * Mount plugin
+ */
+
+#LXQtMountPopup #DiskButton,
+#LXQtMountPopup #EjectButton
+{
+    margin: 1px;
+}
+
+#LXQtMountPopup #NoDiskLabel {
+    padding: 2px;
+}
