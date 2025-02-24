@@ -1,0 +1,49 @@
+/*
+ * Popup
+ */
+
+Notification {
+    background-color: #303030;
+    color: #cbcbcb;
+    border: 2px solid grey;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+QLabel {
+    color: white;
+    background: #484848;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+QToolButton {
+    margin: 0 3px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+QToolButton:hover,
+QToolButton:focus,
+QToolButton:focus:hover {
+    background: rgba(255, 255, 255, 20%);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+QToolButton:pressed {
+    background: rgba(0, 0, 0, 30%);
+}
+
+#appLabel {
+    color: #e6e6e6;
+    margin: 0 30px;
+    background: transparent;
+    border: none;
+}
+
+#closeButton {
+    qproperty-icon: url(lxqt-notificationd/cancel.svg);
+    qproperty-iconSize: 24px;
+}
