@@ -536,6 +536,7 @@ LXQtFancyMenuWindow {
     border-radius: 3px;
     color: #dedede;
     background: rgba(0, 0, 0, 35%);
+    padding: 4px 2px;
 }
 
 #FancyMenu QLabel {
