@@ -15,7 +15,6 @@ QLabel {
     background: #484848;
     border: 1px solid transparent;
     border-radius: 5px;
-    padding: 2px 4px;
 }
 
 QToolButton {
