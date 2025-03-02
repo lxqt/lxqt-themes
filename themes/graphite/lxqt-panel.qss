@@ -394,7 +394,7 @@ QMenu::item {
     margin: 1px 6px;
     border: 1px solid transparent;
     border-radius: 5px;
-    padding: 6px 40px 6px 16px;
+    padding: 3px 40px 4px 16px;
 }
 
 QMenu::item:selected {
@@ -546,7 +546,7 @@ LXQtFancyMenuWindow {
 #FancyMenu QListView::item {
     color: #dedede;
     border: 1px solid transparent;
-    padding: 4px 3px 4px 10px;
+    padding: 1px 3px ;
     margin: 1px 6px;
 }
 
