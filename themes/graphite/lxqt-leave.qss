@@ -1,0 +1,13 @@
+QDialog {
+    color: white;
+    border: 2px solid grey;
+}
+
+QLabel {
+    color: black;
+    background: #9b9b9b;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 50px;
+}
