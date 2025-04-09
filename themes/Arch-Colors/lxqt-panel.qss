@@ -441,8 +441,6 @@ QCalendarWidget QAbstractItemView:enabled
     color: #d7e3e6;
     selection-background-color: #1899da;
     selection-color: #f8f8f8;
-    border: 1px solid #658b94;
-    padding-bottom: 5px;
 }
 
 /* date previous/next month */
