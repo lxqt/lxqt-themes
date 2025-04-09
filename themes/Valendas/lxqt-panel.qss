@@ -583,10 +583,7 @@ QCalendarWidget QAbstractItemView:enabled {
     color: #f1f3f3;
     selection-background-color: #a6abab;
     selection-color: black;
-    border-radius: 4px;
     background-color: rgba(5, 0, 0, 50%);
-    border: 1px solid black;
-    border-radius: 3px;
 }
 
 QCalendarWidget QAbstractItemView:disabled {
