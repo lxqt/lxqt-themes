@@ -162,7 +162,7 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton
 LXQtTaskButton {
     border: 2px groove silver;
     border-radius: 6px;
-    margin: 3px 0 3px 0;
+    margin: 2px 0 2px 0;
 }
 
 #TaskBar QToolButton:on {
@@ -171,7 +171,7 @@ LXQtTaskButton {
 
 #TaskBar QToolButton:on,
 #TaskBar QToolButton:hover {
-    margin: 4px 1px 4px 1px;
+    margin: 2px 1px 2px 1px;
     border-radius: 4px;
     border: 1px solid #80a8d3;
 }
