@@ -237,6 +237,10 @@ VolumePopup > QSlider::sub-page:vertical {
     ;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * Calendar Widget
  */

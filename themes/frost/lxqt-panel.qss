@@ -409,6 +409,10 @@ QListView::item:hover {
     border: 1px solid palette(highlight);
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * Tray Plugin
  */
