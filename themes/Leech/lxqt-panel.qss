@@ -73,6 +73,11 @@ LXQtPanelPlugin > QToolButton {
     border-radius: 2px;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+    padding: 0;
+}
+
 /* Quick Launch (Icon bar) */
 #QuickLaunchPlaceHolder {
     background-color: transparent;

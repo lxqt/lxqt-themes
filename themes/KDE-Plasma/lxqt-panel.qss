@@ -324,6 +324,10 @@ LXQtFancyMenuWindow {
     border: 1px solid rgba(30, 145, 255, 100%);
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * QuickLaunch
  */

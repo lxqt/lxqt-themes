@@ -121,6 +121,7 @@ QMenu::indicator:non-exclusive:checked:selected {
 }
 
 /* Taskbar */
+
 #TaskBar QToolButton {
     margin-left: 1px;
     margin-right: 1px;
@@ -159,6 +160,10 @@ QMenu::indicator:non-exclusive:checked:selected {
     color: #ffffff;
     border: 1px solid #000000;
     border-radius: 3px;
+}
+
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
 }
 
 /* Quick Launch (Icon bar) */

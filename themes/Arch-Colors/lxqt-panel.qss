@@ -337,6 +337,7 @@ LXQtFancyMenuWindow{
 }
 
 #TaskBar LXQtGroupPopup > QToolButton {
+    margin: 0;
     color: #e7eff1;
 }
 

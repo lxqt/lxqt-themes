@@ -470,6 +470,10 @@ LXQtFancyMenuWindow {
     border: 1px solid silver;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * Tray Plugin
  */
