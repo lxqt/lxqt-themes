@@ -228,6 +228,10 @@ QCalendarWidget QWidget {
     border: 1px solid #f88657;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * Main menu
  */
