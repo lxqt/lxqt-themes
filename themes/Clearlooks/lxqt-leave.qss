@@ -1,0 +1,52 @@
+/* Main dialog window */
+QDialog {
+    color: #1a1a1a;
+    background: #edeceb;
+    border: 1px solid #aaaaaa;
+}
+
+/* Caption colors */
+QLabel {
+    color: #000000;
+    background: transparent;
+}
+
+/* Session action buttons */
+QAbstractItemView {
+    color: #000000;
+    background: #ffffff;
+    /* note: must use solid color 1px .png image for bg color */
+    background-image: url(assets/menus/bg.png);
+    border: 1px solid #aaaaaa;
+}
+
+/* Confirmation dialog buttons */
+QPushButton {
+    color: #1a1a1a;
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(assets/buttons/button.png);
+    padding: 4px 20px;
+    margin: 0px 6px;
+}
+
+QToolButton {
+    color: #1a1a1a;
+    background: transparent;
+    border: 3px solid transparent;
+    border-image: url(assets/buttons/button.png);
+    padding: 4px 5px;
+    margin: 0px 6px;
+}
+
+QPushButton:hover,
+QToolButton:hover {
+    background: transparent;
+    border-image: url(assets/buttons/button-hover.png);
+}
+
+QPushButton:pressed,
+QToolButton:pressed {
+    background: transparent;
+    border-image: url(assets/buttons/button-pressed.png);
+}

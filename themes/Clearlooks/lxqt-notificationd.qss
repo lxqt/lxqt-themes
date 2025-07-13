@@ -1,0 +1,32 @@
+Notification {
+    color: #1a1a1a;
+    background: #edeceb;
+    border: 1px solid #aaaaaa;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #1a1a1a;
+}
+
+#appLabel {
+    font-weight: bold;
+}
+
+#closeButton {
+    color: #1a1a1a;
+    background: none;
+    border: 3px solid transparent;
+    border-image: none;
+    margin: 2px;
+    padding: 2px;
+    qproperty-icon: url(assets/icons/cancel.svg);
+}
+
+#closeButton:hover {
+    border-image: url(assets/buttons/button-hover.png);
+}
+
+#closeButton:pressed {
+    border-image: url(assets/buttons/button-pressed.png);
+}
