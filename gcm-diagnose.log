@@ -1,0 +1,188 @@
+﻿Diagnose log at 2025-07-13T19:31:57Z
+
+AppPath: /usr/share/git-credential-manager-2.6.1/git-credential-manager
+InstallDir: /usr/share/git-credential-manager-2.6.1/
+Version: 2.6.1
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Linux
+OSVersion: Gentoo Linux
+Reading environment variables... OK
+ Variables:
+XDG_MENU_PREFIX=lxqt-
+LXQT_SESSION_CONFIG=session
+GTK_CSD=0
+XAUTHORITY=/tmp/xauth_kwFtuz
+VDPAU_DRIVER=radeonsi
+XDG_SESSION_ID=1
+LESSOPEN=|lesspipe %s
+XDG_CONFIG_DIRS=/etc/xdg:/usr/share
+QT_QPA_PLATFORMTHEME=lxqt
+SHELL_SETS_TITLE=0
+GTK_MODULES=canberra-gtk-module:appmenu-gtk-module
+PAGER=/usr/bin/less
+LEX=flex
+MOZ_GMP_PATH=/usr/lib64/nsbrowser/plugins/gmp-gmpopenh264/system-installed
+XDG_RUNTIME_DIR=/run/user/1000
+QT_PLATFORM_PLUGIN=lxqt
+DISPLAY=:0
+LV2_PATH=/usr/lib64/lv2
+PWD=/home/hazuki/.git/lxqt-themes
+LANG=C.UTF8
+MOTD_SHOWN=pam
+OLDPWD=/home/hazuki/.git
+XDG_CONFIG_HOME=/home/hazuki/.config
+MANPAGER=manpager
+CONFIG_PROTECT=/usr/share/gnupg/qualified.txt /usr/share/config
+INFOPATH=/usr/share/gcc-data/x86_64-pc-linux-gnu/14/info:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.44/info:/usr/share/autoconf-2.72/info:/usr/share/automake-1.17/info:/usr/share/info
+XDG_VTNR=2
+XDG_CACHE_HOME=/home/hazuki/.cache
+TERM=st-256color
+DESKTOP_SESSION=lxqt
+MANPATH=/etc/java-config-2/current-system-vm/man:/usr/share/gcc-data/x86_64-pc-linux-gnu/14/man:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.44/man:/etc/java-config-2/current-system-vm/man/:/usr/local/share/man:/usr/share/man:/usr/lib/rust/man-bin-1.84.1:/usr/lib/rust/man-bin-1.85.1:/usr/lib/rust/man-bin-1.86.0:/usr/lib/rust/man-bin-1.87.0:/usr/lib/llvm/20/share/man:/usr/lib/llvm/19/share/man:/etc/eselect/wine/share/man
+MAIL=/var/mail/hazuki
+DBUS_SESSION_BUS_ADDRESS=unix:path=/tmp/dbus-tj6AKYc7Fs,guid=90c1e75d1142c5ce3842d9fd6872b166
+CONFIG_PROTECT_MASK=/etc/sandbox.d /etc/fonts/fonts.conf /etc/gentoo-release /etc/dconf /etc/ca-certificates.conf /etc/revdep-rebuild
+EDITOR=/bin/nano
+XDG_SEAT=seat0
+USER=hazuki
+TERMINFO_DIRS=/usr/share/st/terminfo
+GSETTINGS_BACKEND=dconf
+JDK_HOME=/etc/java-config-2/current-system-vm
+XDG_DATA_HOME=/home/hazuki/.local/share
+XDG_CURRENT_DESKTOP=LXQt
+VBOX_SDK_PATH=/usr/lib64/virtualbox/sdk
+GIT_TRACE2_PARENT_SID=98090c28-f47e-4026-8f08-1dfe4c575825
+VBOX_INSTALL_PATH=/usr/lib64/virtualbox
+LOGNAME=hazuki
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/bin:/usr/lib/llvm/20/bin:/usr/lib/llvm/19/bin:/etc/eselect/wine/bin:/home/hazuki/.local/bin:/home/hazuki/.source:/home/hazuki/.local/bin
+GCC_SPECS=
+WINDOWID=25165830
+XAUTHLOCALHOSTNAME=enceladus
+JAVA_HOME=/etc/java-config-2/current-system-vm
+VBOX_APP_HOME=/usr/lib64/virtualbox
+HOME=/home/hazuki
+XDG_SESSION_TYPE=x11
+GTK_OVERLAY_SCROLLING=0
+JAVAC=/etc/java-config-2/current-system-vm/bin/javac
+UBUNTU_MENUPROXY=1
+SHLVL=1
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/etc/eselect/wine/share
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_CLASS=user
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.cfg=00;32:*.conf=00;32:*.diff=00;32:*.doc=00;32:*.ini=00;32:*.log=00;32:*.patch=00;32:*.pdf=00;32:*.ps=00;32:*.tex=00;32:*.txt=00;32:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:
+LESS=-R -M --shift 5
+SHELL=/bin/bash
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+DOTNET_ROOT=/opt/dotnet-sdk-bin-8.0
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is '/tmp/'...
+Checking basic file I/O...
+Writing to temporary file '/tmp/633447179fe6f9486c7196c5'... OK
+Reading from temporary file '/tmp/633447179fe6f9486c7196c5'... OK
+Deleting temporary file '/tmp/633447179fe6f9486c7196c5'... OK
+Testing IFileSystem instance...
+UserHomePath: /home/hazuki
+UserDataDirectoryPath: /home/hazuki/.gcm
+GetCurrentDirectory(): /home/hazuki/.git/lxqt-themes
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:41287/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.49.0'
+Locating current repository...Git repository at '/home/hazuki/.git/lxqt-themes/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:/etc/gitconfig	safe.directory=/var/db/repos/gentoo
+file:/etc/gitconfig	safe.directory=/var/db/repos/wayland-desktop
+file:/home/hazuki/.gitconfig	credential.helper=manager
+file:/home/hazuki/.gitconfig	credential.helper=
+file:/home/hazuki/.gitconfig	credential.helper=/usr/share/git-credential-manager-2.6.1/git-credential-manager
+file:/home/hazuki/.gitconfig	credential.credentialstore=cache
+file:/home/hazuki/.gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	remote.origin.url=https://github.com/AzumaHazuki/lxqt-themes
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.Clearlooks.remote=origin
+file:.git/config	branch.Clearlooks.merge=refs/heads/Clearlooks
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: /home/hazuki/.local/.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: /home/hazuki/.local/.IdentityService/msal.cache
+KeyringCollection: 
+KeyringSchemaName: 
+KeyringSecretLabel: 
+KeyringAttribute1: (,)
+KeyringAttribute2: (,)
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
