@@ -130,7 +130,7 @@ QToolTip {
     margin: 1px;
 }
 
-/* Lining up desktop switchers and tasks...*/
+/* Lining up desktop switchers and tasks on panel...*/
 
 #DesktopSwitch QToolButton {
     margin: 0px 0px 1px 0px;
