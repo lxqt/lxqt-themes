@@ -2,7 +2,6 @@ Notification {
     color: #1a1a1a;
     background: #edeceb;
     border: 1px solid #aaaaaa;
-    border-radius: 2px;
 }
 
 QLabel {
@@ -15,18 +14,21 @@ QLabel {
 
 #closeButton {
     color: #1a1a1a;
-    background: none;
-    border: 3px solid transparent;
-    border-image: none;
-    margin: 2px;
-    padding: 2px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 3px;
     qproperty-icon: url(assets/icons/cancel.svg);
 }
 
 #closeButton:hover {
-    border-image: url(assets/buttons/button-hover.png);
+    color: #1a1a1a;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #ffffff, stop:0.5 #fafaf9, stop:1 #edeceb);
+    border: 1px solid #928f8d;
 }
 
 #closeButton:pressed {
-    border-image: url(assets/buttons/button-pressed.png);
+    color: #1a1a1a;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.12 #d5d3d2, stop:0.13 #d8d6d4, stop:0.49 #cfcdcb, stop:0.5 #cbc8c6, stop:1 #c0bdba);
+    border: 1px solid #888582;
 }
