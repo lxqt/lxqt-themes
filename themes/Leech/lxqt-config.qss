@@ -1,9 +1,7 @@
-/* Configuration Center
-Theming by the base Qt widget style and palette */
-
+/* Tooltips */
 QToolTip {
-    border: 0px solid transparent;
+    color: #ffffff;
     background: #1c2d1c;
-    color: #e0e0e0;
-    padding: 2px;
+    border: none;
+    padding: 4px;
 }
