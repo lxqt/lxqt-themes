@@ -9,8 +9,7 @@ LXQtPanel #BackgroundWidget {
     border: 0px solid #1a1a1a;
 }
 
-Plugin > QWidget,
-Plugin > QWidget > QWidget {
+Plugin > QWidget {
     border: 0px;
     color: rgba(0, 0, 0, 100%); /* Color of text on same */
 }
@@ -18,7 +17,6 @@ Plugin > QWidget > QWidget {
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
-
 LXQtPanelPlugin > QToolButton {
     background: transparent;
     margin: 0px;
@@ -123,6 +121,7 @@ QMenu::indicator:non-exclusive:checked:selected {
 }
 
 /* Taskbar */
+
 #TaskBar QToolButton {
     margin-left: 1px;
     margin-right: 1px;
@@ -163,6 +162,10 @@ QMenu::indicator:non-exclusive:checked:selected {
     border-radius: 3px;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /* Quick Launch (Icon bar) */
 #QuickLaunchPlaceHolder {
     background-color: #edeceb;
@@ -171,6 +174,7 @@ QMenu::indicator:non-exclusive:checked:selected {
 }
 
 #QuickLaunch QToolButton {
+    border: 0px;
     background-color: transparent;
     margin: 1px;
     padding: 2px;
@@ -573,4 +577,34 @@ LXQtFancyMenuWindow {
     color: #ffffff;
     border: 1px solid #000000;
     border-radius: 3px;
+}
+
+/*
+ * StatusNotifier
+ */
+
+#StatusNotifier QToolButton {
+    border: 0px;
+}
+
+/*
+ * ColorPicker
+ */
+
+#ColorPicker QToolButton {
+    border: 0px;
+}
+
+/*
+ * Mount plugin
+ */
+
+#LXQtMountPopup #DiskButton,
+#LXQtMountPopup #EjectButton
+{
+    margin: 1px;
+}
+
+#LXQtMountPopup #NoDiskLabel {
+    padding: 2px;
 }

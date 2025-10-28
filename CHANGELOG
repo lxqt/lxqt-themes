@@ -1,3 +1,20 @@
+lxqt-themes-2.2.0 / 2025-04-17
+===============================
+ * Made Color Picker divider visible in Clearlooks and Leech.
+ * Fixed the text color of appview in Fancy Menu.
+ * Added basic styling for the mount plugin in Clearlooks and Leech.
+ * Added Graphite theme.
+ * Removed borders from the calendar widget.
+
+lxqt-themes-2.1.0 / 2024-11-05
+===============================
+ * Delete invalid empty folder.
+ * Style tooltips also in configuration center based on palette or theme.
+ * Fixed wordclock texts.
+ * Added tooltip styling.
+ * Added palettes for all themes.
+ * Fixed styling of ColorPicker, Backlight, StatusNotifier in various themes.
+
 lxqt-themes-2.0.0 / 2024-04-17
 ===============================
  * Added Fancy Menu style to themes.

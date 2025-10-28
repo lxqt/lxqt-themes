@@ -785,3 +785,17 @@ QCalendarWidget #qt_calendar_nextmonth {
     background-repeat: repeat-x;
     margin: 4px 0px;
 }
+
+/*
+ * Mount plugin
+ */
+
+#LXQtMountPopup #DiskButton,
+#LXQtMountPopup #EjectButton
+{
+    margin: 1px;
+}
+
+#LXQtMountPopup #NoDiskLabel {
+    padding: 2px;
+}

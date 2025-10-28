@@ -228,6 +228,10 @@ QCalendarWidget QWidget {
     border: 1px solid #f88657;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * Main menu
  */
@@ -335,6 +339,10 @@ LXQtFancyMenuWindow{
 #FancyMenu #AppView {
     background-color: #504f49;
     border: 1px solid #5e5e5e;
+}
+
+#FancyMenu QLabel {
+    color: #f2f1f0;
 }
 
 #FancyMenu #CategoryView {

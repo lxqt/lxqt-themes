@@ -200,6 +200,10 @@ LXQtFancyMenuWindow {
    background-color: #3b3b3b; /* disabled transparency because buggy */
 }
 
+#FancyMenu QLabel {
+    color: white;
+}
+
 #FancyMenu QLineEdit {
     margin: 0;
     padding: 6px;
@@ -369,6 +373,10 @@ LXQtFancyMenuWindow {
 #TaskBar LXQtGroupPopup {
     background: rgba(100, 100, 100, 80%);
     border: 1px solid black;
+}
+
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
 }
 
 /*
@@ -579,10 +587,7 @@ QCalendarWidget QAbstractItemView:enabled {
     color: #f1f3f3;
     selection-background-color: #a6abab;
     selection-color: black;
-    border-radius: 4px;
     background-color: rgba(5, 0, 0, 50%);
-    border: 1px solid black;
-    border-radius: 3px;
 }
 
 QCalendarWidget QAbstractItemView:disabled {

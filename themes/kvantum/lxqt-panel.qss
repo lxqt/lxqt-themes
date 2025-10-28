@@ -179,6 +179,10 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton {
     border-radius: 3px;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 #TaskBar LXQtGroupPopup > QToolButton:hover {
     background: rgba(255, 255, 255, 10%);
 }
@@ -418,6 +422,10 @@ TrayIcon {
 
 LXQtFancyMenuWindow{
     background: #2E2E2E;
+}
+
+#FancyMenu QLabel  {
+    color: white;
 }
 
 #FancyMenu QLineEdit {
