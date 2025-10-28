@@ -588,8 +588,6 @@ QCalendarWidget QAbstractItemView {
     color: #000000;
     background: #ffffff;
     alternate-background-color: #edeceb;
-    border: 1px solid #aaaaaa;
-    border-top: none;
 }
 
 QCalendarWidget QAbstractItemView:enabled {
@@ -604,8 +602,6 @@ QCalendarWidget QAbstractItemView:disabled {
 QCalendarWidget #qt_calendar_navigationbar {
     color: #000000;
     background: #edeceb;
-    border: 1px solid #aaaaaa;
-    border-bottom: none;
 }
 
 QCalendarWidget QToolButton {
