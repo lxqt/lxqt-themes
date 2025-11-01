@@ -140,7 +140,7 @@ lxqt-themes-0.11.96 / 2017-07-07
   * themes: panel volume popup rounded highlighted button corners
   * theme-light: volume popup buttons styles
   * themes: volume popup buttons show outline
-  * themes: avoid uneccessary (and/or orientation specific) margins
+  * themes: avoid unnecessary (and/or orientation specific) margins
   * Handle urgency hint in desktopswitch in themes
   * themes: spacer as semitransparent lighter/darker line
   * themes-panel: initial styles for taskbar groups
@@ -165,7 +165,7 @@ lxqt-themes-0.11.96 / 2017-07-07
   * Theme updated
   * Fixed the Mount Plugin popup.
   * Style for the new keyboard plugin.
-  * Fixed clicking area and aded style for new keyboard indicator.
+  * Fixed clicking area and added style for new keyboard indicator.
   * First approach to style in the new Keyboard Indicator plugin.
   * Apply clicking area fix for all the plugins.
   * Remove lxqt-appswitcher integration as we no longer offer that repo
@@ -178,7 +178,7 @@ lxqt-themes-0.11.96 / 2017-07-07
   * Renamed plasma-next-alpha to kde-plasma Shorter and simple naming in consonance with the other themes.
   * Removed old themes. Deleted A-mego, Flat and Green themes. Now we have less themes to maintain and improve the overall quality.
   * Changed menu icon.
-  * Remover border from nofications. Changed menu icon.
+  * Remove border from notifications. Changed menu icon.
   * Updates translations infrastructure
   * Update the required minimum cmake version
   * Removed font-size for the clock
@@ -191,7 +191,7 @@ lxqt-themes-0.11.96 / 2017-07-07
   * Update themes to support urgency hint
   * Add Qt5 support.
   * Add Plasma Next theme
-  * Add dark aplha theme
+  * Add dark alpha theme
   * Theme changes for RGBA panel
   * Updated qss styles for transparency
   * Use LXQt as desktop name
