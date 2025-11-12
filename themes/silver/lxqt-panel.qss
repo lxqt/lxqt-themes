@@ -145,6 +145,7 @@ QCalendarWidget QAbstractItemView:disabled {
 QCalendarWidget QWidget {
     alternate-background-color: #a6abab; /* week and day frame */
     background-color: #52595a; /* background of buttons and year/month */
+    color: #DEDEDE;
 }
 
 /* months menu background should be restored -- it's changed above because of inheritance */
