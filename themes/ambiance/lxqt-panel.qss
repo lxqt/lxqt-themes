@@ -347,6 +347,7 @@ LXQtFancyMenuWindow{
 
 #FancyMenu #CategoryView {
     background-color: #32312e;
+    border: 1px solid #2b2b29;
 }
 
 #FancyMenu QListView::icon {
@@ -379,7 +380,7 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QLineEdit {
     background: #3c3b37;
-    border: none;
+    border: 1px solid #5e5e5e;
     color: #f2f1f0;
     margin-bottom: 1px;
     padding: 3px;
@@ -398,7 +399,7 @@ LXQtFancyMenuWindow{
 #FancyMenu QToolButton:hover,
 #FancyMenu QToolButton:focus {
     background: #eb7140;
-    border: 1px solid black;
+    border: 1px solid #2b2b29;
 }
 
 #FancyMenu QScrollBar:vertical {
