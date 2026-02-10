@@ -727,12 +727,3 @@ LXQtFancyMenuWindow {
     margin-right: 2px;
     margin-left: 2px;
 }
-
-/*
- * CustomCommand Plugin
- */
-
-#Custom::hover {
-    background: black;
-    color: #f9f9f9;
-}
