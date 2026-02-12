@@ -191,7 +191,6 @@ VolumePopup > QSlider::sub-page:vertical {
 
 #QuickLaunch QToolButton {
     border: 0px;
-    margin: 1px;
     padding: 2px;
 }
 
@@ -520,7 +519,7 @@ LXQtFancyMenuWindow {
 #FancyMenu QToolButton {
     margin: 3px;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: 1px solid #3c3c3c;
     padding: 4px;
     background: transparent;
 }
@@ -592,8 +591,8 @@ LXQtFancyMenuWindow {
 /*
  * Mount plugin
  */
-#LXQtMountPlugin {
-    margin: 2px;
+#LXQtMountPlugin QToolButton {
+    padding: 2px;
 }
 
 #LXQtMountPopup {
@@ -727,13 +726,4 @@ LXQtFancyMenuWindow {
     background-repeat: repeat-x;
     margin-right: 2px;
     margin-left: 2px;
-}
-
-/*
- * CustomCommand Plugin
- */
-
-#Custom::hover {
-    background: black;
-    color: #f9f9f9;
 }
