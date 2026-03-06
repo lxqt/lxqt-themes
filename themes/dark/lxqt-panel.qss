@@ -56,12 +56,13 @@ LXQtPanelPlugin > QToolButton:pressed {
 /*
  * Volume plugin
  */
-VolumePopup {
+VolumePopup, VolumePopup  QScrollArea, VolumePopup QWidget {
     background: hsv(0, 0, 41);
+    color: #DEDEDE;
     margin: 2px;
 }
 
-VolumePopup > QPushButton {
+VolumePopup QPushButton {
     border: 1px solid rgba(255, 255, 255, 5%);
     border-radius: 2px;
     color: #DEDEDE;
@@ -71,34 +72,37 @@ VolumePopup > QPushButton {
     qproperty-iconSize: 24px;
 }
 
-VolumePopup > QPushButton:hover {
-    border: 1px solid rgba(255, 255, 255, 10%);
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
+    border: 1px solid rgba(255, 255, 255, 30%);
     border-radius: 2px;
-    background: rgba(255, 255, 255, 20%);
+    background: rgba(255, 255, 255, 40%);
 }
 
-VolumePopup > QSlider::groove:vertical {
-    background: hsv(0, 0, 41);
-    width: 8px;
-    border-radius: 3px;
+VolumePopup QSlider {
+    min-width: 140px;
+    max-width: 140px;
 }
 
-VolumePopup > QSlider::handle:vertical {
-    height: 10px;
-    background: #DEDEDE;
-    border-radius: 5px;
-    margin: 0 -4px; /* expand outside the groove */
+VolumePopup QSlider::groove:horizontal {
+    height: 6px;
+    border-radius: 2px;
 }
 
-VolumePopup > QSlider::add-page:vertical {
+VolumePopup QSlider::handle:horizontal {
+     width: 10px;
+     background: #C2C2C2;
+     border-radius: 3px;
+     margin: -5px 0; /* expand outside the groove */
+}
+
+VolumePopup QSlider::sub-page {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
             stop: 0 #787676, stop: 1 #ABABAB);
     border: 1px solid rgba(0, 0, 0, 80%);
     border-radius: 3px;
-
 }
 
-VolumePopup > QSlider::sub-page:vertical {
+VolumePopup QSlider::add-page {
     background: rgba(0, 0, 0, 80%);
     border-radius: 3px;
 }
@@ -145,6 +149,7 @@ VolumePopup > QSlider::sub-page:vertical {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
             stop: 0 #787676, stop: 1 #ABABAB);
     border: 1px solid rgba(0, 0, 0, 80%);
+    border-radius: 3px;
 }
 
 #Backlight > SliderDialog > QSlider::sub-page:vertical {
