@@ -53,47 +53,59 @@ LXQtPanelPlugin > QToolButton:hover {
 
 VolumePopup {
     background: #303030;
-    margin: 2px;
+}
+VolumePopup QScrollArea {
+    padding: 3px;
+    border: 1px solid grey;
+}
+VolumePopup QWidget {
+    background: #303030;
+    color: white;
 }
 
-VolumePopup > QPushButton {
-    border: 1px solid rgba(255, 255, 255, 5%);
+VolumePopup QPushButton {
+    border: 1px solid rgba(255, 255, 255, 40%);
     border-radius: 2px;
     color: #dedede;
     background: rgba(255, 255, 255, 10%);
     padding: 2px 10px;
-    margin: 3px;
+    margin: 5px;
     qproperty-iconSize: 24px;
 }
 
-VolumePopup > QPushButton:hover {
-    border: 1px solid rgba(255, 255, 255, 10%);
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on  {
+    border: 1px solid rgba(255, 255, 255, 70%);
     border-radius: 2px;
     background: rgba(255, 255, 255, 20%);
 }
 
-VolumePopup > QSlider::groove:vertical {
-    background: #303030;
-    width: 8px;
+VolumePopup QSlider {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+VolumePopup QSlider::groove:horizontal {
+    background: #5b5b5b;
+    height: 6px;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::handle:vertical {
-    height: 10px;
+VolumePopup QSlider::handle:horizontal {
+    width: 10px;
     background: #dedede;
     border-radius: 5px;
-    margin: 0 -4px; /* expand outside the groove */
+    margin: -4px 0; /* expand outside the groove */
 }
 
-VolumePopup > QSlider::add-page:vertical {
+VolumePopup QSlider::sub-page:horizontal {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
             stop: 0 #787676, stop: 1 #ABABAB);
     border: 1px solid rgba(0, 0, 0, 80%);
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::sub-page:vertical {
-    background: rgba(0, 0, 0, 80%);
+VolumePopup > QSlider::add-page:horizontal {
+    background: rgba(0, 0, 0, 90%);
     border-radius: 3px;
 }
 

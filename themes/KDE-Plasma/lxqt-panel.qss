@@ -366,48 +366,46 @@ VolumePopup {
     padding: 4px;
 }
 
-VolumePopup > QPushButton {
+VolumePopup QPushButton {
     color: rgba(54, 54, 54, 60%);
     background: rgba(30, 145, 255, 30%);
     padding: 2px 10px;
     margin: 3px;
     border-radius: 4px;
     qproperty-iconSize: 24px;
+    border: 1px solid rgba(30, 145, 255, 30%);
 }
 
-VolumePopup > QPushButton:hover {
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
     color: rgba(54, 54, 54, 100%);
     background: rgba(30, 145, 255, 30%);
     border: 1px solid rgba(30, 145, 255, 100%);
 }
 
-VolumePopup > QSlider {
-    margin-top: 4px;
-}
 
-VolumePopup > QSlider::groove:vertical {
+VolumePopup QSlider::groove:horizontal {
     background: rgba(155, 155, 155, 50%);
-    width: 8px;
+    height: 8px;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::handle:vertical {
+VolumePopup QSlider::handle:horizontal {
     height: 10px;
     width: 10px;
     background: rgba(240, 240, 240, 100%);
     border-radius: 5px;
     border: 1px solid rgba(54, 54, 54, 100%);
-    margin: 0 -4px; /* expand outside the groove */
+    margin: -4px 0; /* expand outside the groove */
 }
 
-VolumePopup > QSlider::add-page:vertical {
+VolumePopup QSlider::sub-page:horizontal {
     background: rgba(30, 145, 255, 100%);
     border: 1px solid rgba(155, 155, 155, 100%);
     border-radius: 3px;
 
 }
 
-VolumePopup > QSlider::sub-page:vertical {
+VolumePopup QSlider::add-page:horiziontal {
     border: 1px solid rgba(155, 155, 155, 100%);
     border-radius: 3px;
 }

@@ -375,16 +375,16 @@ StatusNotifierButton {
     background: #1899da;
 }
 
-VolumePopup {
+VolumePopup, VolumePopup > QScrollArea, VolumePopup QWidget {
     background-color: #041b27;
+    color: #e7eff1;
     margin: 2px;
     padding: 2px;
-    border-radius: 2px;
 }
 
-VolumePopup > QPushButton {
-    color: #142e35;
-    background: #1899da;
+VolumePopup QPushButton {
+    color: #202a2c;
+    background: #1378ab;
     padding: 2px 10px;
     margin: 5px;
     border: 1px solid black;
@@ -392,25 +392,26 @@ VolumePopup > QPushButton {
     border-radius: 2px;
 }
 
-VolumePopup > QPushButton:hover {
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
     background: #1aa9f0;
+    color: #142e35;
 }
 
-VolumePopup > QSlider::groove:vertical {
+VolumePopup QSlider::groove:horizontal {
     background-color: #f3f3f3;
-    width: 8px;
+    height: 4px;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::handle:vertical {
-    height: 8px;
+VolumePopup QSlider::handle:horizontal {
+    width: 8px;
     background: #1899da;
     border-radius: 2px;
-    margin: 0 -4px; /* expand outside the groove */
+    margin: -5px 0; /* expand outside the groove */
 
 }
 
-VolumePopup > QSlider::sub-page:vertical {
+VolumePopup QSlider::add-page:horizontal {
     background: rgba(0, 0, 0, 80%);
     border-radius: 3px;
 }
