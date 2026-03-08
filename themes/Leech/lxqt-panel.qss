@@ -659,8 +659,8 @@ VolumePopup QPushButton,
     background: qlineargradient(x1:0, x2:0, y1:0, y2:1, stop:0 #000000, stop:0.89 #000000, stop:0.9 #030303, stop:1 #141414);
     border: 1px solid #555555;
     border-radius: 3px;
-    padding: 2px 10px;
-    margin: 3px;
+    padding: 2px;
+    margin: 2px;
 }
 
 VolumePopup QPushButton:hover, VolumePopup QPushButton:on,

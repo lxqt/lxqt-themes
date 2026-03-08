@@ -67,8 +67,8 @@ VolumePopup QPushButton {
     border-radius: 2px;
     color: #DEDEDE;
     background: rgba(255, 255, 255, 10%);
-    padding: 2px 10px;
-    margin: 3px;
+    padding: 2px;
+    margin: 2px;
     qproperty-iconSize: 24px;
 }
 

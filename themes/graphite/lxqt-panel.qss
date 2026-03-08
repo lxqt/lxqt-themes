@@ -68,8 +68,8 @@ VolumePopup QPushButton {
     border-radius: 2px;
     color: #dedede;
     background: rgba(255, 255, 255, 10%);
-    padding: 2px 10px;
-    margin: 5px;
+    padding: 2px;
+    margin: 2px;
     qproperty-iconSize: 24px;
 }
 
@@ -80,8 +80,9 @@ VolumePopup QPushButton:hover, VolumePopup QPushButton:on  {
 }
 
 VolumePopup QSlider {
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 140px;
+    max-width: 140px;
+    margin: 0 5px;
 }
 
 VolumePopup QSlider::groove:horizontal {
@@ -93,8 +94,8 @@ VolumePopup QSlider::groove:horizontal {
 VolumePopup QSlider::handle:horizontal {
     width: 10px;
     background: #dedede;
-    border-radius: 5px;
-    margin: -4px 0; /* expand outside the groove */
+    border-radius: 4px;
+    margin: -5px 0; /* expand outside the groove */
 }
 
 VolumePopup QSlider::sub-page:horizontal {
