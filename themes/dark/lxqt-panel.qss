@@ -78,11 +78,6 @@ VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
     background: rgba(255, 255, 255, 40%);
 }
 
-VolumePopup QSlider {
-    min-width: 140px;
-    max-width: 140px;
-}
-
 VolumePopup QSlider::groove:horizontal {
     height: 6px;
     border-radius: 2px;

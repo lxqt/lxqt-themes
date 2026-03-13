@@ -347,7 +347,6 @@ LXQtFancyMenuWindow {
 VolumePopup QSlider {
     color: #000000;
     background: transparent;
-    min-width: 120px;
     min-height: 24px;
     margin: 4px 0px;
 }

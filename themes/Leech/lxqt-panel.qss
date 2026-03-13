@@ -338,7 +338,6 @@ LXQtFancyMenuWindow {
  VolumePopup QSlider {
     color: #e0e0e0;
     background: transparent;
-    min-width: 140px;
 }
 
 #Backlight QSlider::handle {

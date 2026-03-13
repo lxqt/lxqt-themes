@@ -619,8 +619,6 @@ VolumePopup QWidget {
 }
 
 VolumePopup QSlider {
-    min-width: 140px;
-    max-width: 140px;
     padding: 0 15px;
 }
 
