@@ -634,6 +634,10 @@ VolumePopup > QSlider::sub-page:vertical {
     border-radius: 3px;
 }
 
+#Backlight > SliderDialog > QToolButton:disabled {
+    color: #6D6D6D;
+}
+
 #Backlight > SliderDialog {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #2e2f2f, stop:1 #59595a);
     margin: 2px;

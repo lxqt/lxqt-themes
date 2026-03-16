@@ -641,6 +641,10 @@ VolumePopup > QPushButton:pressed,
     border: 1px solid #6a6b73;
 }
 
+#Backlight > SliderDialog > QToolButton:disabled {
+    color: #52501b;
+}
+
 /* Calendar */
 QCalendarWidget QAbstractItemView {
     color: #ffffff;

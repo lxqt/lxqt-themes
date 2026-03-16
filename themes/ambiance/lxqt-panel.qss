@@ -94,7 +94,6 @@ Plugin > QWidget > QWidget {
     color: #f2f1f0;
 }
 
-
 Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
@@ -756,6 +755,10 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #Backlight > SliderDialog > QToolButton:hover {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
+}
+
+#Backlight > SliderDialog > QToolButton:disabled {
+    color: #b1b1b1;
 }
 
 #Backlight > SliderDialog {

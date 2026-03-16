@@ -651,6 +651,10 @@ QCalendarWidget QSpinBox {
     background: #1cb3ff;
 }
 
+#Backlight > SliderDialog > QToolButton:disabled {
+    color: #5b6d73;
+}
+
 #Backlight > SliderDialog {
     background: #041b27;
 }

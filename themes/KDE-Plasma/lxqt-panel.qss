@@ -287,6 +287,10 @@ LXQtFancyMenuWindow {
     border-top: 3px solid rgba(30, 145, 255, 50%);
 }
 
+#Backlight > SliderDialog > QToolButton:disabled {
+    color: rgb(160, 160, 160);
+}
+
 /*
  * Sensors
  */
