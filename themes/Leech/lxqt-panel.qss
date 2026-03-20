@@ -178,7 +178,7 @@ QMenu::indicator {
 }
 
 QMenu::indicator::non-exclusive:checked { image: url(assets/boxes/checked.png); }
-QMenu::indicator::non-exclusive:unchecked { image: url(assets/boxes/unchecked.png); }
+QMenu::indicator::non-exclusive:unchecked { image: url(assets/boxes/unchecked.svg); }
 
 QMenu::left-arrow {image: url(assets/arrows/arrow-left.png);}
 QMenu::right-arrow {image: url(assets/arrows/arrow-right.png);}

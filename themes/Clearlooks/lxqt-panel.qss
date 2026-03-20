@@ -191,9 +191,9 @@ QMenu::indicator {
 }
 
 QMenu::indicator::non-exclusive:checked { image: url(assets/boxes/checked.png); }
-QMenu::indicator::non-exclusive:unchecked { image: url(assets/boxes/unchecked.png); }
+QMenu::indicator::non-exclusive:unchecked { image: url(assets/boxes/unchecked.svg); }
 QMenu::indicator::non-exclusive:checked:selected { image: url(assets/boxes/checked-selected.png); }
-QMenu::indicator::non-exclusive:unchecked:selected { image: url(assets/boxes/unchecked-selected.png); }
+QMenu::indicator::non-exclusive:unchecked:selected { image: url(assets/boxes/unchecked-selected.svg); }
 
 QMenu::left-arrow {image: url(assets/arrows/arrow-left.svg);}
 QMenu::right-arrow {image: url(assets/arrows/arrow-right.svg);}
@@ -710,11 +710,11 @@ QCalendarWidget #qt_calendar_nextmonth {
 }
 
 #Spacer[type="lined"] {
-    background-image: url(/assets/panel/line-spacer.png);
+    background-image: url(/assets/panel/line-spacer.svg);
 }
 
 #Spacer[type="dotted"] {
-    background-image: url(/assets/panel/dot-spacer.png);
+    background-image: url(/assets/panel/dot-spacer.svg);
 }
 
 #Spacer[orientation="horizontal"] {
