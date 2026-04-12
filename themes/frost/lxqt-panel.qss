@@ -180,6 +180,12 @@ QCalendarWidget QSpinBox {
     selection-color: palette(highlighted-text);
 }
 
+
+LXQtWorldClockPopup {
+    color: #FFF;
+    background: #000;
+}
+
 /*
  * Main menu plugin
  */
