@@ -1,3 +1,10 @@
+lxqt-themes-2.4.0 / 2026-04-20
+===============================
+ * Fix unreadable timezones popup in Frost theme.
+ * Updated all themes for multisink volume plugin.
+ * 'Dark' theme improvements.
+ * Fixed calendar year spinboxes in 'Valendas' and 'Silver'.
+
 lxqt-themes-2.3.0 / 2025-11-05
 ===============================
  * Reduced margins for taskbar buttons in the Light theme.
