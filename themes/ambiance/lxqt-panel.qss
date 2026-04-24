@@ -703,7 +703,8 @@ VolumePopup QPushButton {
     qproperty-iconSize: 24px;
 }
 
-VolumePopup QPushButton:hover {
+VolumePopup QPushButton:hover,
+VolumePopup QPushButton:on {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #f88657, stop:1 #eb7140);
     border-radius: 2px;
 }
