@@ -179,6 +179,10 @@ LXQtPanel[position="1"] #DesktopSwitch QToolButton {
     border-radius: 3px;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 #TaskBar LXQtGroupPopup > QToolButton:hover {
     background: rgba(255, 255, 255, 10%);
 }
@@ -420,6 +424,10 @@ LXQtFancyMenuWindow{
     background: #2E2E2E;
 }
 
+#FancyMenu QLabel  {
+    color: white;
+}
+
 #FancyMenu QLineEdit {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #141414, stop:0.2 #232323, stop:0.98 #242424 stop:1 #323232);
     border: 1px solid #000000;
@@ -480,7 +488,8 @@ LXQtFancyMenuWindow{
     background:  #4a4a4a;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     background: #3c3c3c;
     border: 1px solid grey;
 }
@@ -567,27 +576,27 @@ LXQtFancyMenuWindow{
 /*
  * Volume plugin
  */
-VolumePopup > QPushButton {
-    margin: 3px;
-    padding: 3px 6px;
+VolumePopup QPushButton {
+    padding: 2px;
+    margin: 2px;
     border: none;
     border-radius: 3px;
-    background: transparent;
+    background: rgba(255, 255, 255, 20%);
     color: white;
     qproperty-iconSize: 22px;
 }
 
-VolumePopup > QPushButton:hover {
-    background: rgba(255, 255, 255, 10%);
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
+    background: rgba(255, 255, 255, 30%);
     border: none;
 }
 
-VolumePopup > QPushButton:pressed {
+VolumePopup QPushButton:pressed {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 20%), stop:1 rgba(255, 255, 255, 20%));
     border: none;
 }
 
-VolumePopup > QPushButton:focus {
+VolumePopup QPushButton:focus {
     outline: 1px solid rgba(255, 255, 255, 10%);
     outline-radius: 3px;
 }
@@ -604,26 +613,30 @@ VolumePopup {
     color: white;
 }
 
-VolumePopup > QSlider {
-    min-width: 16px;
-    max-width: 16px;
+VolumePopup QWidget {
+    background:rgba(90, 90, 90, 40%);
+    color: white;
 }
 
-VolumePopup > QSlider::groove:vertical {
+VolumePopup QSlider {
+    padding: 0 15px;
+}
+
+VolumePopup QSlider::groove:horizontal {
     background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #2e4964, stop:1 #4d8fd2);
-    width: 3px;
+    height: 3px;
 }
 
-VolumePopup > QSlider::sub-page:vertical {
+VolumePopup QSlider::add-page:horizontal {
     background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(15, 15, 15, 100%), stop:1 rgba(110, 110, 110, 100%));
 }
 
-VolumePopup > QSlider::handle:vertical {
+VolumePopup QSlider::handle:horizontal {
     border-image: url(lxqt-panel/slidercursor.png) 0 0 0 0 stretch stretch;
     background-color: transparent;
     width: 16px;
     height: 17px;
-    margin: 0px -7px;
+    margin: -7px;
 }
 
 /*

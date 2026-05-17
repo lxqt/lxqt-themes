@@ -1,27 +1,34 @@
 Notification {
-    color: #ffffff;
-    border: 1px solid #909090;
-    border-radius: 3px;
+    color: #1a1a1a;
     background: #edeceb;
-    margin: 0px;
+    border: 1px solid #aaaaaa;
 }
 
 QLabel {
-    color: #000000;
-}
-
-#closeButton {
-    border: none;
-    qproperty-icon: url(lxqt-notificationd/cancel.svg);
-}
-
-#closeButton:hover {
-    border: 1px solid #909090;
-    border-radius: 3px;
-    background: #ffffff;
-    qproperty-icon: url(lxqt-notificationd/cancel.svg);
+    color: #1a1a1a;
 }
 
 #appLabel {
     font-weight: bold;
+}
+
+#closeButton {
+    color: #1a1a1a;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 3px;
+    qproperty-icon: url(assets/icons/cancel.svg);
+}
+
+#closeButton:hover {
+    color: #1a1a1a;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:0.49 #ffffff, stop:0.5 #fafaf9, stop:1 #edeceb);
+    border: 1px solid #928f8d;
+}
+
+#closeButton:pressed {
+    color: #1a1a1a;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.12 #d5d3d2, stop:0.13 #d8d6d4, stop:0.49 #cfcdcb, stop:0.5 #cbc8c6, stop:1 #c0bdba);
+    border: 1px solid #888582;
 }

@@ -135,11 +135,7 @@ QCalendarWidget QAbstractItemView:enabled {
     color: #3e3e3e;
     selection-background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #adadad, stop:1 #757c7b);
     selection-color: black;
-    border-radius: 4px;
     background-color: #bdc3c3;
-    border: 1px solid #939393;
-    border-radius: 3px;
-    ;
 }
 
 QCalendarWidget QAbstractItemView:disabled {
@@ -149,7 +145,7 @@ QCalendarWidget QAbstractItemView:disabled {
 QCalendarWidget QWidget {
     alternate-background-color: #a6abab; /* week and day frame */
     background-color: #52595a; /* background of buttons and year/month */
-    border-radius: 2px;
+    color: #DEDEDE;
 }
 
 /* months menu background should be restored -- it's changed above because of inheritance */
@@ -321,13 +317,13 @@ LXQtFancyMenuWindow {
     background: #d5d5d5;
 }
 
-#FancyMenu #AppView::item
-{
+#FancyMenu #AppView::item{
     color: #4a4a4a;
 }
 
 #FancyMenu QListView::item {
     border: 1px solid transparent;
+    border-radius: 3px;
     padding: 2px;
     color: #282828;
 }
@@ -338,13 +334,12 @@ LXQtFancyMenuWindow {
             stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
             stop: 0.96 #989898, stop: 1 #dcdcdc);
     color: black;
+    border: 1px solid grey;
 }
 
 #FancyMenu QListView::item:hover {
-    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-            stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
-            stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
-            stop: 0.96 #d1d1d1, stop: 1#ececec);
+    border: 1px solid white;
+    border-radius:3px;
     color: black;
 }
 
@@ -360,7 +355,8 @@ LXQtFancyMenuWindow {
     padding: 4px;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
             stop: 0 #f7f7f7, stop: 0.08 #f1f1f1,
             stop: 0.35 #c3c3c3, stop: 0.4 #b1b1b1,
@@ -474,6 +470,10 @@ LXQtFancyMenuWindow {
     border: 1px solid silver;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    margin: 0;
+}
+
 /*
  * Tray Plugin
  */
@@ -560,50 +560,60 @@ TrayIcon {
     border-top: 2px solid transparent;
 }
 
-VolumePopup {
-    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #2e2f2f, stop:1 #59595a);
-    margin: 2px;
-    padding: 2px;
-    border-radius: 3px;
+VolumePopup QScrollArea {
+    border-top: 1px solid grey;
 }
 
-VolumePopup > QPushButton {
+VolumePopup, VolumePopup QScrollArea, VolumePopup QWidget {
+    margin: 2px;
+    padding: 2px;
+    background-color:  #2e2f2f;
+    color: #d6d6d6;
+}
+
+VolumePopup QPushButton {
     background: #8c8f8f;
     color: black;
-    padding: 2px 10px;
-    margin: 3px;
-    border: none;
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
     qproperty-iconSize: 20px;
 }
 
-VolumePopup > QPushButton:hover {
+VolumePopup QPushButton:hover {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
     color: black;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::groove:vertical {
-    background: hsv(0, 0, 9);
-    width: 8px;
+VolumePopup QPushButton:on  {
+    border:  1px solid white;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::handle:vertical {
-    height: 10px;
+VolumePopup QSlider::groove:horizontal {
+    background: hsv(0, 0, 9);
+    height: 6px;
+    border-radius: 1px;
+}
+
+VolumePopup QSlider::handle:horizontal {
+    width: 10px;
     background: #C2C2C2;
     border-radius: 2px;
-    margin: 0 -4px; /* expand outside the groove */
+    margin: -4px 0; /* expand outside the groove */
 }
 
-VolumePopup > QSlider::add-page:vertical {
+VolumePopup QSlider::sub-page:horizontal {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #adadad, stop:1 #d1dedd);
     border: 1px solid black;
-    width: 5px;
+    width: 3px;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::sub-page:vertical {
-    background: rgba(0, 0, 0, 80%);
+VolumePopup QSlider::add-page:horizontal {
+    background: rgba(0, 0, 0, 40%);
     border-radius: 3px;
 }
 
@@ -824,4 +834,18 @@ VolumePopup > QSlider::sub-page:vertical {
 
 #Custom::hover {
     color: white;
+}
+
+
+/*
+ * ColorPicker
+ */
+#ColorPicker QToolButton:hover {
+    background-color: qlineargradient(x1:1, y1:1, x2:0, y2:1, stop:0 #4a4a4a, stop:1 #909e9a);
+    border: 1px solid #939393;
+    border-radius: 3px;
+}
+
+#ColorPicker QToolButton:pressed {
+    border-top: 2px solid transparent;
 }

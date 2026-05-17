@@ -135,7 +135,7 @@ QMenu::indicator:non-exclusive:checked {
  */
 #MainMenu {
     qproperty-icon: url(mainmenu.svg);
-    background: #162635;
+    background: transparent;
     margin: 0px;
     padding: 3px;
     color: #e7eff1;
@@ -207,6 +207,10 @@ LXQtFancyMenuWindow{
     border: 1px solid grey;
 }
 
+#FancyMenu QLabel {
+    color: #d7e3e6;
+}
+
 #FancyMenu QListView::item {
     color: #d7e3e6;
     padding: 5px 3px 5px 3px;
@@ -214,8 +218,8 @@ LXQtFancyMenuWindow{
 }
 
 #FancyMenu QListView::item:hover {
-    background: #003d5b;
-    color: #d7e3e6;
+    background: #0078b0;
+    color: #000000;
 }
 
 #FancyMenu QListView::item:pressed {
@@ -224,7 +228,7 @@ LXQtFancyMenuWindow{
 
 #FancyMenu QListView::item:selected {
     background: #1899da;
-    color: white;
+    color: #000000;
 }
 
 #FancyMenu QListView::focus {
@@ -246,7 +250,8 @@ LXQtFancyMenuWindow{
     padding: 4px;
 }
 
-#FancyMenu QToolButton:hover {
+#FancyMenu QToolButton:hover,
+#FancyMenu QToolButton:focus {
     border: 1px solid rgba(30, 145, 255, 100%);
 }
 
@@ -332,6 +337,7 @@ LXQtFancyMenuWindow{
 }
 
 #TaskBar LXQtGroupPopup > QToolButton {
+    margin: 0;
     color: #e7eff1;
 }
 
@@ -363,50 +369,49 @@ StatusNotifierButton {
 #VolumePlugin QToolButton {
     margin: 2px;
     padding: 2px;
-    background: #162635;
 }
 
 #VolumePlugin QToolButton:hover {
     background: #1899da;
-    border-radius: 2px;
 }
 
-VolumePopup {
+VolumePopup, VolumePopup > QScrollArea, VolumePopup QWidget {
     background-color: #041b27;
+    color: #e7eff1;
     margin: 2px;
     padding: 2px;
-    border-radius: 2px;
 }
 
-VolumePopup > QPushButton {
-    color: #142e35;
-    background: #1899da;
-    padding: 2px 10px;
-    margin: 5px;
+VolumePopup QPushButton {
+    color: #202a2c;
+    background: #1378ab;
+    padding: 2px;
+    margin: 2px;
     border: 1px solid black;
     qproperty-iconSize: 20px;
     border-radius: 2px;
 }
 
-VolumePopup > QPushButton:hover {
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
     background: #1aa9f0;
+    color: #142e35;
 }
 
-VolumePopup > QSlider::groove:vertical {
+VolumePopup QSlider::groove:horizontal {
     background-color: #f3f3f3;
-    width: 8px;
+    height: 4px;
     border-radius: 3px;
 }
 
-VolumePopup > QSlider::handle:vertical {
-    height: 8px;
+VolumePopup QSlider::handle:horizontal {
+    width: 8px;
     background: #1899da;
     border-radius: 2px;
-    margin: 0 -4px; /* expand outside the groove */
+    margin: -5px 0; /* expand outside the groove */
 
 }
 
-VolumePopup > QSlider::sub-page:vertical {
+VolumePopup QSlider::add-page:horizontal {
     background: rgba(0, 0, 0, 80%);
     border-radius: 3px;
 }
@@ -417,7 +422,7 @@ VolumePopup > QSlider::sub-page:vertical {
 #WorldClock {
     margin: 0px;
     padding: 0px;
-    background-color: #162635;
+    background: transparent;
 }
 
 #WorldClock QLabel {
@@ -425,7 +430,7 @@ VolumePopup > QSlider::sub-page:vertical {
     margin: 0px;
     color: #e7eff1;
     qproperty-alignment: alignCenter;
-    background-color: #162635;
+    background: transparent;
 }
 
 /*
@@ -438,8 +443,6 @@ QCalendarWidget QAbstractItemView:enabled
     color: #d7e3e6;
     selection-background-color: #1899da;
     selection-color: #f8f8f8;
-    border: 1px solid #658b94;
-    padding-bottom: 5px;
 }
 
 /* date previous/next month */
@@ -634,6 +637,10 @@ QCalendarWidget QSpinBox {
 /*
  * Backlight Plugin
  */
+
+#BacklightPlugin QToolButton:hover {
+    background: #1899da;
+}
 #Backlight > SliderDialog > QToolButton {
     margin: 2px;
     padding: 2px;

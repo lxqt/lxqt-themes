@@ -1,3 +1,42 @@
+lxqt-themes-2.4.0 / 2026-04-20
+===============================
+ * Fix unreadable timezones popup in Frost theme.
+ * Updated all themes for multisink volume plugin.
+ * 'Dark' theme improvements.
+ * Fixed calendar year spinboxes in 'Valendas' and 'Silver'.
+
+lxqt-themes-2.3.0 / 2025-11-05
+===============================
+ * Reduced margins for taskbar buttons in the Light theme.
+ * Reduced margins/padding for taskbar groups.
+ * Refactored the Leech and Clearlooks themes.
+ * Fixed calendar widget in the Graphite theme.
+
+lxqt-themes-2.2.0 / 2025-04-17
+===============================
+ * Made Color Picker divider visible in Clearlooks and Leech.
+ * Fixed the text color of appview in Fancy Menu.
+ * Added basic styling for the mount plugin in Clearlooks and Leech.
+ * Added Graphite theme.
+ * Removed borders from the calendar widget.
+
+lxqt-themes-2.1.0 / 2024-11-05
+===============================
+ * Delete invalid empty folder.
+ * Style tooltips also in configuration center based on palette or theme.
+ * Fixed wordclock texts.
+ * Added tooltip styling.
+ * Added palettes for all themes.
+ * Fixed styling of ColorPicker, Backlight, StatusNotifier in various themes.
+
+lxqt-themes-2.0.0 / 2024-04-17
+===============================
+ * Added Fancy Menu style to themes.
+ * Styled customcommand where necessary.
+ * Transparent background color in buttons and clock.
+ * Compile with lxqt2-build-tools.
+ * Dark color for input background in runner with some themes.
+
 lxqt-themes-1.3.0 / 2023-04-15
 ===============================
  * Updated licenses in exif data.
