@@ -831,3 +831,19 @@ VolumePopup QSlider::add-page:horizontal {
     margin: 2px;
     padding: 1px;
 }
+
+/*
+ * Panel DOM Tree
+ */
+#Dom {
+    margin: 2px;
+    padding: 1px;
+}
+
+/*
+ * Directory Menu
+ */
+#DirectoryMenu {
+    margin: 2px;
+    padding: 1px;
+}
