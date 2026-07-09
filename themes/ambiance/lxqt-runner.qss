@@ -76,8 +76,8 @@ QToolButton::menu-indicator {
  */
 #commandEd {
     border: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 4px;
+    margin: 5px;
     background: #3c3b37;
     color: #f2f1f0;
     selection-background-color: #eb7140;
