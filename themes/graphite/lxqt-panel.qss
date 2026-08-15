@@ -264,21 +264,19 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #TaskBar LXQtGroupPopup {
-    margin: 7px 0;
     background: #303030;
     border: 1px solid grey;
-    border-radius: 5px;
 }
 
 #TaskBar LXQtGroupPopup LXQtTaskButton {
     background: #303030;
-    margin: 1px 6px;
     border: 1px solid transparent;
     border-radius: 5px;
 }
 #TaskBar LXQtGroupPopup LXQtTaskButton:hover {
     color: black;
     background: #9b9b9b;
+    border-radius: 5px;
 }
 
 /*
