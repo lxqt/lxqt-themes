@@ -338,6 +338,7 @@ TrayIcon {
 QMenu {
     margin: 0px;
     padding: 2px;
+    min-width: 120px;
     border: 1px solid rgba(50, 50, 50, 80%);
     border-bottom-color: rgba(0, 0, 0, 80%);
     border-right-color: rgba(0, 0, 0, 80%);
@@ -368,7 +369,8 @@ QMenu::item {
     border-top-width: 1px;
     border-bottom-width: 1px;
     border-right-width: 5px;
-    padding: 6px 40px 6px 24px;
+    min-width: 120px;
+    padding: 6px;
     background: transparent;
     color: white;
 }

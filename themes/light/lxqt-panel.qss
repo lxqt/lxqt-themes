@@ -92,12 +92,14 @@ QMenu {
     background: palette(window);
     border: 1px solid #AAA;
     border-radius: 2px;
+    min-width: 120px;
     color: palette(text);
 }
 
 QMenu::item {
     color: palette(text);
-    padding: 5px 27px;
+    padding: 5px 7px;
+    min-width: 120px;
 }
 
 QMenu::item:selected {
