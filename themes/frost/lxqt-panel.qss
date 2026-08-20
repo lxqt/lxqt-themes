@@ -73,20 +73,18 @@ LXQtPanelPlugin > QToolButton:pressed {
 QMenu {
     background-color: palette(text);
     padding: 0;
-    min-width: 120px;
 }
 
 QMenu::icon {
     background-color: transparent;
     border: 1px solid transparent;
-    padding-left: 6px;
+    padding: 0 4px;
 }
 
 QMenu::item {
     color: palette(window);
     border: 1px solid transparent;
-    padding: 5px 9px 5px 3px;
-    min-width: 120px;
+    padding: 5px;
 }
 
 QMenu::item:selected {

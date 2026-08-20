@@ -66,7 +66,6 @@ LXQtPanelPlugin > QToolButton:on {
 QMenu {
     background: #003d5b;
     border-radius: 3px;
-    min-width: 120px;
 }
 
 QMenu QToolButton {
@@ -81,7 +80,6 @@ QMenu::item {
     color: #d7e3e6;
     background: #041b27;
     padding: 5px 13px;
-    min-width: 120px;
 }
 
 QMenu::icon {

@@ -19,7 +19,6 @@ QToolTip {
 QMenu {
     background-color: #3c3b37;
     border: 1px solid #515048;
-    min-width: 120px;
 }
 
 QMenu::icon {
@@ -49,7 +48,6 @@ QMenu::right-arrow {
 QMenu::item {
     color: #f2f1f0;
     padding: 7px;
-    min-width: 120px;
 }
 
 QMenu::item:selected {
