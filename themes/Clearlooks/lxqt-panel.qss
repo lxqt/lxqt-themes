@@ -583,7 +583,7 @@ LXQtPanel QSpinBox::down-button:pressed {
 VolumePopup, VolumePopup > QScrollArea {
     color: #000000;
     background: #edeceb;
-    border: 1px solid #aaaaaa;
+    padding: 0 2px;
 }
 
 #Backlight > SliderDialog > QToolButton {

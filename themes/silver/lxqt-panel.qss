@@ -560,15 +560,10 @@ TrayIcon {
     border-top: 2px solid transparent;
 }
 
-VolumePopup QScrollArea {
-    border-top: 1px solid grey;
-}
-
 VolumePopup, VolumePopup QScrollArea, VolumePopup QWidget {
-    margin: 2px;
-    padding: 2px;
     background-color:  #2e2f2f;
     color: #d6d6d6;
+    padding: 0 2px;
 }
 
 VolumePopup QPushButton {

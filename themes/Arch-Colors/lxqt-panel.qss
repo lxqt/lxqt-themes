@@ -378,8 +378,7 @@ StatusNotifierButton {
 VolumePopup, VolumePopup > QScrollArea, VolumePopup QWidget {
     background-color: #041b27;
     color: #e7eff1;
-    margin: 2px;
-    padding: 2px;
+    padding: 0 2px;
 }
 
 VolumePopup QPushButton {

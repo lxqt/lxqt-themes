@@ -59,7 +59,7 @@ LXQtPanelPlugin > QToolButton:pressed {
 VolumePopup, VolumePopup  QScrollArea, VolumePopup QWidget {
     background: hsv(0, 0, 41);
     color: #DEDEDE;
-    margin: 2px;
+    padding: 0 2px;
 }
 
 VolumePopup QPushButton {

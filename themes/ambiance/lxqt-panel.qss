@@ -693,6 +693,7 @@ TrayIcon {
 VolumePopup, VolumePopup > QScrollArea, VolumePopup QWidget {
     background:#3c3b37;
     color: #f2f1f0;
+    padding: 0 2px;
 }
 
 VolumePopup QPushButton {
