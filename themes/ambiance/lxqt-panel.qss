@@ -47,7 +47,7 @@ QMenu::right-arrow {
 
 QMenu::item {
     color: #f2f1f0;
-    padding: 7px 40px 7px 24px;
+    padding: 7px;
 }
 
 QMenu::item:selected {

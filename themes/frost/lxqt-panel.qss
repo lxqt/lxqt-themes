@@ -78,13 +78,13 @@ QMenu {
 QMenu::icon {
     background-color: transparent;
     border: 1px solid transparent;
-    padding-left: 2px;
+    padding: 0 4px;
 }
 
 QMenu::item {
     color: palette(window);
     border: 1px solid transparent;
-    padding: 5px 30px 5px 30px;
+    padding: 5px;
 }
 
 QMenu::item:selected {

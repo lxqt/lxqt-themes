@@ -97,7 +97,7 @@ QMenu {
 
 QMenu::item {
     color: palette(text);
-    padding: 5px 27px;
+    padding: 5px 7px;
 }
 
 QMenu::item:selected {
