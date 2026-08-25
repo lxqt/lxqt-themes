@@ -206,7 +206,7 @@ QMenu QToolButton {
     border: 1px solid transparent;
     border-image: url(assets/menus/menuitem.png);
     margin: 0px;
-    padding 3px;
+    padding: 3px;
 }
 
 QMenu QLineEdit {
