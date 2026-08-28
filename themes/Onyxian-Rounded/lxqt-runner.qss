@@ -119,6 +119,7 @@ QScrollBar::sub-line:vertical {
 
 /* ----------Menu---------- */
 QMenu {
+    color: #dedede;
     background: #202020;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -158,6 +159,7 @@ QMenu::item {
 }
 
 QMenu::item:selected {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
