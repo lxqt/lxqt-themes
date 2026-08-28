@@ -25,6 +25,7 @@ Plugin > QToolButton,
 Plugin > QWidget > QToolButton,
 Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LXQtPanelPlugin > QToolButton {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -48,6 +49,7 @@ LXQtPanelPlugin > QToolButton:pressed {
 
 /* ----------DesktopSwitch---------- */
 #DesktopSwitch {
+    color: #dedede;
     background: transparent;
     margin: 0 2px;
 }
@@ -241,6 +243,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
 
 /* ----------All menus---------- */
 QMenu {
+    color: #dedede;
     background: #202020;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -280,6 +283,7 @@ QMenu::item {
 }
 
 QMenu::item:selected {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -323,6 +327,7 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu QLineEdit {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -333,6 +338,7 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu #AppView {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -351,6 +357,7 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu QListView::item {
+    color: #dedede;
     background: #202020;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -363,6 +370,7 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu QListView::item:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -462,6 +470,7 @@ LXQtFancyMenuWindow {
 }
 
 #MainMenu QLineEdit {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -487,6 +496,7 @@ LXQtFancyMenuWindow {
 }
 
 #MainMenu ActionView::item:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -508,6 +518,7 @@ VolumePopup QScrollArea {
 }
 
 VolumePopup QPushButton {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -558,6 +569,7 @@ VolumePopup QSlider::add-page:horizontal {
 }
 
 #Backlight QToolButton {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -609,6 +621,7 @@ VolumePopup QSlider::add-page:horizontal {
 
 /* ----------WorldClock---------- */
 #WorldClockContent {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -733,6 +746,7 @@ LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
 
 /* ----------Calendar Widget---------- */
 QCalendarWidget QAbstractItemView:enabled {
+    color: #dedede;
     background: #202020;
     border: 1px solid #393939;
 }
