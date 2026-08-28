@@ -528,6 +528,7 @@ VolumePopup QPushButton {
 }
 
 VolumePopup QPushButton:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -638,6 +639,7 @@ VolumePopup QSlider::add-page:horizontal {
 }
 
 #WorldClock QToolButton:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
