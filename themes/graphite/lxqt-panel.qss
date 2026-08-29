@@ -51,7 +51,7 @@ LXQtPanelPlugin > QToolButton:hover {
  * Volume plugin
  */
 
-VolumePopup, VolumePopup QScrollArea, VolumePopup QWidget  {
+VolumePopup, VolumePopup QScrollArea, VolumePopup QWidget {
     background: #303030;
     color: white;
     padding: 0 2px;
@@ -67,7 +67,7 @@ VolumePopup QPushButton {
     qproperty-iconSize: 24px;
 }
 
-VolumePopup QPushButton:hover, VolumePopup QPushButton:on  {
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on {
     border: 1px solid rgba(255, 255, 255, 70%);
     border-radius: 2px;
     background: rgba(255, 255, 255, 20%);
