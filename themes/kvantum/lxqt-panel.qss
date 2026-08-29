@@ -420,11 +420,11 @@ TrayIcon {
     qproperty-icon: url(/lxqt-panel/mainmenu.svg);
 }
 
-LXQtFancyMenuWindow{
+LXQtFancyMenuWindow {
     background: #2E2E2E;
 }
 
-#FancyMenu QLabel  {
+#FancyMenu QLabel {
     color: white;
 }
 
@@ -447,11 +447,11 @@ LXQtFancyMenuWindow{
 }
 
 #FancyMenu #AppView {
-    background:  #4a4a4a;
+    background: #4a4a4a;
 }
 
 #FancyMenu #CategoryView {
-    background:  #343434;
+    background: #343434;
     border-bottom: 1px solid #3c3c3c;
 }
 
@@ -485,7 +485,7 @@ LXQtFancyMenuWindow{
     border-radius: 4px;
     border: 1px solid transparent;
     padding: 4px;
-    background:  #4a4a4a;
+    background: #4a4a4a;
 }
 
 #FancyMenu QToolButton:hover,
