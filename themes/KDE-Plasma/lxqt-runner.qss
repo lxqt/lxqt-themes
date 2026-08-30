@@ -35,7 +35,7 @@ QToolButton::menu-indicator {
     border: 1px solid #9b9b9b;
     border-radius: 0px;
     padding: 3px;
-    selection-color: #eee;;
+    selection-color: #eee;
     selection-background-color: #1e91ff;
 }
 
