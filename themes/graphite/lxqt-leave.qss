@@ -9,5 +9,5 @@ QLabel {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 5px;
-    margin: 5px 50px;
+    margin: 5px 20px;
 }
