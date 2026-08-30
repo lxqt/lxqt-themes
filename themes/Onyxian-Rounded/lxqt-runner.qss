@@ -105,7 +105,7 @@ QMenu::icon {
 }
 
 QMenu QToolButton {
-    color: #dedede;
+    color: #ffffff;
     background: #161616;
     border: 1px solid #393939;
     border-radius: 10px;
