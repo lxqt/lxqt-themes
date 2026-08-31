@@ -350,8 +350,8 @@ LXQtFancyMenuWindow {
     border-radius: 16px;
     margin: 10px 7px;
     padding: 6px 8px;
-    selection-color: black;
-    selection-background-color: #7a7a7a;
+    selection-color: white;
+    selection-background-color: #5a5a5a;
 }
 
 #FancyMenu #AppView {
@@ -495,8 +495,8 @@ LXQtFancyMenuWindow {
     border-radius: 16px;
     margin: 10px 7px;
     padding: 5px 7px;
-    selection-color: black;
-    selection-background-color: #7a7a7a;
+    selection-color: white;
+    selection-background-color: #5a5a5a;
 }
 
 #MainMenu ActionView {

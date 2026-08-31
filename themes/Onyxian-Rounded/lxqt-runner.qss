@@ -52,8 +52,8 @@ QToolButton::menu-indicator {
     border-radius: 16px;
     margin: 2px;
     padding: 6px 8px;
-    selection-color: black;
-    selection-background-color: #7a7a7a;
+    selection-color: white;
+    selection-background-color: #5a5a5a;
 }
 
 /* ----------Search results list---------- */
