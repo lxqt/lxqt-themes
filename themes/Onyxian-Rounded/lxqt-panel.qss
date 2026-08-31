@@ -657,6 +657,7 @@ VolumePopup QSlider::add-page:horizontal {
 }
 
 #WorldClock QToolButton {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
