@@ -499,9 +499,13 @@ LXQtFancyMenuWindow {
     selection-background-color: #5a5a5a;
 }
 
+#MainMenu QListView::focus {
+    outline: transparent;
+}
+
 #MainMenu ActionView {
     color: #dedede;
-    background: #2a2a2a;
+    background: transparent;
     border: none;
 }
 
@@ -560,8 +564,21 @@ VolumePopup QPushButton:pressed {
 }
 
 VolumePopup QPushButton:on {
+    color: #dedede;
     background: #474646;
     border: 1px solid #666666;
+}
+
+VolumePopup QPushButton:hover:on {
+    color: #ffffff;
+    background: #585858;
+    border: 1px solid #888888;
+}
+
+VolumePopup QPushButton:on:pressed {
+    color: #dedede;
+    background: #3c3c3c;
+    border: 1px solid #555555;
 }
 
 VolumePopup QSlider::groove:horizontal {
