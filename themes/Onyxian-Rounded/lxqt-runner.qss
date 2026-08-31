@@ -33,6 +33,7 @@ QToolButton::menu-indicator {
 
 #closeButton:hover,
 #actionButton:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -143,6 +144,7 @@ QMenu::item:disabled {
 }
 
 QMenu::item:pressed {
+    color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }

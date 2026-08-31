@@ -31,11 +31,13 @@ QToolButton {
 }
 
 QToolButton:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
 
 QToolButton:pressed {
+    color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }

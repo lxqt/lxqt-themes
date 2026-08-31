@@ -62,26 +62,31 @@ LXQtPanelPlugin > QToolButton:pressed {
 }
 
 #DesktopSwitch QToolButton:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
 
 #DesktopSwitch QToolButton:pressed {
+    color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }
 
 #DesktopSwitch QToolButton:on {
+    color: #dedede;
     background: #5e5e5e;
     border: 1px solid #929292;
 }
 
 #DesktopSwitch QToolButton:hover:on {
+    color: #ffffff;
     background: #707070;
     border: 1px solid #b4b4b4;
 }
 
 #DesktopSwitch QToolButton:on:pressed {
+    color: #dedede;
     background: #505050;
     border: 1px solid #7c7c7c;
 }
@@ -177,31 +182,37 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
 }
 
 #TaskBar QToolButton:!on {
+    color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
 }
 
 #TaskBar QToolButton:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
 
 #TaskBar QToolButton:pressed {
+    color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }
 
 #TaskBar QToolButton:on {
+    color: #dedede;
     background: #474646;
     border: 1px solid #666666;
 }
 
 #TaskBar QToolButton:hover:on {
+    color: #ffffff;
     background: #585858;
     border: 1px solid #888888;
 }
 
 #TaskBar QToolButton:on:pressed {
+    color: #dedede;
     background: #3c3c3c;
     border: 1px solid #555555;
 }
@@ -297,6 +308,7 @@ QMenu::item:disabled {
 }
 
 QMenu::item:pressed {
+    color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }
@@ -319,6 +331,7 @@ QMenu::indicator:non-exclusive:unchecked {
 }
 
 #FancyMenu:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -378,6 +391,7 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu QListView::item:selected {
+    color: #dedede;
     background: #474646;
     border: 1px solid #666666;
 }
@@ -467,6 +481,7 @@ LXQtFancyMenuWindow {
 }
 
 #MainMenu:hover {
+    color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
@@ -504,6 +519,7 @@ LXQtFancyMenuWindow {
 }
 
 #MainMenu ActionView::item:selected {
+    color: #dedede;
     background: #474646;
     border: 1px solid #666666;
 }
@@ -653,6 +669,7 @@ VolumePopup QSlider::add-page:horizontal {
 }
 
 #WorldClock QToolButton:pressed {
+    color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }
