@@ -1,3 +1,5 @@
+/* Onyxian-Rounded Theme by Ali-v1074 */
+
 /* ----------General panel settings---------- */
 LXQtPanel #BackgroundWidget {
     background: #202020;
