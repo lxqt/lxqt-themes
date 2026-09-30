@@ -438,7 +438,7 @@ LXQtFancyMenuWindow {
     border: 1px solid #666666;
 }
 
-#FancyMenu QListView::focus {
+#FancyMenu QListView:focus {
     outline: transparent;
 }
 
