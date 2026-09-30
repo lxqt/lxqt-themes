@@ -103,7 +103,7 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 /*
- *Backlight Plugin
+ * Backlight Plugin
  */
 
 #Backlight QToolButton {
@@ -230,7 +230,7 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #TaskBar QToolButton {
-    margin: Opx;
+    margin: 0px;
     padding: 2px;
     border: 0px;
 }
@@ -267,6 +267,7 @@ VolumePopup > QSlider::add-page:horizontal {
     border: 1px solid transparent;
     border-radius: 5px;
 }
+
 #TaskBar LXQtGroupPopup LXQtTaskButton:hover {
     color: black;
     background: #9b9b9b;
@@ -545,7 +546,7 @@ LXQtFancyMenuWindow {
 #FancyMenu QListView::item {
     color: #dedede;
     border: 1px solid transparent;
-    padding: 1px 3px ;
+    padding: 1px 3px;
     margin: 1px 6px;
 }
 
@@ -560,12 +561,12 @@ LXQtFancyMenuWindow {
 #FancyMenu QListView::item:selected {
     color: black;
     background: #9b9b9b;
-    margin: 1 6px;
+    margin: 1px 6px;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
-#FancyMenu QListView::focus {
+#FancyMenu QListView:focus {
     outline: transparent;
     padding: 0px;
 }
@@ -592,14 +593,14 @@ LXQtFancyMenuWindow {
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
     width: 15px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px;
     border: 1px solid transparent;
 }
 
 #FancyMenu QScrollBar:horizontal {
     background-color: transparent;
     height: 15px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px;
     border: 1px solid transparent;
 }
 
@@ -711,7 +712,7 @@ LXQtFancyMenuWindow {
  */
 
 #SysStat {
-    padding: 2px 2px 2px 2px;
+    padding: 2px;
     margin: 2px;
 }
 
@@ -791,11 +792,12 @@ LXQtFancyMenuWindow {
 /*
  * CustomCommand Plugin
  */
+
 #Custom {
     margin: 0;
 }
 
-#Custom::hover {
+#Custom:hover {
     background: rgba(255, 255, 255, 10%);
     color: #f9f9f9;
     border: 1px solid transparent;
