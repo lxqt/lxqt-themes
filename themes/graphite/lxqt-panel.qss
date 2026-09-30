@@ -7,8 +7,8 @@ LXQtPanel #BackgroundWidget {
 }
 
 QToolTip {
-    background: palette(tooltip_base);
-    color: palette(tooltip_text);
+    background: palette(tooltip-base);
+    color: palette(tooltip-text);
     padding: 3px;
     margin: 0px;
     border: 1px solid grey;
