@@ -607,7 +607,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:vertical {
     background-color: #7a7a7a;
-    border: 0;
+    border: 0 solid #7a7a7a;
     min-height: 40px;
     border-radius: 3px;
     margin: 1px;
@@ -615,7 +615,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:horizontal {
     background-color: #7a7a7a;
-    border: 0;
+    border: 0 solid #7a7a7a;
     min-width: 40px;
     border-radius: 3px;
     margin: 1px;
@@ -628,14 +628,14 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::add-line:vertical,
 #FancyMenu QScrollBar::sub-line:vertical {
-    border: 0;
+    border: 0 solid transparent;
     background: transparent;
     width: 0;
 }
 
 #FancyMenu QScrollBar::add-line:horizontal,
 #FancyMenu QScrollBar::sub-line:horizontal {
-    border: 0;
+    border: 0 solid transparent;
     background: transparent;
     width: 0;
 }
