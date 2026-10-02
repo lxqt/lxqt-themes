@@ -10,7 +10,7 @@ QToolTip {
     background: palette(tooltip-base);
     color: palette(tooltip-text);
     padding: 3px;
-    margin: 0px;
+    margin: 0;
     border: 1px solid grey;
     border-radius: 5px;
 }
@@ -163,7 +163,7 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #DesktopSwitch QToolButton {
-    margin: 0px;
+    margin: 0;
 }
 
 #DesktopSwitch QToolButton:hover {
@@ -202,13 +202,13 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #QuickLaunch {
-    margin: 0px;
+    margin: 0;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
 #QuickLaunch QToolButton {
-    border: 0px;
+    border: 0;
     padding: 2px;
 }
 
@@ -230,9 +230,9 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #TaskBar QToolButton {
-    margin: 0px;
+    margin: 0;
     padding: 2px;
-    border: 0px;
+    border: 0;
 }
 
 #TaskBar QToolButton:on {
@@ -240,12 +240,12 @@ VolumePopup > QSlider::add-page:horizontal {
     border-right: 1px solid grey;
     border-left: 1px solid grey;
     font: bold;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 #TaskBar QToolButton:hover {
     background: rgba(255, 255, 255, 20%);
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 #TaskBar QToolButton:pressed {
@@ -362,7 +362,7 @@ QCalendarWidget QSpinBox {
  */
 
 QMenu {
-    margin: 0px;
+    margin: 0;
     padding: 2px;
     border: 1px solid grey;
     border-radius: 3px;
@@ -469,7 +469,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 #MainMenu TopLevelMainMenu {
-    margin: 7px 0px;
+    margin: 7px 0;
 }
 
 #MainMenu ActionView {
@@ -568,7 +568,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QListView:focus {
     outline: transparent;
-    padding: 0px;
+    padding: 0;
 }
 
 #FancyMenu QToolButton {
@@ -606,7 +606,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:vertical {
     background-color: #7a7a7a;
-    border: 0px solid #7a7a7a;
+    border: 0;
     min-height: 40px;
     border-radius: 3px;
     margin: 1px;
@@ -614,7 +614,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:horizontal {
     background-color: #7a7a7a;
-    border: 0px solid #7a7a7a;
+    border: 0;
     min-width: 40px;
     border-radius: 3px;
     margin: 1px;
@@ -622,21 +622,21 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:hover {
     background-color: #9b9b9b;
-    margin: 0px;
+    margin: 0;
 }
 
 #FancyMenu QScrollBar::add-line:vertical,
 #FancyMenu QScrollBar::sub-line:vertical {
-    border: 0px solid transparent;
+    border: 0;
     background: transparent;
-    width: 0px;
+    width: 0;
 }
 
 #FancyMenu QScrollBar::add-line:horizontal,
 #FancyMenu QScrollBar::sub-line:horizontal {
-    border: 0px solid transparent;
+    border: 0;
     background: transparent;
-    width: 0px;
+    width: 0;
 }
 
 #FancyMenu QAbstractScrollArea::corner {
@@ -694,7 +694,7 @@ LXQtFancyMenuWindow {
 
 #KbIndicator > QLabel {
     padding: 3px;
-    border: 0px;
+    border: 0;
     font: bold;
 }
 
