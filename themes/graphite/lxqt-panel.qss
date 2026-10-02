@@ -7,10 +7,10 @@ LXQtPanel #BackgroundWidget {
 }
 
 QToolTip {
-    background: palette(tooltip_base);
-    color: palette(tooltip_text);
+    background: palette(tooltip-base);
+    color: palette(tooltip-text);
     padding: 3px;
-    margin: 0px;
+    margin: 0;
     border: 1px solid grey;
     border-radius: 5px;
 }
@@ -103,7 +103,7 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 /*
- *Backlight Plugin
+ * Backlight Plugin
  */
 
 #Backlight QToolButton {
@@ -163,7 +163,7 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #DesktopSwitch QToolButton {
-    margin: 0px;
+    margin: 0;
 }
 
 #DesktopSwitch QToolButton:hover {
@@ -202,13 +202,13 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #QuickLaunch {
-    margin: 0px;
+    margin: 0;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
 #QuickLaunch QToolButton {
-    border: 0px;
+    border: 0;
     padding: 2px;
 }
 
@@ -230,9 +230,9 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 #TaskBar QToolButton {
-    margin: Opx;
+    margin: 0;
     padding: 2px;
-    border: 0px;
+    border: 0;
 }
 
 #TaskBar QToolButton:on {
@@ -240,12 +240,12 @@ VolumePopup > QSlider::add-page:horizontal {
     border-right: 1px solid grey;
     border-left: 1px solid grey;
     font: bold;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 #TaskBar QToolButton:hover {
     background: rgba(255, 255, 255, 20%);
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 #TaskBar QToolButton:pressed {
@@ -267,6 +267,7 @@ VolumePopup > QSlider::add-page:horizontal {
     border: 1px solid transparent;
     border-radius: 5px;
 }
+
 #TaskBar LXQtGroupPopup LXQtTaskButton:hover {
     color: black;
     background: #9b9b9b;
@@ -361,7 +362,7 @@ QCalendarWidget QSpinBox {
  */
 
 QMenu {
-    margin: 0px;
+    margin: 0;
     padding: 2px;
     border: 1px solid grey;
     border-radius: 3px;
@@ -468,7 +469,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 #MainMenu TopLevelMainMenu {
-    margin: 7px 0px;
+    margin: 7px 0;
 }
 
 #MainMenu ActionView {
@@ -491,6 +492,7 @@ QMenu::indicator:non-exclusive:checked {
     border: 1px solid transparent;
     border-radius: 5px;
 }
+
 #MainMenu ActionView::item:selected {
     background: #9b9b9b;
     color: black;
@@ -545,7 +547,7 @@ LXQtFancyMenuWindow {
 #FancyMenu QListView::item {
     color: #dedede;
     border: 1px solid transparent;
-    padding: 1px 3px ;
+    padding: 1px 3px;
     margin: 1px 6px;
 }
 
@@ -560,14 +562,14 @@ LXQtFancyMenuWindow {
 #FancyMenu QListView::item:selected {
     color: black;
     background: #9b9b9b;
-    margin: 1 6px;
+    margin: 1px 6px;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
-#FancyMenu QListView::focus {
+#FancyMenu QListView:focus {
     outline: transparent;
-    padding: 0px;
+    padding: 0;
 }
 
 #FancyMenu QToolButton {
@@ -592,20 +594,20 @@ LXQtFancyMenuWindow {
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
     width: 15px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px;
     border: 1px solid transparent;
 }
 
 #FancyMenu QScrollBar:horizontal {
     background-color: transparent;
     height: 15px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px;
     border: 1px solid transparent;
 }
 
 #FancyMenu QScrollBar::handle:vertical {
     background-color: #7a7a7a;
-    border: 0px solid #7a7a7a;
+    border: 0 solid #7a7a7a;
     min-height: 40px;
     border-radius: 3px;
     margin: 1px;
@@ -613,7 +615,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:horizontal {
     background-color: #7a7a7a;
-    border: 0px solid #7a7a7a;
+    border: 0 solid #7a7a7a;
     min-width: 40px;
     border-radius: 3px;
     margin: 1px;
@@ -621,21 +623,21 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QScrollBar::handle:hover {
     background-color: #9b9b9b;
-    margin: 0px;
+    margin: 0;
 }
 
 #FancyMenu QScrollBar::add-line:vertical,
 #FancyMenu QScrollBar::sub-line:vertical {
-    border: 0px solid transparent;
+    border: 0 solid transparent;
     background: transparent;
-    width: 0px;
+    width: 0;
 }
 
 #FancyMenu QScrollBar::add-line:horizontal,
 #FancyMenu QScrollBar::sub-line:horizontal {
-    border: 0px solid transparent;
+    border: 0 solid transparent;
     background: transparent;
-    width: 0px;
+    width: 0;
 }
 
 #FancyMenu QAbstractScrollArea::corner {
@@ -693,7 +695,7 @@ LXQtFancyMenuWindow {
 
 #KbIndicator > QLabel {
     padding: 3px;
-    border: 0px;
+    border: 0;
     font: bold;
 }
 
@@ -711,7 +713,7 @@ LXQtFancyMenuWindow {
  */
 
 #SysStat {
-    padding: 2px 2px 2px 2px;
+    padding: 2px;
     margin: 2px;
 }
 
@@ -791,11 +793,12 @@ LXQtFancyMenuWindow {
 /*
  * CustomCommand Plugin
  */
+
 #Custom {
     margin: 0;
 }
 
-#Custom::hover {
+#Custom:hover {
     background: rgba(255, 255, 255, 10%);
     color: #f9f9f9;
     border: 1px solid transparent;
