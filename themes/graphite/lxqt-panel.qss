@@ -492,6 +492,7 @@ QMenu::indicator:non-exclusive:checked {
     border: 1px solid transparent;
     border-radius: 5px;
 }
+
 #MainMenu ActionView::item:selected {
     background: #9b9b9b;
     color: black;
