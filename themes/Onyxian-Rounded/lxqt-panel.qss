@@ -856,6 +856,7 @@ QCalendarWidget QAbstractItemView:enabled {
     color: #dedede;
     background: #202020;
     border: 1px solid #393939;
+    selection-color: #ffffff;
 }
 
 QCalendarWidget QWidget {
