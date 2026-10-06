@@ -412,6 +412,11 @@ LXQtFancyMenuWindow {
     selection-background-color: #5a5a5a;
 }
 
+#FancyMenu QLabel {
+    color: #dedede;
+    background: #2a2a2a;
+}
+
 #FancyMenu #AppView {
     color: #dedede;
     background: #2a2a2a;
