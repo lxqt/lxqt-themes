@@ -112,7 +112,7 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
 #DesktopSwitch {
     color: #dedede;
     background: transparent;
-    margin: 0 2px;
+    margin: 0;
 }
 
 #DesktopSwitch QToolButton {
