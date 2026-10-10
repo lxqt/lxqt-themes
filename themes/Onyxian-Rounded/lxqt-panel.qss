@@ -436,6 +436,10 @@ LXQtFancyMenuWindow {
     icon-size: 21px;
 }
 
+#FancyMenu QListView:focus {
+    outline: transparent;
+}
+
 #FancyMenu QListView::item {
     color: #dedede;
     background: #202020;
@@ -461,10 +465,6 @@ LXQtFancyMenuWindow {
     border: 1px solid #666666;
 }
 
-#FancyMenu QListView:focus {
-    outline: transparent;
-}
-
 #FancyMenu QToolButton {
     background: #2a2a2a;
     border: 1px solid #393939;
@@ -476,10 +476,6 @@ LXQtFancyMenuWindow {
 #FancyMenu QToolButton:hover {
     background: #383838;
     border: 1px solid #666666;
-}
-
-#FancyMenu QToolButton:focus {
-    background: transparent;
 }
 
 #FancyMenu QToolButton:pressed {
@@ -556,7 +552,7 @@ LXQtFancyMenuWindow {
     selection-background-color: #5a5a5a;
 }
 
-#MainMenu QListView::focus {
+#MainMenu QListView:focus {
     outline: transparent;
 }
 
