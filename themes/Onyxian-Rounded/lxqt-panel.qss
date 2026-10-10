@@ -862,44 +862,6 @@ VolumePopup QSlider::add-page:horizontal {
     border-radius: 3px;
 }
 
-/* ----------WorldClock---------- */
-#WorldClockContent {
-    color: #dedede;
-    background: #2a2a2a;
-    border: 1px solid #393939;
-    border-radius: 16px;
-    margin: 5px;
-    padding: 7px;
-    font-size: 13px;
-}
-
-#WorldClockContent:hover {
-    color: #ffffff;
-    background: #383838;
-    border: 1px solid #666666;
-}
-
-#WorldClock QToolButton {
-    color: #dedede;
-    background: #2a2a2a;
-    border: 1px solid #393939;
-    border-radius: 16px;
-    margin: 4px 6px;
-    padding: 3px 7px;
-}
-
-#WorldClock QToolButton:hover {
-    color: #ffffff;
-    background: #383838;
-    border: 1px solid #666666;
-}
-
-#WorldClock QToolButton:pressed {
-    color: #dedede;
-    background: #303030;
-    border: 1px solid #4a4a4a;
-}
-
 /* ----------Mount plugin---------- */
 #LXQtMountPopup {
     background: #202020;
@@ -998,6 +960,44 @@ LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
     border: 1px solid #4a4a4a;
 }
 
+/* ----------WorldClock---------- */
+#WorldClockContent {
+    color: #dedede;
+    background: #2a2a2a;
+    border: 1px solid #393939;
+    border-radius: 16px;
+    margin: 5px;
+    padding: 7px;
+    font-size: 13px;
+}
+
+#WorldClockContent:hover {
+    color: #ffffff;
+    background: #383838;
+    border: 1px solid #666666;
+}
+
+#WorldClock QToolButton {
+    color: #dedede;
+    background: #2a2a2a;
+    border: 1px solid #393939;
+    border-radius: 16px;
+    margin: 4px 6px;
+    padding: 3px 7px;
+}
+
+#WorldClock QToolButton:hover {
+    color: #ffffff;
+    background: #383838;
+    border: 1px solid #666666;
+}
+
+#WorldClock QToolButton:pressed {
+    color: #dedede;
+    background: #303030;
+    border: 1px solid #4a4a4a;
+}
+
 /* ----------Calendar Widget---------- */
 QCalendarWidget QAbstractItemView:enabled {
     color: #dedede;
@@ -1031,6 +1031,16 @@ QCalendarWidget QSpinBox {
     margin: 4px;
 }
 
+/* ----------Show Desktop---------- */
+#ShowDesktop {
+    qproperty-icon: url(/assets/icons/show-desktop.svg);
+}
+
+/* ----------DOM---------- */
+#DomPlugin QToolButton {
+    qproperty-icon: url(/assets/icons/plugins.svg);
+}
+
 /* ----------SysStat---------- */
 #SysStat {
     margin: 2px;
@@ -1055,9 +1065,4 @@ QCalendarWidget QSpinBox {
     qproperty-swapUsedColor: rgb(128, 0, 0);
     qproperty-netReceivedColor: rgb(0, 0, 128);
     qproperty-netTransmittedColor: rgb(128, 128, 0);
-}
-
-/* ----------DOM---------- */
-#DomPlugin QToolButton {
-    qproperty-icon: url(/assets/icons/plugins.svg);
 }
