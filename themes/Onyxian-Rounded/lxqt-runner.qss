@@ -23,12 +23,12 @@ QToolButton::menu-indicator {
 }
 
 #closeButton {
-    qproperty-icon: url(/assets/icons/window-close.svg);
+    qproperty-icon: url(/assets/navigation/window-close.svg);
 }
 
 #actionButton {
     padding: 7px 9px;
-    qproperty-icon: url(/assets/icons/go-down.svg);
+    qproperty-icon: url(/assets/navigation/go-down.svg);
 }
 
 #closeButton:hover,
