@@ -27,7 +27,7 @@ QToolButton {
     border-radius: 8px;
     margin-right: 8px;
     padding: 3px 3px 3px 7px;
-    qproperty-icon: url(/assets/icons/window-close.svg);
+    qproperty-icon: url(/assets/navigation/window-close.svg);
 }
 
 QToolButton:hover {

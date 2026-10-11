@@ -393,7 +393,7 @@ QMenu::indicator:non-exclusive:unchecked {
 
 /* ----------Fancy Menu---------- */
 #FancyMenu {
-    qproperty-icon: url(/assets/Menu/Menu.svg);
+    qproperty-icon: url(/assets/icons/Menu.svg);
 }
 
 LXQtFancyMenuWindow {
@@ -538,7 +538,7 @@ LXQtFancyMenuWindow {
 
 /* ----------Main menu---------- */
 #MainMenu {
-    qproperty-icon: url(/assets/Menu/Menu.svg);
+    qproperty-icon: url(/assets/icons/Menu.svg);
 }
 
 #MainMenu QLineEdit {
@@ -585,7 +585,7 @@ LXQtFancyMenuWindow {
 
 /* ----------Wing Menu---------- */
 #WingMenuPlugin {
-    qproperty-icon: url(/assets/Menu/Menu.svg);
+    qproperty-icon: url(/assets/icons/Menu.svg);
 }
 
 #WingMenuPlugin QWidget {
@@ -1018,11 +1018,11 @@ QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
 }
 
 QCalendarWidget #qt_calendar_nextmonth {
-    qproperty-icon: url(/assets/calendar-popup/go-next.svg);
+    qproperty-icon: url(/assets/navigation/go-next.svg);
 }
 
 QCalendarWidget #qt_calendar_prevmonth {
-    qproperty-icon: url(/assets/calendar-popup/go-previous.svg);
+    qproperty-icon: url(/assets/navigation/go-previous.svg);
 }
 
 QCalendarWidget QSpinBox {
