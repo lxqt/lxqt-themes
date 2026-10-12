@@ -112,7 +112,7 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
 #DesktopSwitch {
     color: #dedede;
     background: transparent;
-    margin: 0;
+    margin: 0 2px;
 }
 
 #DesktopSwitch QToolButton {
@@ -1039,6 +1039,11 @@ QCalendarWidget QSpinBox {
 /* ----------DOM---------- */
 #DomPlugin QToolButton {
     qproperty-icon: url(/assets/icons/plugins.svg);
+}
+
+/* ----------Directory Menu---------- */
+#DirectoryMenu {
+    qproperty-icon: url(/assets/icons/directory-menu.svg);
 }
 
 /* ----------SysStat---------- */
