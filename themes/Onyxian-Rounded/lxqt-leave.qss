@@ -1,16 +1,16 @@
-/* ----------Main dialog window---------- */
+/* ---------- Main dialog window ---------- */
 QDialog {
     background: #202020;
     border: 1px solid #393939;
 }
 
-/* ----------Caption colors---------- */
+/* ---------- Caption colors ---------- */
 QLabel {
     color: #dedede;
     margin: 17px 0 3px;
 }
 
-/* ----------Session action buttons---------- */
+/* ---------- Session action buttons ---------- */
 QAbstractItemView {
     background: #2a2a2a;
     /* note: must use solid color 1px .png image for bg color */
@@ -20,7 +20,7 @@ QAbstractItemView {
     margin: 0 10px;
 }
 
-/* ----------Confirmation dialog buttons---------- */
+/* ---------- Confirmation dialog buttons ---------- */
 QToolButton {
     background: #2a2a2a;
     border: 1px solid #393939;

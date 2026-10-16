@@ -18,7 +18,7 @@
 */
 /* Onyxian-Rounded Theme by Ali-v1074 */
 
-/* ----------General panel settings---------- */
+/* ---------- General panel settings ---------- */
 LXQtPanel #BackgroundWidget {
     background: #202020;
     border: 1px solid #393939;
@@ -35,7 +35,7 @@ QToolTip {
     padding: 4px;
 }
 
-/* ----------General plugins settings---------- */
+/* ---------- General plugins settings ---------- */
 Plugin,
 LXQtPanelPlugin {
     qproperty-moveMarkerColor: #b8a000;
@@ -55,7 +55,13 @@ LXQtPanelPlugin > QToolButton {
 
 Plugin > QToolButton:hover,
 Plugin > QWidget > QToolButton:hover,
-LXQtPanelPlugin > QToolButton:hover {
+LXQtPanelPlugin > QToolButton:hover,
+LXQtPanel[position="Left"] Plugin > QToolButton:hover,
+LXQtPanel[position="Left"] Plugin > QWidget > QToolButton:hover,
+LXQtPanel[position="Left"] LXQtPanelPlugin > QToolButton:hover,
+LXQtPanel[position="Right"] Plugin > QToolButton:hover,
+LXQtPanel[position="Right"] Plugin > QWidget > QToolButton:hover,
+LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:hover {
     color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
@@ -63,13 +69,19 @@ LXQtPanelPlugin > QToolButton:hover {
 
 Plugin > QToolButton:pressed,
 Plugin > QWidget > QToolButton:pressed,
-LXQtPanelPlugin > QToolButton:pressed {
+LXQtPanelPlugin > QToolButton:pressed,
+LXQtPanel[position="Left"] Plugin > QToolButton:pressed,
+LXQtPanel[position="Left"] Plugin > QWidget > QToolButton:pressed,
+LXQtPanel[position="Left"] LXQtPanelPlugin > QToolButton:pressed,
+LXQtPanel[position="Right"] Plugin > QToolButton:pressed,
+LXQtPanel[position="Right"] Plugin > QWidget > QToolButton:pressed,
+LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
     color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }
 
-/* General plugins settings - Vertical Panel (Left/Right) */
+/* General plugins settings - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] Plugin > QToolButton,
 LXQtPanel[position="Left"] Plugin > QWidget > QToolButton,
 LXQtPanel[position="Left"] Plugin > QWidget > QToolButton > QWidget > QToolButton,
@@ -86,87 +98,90 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton {
     padding: 5px 7px;
 }
 
-LXQtPanel[position="Left"] Plugin > QToolButton:hover,
-LXQtPanel[position="Left"] Plugin > QWidget > QToolButton:hover,
-LXQtPanel[position="Left"] LXQtPanelPlugin > QToolButton:hover,
-LXQtPanel[position="Right"] Plugin > QToolButton:hover,
-LXQtPanel[position="Right"] Plugin > QWidget > QToolButton:hover,
-LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:hover {
-    color: #ffffff;
-    background: #383838;
-    border: 1px solid #666666;
-}
-
-LXQtPanel[position="Left"] Plugin > QToolButton:pressed,
-LXQtPanel[position="Left"] Plugin > QWidget > QToolButton:pressed,
-LXQtPanel[position="Left"] LXQtPanelPlugin > QToolButton:pressed,
-LXQtPanel[position="Right"] Plugin > QToolButton:pressed,
-LXQtPanel[position="Right"] Plugin > QWidget > QToolButton:pressed,
-LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
-    color: #dedede;
-    background: #303030;
-    border: 1px solid #4a4a4a;
-}
-
-/* ----------Desktop Switch---------- */
-#DesktopSwitch {
+/* ---------- Desktop Switch ---------- */
+#DesktopSwitch,
+LXQtPanel[position="Left"] #DesktopSwitch,
+LXQtPanel[position="Right"] #DesktopSwitch {
     color: #dedede;
     background: transparent;
-    margin: 0 2px;
+    border: 1px solid #393939;
+    border-radius: 16px;
+    margin: 5px;
+    padding: 0;
 }
 
 #DesktopSwitch QToolButton {
     color: #dedede;
-    margin: 5px;
-    padding: 7px 8px;
+    background: transparent;
+    border: 0;
+    border-radius: 16px;
+    margin: 0;
+    padding: 0 7px;
 }
 
-#DesktopSwitch QToolButton:hover {
+#DesktopSwitch QToolButton:hover,
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:hover,
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:hover {
     color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
 
-#DesktopSwitch QToolButton:pressed {
+#DesktopSwitch QToolButton:pressed,
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:pressed,
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:pressed {
     color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
 }
 
-#DesktopSwitch QToolButton:on {
+#DesktopSwitch QToolButton:on,
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:on,
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:on {
     color: #ffffff;
     background: #5e5e5e;
     border: 1px solid #929292;
 }
 
-#DesktopSwitch QToolButton:hover:on {
+#DesktopSwitch QToolButton:hover:on,
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:hover:on,
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:hover:on {
     color: #ffffff;
     background: #707070;
     border: 1px solid #b4b4b4;
 }
 
-#DesktopSwitch QToolButton:on:pressed {
+#DesktopSwitch QToolButton:on:pressed,
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:on:pressed,
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:on:pressed {
     color: #dedede;
     background: #505050;
     border: 1px solid #7c7c7c;
 }
 
 #DesktopSwitch QToolButton[urgent="true"],
-#DesktopSwitch QToolButton:on[urgent="true"] {
+#DesktopSwitch QToolButton:on[urgent="true"],
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton[urgent="true"],
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton[urgent="true"],
+LXQtPanel[position="Left"] #DesktopSwitch QToolButton:on[urgent="true"],
+LXQtPanel[position="Right"] #DesktopSwitch QToolButton:on[urgent="true"] {
     color: #FFB4B4;
     background: #5a2828;
     border: 1px solid #8b3a3a;
 }
 
-/* Desktop Switch - Vertical Panel (Left/Right) */
+/* Desktop Switch - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] #DesktopSwitch QToolButton,
 LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
     color: #dedede;
-    margin: 5px 3px;
-    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-radius: 16px;
+    margin: 0;
+    padding: 5px 0;
 }
 
-/* ----------QuickLaunch---------- */
+/* ---------- Quick Launch ---------- */
 #QuickLaunchPlaceHolder {
     color: #dedede;
     background: transparent;
@@ -190,17 +205,21 @@ LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
     padding: 0 5px 0 6px;
 }
 
-#QuickLaunch QToolButton:hover {
+#QuickLaunch QToolButton:hover,
+LXQtPanel[position="Left"] #QuickLaunch QToolButton:hover,
+LXQtPanel[position="Right"] #QuickLaunch QToolButton:hover {
     background: #383838;
     border: 1px solid #666666;
 }
 
-#QuickLaunch QToolButton:pressed {
+#QuickLaunch QToolButton:pressed,
+LXQtPanel[position="Left"] #QuickLaunch QToolButton:pressed,
+LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
     background: #303030;
     border: 1px solid #4a4a4a;
 }
 
-/* QuickLaunch - Vertical Panel (Left/Right) */
+/* QuickLaunch - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] #QuickLaunchPlaceHolder,
 LXQtPanel[position="Right"] #QuickLaunchPlaceHolder {
     color: #dedede;
@@ -228,19 +247,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
     padding: 5px 0;
 }
 
-LXQtPanel[position="Left"] #QuickLaunch QToolButton:hover,
-LXQtPanel[position="Right"] #QuickLaunch QToolButton:hover {
-    background: #383838;
-    border: 1px solid #666666;
-}
-
-LXQtPanel[position="Left"] #QuickLaunch QToolButton:pressed,
-LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
-    background: #303030;
-    border: 1px solid #4a4a4a;
-}
-
-/* ----------Taskbar---------- */
+/* ---------- Taskbar ---------- */
 #TaskBar QToolButton {
     background: transparent;
     border: 1px solid #393939;
@@ -297,7 +304,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
     border-radius: 16px;
 }
 
-/* ----------Spacer---------- */
+/* ---------- Spacer ---------- */
 #Spacer {
     background-position: center center;
 }
@@ -322,7 +329,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
     margin: 0 6px;
 }
 
-/* ----------All menus---------- */
+/* ---------- All menus ---------- */
 QMenu {
     color: #dedede;
     background: #202020;
@@ -393,7 +400,7 @@ QMenu::indicator:non-exclusive:unchecked {
     image: url(/assets/radio-buttons/radio-unchecked.svg);
 }
 
-/* ----------Fancy Menu---------- */
+/* ---------- Fancy Menu ---------- */
 #FancyMenu {
     qproperty-icon: url(/assets/icons/Menu.svg);
 }
@@ -538,7 +545,7 @@ LXQtFancyMenuWindow {
     background: transparent;
 }
 
-/* ----------Main menu---------- */
+/* ---------- Main Menu ---------- */
 #MainMenu {
     qproperty-icon: url(/assets/icons/Menu.svg);
 }
@@ -585,7 +592,7 @@ LXQtFancyMenuWindow {
     border: 1px solid #666666;
 }
 
-/* ----------Volume plugin---------- */
+/* ---------- Volume Plugin ---------- */
 VolumePopup {
     background: #202020;
     border: 1px solid #393939;
@@ -662,7 +669,7 @@ VolumePopup QSlider::add-page:horizontal {
     border-radius: 3px;
 }
 
-/* ----------Backlight Plugin---------- */
+/* ---------- Backlight Plugin ---------- */
 #Backlight {
     qproperty-icon: url(/assets/icons/brightness.svg);
 }
@@ -718,7 +725,7 @@ VolumePopup QSlider::add-page:horizontal {
     border-radius: 3px;
 }
 
-/* ----------Mount plugin---------- */
+/* ---------- Mount Plugin ---------- */
 #LXQtMountPopup {
     background: #202020;
     border: 1px solid #393939;
@@ -751,7 +758,7 @@ VolumePopup QSlider::add-page:horizontal {
     margin: 10px;
 }
 
-/* ----------Color Picker---------- */
+/* ---------- Color Picker ---------- */
 #ColorPickerPlugin {
     background: #2a2a2a;
     border: 1px solid #393939;
@@ -769,18 +776,26 @@ VolumePopup QSlider::add-page:horizontal {
 }
 
 #ColorPickerPickerButton:hover,
-#ColorPickerColorButton:hover {
+#ColorPickerColorButton:hover,
+LXQtPanel[position="Left"] #ColorPickerPickerButton:hover,
+LXQtPanel[position="Left"] #ColorPickerColorButton:hover,
+LXQtPanel[position="Right"] #ColorPickerPickerButton:hover,
+LXQtPanel[position="Right"] #ColorPickerColorButton:hover {
     background: #383838;
     border: 1px solid #666666;
 }
 
 #ColorPickerPickerButton:pressed,
-#ColorPickerColorButton:pressed {
+#ColorPickerColorButton:pressed,
+LXQtPanel[position="Left"] #ColorPickerPickerButton:pressed,
+LXQtPanel[position="Left"] #ColorPickerColorButton:pressed,
+LXQtPanel[position="Right"] #ColorPickerPickerButton:pressed,
+LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
     background: #303030;
     border: 1px solid #4a4a4a;
 }
 
-/* ColorPicker - Vertical Panel (Left/Right) */
+/* ColorPicker - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] #ColorPickerPlugin,
 LXQtPanel[position="Right"] #ColorPickerPlugin {
     background: #2a2a2a;
@@ -800,23 +815,7 @@ LXQtPanel[position="Right"] #ColorPickerColorButton {
     padding: 5px 0;
 }
 
-LXQtPanel[position="Left"] #ColorPickerPickerButton:hover,
-LXQtPanel[position="Left"] #ColorPickerColorButton:hover,
-LXQtPanel[position="Right"] #ColorPickerPickerButton:hover,
-LXQtPanel[position="Right"] #ColorPickerColorButton:hover {
-    background: #383838;
-    border: 1px solid #666666;
-}
-
-LXQtPanel[position="Left"] #ColorPickerPickerButton:pressed,
-LXQtPanel[position="Left"] #ColorPickerColorButton:pressed,
-LXQtPanel[position="Right"] #ColorPickerPickerButton:pressed,
-LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
-    background: #303030;
-    border: 1px solid #4a4a4a;
-}
-
-/* ----------WorldClock---------- */
+/* ---------- World Clock ---------- */
 #WorldClockContent {
     color: #dedede;
     background: #2a2a2a;
@@ -854,7 +853,7 @@ LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
     border: 1px solid #4a4a4a;
 }
 
-/* ----------Calendar Widget---------- */
+/* ---------- Calendar Widget ---------- */
 QCalendarWidget QAbstractItemView:enabled {
     color: #dedede;
     background: #202020;
@@ -887,22 +886,22 @@ QCalendarWidget QSpinBox {
     margin: 4px;
 }
 
-/* ----------Show Desktop---------- */
+/* ---------- Show Desktop ---------- */
 #ShowDesktop {
     qproperty-icon: url(/assets/icons/show-desktop.svg);
 }
 
-/* ----------DOM---------- */
+/* ---------- DOM ---------- */
 #DomPlugin QToolButton {
     qproperty-icon: url(/assets/icons/plugins.svg);
 }
 
-/* ----------Directory Menu---------- */
+/* ---------- Directory Menu ---------- */
 #DirectoryMenu {
     qproperty-icon: url(/assets/icons/directory-menu.svg);
 }
 
-/* ----------SysStat---------- */
+/* ---------- SysStat ---------- */
 #SysStat {
     margin: 2px;
     padding: 2px;
