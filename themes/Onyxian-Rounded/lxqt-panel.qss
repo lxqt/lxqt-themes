@@ -116,6 +116,7 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
 }
 
 #DesktopSwitch QToolButton {
+    color: #dedede;
     margin: 5px;
     padding: 7px 8px;
 }
@@ -160,6 +161,7 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
 /* Desktop Switch - Vertical Panel (Left/Right) */
 LXQtPanel[position="Left"] #DesktopSwitch QToolButton,
 LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
+    color: #dedede;
     margin: 5px 3px;
     padding: 5px;
 }
