@@ -1,4 +1,4 @@
-/* ----------Panel---------- */
+/* ---------- Panel ---------- */
 #panel {
     background: #202020;
     border: 1px solid #393939;
@@ -7,7 +7,7 @@
     padding: 5px;
 }
 
-/* ----------Buttons---------- */
+/* ---------- Buttons ---------- */
 QToolButton::menu-indicator {
     image: none;
 }
@@ -44,7 +44,7 @@ QToolButton::menu-indicator {
     border: 1px solid #4a4a4a;
 }
 
-/* ----------Search line-edit---------- */
+/* ---------- Search line-edit ---------- */
 #commandEd {
     color: #dedede;
     background: #2a2a2a;
@@ -56,7 +56,7 @@ QToolButton::menu-indicator {
     selection-background-color: #5a5a5a;
 }
 
-/* ----------Search results list---------- */
+/* ---------- Search results list ---------- */
 #commandList {
     color: #dedede;
     background: #202020;
@@ -90,7 +90,7 @@ QToolButton::menu-indicator {
     border: 1px solid #888888;
 }
 
-/* ----------Menu---------- */
+/* ---------- Menu ---------- */
 QMenu {
     color: #dedede;
     background: #202020;
