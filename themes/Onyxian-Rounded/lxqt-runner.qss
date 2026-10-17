@@ -115,12 +115,6 @@ QMenu QToolButton {
     font-weight: bold;
 }
 
-QMenu::separator {
-    background: #4c4c4c;
-    margin: 5px;
-    height: 1px;
-}
-
 QMenu::item {
     color: #dedede;
     background: #2a2a2a;
@@ -137,26 +131,8 @@ QMenu::item:selected {
     border: 1px solid #666666;
 }
 
-QMenu::item:disabled {
-    color: #666666;
-    background: #222222;
-    border: 1px solid #303030;
-}
-
 QMenu::item:pressed {
     color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
-}
-
-QMenu::indicator {
-    margin-left: 8px;
-}
-
-QMenu::indicator:non-exclusive:checked {
-    image: url(/assets/radio-buttons/radio-checked.svg);
-}
-
-QMenu::indicator:non-exclusive:unchecked {
-    image: url(/assets/radio-buttons/radio-unchecked.svg);
 }
