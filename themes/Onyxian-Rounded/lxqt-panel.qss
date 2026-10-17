@@ -190,7 +190,9 @@ LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
     font-size: 11px;
 }
 
-#QuickLaunch {
+#QuickLaunch,
+LXQtPanel[position="Left"] #QuickLaunch,
+LXQtPanel[position="Right"] #QuickLaunch {
     background: transparent;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -201,7 +203,7 @@ LXQtPanel[position="Right"] #DesktopSwitch QToolButton {
 #QuickLaunch QToolButton {
     background: transparent;
     border: none;
-    margin: 0 2px;
+    margin: 0;
     padding: 0 5px 0 6px;
 }
 
@@ -230,21 +232,12 @@ LXQtPanel[position="Right"] #QuickLaunchPlaceHolder {
     font-size: 11px;
 }
 
-LXQtPanel[position="Left"] #QuickLaunch,
-LXQtPanel[position="Right"] #QuickLaunch {
-    background: transparent;
-    border: 1px solid #393939;
-    border-radius: 16px;
-    margin: 5px;
-    padding: 0;
-}
-
 LXQtPanel[position="Left"] #QuickLaunch QToolButton,
 LXQtPanel[position="Right"] #QuickLaunch QToolButton {
     background: transparent;
     border: none;
-    margin: 2px 0;
-    padding: 5px 0;
+    margin: 0;
+    padding: 5px 0 4px 0;
 }
 
 /* ---------- Taskbar ---------- */
@@ -905,7 +898,9 @@ VolumePopup QSlider::add-page:horizontal {
 }
 
 /* ---------- Color Picker ---------- */
-#ColorPickerPlugin {
+#ColorPickerPlugin,
+LXQtPanel[position="Left"] #ColorPickerPlugin,
+LXQtPanel[position="Right"] #ColorPickerPlugin {
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 16px;
@@ -942,15 +937,6 @@ LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
 }
 
 /* ColorPicker - Vertical Panel (Left/Right): different margin/padding only */
-LXQtPanel[position="Left"] #ColorPickerPlugin,
-LXQtPanel[position="Right"] #ColorPickerPlugin {
-    background: #2a2a2a;
-    border: 1px solid #393939;
-    border-radius: 16px;
-    margin: 5px;
-    padding: 0;
-}
-
 LXQtPanel[position="Left"] #ColorPickerPickerButton,
 LXQtPanel[position="Left"] #ColorPickerColorButton,
 LXQtPanel[position="Right"] #ColorPickerPickerButton,
