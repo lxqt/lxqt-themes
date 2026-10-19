@@ -1,0 +1,14 @@
+<svg version="1.1" width="5" height="15" viewBox="0 0 5 15" xmlns="http://www.w3.org/2000/svg"><defs>
+	<linearGradient id="infill" x1="0" y1="0" x2="1" y2="0">
+		<stop offset="0%" stop-color="#bed4ef"/>
+		<stop offset="49%" stop-color="#b3cceb"/>
+		<stop offset="50%" stop-color="#acc7e8"/>
+		<stop offset="100%" stop-color="#a1bfe3"/>
+	</linearGradient>
+</defs><g transform="translate(5, 0) rotate(90)">
+
+
+  <rect x="0.5" y="0.5" width="14" height="4" stroke="#5e7ea5" stroke-width="1px" fill="none"/>
+  <rect x="1.5" y="1.5" width="12" height="2" stroke="url(#infill)" stroke-width="1px" fill="none"/>
+
+</g></svg>
