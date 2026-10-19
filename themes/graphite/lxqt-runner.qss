@@ -41,7 +41,7 @@ QToolButton::menu-indicator {
 }
 
 /*
- *Search line-edit
+ * Search line-edit
  */
 
 #commandEd {
@@ -56,7 +56,7 @@ QToolButton::menu-indicator {
 }
 
 /*
- *Search results list
+ * Search results list
  */
 
 #commandList {
@@ -113,7 +113,6 @@ QMenu {
 QMenu::icon {
     background-color: transparent;
     margin: 0 5px;
-
 }
 
 QMenu QToolButton {
@@ -132,7 +131,7 @@ QMenu::separator {
 QMenu::item {
     background: transparent;
     color: #dedede;
-    margin: 1 6px;
+    margin: 1px 6px;
     border: 1px solid transparent;
     border-radius: 5px;
     padding: 6px 40px 6px 16px;
@@ -141,7 +140,7 @@ QMenu::item {
 QMenu::item:selected {
     background: #7a7a7a;
     color: #dedede;
-    margin: 1 6px;
+    margin: 1px 6px;
     border: 1px solid grey;
     border-radius: 5px;
 }

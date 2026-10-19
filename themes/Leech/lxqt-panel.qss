@@ -327,7 +327,7 @@ LXQtFancyMenuWindow {
 }
 
 /* Sliders */
-#Backlight QSlider, VolumePopup QSlider {
+#Backlight QSlider {
     color: #e0e0e0;
     background: transparent;
     min-width: 24px;
@@ -335,7 +335,12 @@ LXQtFancyMenuWindow {
     margin: 4px 0px;
 }
 
-#Backlight QSlider::handle, VolumePopup QSlider::handle {
+ VolumePopup QSlider {
+    color: #e0e0e0;
+    background: transparent;
+}
+
+#Backlight QSlider::handle {
     background: #000000;
     background-image: url(assets/scrollbars/grip-v.png);
     background-repeat: no-repeat;
@@ -345,6 +350,19 @@ LXQtFancyMenuWindow {
     border-radius: 2px;
     width: 14px;
     height: 31px;
+    margin: -1px;
+}
+
+VolumePopup QSlider::handle {
+    background: #000000;
+    background-image: url(assets/scrollbars/grip-v.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    border: 1px solid #707070;
+    border-radius: 2px;
+    width: 31px;
+    height: 14px;
     margin: -1px;
 }
 
@@ -358,10 +376,16 @@ LXQtFancyMenuWindow {
     border: 1px solid #7b7b88;
 }
 
-#Backlight QSlider::groove, VolumePopup QSlider::groove,
-#Backlight QSlider::sub-page, VolumePopup QSlider::sub-page {
+#Backlight QSlider::groove,
+#Backlight QSlider::sub-page {
     border: 1px solid #494949;
     width: 12px;
+}
+
+VolumePopup QSlider::groove,
+VolumePopup QSlider::sub-page:horizontal {
+    border: 1px solid #494949;
+    height: 12px;
 }
 
 /* Scrollbars */
@@ -607,7 +631,6 @@ LXQtPanel QSpinBox::up-button:pressed {
 }
 
 /* Volume and Backlight controls */
-VolumePopup,
 #Backlight > SliderDialog {
     color: #ffffff;
     background: #000000;
@@ -617,24 +640,36 @@ VolumePopup,
     min-height: 140px;
 }
 
-VolumePopup > QPushButton,
+VolumePopup {
+    color: #ffffff;
+    background: #000000;
+    border: 1px solid #2f2f2f;
+    padding: 4px;
+}
+
+VolumePopup  QScrollArea, VolumePopup QWidget {
+    color: #ffffff;
+    background: #000000;
+}
+
+VolumePopup QPushButton,
 #Backlight > SliderDialog > QToolButton {
     color: #e0e0e0;
     background: qlineargradient(x1:0, x2:0, y1:0, y2:1, stop:0 #000000, stop:0.89 #000000, stop:0.9 #030303, stop:1 #141414);
     border: 1px solid #555555;
     border-radius: 3px;
-    margin: 2px;
     padding: 2px;
+    margin: 2px;
 }
 
-VolumePopup > QPushButton:hover,
+VolumePopup QPushButton:hover, VolumePopup QPushButton:on,
 #Backlight > SliderDialog > QToolButton:hover {
     color: #e0e0e0;
     background: qlineargradient(x1:0, x2:0, y1:0, y2:1, stop:0 #16162f, stop:0.89 #16162f, stop:0.9 #191931, stop:1 #28283f);
     border: 1px solid #636372;
 }
 
-VolumePopup > QPushButton:pressed,
+VolumePopup QPushButton:pressed,
 #Backlight > SliderDialog > QToolButton:pressed {
     color: #e0e0e0;
     background: qlineargradient(x1:0, x2:0, y1:0, y2:1, stop:0 #3e3e4a, stop:0.19 #181928, stop:0.2 #0f101f, stop:0.8 #0f101f, stop:0.81 #121322, stop:1 #1c1d2b);

@@ -80,7 +80,7 @@ QToolButton:hover {
 
 #commandList::item:selected {
     background: #1899da;
-    color: white
+    color: white;
 }
 
 /*

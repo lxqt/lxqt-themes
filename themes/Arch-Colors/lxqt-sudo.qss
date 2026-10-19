@@ -14,9 +14,9 @@
 #descCommandL,
 #commandL,
 #descPasswordL {
-    color: #f1f7f9
+    color: #f1f7f9;
 }
 
 #errorL {
-    color: #989995
+    color: #989995;
 }
