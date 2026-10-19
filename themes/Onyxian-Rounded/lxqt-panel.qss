@@ -808,6 +808,18 @@ VolumePopup QSlider::add-page:horizontal {
     border-radius: 3px;
 }
 
+/* RTL-specific styles */
+VolumePopup[layoutDirection="1"] QSlider::sub-page:horizontal {
+    background: #2a2a2a;
+    border: 1px solid #393939;
+    border-radius: 3px;
+}
+
+VolumePopup[layoutDirection="1"] QSlider::add-page:horizontal {
+    background: #545454;
+    border-radius: 3px;
+}
+
 /* ---------- Backlight Plugin ---------- */
 #Backlight {
     qproperty-icon: url(/assets/icons/brightness.svg);
