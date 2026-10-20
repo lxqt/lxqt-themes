@@ -152,7 +152,7 @@ VolumePopup > QSlider::add-page:horizontal {
 }
 
 /*
- * Desktopswitch
+ * DesktopSwitch
  */
 
 #DesktopSwitch {
@@ -308,9 +308,11 @@ QCalendarWidget #qt_calendar_navigationbar * {
 QCalendarWidget #qt_calendar_monthbutton,
 QCalendarWidget #qt_calendar_yearbutton {
     margin: 2px;
+    padding: 2px;
 }
 
-QCalendarWidget #qt_calendar_monthbutton:hover {
+QCalendarWidget #qt_calendar_monthbutton:hover,
+QCalendarWidget #qt_calendar_yearbutton:hover {
     border: 1px solid rgba(0, 0, 0, 50%);
     background: rgba(255, 255, 255, 20%);
     border-radius: 5px;
