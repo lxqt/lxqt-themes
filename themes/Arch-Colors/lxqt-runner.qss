@@ -64,13 +64,13 @@ QToolButton:hover {
 }
 
 #commandList::item {
-     background: #041b27;
-     color: #cfcfcf;
+    background: #041b27;
+    color: #cfcfcf;
 }
 
 #commandList::item:alternate {
-     background: #062a3c;
-     color: #cfcfcf;
+    background: #062a3c;
+    color: #cfcfcf;
 }
 
 #commandList::item:hover {
@@ -105,11 +105,11 @@ QMenu::icon {
 
 QMenu::item:selected {
     background: #1899da;
-    color:#0a0a2b;
+    color: #0a0a2b;
 }
 
 QMenu::item:disabled {
-     color: rgba(215, 227, 230, 50%);
+    color: rgba(215, 227, 230, 50%);
 }
 
 QMenu::separator {

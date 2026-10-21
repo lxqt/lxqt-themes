@@ -8,12 +8,12 @@ Notification {
     margin: 0px;
 }
 
-/* message */
+/* Message */
 QLabel {
     color: #e5f3f9;
 }
 
-/* title */
+/* Title */
 #appLabel {
     color: #1899da;
 }
