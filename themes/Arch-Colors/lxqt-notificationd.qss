@@ -3,6 +3,7 @@
  */
 Notification {
     background: #041b27;
+    border: 1px solid #1899da;
     border-radius: 4px;
     padding: 1px;
     margin: 0px;
@@ -22,9 +23,14 @@ QToolButton {
     padding: 4px;
 }
 
+QToolButton:hover {
+    background: #364952;
+    border-radius: 4px;
+}
+
 QToolButton:pressed {
     background: #1899da;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 #closeButton {

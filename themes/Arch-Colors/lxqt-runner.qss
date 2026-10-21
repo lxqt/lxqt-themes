@@ -19,13 +19,18 @@ QToolButton::menu-indicator {
 QToolButton {
     margin: 0px;
     border: 0px solid transparent;
-    padding: 0px;
+    padding: 5px;
     qproperty-iconSize: 20px;
 }
 
 QToolButton:hover {
-    margin: 1px;
-    padding: 1px;
+    background: #364952;
+    border-radius: 4px;
+}
+
+QToolButton:pressed {
+    background: #1899da;
+    border-radius: 4px;
 }
 
 #closeButton {
