@@ -1,4 +1,4 @@
-/*Dark Arch Colors Theme by stefonarch (standreas@riseup.net)*/
+/* Dark Arch Colors Theme by stefonarch (standreas@riseup.net) */
 
 /* Panel */
 LXQtPanel #BackgroundWidget {
@@ -26,7 +26,7 @@ LXQtPanelPlugin {
 
 Plugin > QWidget,
 Plugin > QWidget > QWidget {
-/*  color: #cbc4c4; */
+    /* color: #cbc4c4; */
 }
 
 Plugin > QToolButton,
@@ -97,7 +97,6 @@ QMenu::item:disabled {
     color: #5b6d73;
 }
 
-
 QMenu::right-arrow {
     image: url(arrow-right.svg);
 }
@@ -131,7 +130,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 /*
- * Mainmenu
+ * MainMenu
  */
 #MainMenu {
     qproperty-icon: url(mainmenu.svg);
@@ -150,7 +149,7 @@ QMenu::indicator:non-exclusive:checked {
  */
 #MainMenu QLineEdit {
     color: white;
-    background:  #041b27;
+    background: #041b27;
     padding: 5px;
     border: none;
 }
@@ -184,7 +183,7 @@ QMenu::indicator:non-exclusive:checked {
 }
 
 /*
- * Fancymenu
+ * FancyMenu
  */
 #FancyMenu {
     qproperty-icon: url(mainmenu.svg);
@@ -213,7 +212,7 @@ LXQtFancyMenuWindow {
 
 #FancyMenu QListView::item {
     color: #d7e3e6;
-    padding: 5px 3px 5px 3px;
+    padding: 5px 3px;
     border: 0px;
 }
 
@@ -231,14 +230,14 @@ LXQtFancyMenuWindow {
     color: #000000;
 }
 
-#FancyMenu QListView::focus {
-    outline:transparent;
+#FancyMenu QListView:focus {
+    outline: transparent;
     padding: 0px;
 }
 
 #FancyMenu QLineEdit {
     color: white;
-    background:  #041b27;
+    background: #041b27;
     padding: 3px;
     border: none;
 }
@@ -264,14 +263,14 @@ LXQtFancyMenuWindow {
 #FancyMenu QScrollBar:vertical {
     background-color: transparent;
     width: 15px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px;
     border: 1px solid transparent;
 }
 
 #FancyMenu QScrollBar:horizontal {
     background-color: transparent;
     height: 15px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px;
     border: 1px solid transparent;
 }
 
@@ -407,7 +406,6 @@ VolumePopup QSlider::handle:horizontal {
     background: #1899da;
     border-radius: 2px;
     margin: -5px 0; /* expand outside the groove */
-
 }
 
 VolumePopup QSlider::add-page:horizontal {
@@ -437,16 +435,14 @@ VolumePopup QSlider::add-page:horizontal {
  */
 
 /* date of actual month */
-QCalendarWidget QAbstractItemView:enabled
-{
+QCalendarWidget QAbstractItemView:enabled {
     color: #d7e3e6;
     selection-background-color: #1899da;
     selection-color: #f8f8f8;
 }
 
 /* date previous/next month */
-QCalendarWidget QAbstractItemView:disabled
-{
+QCalendarWidget QAbstractItemView:disabled {
     color: #6f6969;
 }
 
@@ -529,7 +525,6 @@ QCalendarWidget QSpinBox {
 
 #DesktopSwitch QToolButton:hover {
     background: #1899da;
-
 }
 
 #DesktopSwitch QToolButton:on {
@@ -546,7 +541,7 @@ QCalendarWidget QSpinBox {
 }
 
 /*
- * Quicklaunch
+ * QuickLaunch
  */
 #QuickLaunchPlaceHolder {
     color: #e7f4f8;
@@ -573,14 +568,14 @@ QCalendarWidget QSpinBox {
 
 /* not working
 #LXQtMountPopup {
-   background-color:#99bac6;
-   padding: 4px;
+    background-color: #99bac6;
+    padding: 4px;
 }
-#LXQtMountPopup  >  MenuDiskItem {
-   border-radius: 0px;
+#LXQtMountPopup > MenuDiskItem {
+    border-radius: 0px;
 }
-#LXQtMountPopup  >  MenuDiskItem:hover {
-   background:black;
+#LXQtMountPopup > MenuDiskItem:hover {
+    background: black;
 } */
 
 #LXQtMountPopup #EjectButton,
@@ -591,7 +586,6 @@ QCalendarWidget QSpinBox {
     border: 1px solid transparent;
     border-radius: 1px;
     padding: 4px;
-    border: 1px solid #445256;
 }
 
 #LXQtMountPopup #EjectButton:hover,
@@ -636,10 +630,10 @@ QCalendarWidget QSpinBox {
 /*
  * Backlight Plugin
  */
-
 #BacklightPlugin QToolButton:hover {
     background: #1899da;
 }
+
 #Backlight > SliderDialog > QToolButton {
     margin: 2px;
     padding: 2px;
@@ -672,8 +666,6 @@ QCalendarWidget QSpinBox {
     margin: 0 -4px; /* expand outside the groove */
 }
 
-#Backlight > SliderDialog > QSlider::add-page:vertical {}
-
 #Backlight > SliderDialog > QSlider::sub-page:vertical {
     background: rgba(0, 0, 0, 80%);
     border-radius: 3px;
@@ -689,11 +681,10 @@ QCalendarWidget QSpinBox {
 /*
  * CustomCommand Plugin
  */
-
 #Custom {
     color: white;
 }
 
-#Custom::hover {
+#Custom:hover {
     color: #d7e3e6;
 }
