@@ -20,24 +20,27 @@ QToolButton::menu-indicator {
 #closeButton {
     qproperty-icon: url(lxqt-runner/close.svg);
     margin: 2px;
+    padding: 2px;
     qproperty-iconSize: 24px;
 }
 
 #closeButton:hover,
 #actionButton:hover {
+    background: rgba(255, 255, 255, 20%);
     border: 1px solid grey;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 #actionButton {
     qproperty-icon: url(lxqt-runner/down-arrow.svg);
     qproperty-iconSize: 24px;
     margin: 2px;
+    padding: 2px;
 }
 
+#closeButton:pressed,
 #actionButton:pressed {
-    border: 1px solid rgba(0, 0, 0, 50%);
-    background: rgba(255, 255, 255, 20%);
+    background: rgba(0, 0, 0, 30%);
 }
 
 /*
