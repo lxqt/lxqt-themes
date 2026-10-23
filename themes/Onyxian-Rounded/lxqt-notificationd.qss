@@ -1,17 +1,17 @@
 /* ---------- Popup ---------- */
 Notification {
-    color: #dedede;
     background: #202020;
     border: 1px solid #393939;
     border-radius: 16px;
 }
 
-QLabel {
-    color: #dedede;
+#appLabel {
+    color: #ffffff;
+    font-weight: bold;
 }
 
-#appLabel {
-    font-weight: bold;
+QLabel {
+    color: #dedede;
 }
 
 QToolButton {
