@@ -621,7 +621,7 @@ LXQtFancyMenuWindow {
     border: 1px solid #393939;
     border-radius: 16px;
     margin: 4px 6px;
-    padding: 0 7px;
+    padding: 5px 7px;
 }
 
 #WingMenuPlugin #CategoryButton:checked {
@@ -659,7 +659,7 @@ LXQtFancyMenuWindow {
     border: 1px solid #393939;
     border-radius: 16px;
     margin: 4px;
-    padding: 0 7px;
+    padding: 5px 7px;
 }
 
 #WingMenuPlugin QToolButton:hover {
