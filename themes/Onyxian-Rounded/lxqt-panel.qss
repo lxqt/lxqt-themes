@@ -597,6 +597,7 @@ LXQtFancyMenuWindow {
 #WingMenuPlugin > QWidget {
     border: 1px solid #393939;
     border-radius: 16px;
+    padding: 13px;
 }
 
 #WingMenuPlugin QLineEdit {
@@ -622,6 +623,7 @@ LXQtFancyMenuWindow {
     border-radius: 16px;
     margin: 4px 6px;
     padding: 5px 7px;
+    padding-right: 29px;
 }
 
 #WingMenuPlugin #CategoryButton:checked {
