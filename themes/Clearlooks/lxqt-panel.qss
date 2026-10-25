@@ -816,7 +816,7 @@ LXQtPanel QSpinBox::down-button:pressed {
 }
 
 #WorldClockContent {
-    padding: 6px;
+    padding: 0px 6px;
 }
 
 /* System Monitors and Graphs */
