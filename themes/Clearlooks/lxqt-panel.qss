@@ -68,6 +68,7 @@ QToolTip {
     color: #1a1a1a;
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.12 #d5d3d2, stop:0.13 #d8d6d4, stop:0.4 #cfcdcb, stop:0.5 #cbc8c6, stop:1 #c0bdba);
     border: 1px solid #888582;
+	padding: 1px -1px -1px 1px;
 }
 
 /* Launchers */
@@ -99,6 +100,7 @@ QToolTip {
     color: #1a1a1a;
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ccc9c7, stop:0.12 #d5d3d2, stop:0.13 #d8d6d4, stop:0.49 #cfcdcb, stop:0.5 #cbc8c6, stop:1 #c0bdba);
     border: 1px solid #888582;
+	padding: 1px -1px -1px 1px;
 }
 
 /* Taskbar and Desktop Switcher */
@@ -194,10 +196,10 @@ QMenu::indicator::non-exclusive:unchecked { image: url(assets/boxes/unchecked.sv
 QMenu::indicator::non-exclusive:checked:selected { image: url(assets/boxes/checked-selected.svg); }
 QMenu::indicator::non-exclusive:unchecked:selected { image: url(assets/boxes/unchecked-selected.svg); }
 
-QMenu::left-arrow {image: url(assets/arrows/arrow-left.svg);}
-QMenu::right-arrow {image: url(assets/arrows/arrow-right.svg);}
-QMenu::left-arrow:selected {image: url(assets/arrows/arrow-left-selected.svg);}
-QMenu::right-arrow:selected {image: url(assets/arrows/arrow-right-selected.svg);}
+QMenu::left-arrow {image: url(assets/arrows/arrow-left.svg); padding-left: 4px;}
+QMenu::right-arrow {image: url(assets/arrows/arrow-right.svg); padding-right: 4px;}
+QMenu::left-arrow:selected {image: url(assets/arrows/arrow-left-selected.svg); padding-left: 4px;}
+QMenu::right-arrow:selected {image: url(assets/arrows/arrow-right-selected.svg); padding-right: 4px;}
 
 QMenu QToolButton {
     color: #ffffff;
@@ -594,7 +596,7 @@ VolumePopup,
 VolumePopup QScrollArea {
     color: #1a1a1a;
     background: #edeceb;
-    border: 1px solid #aaaaaa;
+	padding: 2px;
 }
 VolumePopup QPushButton {
     color: #1a1a1a;
@@ -645,7 +647,7 @@ VolumePopup QSlider::groove:horizontal {
     color: transparent;
 	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d3d1ce, stop:0.5 #d6d4d2, stop:1 #dad8d6);
     height: 3px;
-	border: 1px solid #597ca7;
+	border: 1px solid #878481;
 }
 
 VolumePopup QSlider::sub-page:horizontal {

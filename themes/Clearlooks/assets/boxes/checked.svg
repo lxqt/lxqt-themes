@@ -6,56 +6,7 @@
   <rect x="1" y="1" rx="1" ry="1" width="12" height="12" stroke="none" fill="#787571"/>
   <rect x="2" y="2" rx="1" ry="1" width="10" height="10" stroke="none" fill="#ffffff"/>
 
-  <rect x="2" y="6" width="1" height="2" stroke="none" fill="#a2a2a2"/>
-  <rect x="3" y="8" width="1" height="1" stroke="none" fill="#a2a2a2"/>
-  <rect x="4" y="9" width="1" height="1" stroke="none" fill="#a2a2a2"/>
-  <rect x="5" y="10" width="1" height="1" stroke="none" fill="#a2a2a2"/>
-
-  <rect x="6" y="11" width="1" height="1" stroke="none" fill="#e9e9e9"/>
-
-  <rect x="7" y="9" width="1" height="1" stroke="none" fill="#dedede"/>
-
-  <rect x="7" y="8" width="1" height="1" stroke="none" fill="#797979"/>
-
-  <rect x="8" y="7" width="1" height="1" stroke="none" fill="#dfdfdf"/>
-
-  <rect x="8" y="6" width="1" height="1" stroke="none" fill="#565656"/>
-
-  <rect x="9" y="5" width="1" height="1" stroke="none" fill="#919191"/>
-  <rect x="10" y="4" width="1" height="1" stroke="none" fill="#979797"/>
-  <rect x="11" y="3" width="1" height="1" stroke="none" fill="#c5c5c5"/>
-
-  <rect x="10" y="2" width="1" height="1" stroke="none" fill="#9f9f9f"/>
-
-  <rect x="9" y="2" width="1" height="1" stroke="none" fill="#efefef"/>
-
-  <rect x="8" y="3" width="1" height="1" stroke="none" fill="#e1e1e1"/>
-
-  <rect x="7" y="4" width="1" height="1" stroke="none" fill="#f0f0f0"/>
-  <rect x="7" y="5" width="1" height="1" stroke="none" fill="#6e6e6e"/>
-  <rect x="6" y="6" width="1" height="1" stroke="none" fill="#c3c3c3"/>
-  <rect x="5" y="7" width="1" height="1" stroke="none" fill="#e1e1e1"/>
-  <rect x="4" y="6" width="1" height="1" stroke="none" fill="#e2e2e2"/>
-  <rect x="3" y="5" width="1" height="1" stroke="none" fill="#f4f4f4"/>
-
-  <rect x="3" y="7" width="1" height="1" stroke="none" fill="#1b1b1b"/>
-  <rect x="4" y="8" width="1" height="1" stroke="none" fill="#1b1b1b"/>
-
-  <rect x="5" y="8" width="2" height="2" stroke="none" fill="#1a1a1a"/>
-
-  <rect x="7" y="7" width="1" height="1" stroke="none" fill="#1a1a1a"/>
-  <rect x="7" y="6" width="1" height="1" stroke="none" fill="#1b1b1b"/>
-
-  <rect x="8" y="5" width="1" height="1" stroke="none" fill="#1a1a1a"/>
-  <rect x="9" y="4" width="1" height="1" stroke="none" fill="#1a1a1a"/>
-  <rect x="10" y="3" width="1" height="1" stroke="none" fill="#1a1a1a"/>
-
-  <rect x="8" y="4" width="1" height="1" stroke="none" fill="#3a3a3a"/>
-  <rect x="9" y="3" width="1" height="1" stroke="none" fill="#3c3c3c"/>
-
-  <rect x="3" y="6" width="1" height="1" stroke="none" fill="#373737"/>
-  <rect x="4" y="7" width="1" height="1" stroke="none" fill="#363636"/>
-  <rect x="6" y="7" width="1" height="1" stroke="none" fill="#444444"/>
-  <rect x="6" y="10" width="1" height="1" stroke="none" fill="#4e4e4e"/>
+  <path d="M 3 6 L 7 10.5" stroke="#000000" stroke-width="2px" fill="none"/>
+  <path d="M 7 10 A 4 7 30 0 1 11 3" stroke="#000000" stroke-width="1.5px" fill="none"/>
 
 </svg>
