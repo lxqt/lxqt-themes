@@ -85,7 +85,7 @@ QToolTip {
     background: transparent;
     border: 1px solid transparent;
     border-radius: 3px;
-    margin: 0px 0px 1px 0px;
+    margin: 1px;
 }
 
 #ShowDesktop:hover,
