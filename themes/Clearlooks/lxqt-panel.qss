@@ -874,3 +874,18 @@ LXQtPanel QSpinBox::down-button:pressed {
 #KbIndicator #ScrollLockLabel:enabled {color: #1a1a1a; font: bold;}
 #KbIndicator #ScrollLockLabel:!enabled {color: #1a1a1a; font: normal;}
 #KbIndicator #ScrollLockLabel:disabled {color: #a0a0a0; font: normal;}
+
+/* Mount plugin */
+#LXQtMountPopup {
+    color: #1a1a1a;
+    background: #edeceb;
+}
+
+#LXQtMountPopup #DiskButton,
+#LXQtMountPopup #EjectButton {
+    margin: 1px;
+}
+
+#LXQtMountPopup #NoDiskLabel {
+    padding: 2px;
+}
