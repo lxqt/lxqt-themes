@@ -754,6 +754,10 @@ VolumePopup QPushButton {
     qproperty-iconSize: 23px;
 }
 
+VolumePopup QPushButton:focus {
+    outline: transparent;
+}
+
 VolumePopup QPushButton:hover {
     color: #ffffff;
     background: #383838;
