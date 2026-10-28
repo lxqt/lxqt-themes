@@ -242,8 +242,6 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
 
 /* ---------- Taskbar ---------- */
 #TaskBar QToolButton {
-    background: transparent;
-    border: 1px solid #393939;
     border-radius: 16px;
     margin: 5px;
     padding: 7px;
