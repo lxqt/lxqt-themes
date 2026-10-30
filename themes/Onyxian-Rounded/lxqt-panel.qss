@@ -18,7 +18,7 @@
 */
 /* Onyxian-Rounded Theme by Ali-v1074 */
 
-/* ---------- General panel settings ---------- */
+/* ---------- General Panel Settings ---------- */
 LXQtPanel #BackgroundWidget {
     background: #202020;
     border: 1px solid #393939;
@@ -35,7 +35,7 @@ QToolTip {
     padding: 4px;
 }
 
-/* ---------- General plugins settings ---------- */
+/* ---------- General Plugins Settings ---------- */
 Plugin,
 LXQtPanelPlugin {
     qproperty-moveMarkerColor: #b8a000;
@@ -81,7 +81,7 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton:pressed {
     border: 1px solid #4a4a4a;
 }
 
-/* General plugins settings - Vertical Panel (Left/Right): different margin/padding only */
+/* General Plugins Settings - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] Plugin > QToolButton,
 LXQtPanel[position="Left"] Plugin > QWidget > QToolButton,
 LXQtPanel[position="Left"] Plugin > QWidget > QToolButton > QWidget > QToolButton,
@@ -221,7 +221,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton:pressed {
     border: 1px solid #4a4a4a;
 }
 
-/* QuickLaunch - Vertical Panel (Left/Right): different margin/padding only */
+/* Quick Launch - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] #QuickLaunchPlaceHolder,
 LXQtPanel[position="Right"] #QuickLaunchPlaceHolder {
     color: #dedede;
@@ -240,7 +240,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
     padding: 5px 0 4px 0;
 }
 
-/* ---------- Taskbar ---------- */
+/* ---------- Task Bar ---------- */
 #TaskBar QToolButton {
     border-radius: 16px;
     margin: 5px;
@@ -320,7 +320,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
     margin: 0 6px;
 }
 
-/* ---------- All menus ---------- */
+/* ---------- All Menus ---------- */
 QMenu {
     color: #dedede;
     background: #202020;
@@ -393,7 +393,7 @@ QMenu::indicator:non-exclusive:unchecked {
 
 /* ---------- Fancy Menu ---------- */
 #FancyMenu {
-    qproperty-icon: url(/assets/icons/Menu.svg);
+    qproperty-icon: url(/assets/icons/menu.svg);
 }
 
 LXQtFancyMenuWindow {
@@ -538,7 +538,7 @@ LXQtFancyMenuWindow {
 
 /* ---------- Main Menu ---------- */
 #MainMenu {
-    qproperty-icon: url(/assets/icons/Menu.svg);
+    qproperty-icon: url(/assets/icons/menu.svg);
 }
 
 #MainMenu QLineEdit {
@@ -585,7 +585,7 @@ LXQtFancyMenuWindow {
 
 /* ---------- Wing Menu ---------- */
 #WingMenuPlugin {
-    qproperty-icon: url(/assets/icons/Menu.svg);
+    qproperty-icon: url(/assets/icons/menu.svg);
 }
 
 #WingMenuPlugin QWidget {
@@ -952,7 +952,7 @@ LXQtPanel[position="Right"] #ColorPickerColorButton:pressed {
     border: 1px solid #4a4a4a;
 }
 
-/* ColorPicker - Vertical Panel (Left/Right): different margin/padding only */
+/* Color Picker - Vertical Panel (Left/Right): different margin/padding only */
 LXQtPanel[position="Left"] #ColorPickerPickerButton,
 LXQtPanel[position="Left"] #ColorPickerColorButton,
 LXQtPanel[position="Right"] #ColorPickerPickerButton,

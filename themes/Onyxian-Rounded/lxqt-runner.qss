@@ -44,7 +44,7 @@ QToolButton::menu-indicator {
     border: 1px solid #4a4a4a;
 }
 
-/* ---------- Search line-edit ---------- */
+/* ---------- Search Line-Edit ---------- */
 #commandEd {
     color: #dedede;
     background: #2a2a2a;
@@ -56,7 +56,7 @@ QToolButton::menu-indicator {
     selection-background-color: #5a5a5a;
 }
 
-/* ---------- Search results list ---------- */
+/* ---------- Search Results List ---------- */
 #commandList {
     color: #dedede;
     background: #202020;
