@@ -1,3 +1,19 @@
+lxqt-themes-2.5.0 / 2026-11-05
+===============================
+ * Removed wallpaper symlink from Silver theme.
+ * Removed top/bottom padding, margins and borders in volume popup.
+ * Lowered excessive menu-item padding.
+ * Fixed two typos.
+ * Fixed inconsistent semicolons on last lines of QSS blocks.
+ * Corrected spacing inconsistencies and semicolon duplicates in several themes.
+ * Fixed taskbar group popup for small panels.
+ * Fixed formatting issues in `lxqt-panel.qss`.
+ * Added 'on' state styling to plugin-volume of Clearlooks and Ambiance.
+ * Added some padding to Ambiance.
+ * Improved the QCalendarWidget style of Graphite.
+ * Refactored Clearlooks theme to support SVG images.
+ * Updated the address of Free Software Foundation.
+
 lxqt-themes-2.4.0 / 2026-04-20
 ===============================
  * Fix unreadable timezones popup in Frost theme.
