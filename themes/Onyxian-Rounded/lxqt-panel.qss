@@ -18,6 +18,14 @@
 */
 /* Onyxian-Rounded Theme by Ali-v1074 */
 
+/* ---------- General Font Settings ---------- */
+* {
+    font-family: "Noto Sans";
+    font-size: 11pt;
+    font-style: normal;
+    font-weight: normal;
+}
+
 /* ---------- General Panel Settings ---------- */
 LXQtPanel #BackgroundWidget {
     background: #202020;
@@ -380,7 +388,7 @@ QMenu::item:pressed {
 }
 
 QMenu::indicator {
-    margin-left: 6px;
+    margin: 0 6px;
 }
 
 QMenu::indicator:non-exclusive:checked {
@@ -1032,6 +1040,15 @@ QCalendarWidget QSpinBox {
     background: #2a2a2a;
     border: 1px solid #393939;
     margin: 4px;
+}
+
+/* RTL-specific styles */
+QCalendarWidget[layoutDirection="1"] #qt_calendar_nextmonth {
+    qproperty-icon: url(/assets/navigation/go-previous.svg);
+}
+
+QCalendarWidget[layoutDirection="1"] #qt_calendar_prevmonth {
+    qproperty-icon: url(/assets/navigation/go-next.svg);
 }
 
 /* ---------- Show Desktop ---------- */
