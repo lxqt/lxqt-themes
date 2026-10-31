@@ -628,8 +628,14 @@ LXQtFancyMenuWindow {
     border: 1px solid #393939;
     border-radius: 16px;
     margin: 4px 6px;
-    padding: 5px 7px;
+    padding: 5px 6px;
     padding-right: 29px;
+}
+
+/* RTL-specific styles */
+#WingMenuPlugin[layoutDirection="1"] #CategoryButton {
+    padding: 5px 6px;
+    padding-left: 29px;
 }
 
 #WingMenuPlugin #CategoryButton:checked {
@@ -1036,12 +1042,6 @@ QCalendarWidget #qt_calendar_prevmonth {
     qproperty-icon: url(/assets/navigation/go-previous.svg);
 }
 
-QCalendarWidget QSpinBox {
-    background: #2a2a2a;
-    border: 1px solid #393939;
-    margin: 4px;
-}
-
 /* RTL-specific styles */
 QCalendarWidget[layoutDirection="1"] #qt_calendar_nextmonth {
     qproperty-icon: url(/assets/navigation/go-previous.svg);
@@ -1049,6 +1049,12 @@ QCalendarWidget[layoutDirection="1"] #qt_calendar_nextmonth {
 
 QCalendarWidget[layoutDirection="1"] #qt_calendar_prevmonth {
     qproperty-icon: url(/assets/navigation/go-next.svg);
+}
+
+QCalendarWidget QSpinBox {
+    background: #2a2a2a;
+    border: 1px solid #393939;
+    margin: 4px;
 }
 
 /* ---------- Show Desktop ---------- */
