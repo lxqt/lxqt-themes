@@ -18,19 +18,11 @@
 */
 /* Onyxian-Rounded Theme by Ali-v1074 */
 
-/* ---------- General Font Settings ---------- */
-* {
-    font-family: "Noto Sans";
-    font-size: 11pt;
-    font-style: normal;
-    font-weight: normal;
-}
-
 /* ---------- General Panel Settings ---------- */
 LXQtPanel #BackgroundWidget {
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 20px;
     margin: 8px;
 }
 
@@ -38,7 +30,7 @@ QToolTip {
     color: #dedede;
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 1px;
     padding: 4px;
 }
@@ -56,7 +48,7 @@ LXQtPanelPlugin > QToolButton {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 7px 6px;
 }
@@ -101,9 +93,9 @@ LXQtPanel[position="Right"] LXQtPanelPlugin > QToolButton {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
-    padding: 5px 7px;
+    padding: 4px 7px;
 }
 
 /* ---------- Desktop Switch ---------- */
@@ -113,7 +105,7 @@ LXQtPanel[position="Right"] #DesktopSwitch {
     color: #dedede;
     background: transparent;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 0;
 }
@@ -203,7 +195,7 @@ LXQtPanel[position="Left"] #QuickLaunch,
 LXQtPanel[position="Right"] #QuickLaunch {
     background: transparent;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 0;
 }
@@ -211,6 +203,7 @@ LXQtPanel[position="Right"] #QuickLaunch {
 #QuickLaunch QToolButton {
     background: transparent;
     border: none;
+    border-radius: 16px;
     margin: 0;
     padding: 0 5px 0 6px;
 }
@@ -250,7 +243,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
 
 /* ---------- Task Bar ---------- */
 #TaskBar QToolButton {
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 7px;
 }
@@ -300,7 +293,7 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
 #TaskBar LXQtGroupPopup {
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 
 /* ---------- Spacer ---------- */
@@ -333,7 +326,7 @@ QMenu {
     color: #dedede;
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 20px;
     margin: 0;
     padding: 12px;
 }
@@ -388,7 +381,12 @@ QMenu::item:pressed {
 }
 
 QMenu::indicator {
-    margin: 0 6px;
+    margin: 0 0 0 6px;
+}
+
+/* RTL-specific styles */
+QMenu::indicator[layoutDirection="1"] {
+    margin: 0 6px 0 0;
 }
 
 QMenu::indicator:non-exclusive:checked {
@@ -413,7 +411,7 @@ LXQtFancyMenuWindow {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 10px 7px;
     padding: 6px 8px;
     selection-color: white;
@@ -429,7 +427,7 @@ LXQtFancyMenuWindow {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin-left: 8px;
     padding: 6px 3px;
     icon-size: 21px;
@@ -438,7 +436,7 @@ LXQtFancyMenuWindow {
 #FancyMenu QListView {
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin-right: 7px;
     padding: 6px 0 6px 3px;
     icon-size: 21px;
@@ -452,11 +450,11 @@ LXQtFancyMenuWindow {
     color: #dedede;
     background: #202020;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 2px 6px;
-    padding: 1px 0;
-    min-width: 145px;
-    max-width: 145px;
+    padding: 1px 3px;
+    min-width: 137px;
+    max-width: 137px;
     min-height: 25px;
     max-height: 25px;
 }
@@ -476,9 +474,10 @@ LXQtFancyMenuWindow {
 #FancyMenu QToolButton {
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 4px;
-    padding: 3px 5px;
+    padding: 3px 4px 3px 5px;
+    qproperty-iconSize: 26px;
 }
 
 #FancyMenu QToolButton:hover {
@@ -553,7 +552,7 @@ LXQtFancyMenuWindow {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 10px 7px;
     padding: 5px 7px;
     selection-color: white;
@@ -574,7 +573,7 @@ LXQtFancyMenuWindow {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 7px;
     padding: 4px 3px 4px 10px;
 }
@@ -606,9 +605,9 @@ VolumePopup QPushButton {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 4px 6px;
-    padding: 7px;
+    padding: 6px 5px;
     qproperty-iconSize: 23px;
 }
 
@@ -693,7 +692,7 @@ VolumePopup[layoutDirection="1"] QSlider::add-page:horizontal {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 5px;
 }
@@ -747,15 +746,15 @@ VolumePopup[layoutDirection="1"] QSlider::add-page:horizontal {
 }
 
 #LXQtMountPopup > MenuDiskItem {
-    padding: 20px;
+    padding: 11px 6px;
 }
 
 #LXQtMountPopup > MenuDiskItem > QToolButton {
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
-    margin-left: 7px;
-    padding: 10px;
+    border-radius: 17px;
+    margin: 0 5px;
+    padding: 7px;
 }
 
 #LXQtMountPopup > MenuDiskItem > QToolButton:hover {
@@ -779,7 +778,7 @@ LXQtPanel[position="Left"] #ColorPickerPlugin,
 LXQtPanel[position="Right"] #ColorPickerPlugin {
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 0;
 }
@@ -788,6 +787,7 @@ LXQtPanel[position="Right"] #ColorPickerPlugin {
 #ColorPickerColorButton {
     background: transparent;
     border: none;
+    border-radius: 16px;
     margin: 0;
     padding: 0 5px;
 }
@@ -820,7 +820,7 @@ LXQtPanel[position="Right"] #ColorPickerColorButton {
     background: transparent;
     border: none;
     margin: 0;
-    padding: 5px 0;
+    padding: 4px 0;
 }
 
 /* ---------- World Clock ---------- */
@@ -828,7 +828,7 @@ LXQtPanel[position="Right"] #ColorPickerColorButton {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px;
     padding: 7px;
     font-size: 13px;
