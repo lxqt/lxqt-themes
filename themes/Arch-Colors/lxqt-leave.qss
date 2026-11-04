@@ -1,0 +1,18 @@
+/* Main dialog window */
+QDialog {
+    background: #041b27;
+    border: 2px solid #1899da;
+}
+
+/* Caption colors */
+QLabel {
+    color: #fcf7f7;
+    margin: 15px 0 3px;
+}
+
+/* Session action buttons */
+QAbstractItemView {
+    color: #fcf7f7;
+    /* note: must use solid color 1px .png image for bg color */
+    background-image: url(/lxqt-leave/background.png);
+}
