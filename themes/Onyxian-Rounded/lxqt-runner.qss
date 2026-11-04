@@ -2,7 +2,7 @@
 #panel {
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 20px;
     margin: 8px 0;
     padding: 5px;
 }
@@ -16,7 +16,7 @@ QToolButton::menu-indicator {
 #actionButton {
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 4px 6px;
     padding: 7px 8px;
     qproperty-iconSize: 16px;
@@ -49,7 +49,7 @@ QToolButton::menu-indicator {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 2px;
     padding: 6px 8px;
     selection-color: white;
@@ -61,7 +61,7 @@ QToolButton::menu-indicator {
     color: #dedede;
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 20px;
     selection-color: white;
     alternate-background-color: transparent;
@@ -71,7 +71,7 @@ QToolButton::menu-indicator {
     color: #dedede;
     background: #2a2a2a;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 17px;
     margin: 5px 0;
 }
 
@@ -95,7 +95,7 @@ QMenu {
     color: #dedede;
     background: #202020;
     border: 1px solid #393939;
-    border-radius: 16px;
+    border-radius: 20px;
     margin: 0;
     padding: 12px;
 }
@@ -103,16 +103,6 @@ QMenu {
 QMenu::icon {
     background: transparent;
     padding-left: 12px;
-}
-
-QMenu QToolButton {
-    color: #ffffff;
-    background: #161616;
-    border: 1px solid #393939;
-    border-radius: 10px;
-    margin: 8px 5px;
-    padding: 8px;
-    font-weight: bold;
 }
 
 QMenu::item {
