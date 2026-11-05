@@ -418,9 +418,13 @@ LXQtFancyMenuWindow {
     selection-background-color: #5a5a5a;
 }
 
-#FancyMenu QLabel {
-    color: #dedede;
-    background: #2a2a2a;
+#FancyMenu #CategoryView {
+    background: #202020;
+    border: 1px solid #393939;
+    border-radius: 17px;
+    margin: 0 7px;
+    padding: 6px 0 6px 3px;
+    icon-size: 21px;
 }
 
 #FancyMenu #AppView {
@@ -433,13 +437,33 @@ LXQtFancyMenuWindow {
     icon-size: 21px;
 }
 
-#FancyMenu #CategoryView {
+#FancyMenu #CategoryView::item,
+#FancyMenu #AppView::item {
+    color: #dedede;
     background: #202020;
-    border: 1px solid #393939;
-    border-radius: 17px;
-    margin: 0 7px;
-    padding: 6px 0 6px 3px;
-    icon-size: 21px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 2px 6px;
+    padding: 1px 3px;
+}
+
+#FancyMenu #CategoryView::item:selected,
+#FancyMenu #AppView::item:selected {
+    color: #ffffff;
+    background: #474646;
+    border: 1px solid #666666;
+}
+
+#FancyMenu #CategoryView::item:hover,
+#FancyMenu #AppView::item:hover {
+    color: #ffffff;
+    background: #383838;
+    border: 1px solid #666666;
+}
+
+#FancyMenu QLabel {
+    color: #dedede;
+    background: #2a2a2a;
 }
 
 #FancyMenu QListView:focus {
@@ -447,28 +471,10 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu QListView::item {
-    color: #dedede;
-    background: #202020;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    margin: 2px 6px;
-    padding: 1px 3px;
-    min-width: 137px;
-    max-width: 137px;
+    min-width: 133px;
+    max-width: 133px;
     min-height: 25px;
     max-height: 25px;
-}
-
-#FancyMenu QListView::item:selected {
-    color: #ffffff;
-    background: #474646;
-    border: 1px solid #666666;
-}
-
-#FancyMenu QListView::item:hover {
-    color: #ffffff;
-    background: #383838;
-    border: 1px solid #666666;
 }
 
 #FancyMenu QToolButton {
