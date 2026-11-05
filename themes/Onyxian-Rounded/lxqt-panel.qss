@@ -491,17 +491,10 @@ LXQtFancyMenuWindow {
 }
 
 #FancyMenu QScrollBar:vertical {
-    background: #2a2a2a;
-    border: 1px solid #393939;
+    background: transparent;
+    border: 1px solid transparent;
     margin: 2px;
     width: 14px;
-}
-
-#FancyMenu QScrollBar:horizontal {
-    background: #2a2a2a;
-    border: 1px solid #393939;
-    margin: 2px;
-    height: 14px;
 }
 
 #FancyMenu QScrollBar::handle:vertical {
@@ -512,16 +505,9 @@ LXQtFancyMenuWindow {
     min-height: 40px;
 }
 
-#FancyMenu QScrollBar::handle:horizontal {
-    background: #7a7a7a;
-    border: 0;
-    border-radius: 3px;
-    margin: 1px;
-    min-width: 40px;
-}
-
-#FancyMenu QScrollBar::handle:hover {
+#FancyMenu QScrollBar::handle:vertical:hover {
     background: #9b9b9b;
+    border-radius: 4px;
     margin: 0;
 }
 
@@ -530,17 +516,6 @@ LXQtFancyMenuWindow {
     background: transparent;
     border: none;
     width: 0;
-}
-
-#FancyMenu QScrollBar::add-line:horizontal,
-#FancyMenu QScrollBar::sub-line:horizontal {
-    background: transparent;
-    border: none;
-    width: 0;
-}
-
-#FancyMenu QAbstractScrollArea::corner {
-    background: transparent;
 }
 
 /* ---------- Main Menu ---------- */
@@ -588,6 +563,34 @@ LXQtFancyMenuWindow {
     color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
+}
+
+#MainMenu QScrollBar:vertical {
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 2px;
+    width: 14px;
+}
+
+#MainMenu QScrollBar::handle:vertical {
+    background: #7a7a7a;
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+    min-height: 40px;
+}
+
+#MainMenu QScrollBar::handle:vertical:hover {
+    background: #9b9b9b;
+    border-radius: 4px;
+    margin: 0;
+}
+
+#MainMenu QScrollBar::add-line:vertical,
+#MainMenu QScrollBar::sub-line:vertical {
+    background: transparent;
+    border: none;
+    width: 0;
 }
 
 /* ---------- Volume Plugin ---------- */
