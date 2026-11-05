@@ -296,6 +296,10 @@ LXQtPanel[position="Right"] #QuickLaunch QToolButton {
     border-radius: 20px;
 }
 
+#TaskBar LXQtGroupPopup QToolButton {
+    border-radius: 16px;
+}
+
 /* ---------- Spacer ---------- */
 #Spacer {
     background-position: center center;
