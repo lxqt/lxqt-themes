@@ -433,11 +433,11 @@ LXQtFancyMenuWindow {
     icon-size: 21px;
 }
 
-#FancyMenu QListView {
+#FancyMenu #CategoryView {
     background: #202020;
     border: 1px solid #393939;
     border-radius: 17px;
-    margin-right: 7px;
+    margin: 0 7px;
     padding: 6px 0 6px 3px;
     icon-size: 21px;
 }
