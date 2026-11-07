@@ -610,8 +610,15 @@ VolumePopup {
 }
 
 VolumePopup QScrollArea {
-    background: #202020;
+    margin: 0 7px;
+}
+
+VolumePopup QPushButton#MixerLink {
+    color: #dedede;
+    background: #2a2a2a;
     border: 1px solid #393939;
+    border-radius: 17px;
+    margin: 5px 0 0 0;
 }
 
 VolumePopup QPushButton {
@@ -619,22 +626,24 @@ VolumePopup QPushButton {
     background: #2a2a2a;
     border: 1px solid #393939;
     border-radius: 17px;
-    margin: 4px 6px;
+    margin: 0 0 3px 5px;
     padding: 6px 5px;
-    qproperty-iconSize: 23px;
+    qproperty-iconSize: 21px;
 }
 
 VolumePopup QPushButton:focus {
     outline: transparent;
 }
 
-VolumePopup QPushButton:hover {
+VolumePopup QPushButton:hover,
+VolumePopup QPushButton#MixerLink:hover {
     color: #ffffff;
     background: #383838;
     border: 1px solid #666666;
 }
 
-VolumePopup QPushButton:pressed {
+VolumePopup QPushButton:pressed,
+VolumePopup QPushButton#MixerLink:pressed {
     color: #dedede;
     background: #303030;
     border: 1px solid #4a4a4a;
@@ -670,7 +679,7 @@ VolumePopup QSlider::handle:horizontal {
     border: 1px solid #666666;
     border-radius: 6px;
     margin: -3px 0; /* expand outside the groove */
-    width: 12px;
+    width: 11px;
 }
 
 VolumePopup QSlider::sub-page:horizontal {
@@ -694,6 +703,34 @@ VolumePopup[layoutDirection="1"] QSlider::sub-page:horizontal {
 VolumePopup[layoutDirection="1"] QSlider::add-page:horizontal {
     background: #545454;
     border-radius: 3px;
+}
+
+#Volume QScrollBar:vertical {
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 2px;
+    width: 14px;
+}
+
+#Volume QScrollBar::handle:vertical {
+    background: #7a7a7a;
+    border: 0;
+    border-radius: 3px;
+    margin: 1px;
+    min-height: 40px;
+}
+
+#Volume QScrollBar::handle:vertical:hover {
+    background: #9b9b9b;
+    border-radius: 4px;
+    margin: 0;
+}
+
+#Volume QScrollBar::add-line:vertical,
+#Volume QScrollBar::sub-line:vertical {
+    background: transparent;
+    border: none;
+    width: 0;
 }
 
 /* ---------- Backlight Plugin ---------- */
@@ -738,7 +775,7 @@ VolumePopup[layoutDirection="1"] QSlider::add-page:horizontal {
     border: 1px solid #666666;
     border-radius: 6px;
     margin: 0 -3px; /* expand outside the groove */
-    height: 12px;
+    height: 11px;
 }
 
 #Backlight > SliderDialog > QSlider::sub-page:vertical {
